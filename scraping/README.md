@@ -1,0 +1,63 @@
+# Scraping Module
+
+Web scraping is our go-to technique for collecting data from different real estate platforms.
+
+We are focusing on collecting data about appartments on sale throughout Morocco.
+
+The main platforms used for data collection are:
+
+- [Avito](https://www.avito.ma/)
+- [Mubawab](https://www.mubawab.ma/)
+- [Sarouty](https://www.sarouty.ma/)
+- [Yakeey](https://yakeey.com/fr-ma)
+
+The following is a description regarding practices and rules we followed while scraping data, as well as the limitations and challenges faced for each platform.
+
+## Avito
+
+[Avito](https://www.avito.ma/) is a large marketplace that provide a wide range of products in every category. But as real estate is a very large category on its own, the platform dedicated resources made specifically for this class of products.
+
+In our case, we are going to be looking at [appartments for sale](https://www.avito.ma/fr/maroc/appartements-%C3%A0_vendre), which currently contains more than 47k annoucements, making it our biggest data source.
+
+### Description
+
+- Each page contains about 44 announcements, with more than 1400 pages.
+- For each page, we can easily extract the link to each announcement, and then extract the information we need from each announcement page.
+- Here's a list of what an announcement page contains:
+  - Title (required)
+  - City (required)
+  - Time of publication (automatically set by the platform)
+  - Number of rooms (required)
+  - Description (required)
+  - Type (required - "Appartements, à vendre" in our case)
+  - Neighborhood (required)
+  - Living area (required)
+  - Floor (required)
+  - Price (optional - "Prix non spécifié" if not provided)
+  - Number of bathrooms (optional)
+  - Total area (optional)
+  - Number of living rooms (optional)
+  - Age (optional)
+  - Adress (optional)
+  - Equipments (optional - list of predefined values: "Balcon", "Ascenseur", "Terrasse",  "Meublé", "Climatisation", "Chauffage", "Cuisine équipée", "Concierge", "Sécurité", "Parking", "Duplex", "Câblage téléphonique")
+
+### Rules
+
+- The [robots.txt](https://www.avito.ma/robots.txt) file doesn't seem to contain rules that forbid the use of automated bots for retrieving data. However, considering the large ammount of data to be collected, we have to be very careful not to disturb the traffic.
+
+### Challenges
+
+- Huge number of requests to be made.
+- Retrieving Javascript rendered content, such as the number of rooms, bathrooms, etc (represented by icons):
+
+![JS rendered](images/avito_js_rendered.png)
+
+- Some announcement links redirect to external websites:
+
+![External redirection](images/avito_external_redirection.png)
+
+### Suggestions
+
+- We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
+- After trying to create an annoucement, we noticed a pattern that let us get the information we need without the need of extracting what is rendered by Javascript. In the image above, the number of rooms is always the first number, and it is a required field, it could then be followed by the number of bathrooms, then the total area.
+- We can easily distinguish between internal and external websites, making it easy to ignore those external redirections.
