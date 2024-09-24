@@ -27,19 +27,21 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
   - Title (required)
   - City (required)
   - Time of publication (automatically set by the platform)
-  - Number of rooms (required)
+  - Number of rooms (required - 1 -> 11)
   - Description (required)
   - Type (required - "Appartements, à vendre" in our case)
   - Neighborhood (required)
   - Living area (required)
   - Floor (required)
   - Price (optional - "Prix non spécifié" if not provided)
-  - Number of bathrooms (optional)
+  - Number of bathrooms (optional - 0 -> 8)
   - Total area (optional)
-  - Number of living rooms (optional)
+  - Number of living rooms (optional - 0 -> 8)
   - Age (optional)
   - Adress (optional)
+  - Syndicate price (optional)
   - Equipments (optional - list of predefined values: "Balcon", "Ascenseur", "Terrasse",  "Meublé", "Climatisation", "Chauffage", "Cuisine équipée", "Concierge", "Sécurité", "Parking", "Duplex", "Câblage téléphonique")
+- A page is estimated to take about 5 seconds to be scraped.
 
 ### Rules
 
@@ -48,7 +50,9 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 ### Challenges
 
 - Huge number of requests to be made.
-- Retrieving Javascript rendered content, such as the number of rooms, bathrooms, etc (represented by icons):
+- Premium announcements are JavaScript rendered (2 per page).
+- Description is not fully displayed, and requires a click to be shown.
+- Retrieving Javascript rendered attributes, such as the number of rooms, bathrooms, etc (represented by icons):
 
 ![JS rendered](images/avito_js_rendered.png)
 
@@ -60,4 +64,6 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 
 - We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
 - After trying to create an annoucement, we noticed a pattern that let us get the information we need without the need of extracting what is rendered by Javascript. In the image above, the number of rooms is always the first number, and it is a required field, it could then be followed by the number of bathrooms, then the total area.
-- We can easily distinguish between internal and external websites, making it easy to ignore those external redirections.
+- We can easily distinguish between internal and external websites (scrapy does this automatically via the allowed_domains attribute of the scrapper), making it easy to ignore those external redirections.
+
+## Tests
