@@ -28,7 +28,7 @@ class AvitoAnnouncementItem(scrapy.Item):
     age = scrapy.Field()
     address = scrapy.Field()
     syndicate_price = scrapy.Field()
-    equipements = scrapy.Field()
 
-    # helper fields
-    attributes = scrapy.Field() # this field is used to store the attributes of the announcement, it is not used in the final item
+    # helper fields: to be transformed in the pipeline
+    attributes = scrapy.Field()
+    equipements = scrapy.Field()

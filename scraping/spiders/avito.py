@@ -1,7 +1,6 @@
 import scrapy
-import scrapy.http
-import scrapy.selector
-import scrapy.selector.unified
+from scrapy.http import Response
+from scrapy.selector.unified import Selector
 from scraping.items import AvitoAnnouncementItem
 
 from urllib.parse import urlparse
@@ -13,7 +12,7 @@ class AvitoSpider(scrapy.Spider):
     allowed_domains = ["www.avito.ma"]
     start_urls = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
 
-    def parse(self: scrapy.Spider, response: scrapy.http.Response):
+    def parse(self: scrapy.Spider, response: Response):
         # scrape each announcement
         announcements = AvitoSpider.get_announcements(response)
         for announcement in announcements:
@@ -26,7 +25,7 @@ class AvitoSpider(scrapy.Spider):
         # if next_page_url:
         #     yield response.follow(next_page_url, callback=self.parse)
     
-    def parse_announcement(self: scrapy.Spider, response: scrapy.http.Response, **kwargs):
+    def parse_announcement(self: scrapy.Spider, response: Response, **kwargs):
         item = kwargs["item"]
         item["title"], item["price"], item["city"], item["time"], item["user"] = self.get_header(response)
         item["attributes"] = self.get_attributes(response)
@@ -34,7 +33,7 @@ class AvitoSpider(scrapy.Spider):
         yield item
 
     @staticmethod
-    def get_announcements(response: scrapy.http.Response) -> List[Tuple[str, str, Optional[str], Optional[str]]]:
+    def get_announcements(response: Response) -> List[Tuple[str, str, Optional[str], Optional[str]]]:
         """
         Extract the url, number of rooms, bathrooms and total area from the announcements page.
 
@@ -48,12 +47,12 @@ class AvitoSpider(scrapy.Spider):
         announcements_a = filter(AvitoSpider.is_announcement_valid, response.css("div.sc-1nre5ec-1 a"))
         for a in announcements_a:
             url = a.attrib["href"]
-            n_rooms, n_bathrooms, total_area = AvitoSpider.get_attributes_from_announcement_a(a)
+            n_rooms, n_bathrooms, total_area = AvitoSpider.get_info_from_announcement_a(a)
             announcements.append((url, n_rooms, n_bathrooms, total_area))
         return announcements
     
     @staticmethod
-    def is_announcement_valid(announcement: scrapy.selector.unified.Selector) -> bool:
+    def is_announcement_valid(announcement: Selector) -> bool:
         """
         Check if the announcement is valid.
         A valid announcement is one that doesn't redirect to any external domain.
@@ -69,7 +68,7 @@ class AvitoSpider(scrapy.Spider):
         return domain in AvitoSpider.allowed_domains
 
     @staticmethod
-    def get_info_from_announcement_a(announcement: scrapy.selector.unified.Selector) -> Tuple[str, Optional[str], Optional[str]]:
+    def get_info_from_announcement_a(announcement: Selector) -> Tuple[str, Optional[str], Optional[str]]:
         """
         Extract the number of rooms, bathrooms and total area from the announcement.
 
@@ -93,7 +92,7 @@ class AvitoSpider(scrapy.Spider):
         return n_rooms, n_bathrooms, total_area
 
     @staticmethod
-    def get_next_page_url(response: scrapy.http.Response) -> Optional[str]:
+    def get_next_page_url(response: Response) -> Optional[str]:
         """
         Extract the next page url.
         
@@ -110,7 +109,7 @@ class AvitoSpider(scrapy.Spider):
         return None
 
     @staticmethod
-    def get_header(response: scrapy.http.Response) -> Tuple[str, str, str, str, str]:
+    def get_header(response: Response) -> Tuple[str, str, str, str, str]:
         """
         Extract the title, price, city, time and user.
 
@@ -120,12 +119,17 @@ class AvitoSpider(scrapy.Spider):
         Returns:
             A tuple of 5 strings: title, price, city, time, user.
         """
-        title, price, city, time = response.css("div.sc-1g3sn3w-8 ::text").getall()
-        user = response.css("div.sc-1g3sn3w-0.sc-1g3sn3w-2 p::text").get()
+        header1 = response.css("div.sc-1g3sn3w-8")
+        title = header1.css("h1::text").get()
+        price = header1.css("p::text").get()
+        city = header1.css("div.sc-1g3sn3w-8 > div:nth-child(2) span::text").get()
+        time = header1.css("time::text").get()
+        header2 = response.css("div.sc-1g3sn3w-2")
+        user = header2.css("p::text").get()
         return title, price, city, time, user
     
     @staticmethod
-    def get_attributes(response: scrapy.http.Response) -> Dict[str, str]:
+    def get_attributes(response: Response) -> Dict[str, str]:
         """
         Extract the attributes.
 
@@ -142,7 +146,7 @@ class AvitoSpider(scrapy.Spider):
         return attributes
 
     @staticmethod
-    def get_equipments(response: scrapy.http.Response) -> List[str]:
+    def get_equipments(response: Response) -> List[str]:
         """
         Extract extra equipements.
 
