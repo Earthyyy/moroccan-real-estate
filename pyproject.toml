@@ -1,0 +1,72 @@
+# Build System Configuration
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Project Metadata
+[project]
+name = "moroccan-real-estate"
+version = "0.0.1"
+dynamic = ["dependencies"]  # Dependencies will be loaded dynamically (dev-requirements.txt)
+
+requires-python = ">3.10,<3.12"
+
+authors = [
+  {name = "EL MAMOUNI Saad", email = "elmamounisaad@gmail.com"},
+  {name = "NIJADE Mohamed", email = "mohammednijade@gmail.com"},
+  {name = "EL ARDI Anas", email= "anaselardi@gmail.com"},
+]
+
+# Project descriptions
+description = "A real estate data engineering project focusing on the Moroccan market."
+readme = "README.md"
+license = {file = "LICENSE"}
+
+# Keywords for easier project discoverability
+keywords = ["Real estate", "Data engineering", "Morocco", "ETL", "Data pipeline"]
+
+# Project URLs for easy access to resources
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://example.com/docs"
+Repository = "https://github.com/Earthyyy/moroccan-real-estate"
+"Bug Tracker" = "https://github.com/Earthyyy/moroccan-real-estate/issues"
+
+# Dynamic dependencies
+[tool.setuptools.dynamic]
+dependencies = {file = ["./requirements/dev-requirements.txt"]}  # Dynamically load dependencies from the file
+
+# Optional Configuration for Packaging
+[tool.hatch.build.targets.wheel]
+packages = ["src"]  # Specify that the 'src' directory is the main source of the project
+
+# Linting Configuration for Ruff
+[tool.ruff]
+line-length = 88
+
+# Selected linting rules from various plugins
+lint.select = [
+    "E", "F", "W", "B", "A", "C4", "T10", "EXE", "ISC", "G", "PIE", "T20", "PT", 
+    "RSE", "RET", "TID", "ARG", "PGH", "PLC", "PLE", "PLW", "RUF"
+]
+
+# Exclude common directories and files from linting
+extend-exclude = [
+    "*.pyc",
+    "__pycache__",
+]
+
+# Black code formatter configuration
+[tool.black]
+line-length = 88
+
+# isort (import sorting) configuration aligned with black's style
+[tool.isort]
+profile = "black"
+
+# Mypy type checking configuration
+[tool.mypy]
+python_version = "3.11"
+follow_imports = "skip"
+ignore_missing_imports = true
+files = "src"  # Specify the directory for type checking
