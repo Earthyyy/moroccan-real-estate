@@ -24,7 +24,8 @@ class AvitoSpider(scrapy.Spider):
         item["equipements"] = self.get_equipments(response)
         yield item
 
-    def get_announcement_urls(self, response):
+    @staticmethod
+    def get_announcement_urls(response):
         """
         Extract the announcement urls.
         
@@ -37,7 +38,8 @@ class AvitoSpider(scrapy.Spider):
         """
         return response.css("div.sc-1nre5ec-1 a::attr(href)").getall()
 
-    def get_next_page_url(self, response):
+    @staticmethod
+    def get_next_page_url(response):
         """
         Extract the next page url.
         
@@ -53,7 +55,8 @@ class AvitoSpider(scrapy.Spider):
             return nav[-1].attrib["href"]
         return None
 
-    def get_header(self, response):
+    @staticmethod
+    def get_header(response):
         """
         Extract the title, price, city, time and user.
 
@@ -68,7 +71,8 @@ class AvitoSpider(scrapy.Spider):
         user = response.css("div.sc-1g3sn3w-0.sc-1g3sn3w-2 p::text").get()
         return title, price, city, time, user
     
-    def get_attributes(self, response):
+    @staticmethod
+    def get_attributes(response):
         """
         Extract the attributes.
 
@@ -91,7 +95,8 @@ class AvitoSpider(scrapy.Spider):
 
         return attributes
 
-    def get_attributes_first(self, response):
+    @staticmethod
+    def get_attributes_first(response):
         """
         Extract the first part of the attributes.
 
@@ -113,7 +118,8 @@ class AvitoSpider(scrapy.Spider):
             n_bathrooms, total_area = optional
         return n_bedrooms, n_bathrooms, total_area
     
-    def get_attributes_second(self, response):
+    @staticmethod
+    def get_attributes_second(response):
         """
         Extract the second part of the attributes.
 
@@ -130,7 +136,8 @@ class AvitoSpider(scrapy.Spider):
             attributes[key] = value
         return attributes
 
-    def get_equipments(self, response):
+    @staticmethod
+    def get_equipments(response):
         """
         Extract extra equipements.
 
