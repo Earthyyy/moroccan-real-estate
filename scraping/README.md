@@ -70,3 +70,24 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 - We can easily distinguish between internal and external websites (scrapy does this automatically via the allowed_domains attribute of the scrapper), making it easy to ignore those external redirections.
 
 ## Tests
+
+After navigating through the pages and announcements, we have come up with different cases against which we need to test our scrapper, the three main set of tests we need to have are:
+
+- Retrieving all of the listed announcements from a page.
+- Extracting all of the required as well as the optional information from an announcement page.
+- Navigating through the pages.
+
+For this, we have created a test file at `../tests/scraping/avito.py`.
+
+- There are 3 types of announcements:
+  - Regular announcement
+  - Star announcement
+  - External announcement
+  - (Note that there are also premium announcements which are out of the scope of this iteration as they require more discussions)
+
+- There are 3 types of pages:
+  - First page
+  - Middle page
+  - Last page
+
+For simplicity, we have choosen the function based approach for testing, for easy setting up the tests. As we add more scrapers, we can move to class based testing.
