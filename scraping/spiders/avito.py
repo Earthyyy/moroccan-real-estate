@@ -1,45 +1,99 @@
 import scrapy
-from scraping.items import AvitoItem
+import scrapy.http
+import scrapy.selector
+import scrapy.selector.unified
+from scraping.items import AvitoAnnouncementItem
+
+from urllib.parse import urlparse
+
+from typing import List, Tuple, Dict, Optional
 
 class AvitoSpider(scrapy.Spider):
     name = "avito"
     allowed_domains = ["www.avito.ma"]
     start_urls = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
 
-    def parse(self, response):
+    def parse(self: scrapy.Spider, response: scrapy.http.Response):
         # scrape each announcement
-        announcement_urls = self.get_announcement_urls(response)
-        for announcement_url in announcement_urls:
-            yield response.follow(announcement_url, callback=self.parse_announcement)
+        announcements = AvitoSpider.get_announcements(response)
+        for announcement in announcements:
+            item = AvitoAnnouncementItem()
+            item["url"], item["n_bedrooms"], item["n_bathrooms"], item["total_area"] = announcement
+            yield response.follow(item["url"], callback=self.parse_announcement, cb_kwargs=dict(item=item))
         
         # go to the next page
         # next_page_url = self.get_next_page_url(response)
         # if next_page_url:
         #     yield response.follow(next_page_url, callback=self.parse)
     
-    def parse_announcement(self, response):
-        item = AvitoItem()
+    def parse_announcement(self: scrapy.Spider, response: scrapy.http.Response, **kwargs):
+        item = kwargs["item"]
         item["title"], item["price"], item["city"], item["time"], item["user"] = self.get_header(response)
         item["attributes"] = self.get_attributes(response)
         item["equipements"] = self.get_equipments(response)
         yield item
 
     @staticmethod
-    def get_announcement_urls(response):
+    def get_announcements(response: scrapy.http.Response) -> List[Tuple[str, str, Optional[str], Optional[str]]]:
         """
-        Extract the announcement urls.
-        
+        Extract the url, number of rooms, bathrooms and total area from the announcements page.
+
         Args:
-            self: the spider object.
             response: the response object of the page.
 
         Returns:
-            A list of announcement urls.
+            A list of tuples (url, n_rooms, n_bathrooms (optional), total_area (optional)).
         """
-        return response.css("div.sc-1nre5ec-1 a::attr(href)").getall()
+        announcements = []
+        announcements_a = filter(AvitoSpider.is_announcement_valid, response.css("div.sc-1nre5ec-1 a"))
+        for a in announcements_a:
+            url = a.attrib["href"]
+            n_rooms, n_bathrooms, total_area = AvitoSpider.get_attributes_from_announcement_a(a)
+            announcements.append((url, n_rooms, n_bathrooms, total_area))
+        return announcements
+    
+    @staticmethod
+    def is_announcement_valid(announcement: scrapy.selector.unified.Selector) -> bool:
+        """
+        Check if the announcement is valid.
+        A valid announcement is one that doesn't redirect to any external domain.
+
+        Args:
+            announcement: the anchor tag of the announcement.
+
+        Returns:
+            True if the announcement is valid, False otherwise.
+        """
+        announcement_url = announcement.attrib["href"]
+        domain = urlparse(announcement_url).netloc
+        return domain in AvitoSpider.allowed_domains
 
     @staticmethod
-    def get_next_page_url(response):
+    def get_info_from_announcement_a(announcement: scrapy.selector.unified.Selector) -> Tuple[str, Optional[str], Optional[str]]:
+        """
+        Extract the number of rooms, bathrooms and total area from the announcement.
+
+        Args:
+            announcement: the anchor tag of the announcement.
+
+        Returns:
+            A tuple of 3 strings: n_rooms, n_bathrooms (optional), total_area (optional).
+        """
+        n_rooms, n_bathrooms, total_area = None, None, None
+        spans_text = [''.join(elem.css("::text").getall()).strip() for elem in announcement.xpath('./div[3]//span[contains(@class, "sc-1s278lr-0")]')]
+        if spans_text:
+            n_rooms = spans_text[0]
+            if len(spans_text) == 2:
+                if "m²" not in spans_text[1]:
+                    n_bathrooms = spans_text[1]
+                else:
+                    total_area = spans_text[1]
+            elif len(spans_text) == 3:
+                n_bathrooms, total_area = spans_text[1:]
+        return n_rooms, n_bathrooms, total_area
+
+    @staticmethod
+    def get_next_page_url(response: scrapy.http.Response) -> Optional[str]:
         """
         Extract the next page url.
         
@@ -56,12 +110,11 @@ class AvitoSpider(scrapy.Spider):
         return None
 
     @staticmethod
-    def get_header(response):
+    def get_header(response: scrapy.http.Response) -> Tuple[str, str, str, str, str]:
         """
         Extract the title, price, city, time and user.
 
         Args:
-            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:
@@ -72,59 +125,11 @@ class AvitoSpider(scrapy.Spider):
         return title, price, city, time, user
     
     @staticmethod
-    def get_attributes(response):
+    def get_attributes(response: scrapy.http.Response) -> Dict[str, str]:
         """
         Extract the attributes.
 
         Args:
-            self: the spider object.
-            response: the response object of the announcement page.
-
-        Returns:
-            A dictionary of the attributes.
-        """
-        attributes = dict()
-        # 1st part of the attributes
-        n_rooms, n_bathrooms, total_area = self.get_attributes_first(response)
-        attributes["Chambres"] = n_rooms
-        attributes["Salles de bain"] = n_bathrooms
-        attributes["Surface totale"] = total_area
-
-        # 2nd part of the attributes
-        attributes.update(self.get_attributes_second(response))
-
-        return attributes
-
-    @staticmethod
-    def get_attributes_first(response):
-        """
-        Extract the first part of the attributes.
-
-        Args:
-            self: the spider object.
-            response: the response object of the announcement page.
-
-        Returns:
-            A tuple of 3 strings: n_rooms, n_bathrooms, total_area.
-        """
-        n_bedrooms, n_bathrooms, total_area = None, None, None
-        n_bedrooms, *optional = response.css("div.sc-1g3sn3w-3 div.sc-6p5md9-0 ::text").getall()
-        if len(optional) == 1:
-            if 0 < int(optional[0]) <= 8:
-                n_bathrooms = optional[0]
-            else:
-                total_area = optional[0]
-        elif len(optional) == 2:
-            n_bathrooms, total_area = optional
-        return n_bedrooms, n_bathrooms, total_area
-    
-    @staticmethod
-    def get_attributes_second(response):
-        """
-        Extract the second part of the attributes.
-
-        Args:
-            self: the spider object
             response: the response object of the announcement page.
 
         Returns:
@@ -137,7 +142,7 @@ class AvitoSpider(scrapy.Spider):
         return attributes
 
     @staticmethod
-    def get_equipments(response):
+    def get_equipments(response: scrapy.http.Response) -> List[str]:
         """
         Extract extra equipements.
 

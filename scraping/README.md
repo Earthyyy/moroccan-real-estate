@@ -27,7 +27,7 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
   - Title (required)
   - City (required)
   - Time of publication (automatically set by the platform)
-  - Number of rooms (required - 1 -> 11)
+  - Number of bedrooms (required - 1 -> 11)
   - Description (required)
   - Type (required - "Appartements, à vendre" in our case)
   - Neighborhood (required)
@@ -54,16 +54,19 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 - Description is not fully displayed, and requires a click to be shown.
 - Retrieving Javascript rendered attributes, such as the number of rooms, bathrooms, etc (represented by icons):
 
-![JS rendered](images/avito_js_rendered.png)
+![JS rendered](../images/avito_js_rendered.png)
 
 - Some announcement links redirect to external websites:
 
-![External redirection](images/avito_external_redirection.png)
+![External redirection](../images/avito_external_redirection.png)
 
 ### Suggestions
 
 - We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
-- After trying to create an annoucement, we noticed a pattern that let us get the information we need without the need of extracting what is rendered by Javascript. In the image above, the number of rooms is always the first number, and it is a required field, it could then be followed by the number of bathrooms, then the total area.
+- Fortunately, we can extract this information from the announcements list page, as the information is displayed directly there and it is easier to process it. Here's how the information is displayed:
+
+![JS rendered](../images/avito_announcement_list.png)
+
 - We can easily distinguish between internal and external websites (scrapy does this automatically via the allowed_domains attribute of the scrapper), making it easy to ignore those external redirections.
 
 ## Tests

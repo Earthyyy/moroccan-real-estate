@@ -1,10 +1,34 @@
 import scrapy
 
-class AvitoItem(scrapy.Item):
+class AnnouncementItem(scrapy.Item):
+    pass
+
+class AnnouncementsPageItem(scrapy.Item):
+    pass
+
+class AvitoAnnouncementItem(scrapy.Item):
+
+    # required fields
+    url = scrapy.Field()
     title = scrapy.Field()
-    price = scrapy.Field()
     city = scrapy.Field()
     time = scrapy.Field()
     user = scrapy.Field()
-    attributes = scrapy.Field()
+    n_bedrooms = scrapy.Field()
+    type = scrapy.Field()
+    neighborhood = scrapy.Field()
+    living_area = scrapy.Field()
+    floor = scrapy.Field()
+    
+    # optional fields
+    price = scrapy.Field()
+    n_bathrooms = scrapy.Field()
+    total_area = scrapy.Field()
+    n_living_rooms = scrapy.Field()
+    age = scrapy.Field()
+    address = scrapy.Field()
+    syndicate_price = scrapy.Field()
     equipements = scrapy.Field()
+
+    # helper fields
+    attributes = scrapy.Field() # this field is used to store the attributes of the announcement, it is not used in the final item
