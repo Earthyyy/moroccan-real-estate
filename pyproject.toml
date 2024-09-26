@@ -13,7 +13,7 @@ requires-python = ">3.10,<3.12"
 
 authors = [
   {name = "EL MAMOUNI Saad", email = "elmamounisaad@gmail.com"},
-  {name = "NIJADE Mohamed", email = "mohammednijade@gmail.com"},
+  {name = "NIJADE Mohamed", email = "mohammednijadi47@gmail.com"},
   {name = "EL ARDI Anas", email= "anaselardi@gmail.com"},
 ]
 
