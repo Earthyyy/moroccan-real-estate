@@ -41,10 +41,12 @@ def test_get_header(avito_spider, url: str, expected: Tuple[str, str, str, str, 
     response = make_response(url)
     assert avito_spider.get_header(response) == expected
 
+@pytest.mark.skip
 @pytest.mark.vcr()
 @pytest.mark.parametrize("url, expected", [(test["url"], test["attributes"]) for test in AVITO_ANNOUNCEMENTS])
 def test_get_attributes(avito_spider, url: str, expected: Dict[str, str]):
-    assert True
+    response = make_response(url)
+    assert avito_spider.get_attributes(response) == expected
 
 @pytest.mark.skip
 @pytest.mark.vcr()
