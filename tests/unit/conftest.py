@@ -7,14 +7,15 @@ from scrapy.http import HtmlResponse
 from scrapy.selector.unified import Selector
 
 # Add the project's root directory to the Python path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from scraping.spiders.avito import AvitoSpider
+from src.scraping.spiders.avito import AvitoSpider
 
 # A user agent is needed to make requests to the website.
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) \
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
 }
 
 # Avito
@@ -40,8 +41,12 @@ def get_announcements_a() -> Selector:
     return response.css("div.sc-1nre5ec-1 a")
 
 
-# Requests to the following URLs are cached in tests/scraping/cassettes, if these caches are deleted, links might not work as the information is constantly changing.
-# for example, the last page of the announcements is 1359, but it might change in the future, as well as announcements within the pages, or information in an announcement.
+# Requests to the following URLs are cached in tests/scraping/cassettes
+# if these caches are deleted, links might not work as the information
+# is constantly changing.
+# for example, the last page of the announcements is 1359,
+# but it might change in the future, as well as announcements within the pages,
+# or information in an announcement.
 
 AVITO_PAGE_1 = "https://www.avito.ma/fr/maroc/appartements-à_vendre"
 AVITO_PAGE_2 = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=2"
@@ -60,7 +65,7 @@ AVITO_ANNOUNCEMENT = {
     "info": ("3", "3", "140 m²"),
     "header": (
         "شقة بواجهتين بالقرب من ديكاتلون فمنزل R2 ",
-        "880 000 DH",
+        "880 000 DH",  # noqa: RUF001
         "Meknès",
         "il y a 9 heures",
         "BAMEKNA IMMOBILIER",
@@ -92,7 +97,7 @@ AVITO_ANNOUNCEMENT_STAR = {
     "info": ("3", "2", "105 m²"),
     "header": (
         "Appartement à vendre 105 m² à Temara",
-        "750 000 DH",
+        "750 000 DH",  # noqa: RUF001
         "Temara",
         "il y a 9 heures",
         "Karim ",
@@ -115,7 +120,7 @@ AVITO_ANNOUNCEMENT_VERIFIED = {
     "info": ("3", "2", "147 m²"),
     "header": (
         "Appartement Spacieux à vendre 147 m² à Casablanca ",
-        "1 950 000 DH",
+        "1 950 000 DH",  # noqa: RUF001
         "Casablanca",
         "il y a 9 heures",
         "Keysafe Immobilier",
@@ -167,7 +172,7 @@ AVITO_ANNOUNCEMENT_OPTIONAL_ALL = {
     "info": ("2", "2", "117 m²"),
     "header": (
         "Apparemment saidia ap2 al waha",
-        "980 000 DH",
+        "980 000 DH",  # noqa: RUF001
         "Saidia",
         "il y a 9 heures",
         "Ad Ch",
@@ -221,7 +226,7 @@ AVITO_ANNOUNCEMENT_NO_EQUIPMENTS = {
     "info": ("2", "1", "50 m²"),
     "header": (
         "appartement sourour farah salam ",
-        "280 000 DH",
+        "280 000 DH",  # noqa: RUF001
         "Casablanca",
         "il y a 9 heures",
         "Agence immobilière la confiance ",

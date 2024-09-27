@@ -44,13 +44,15 @@ class AvitoSpider(scrapy.Spider):
         response: Response,
     ) -> List[Tuple[str, str, Optional[str], Optional[str]]]:
         """
-        Extract the url, number of rooms, bathrooms and total area from the announcements page.
+        Extract the url, number of rooms, bathrooms and total area from the
+        announcements page.
 
         Args:
             response: the response object of the page.
 
         Returns:
-            A list of tuples (url, n_rooms, n_bathrooms (optional), total_area (optional)).
+            A list of tuples
+            (url, n_rooms, n_bathrooms (optional), total_area (optional)).
         """
         announcements = []
         announcements_a = filter(
@@ -91,9 +93,10 @@ class AvitoSpider(scrapy.Spider):
             announcement: the anchor tag of the announcement.
 
         Returns:
-            A tuple of 3 strings: n_rooms, n_bathrooms (optional), total_area (optional).
+            A tuple of 3 strings: n_rooms, n_bathrooms (optional),
+            total_area (optional).
         """
-        n_rooms, n_bathrooms, total_area = None, None, None
+        n_rooms, n_bathrooms, total_area = "", None, None
         spans_text = [
             "".join(elem.css("::text").getall()).strip()
             for elem in announcement.xpath(
@@ -159,7 +162,7 @@ class AvitoSpider(scrapy.Spider):
         Returns:
             A dictionary of the attributes.
         """
-        attributes = dict()
+        attributes = {}
         for li in response.css("div.sc-1g3sn3w-3 li"):
             key, value = li.css("span::text").getall()
             attributes[key] = value

@@ -115,6 +115,7 @@ type checking, testing, and documentation building.
    Available sessions:
    - lint: Runs Ruff to check for linting issues.
    - formatting: Runs Black and Isort to check code formatting.
+        - run: Use to apply changes.
    - typing: Runs MyPy for static type checking.
    - dev: Sets up a development environment.
         - windows: Use when working on Windows.
