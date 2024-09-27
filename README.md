@@ -54,18 +54,20 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 - Description is not fully displayed, and requires a click to be shown.
 - Retrieving Javascript rendered attributes, such as the number of rooms, bathrooms, etc (represented by icons):
 
-![JS rendered](../images/avito_js_rendered.png)
+![JS rendered](images/avito_js_rendered.png)
 
 - Some announcement links redirect to external websites:
 
-![External redirection](../images/avito_external_redirection.png)
+![External redirection](images/avito_external_redirection.png)
+
+- Extracted text is not always clean, some characters are replaced by their HTML entities, and arabic text is not displayed correclty.
 
 ### Suggestions
 
 - We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
 - Fortunately, we can extract this information from the announcements list page, as the information is displayed directly there and it is easier to process it. Here's how the information is displayed:
 
-![JS rendered](../images/avito_announcement_list.png)
+![JS rendered](images/avito_announcement_list.png)
 
 - We can easily distinguish between internal and external websites (scrapy does this automatically via the allowed_domains attribute of the scrapper), making it easy to ignore those external redirections.
 
@@ -77,7 +79,7 @@ After navigating through the pages and announcements, we have come up with diffe
 - Extracting all of the required as well as the optional information from an announcement page.
 - Navigating through the pages.
 
-For this, we have created a test file at `../tests/scraping/avito.py`.
+For this, we have created a test file at `tests/scraping/avito.py`.
 
 - There are 3 types of announcements:
   - Regular announcement
