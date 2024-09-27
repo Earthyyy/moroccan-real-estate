@@ -1,39 +1,48 @@
+from typing import ClassVar, Dict, List, Optional, Tuple
+from urllib.parse import urlparse
+
 import scrapy
 from scrapy.http import Response
 from scrapy.selector.unified import Selector
-from scraping.items import AvitoAnnouncementItem
 
-from urllib.parse import urlparse
+from src.scraping.items import AvitoAnnouncementItem
 
-from typing import List, Tuple, Dict, Optional
 
 class AvitoSpider(scrapy.Spider):
     name = "avito"
-    allowed_domains = ["www.avito.ma"]
-    start_urls = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
+    allowed_domains: ClassVar = ["www.avito.ma"]
+    start_urls: ClassVar = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
 
     def parse(self: scrapy.Spider, response: Response):
         # scrape each announcement
         announcements = AvitoSpider.get_announcements(response)
         for announcement in announcements:
             item = AvitoAnnouncementItem()
-            item["url"], item["n_bedrooms"], item["n_bathrooms"], item["total_area"] = announcement
-            yield response.follow(item["url"], callback=self.parse_announcement, cb_kwargs=dict(item=item))
-        
+            item["url"], item["n_bedrooms"], item["n_bathrooms"], item["total_area"] = (
+                announcement
+            )
+            yield response.follow(
+                item["url"], callback=self.parse_announcement, cb_kwargs={"item": item}
+            )
+
         # go to the next page
         # next_page_url = self.get_next_page_url(response)
         # if next_page_url:
         #     yield response.follow(next_page_url, callback=self.parse)
-    
+
     def parse_announcement(self: scrapy.Spider, response: Response, **kwargs):
         item = kwargs["item"]
-        item["title"], item["price"], item["city"], item["time"], item["user"] = self.get_header(response)
+        item["title"], item["price"], item["city"], item["time"], item["user"] = (
+            self.get_header(response)
+        )
         item["attributes"] = self.get_attributes(response)
         item["equipements"] = self.get_equipments(response)
         yield item
 
     @staticmethod
-    def get_announcements(response: Response) -> List[Tuple[str, str, Optional[str], Optional[str]]]:
+    def get_announcements(
+        response: Response,
+    ) -> List[Tuple[str, str, Optional[str], Optional[str]]]:
         """
         Extract the url, number of rooms, bathrooms and total area from the announcements page.
 
@@ -44,13 +53,17 @@ class AvitoSpider(scrapy.Spider):
             A list of tuples (url, n_rooms, n_bathrooms (optional), total_area (optional)).
         """
         announcements = []
-        announcements_a = filter(AvitoSpider.is_announcement_valid, response.css("div.sc-1nre5ec-1 a"))
+        announcements_a = filter(
+            AvitoSpider.is_announcement_valid, response.css("div.sc-1nre5ec-1 a")
+        )
         for a in announcements_a:
             url = a.attrib["href"]
-            n_rooms, n_bathrooms, total_area = AvitoSpider.get_info_from_announcement_a(a)
+            n_rooms, n_bathrooms, total_area = AvitoSpider.get_info_from_announcement_a(
+                a
+            )
             announcements.append((url, n_rooms, n_bathrooms, total_area))
         return announcements
-    
+
     @staticmethod
     def is_announcement_valid(announcement: Selector) -> bool:
         """
@@ -68,7 +81,9 @@ class AvitoSpider(scrapy.Spider):
         return domain in AvitoSpider.allowed_domains
 
     @staticmethod
-    def get_info_from_announcement_a(announcement: Selector) -> Tuple[str, Optional[str], Optional[str]]:
+    def get_info_from_announcement_a(
+        announcement: Selector,
+    ) -> Tuple[str, Optional[str], Optional[str]]:
         """
         Extract the number of rooms, bathrooms and total area from the announcement.
 
@@ -79,7 +94,12 @@ class AvitoSpider(scrapy.Spider):
             A tuple of 3 strings: n_rooms, n_bathrooms (optional), total_area (optional).
         """
         n_rooms, n_bathrooms, total_area = None, None, None
-        spans_text = [''.join(elem.css("::text").getall()).strip() for elem in announcement.xpath('./div[3]//span[contains(@class, "sc-1s278lr-0")]')]
+        spans_text = [
+            "".join(elem.css("::text").getall()).strip()
+            for elem in announcement.xpath(
+                './div[3]//span[contains(@class, "sc-1s278lr-0")]'
+            )
+        ]
         if spans_text:
             n_rooms = spans_text[0]
             if len(spans_text) == 2:
@@ -95,11 +115,11 @@ class AvitoSpider(scrapy.Spider):
     def get_next_page_url(response: Response) -> Optional[str]:
         """
         Extract the next page url.
-        
+
         Args:
             self: the spider object.
             response: the response object of the page.
-            
+
         Returns:
             The next page url, or None if we reached the last page.
         """
@@ -127,7 +147,7 @@ class AvitoSpider(scrapy.Spider):
         header2 = response.css("div.sc-1g3sn3w-2")
         user = header2.css("p::text").get()
         return title, price, city, time, user
-    
+
     @staticmethod
     def get_attributes(response: Response) -> Dict[str, str]:
         """

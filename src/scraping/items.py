@@ -1,10 +1,13 @@
 import scrapy
 
+
 class AnnouncementItem(scrapy.Item):
     pass
 
+
 class AnnouncementsPageItem(scrapy.Item):
     pass
+
 
 class AvitoAnnouncementItem(scrapy.Item):
 
@@ -19,7 +22,7 @@ class AvitoAnnouncementItem(scrapy.Item):
     neighborhood = scrapy.Field()
     living_area = scrapy.Field()
     floor = scrapy.Field()
-    
+
     # optional fields
     price = scrapy.Field()
     n_bathrooms = scrapy.Field()
