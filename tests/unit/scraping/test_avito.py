@@ -4,21 +4,18 @@ from typing import Dict, List, Tuple
 
 # Tests based on the announcements listing page
 
-@pytest.mark.skip
 @pytest.mark.vcr()
 def test_is_announcement_valid(avito_spider, get_announcements_a,):
     announcements_a = get_announcements_a
     for test in AVITO_ANNOUNCEMENTS + [AVITO_ANNOUNCEMENT_IMMONEUF]:
         assert avito_spider.is_announcement_valid(announcements_a[test["index"]]) == test["is_valid"]
 
-@pytest.mark.skip
 @pytest.mark.vcr()
 def test_get_info_from_announcement_a(avito_spider, get_announcements_a):
     announcements_a = get_announcements_a
     for test in AVITO_ANNOUNCEMENTS:
         assert avito_spider.get_info_from_announcement_a(announcements_a[test["index"]]) == test["info"]
-    
-@pytest.mark.skip
+
 @pytest.mark.vcr()
 @pytest.mark.parametrize("url, expected_url", [
     (AVITO_PAGE_1, AVITO_PAGE_2),
@@ -34,22 +31,20 @@ def test_get_next_page_url(avito_spider, url: str, expected_url: str):
 
 # Tests based on the announcement's page
 
-@pytest.mark.skip
 @pytest.mark.vcr()
 @pytest.mark.parametrize("url, expected", [(test["url"], test["header"]) for test in AVITO_ANNOUNCEMENTS])
 def test_get_header(avito_spider, url: str, expected: Tuple[str, str, str, str, str]):
     response = make_response(url)
     assert avito_spider.get_header(response) == expected
 
-@pytest.mark.skip
 @pytest.mark.vcr()
 @pytest.mark.parametrize("url, expected", [(test["url"], test["attributes"]) for test in AVITO_ANNOUNCEMENTS])
 def test_get_attributes(avito_spider, url: str, expected: Dict[str, str]):
     response = make_response(url)
     assert avito_spider.get_attributes(response) == expected
 
-@pytest.mark.skip
 @pytest.mark.vcr()
 @pytest.mark.parametrize("url, expected", [(test["url"], test["equipments"]) for test in AVITO_ANNOUNCEMENTS])
 def test_get_equipments(avito_spider, url: str, expected: List[str]):
-    assert True
+    response = make_response(url)
+    assert avito_spider.get_equipments(response) == expected

@@ -56,7 +56,7 @@ AVITO_ANNOUNCEMENT = {
     "info": ("3", "3", "140 m²"),
     "header": ("شقة بواجهتين بالقرب من ديكاتلون فمنزل R2 ", "880 000 DH", "Meknès", "il y a 9 heures", "BAMEKNA IMMOBILIER"),
     "attributes": {'Type': 'Appartements, à vendre', 'Secteur': 'Autre secteur', 'Salons': '2', 'Surface habitable': '140', 'Âge du bien': 'Neuf', 'Étage': '2'},
-    "equipments": []
+    "equipments": ['Balcon', 'Chauffage', 'Climatisation', 'Concierge', 'Cuisine équipée', 'Duplex', 'Meublé', 'Sécurité', 'Terrasse']
 }
 AVITO_ANNOUNCEMENT_STAR = {
     "index": 27,
@@ -65,7 +65,7 @@ AVITO_ANNOUNCEMENT_STAR = {
     "info": ("3", "2", "105 m²"),
     "header": ("Appartement à vendre 105 m² à Temara", "750 000 DH", "Temara", "il y a 9 heures", "Karim "),
     "attributes": {'Type': 'Appartements, à vendre', 'Secteur': 'Skikina', 'Frais de syndic / mois': '150', 'Salons': '1', 'Surface habitable': '105', 'Âge du bien': '11-20 ans', 'Étage': '3'},
-    "equipments": []
+    "equipments": ['Ascenseur', 'Balcon', 'Parking', 'Sécurité']
 }
 AVITO_ANNOUNCEMENT_VERIFIED = {
     "index": 23,
@@ -74,7 +74,7 @@ AVITO_ANNOUNCEMENT_VERIFIED = {
     "info": ("3", "2", "147 m²"),
     "header": ("Appartement Spacieux à vendre 147 m² à Casablanca ", "1 950 000 DH", "Casablanca", "il y a 9 heures", "Keysafe Immobilier"),
     "attributes": {'Type': 'Appartements, à vendre', 'Secteur': '2 Mars', 'Frais de syndic / mois': '500', 'Salons': '2', 'Surface habitable': '147', 'Étage': 'Rez de chaussée'},
-    "equipments": []
+    "equipments": ['Ascenseur', 'Balcon', 'Chauffage', 'Climatisation', 'Concierge', 'Cuisine équipée', 'Parking', 'Sécurité', 'Terrasse']
 }
 AVITO_ANNOUNCEMENT_REQUIRED_ONLY = {
     "index": 11,
@@ -92,7 +92,7 @@ AVITO_ANNOUNCEMENT_OPTIONAL_ALL = {
     "info": ("2", "2", "117 m²"),
     "header": ("Apparemment saidia ap2 al waha", "980 000 DH", "Saidia", "il y a 9 heures", "Ad Ch"),
     "attributes": {'Type': 'Appartements, à vendre', 'Secteur': 'Toute la ville', 'Frais de syndic / mois': '265', 'Salons': '1', 'Surface habitable': '117', 'Âge du bien': '6-10 ans', 'Étage': '1'},
-    "equipments": []
+    "equipments": ['Balcon', 'Climatisation', 'Concierge', 'Cuisine équipée', 'Meublé', 'Parking', 'Sécurité', 'Terrasse']
 }
 AVITO_ANNOUNCEMENT_NO_PRICE = {
     "index": 5,
@@ -101,7 +101,7 @@ AVITO_ANNOUNCEMENT_NO_PRICE = {
     "info": ("3", "2", "281 m²"),
     "header": ("appartement avec jardin ", "Prix non spécifié", "Marrakech", "il y a 9 heures", "Summer House"),
     "attributes": {'Type': 'Appartements, à vendre', 'Secteur': 'Sakar', 'Salons': '2', 'Surface habitable': '140', 'Âge du bien': '11-20 ans', 'Étage': 'Rez de chaussée'},
-    "equipments": []
+    "equipments": ['Chauffage', 'Climatisation', 'Cuisine équipée', 'Terrasse']
 }
 AVITO_ANNOUNCEMENT_NO_EQUIPMENTS = {
     "index": 2,
