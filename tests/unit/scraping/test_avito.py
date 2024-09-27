@@ -1,5 +1,5 @@
 import pytest
-from tests.unit.scraping.scraping_conftest import *
+from tests.unit.scraping.conftest_scraping import *
 from typing import Dict, List, Tuple 
 
 # Tests based on the announcements listing page
