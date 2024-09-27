@@ -1,6 +1,6 @@
 import pytest
-from typing import Tuple
 from tests.unit.scraping.scraping_conftest import *
+from typing import Dict, List, Tuple 
 
 # Tests based on the announcements listing page
 
@@ -33,19 +33,21 @@ def test_get_next_page_url(avito_spider, url: str, expected_url: str):
     assert avito_spider.get_next_page_url(response) == expected_url
 
 # Tests based on the announcement's page
+
+@pytest.mark.skip
 @pytest.mark.vcr()
 @pytest.mark.parametrize("url, expected", [(test["url"], test["header"]) for test in AVITO_ANNOUNCEMENTS])
 def test_get_header(avito_spider, url: str, expected: Tuple[str, str, str, str, str]):
     response = make_response(url)
+    assert avito_spider.get_header(response) == expected
+
+@pytest.mark.vcr()
+@pytest.mark.parametrize("url, expected", [(test["url"], test["attributes"]) for test in AVITO_ANNOUNCEMENTS])
+def test_get_attributes(avito_spider, url: str, expected: Dict[str, str]):
     assert True
-    # assert avito_spider.get_header(response) == expected
 
 @pytest.mark.skip
-# @pytest.mark.vcr()
-def test_get_attributes():
-    assert True
-
-@pytest.mark.skip
-# @pytest.mark.vcr()
-def test_get_equipments():
+@pytest.mark.vcr()
+@pytest.mark.parametrize("url, expected", [(test["url"], test["equipments"]) for test in AVITO_ANNOUNCEMENTS])
+def test_get_equipments(avito_spider, url: str, expected: List[str]):
     assert True

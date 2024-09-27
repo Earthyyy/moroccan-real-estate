@@ -54,7 +54,7 @@ AVITO_ANNOUNCEMENT = {
     "url": "https://www.avito.ma/fr/autre_secteur/appartements/شقة_بواجهتين_بالقرب_من_ديكاتلون_فمنزل_R2__55576138.htm",
     "is_valid": True,
     "info": ("3", "3", "140 m²"),
-    "header": (),
+    "header": ("شقة بواجهتين بالقرب من ديكاتلون فمنزل R2 ", "880 000 DH", "Meknès", "il y a 9 heures", "BAMEKNA IMMOBILIER"),
     "attributes": {},
     "equipments": []
 }
@@ -63,7 +63,7 @@ AVITO_ANNOUNCEMENT_NO_EQUIPMENTS = {
     "url": "https://www.avito.ma/fr/oulfa/appartements/appartement_sourour_farah_salam__55440383.htm",
     "is_valid": True,
     "info": ("2", "1", "50 m²"),
-    "header": (),
+    "header": ("appartement sourour farah salam ", "280 000 DH", "Casablanca", "il y a 9 heures", "Agence immobilière la confiance "),
     "attributes": {},
     "equipments": []
 }
@@ -72,16 +72,16 @@ AVITO_ANNOUNCEMENT_IMMONEUF = {
     "url": "https://immoneuf.avito.ma/fr/unite/jfU?utm_source=avito_integration&utm_medium=listing_integration",
     "is_valid": False,
     "info": None,
-    "header": (),
-    "attributes": {},
-    "equipments": []
+    "header": None,
+    "attributes": None,
+    "equipments": None
 }
 AVITO_ANNOUNCEMENT_NO_PRICE = {
     "index": 5,
     "url": "https://www.avito.ma/fr/sakar/appartements/appartement_avec_jardin__55576063.htm",
     "is_valid": True,
     "info": ("3", "2", "281 m²"),
-    "header": (),
+    "header": ("appartement avec jardin ", "Prix non spécifié", "Marrakech", "il y a 9 heures", "Summer House"),
     "attributes": {},
     "equipments": []
 }
@@ -90,7 +90,7 @@ AVITO_ANNOUNCEMENT_REQUIRED_ONLY = {
     "url": "https://www.avito.ma/fr/khemisset/appartements/Appartement_à_vendre_1_m²_à_Khemisset_55576049.htm",
     "is_valid": True,
     "info": ("1", None, None),
-    "header": (),
+    "header": ("Appartement à vendre 1 m² à Khemisset", "Prix non spécifié", "Khemisset", "il y a 9 heures", "wassim jaouya"),
     "attributes": {},
     "equipments": []
 }
@@ -99,7 +99,7 @@ AVITO_ANNOUNCEMENT_OPTIONAL_ALL = {
     "url": "https://www.avito.ma/fr/saidia/appartements/Apparemment__saidia_ap2_al_waha_55208892.htm",
     "is_valid": True,
     "info": ("2", "2", "117 m²"),
-    "header": (),
+    "header": ("Apparemment saidia ap2 al waha", "980 000 DH", "Saidia", "il y a 9 heures", "Ad Ch"),
     "attributes": {},
     "equipments": []
 }
@@ -108,7 +108,7 @@ AVITO_ANNOUNCEMENT_VERIFIED = {
     "url": "https://www.avito.ma/fr/2_mars/appartements/Appartement_Spacieux_à_vendre_147_m²_à_Casablanca__55393976.htm",
     "is_valid": True,
     "info": ("3", "2", "147 m²"),
-    "header": (),
+    "header": ("Appartement Spacieux à vendre 147 m² à Casablanca ", "1 950 000 DH", "Casablanca", "il y a 9 heures", "Keysafe Immobilier"),
     "attributes": {},
     "equipments": []
 }
@@ -117,7 +117,7 @@ AVITO_ANNOUNCEMENT_STAR = {
     "url": "https://www.avito.ma/fr/skikina/appartements/Appartement_à_vendre_105_m²_à_Temara_55562047.htm",
     "is_valid": True,
     "info": ("3", "2", "105 m²"),
-    "header": (),
+    "header": ("Appartement à vendre 105 m² à Temara", "750 000 DH", "Temara", "il y a 9 heures", "Karim "),
     "attributes": {},
     "equipments": []
 }
