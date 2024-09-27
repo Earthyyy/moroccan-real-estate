@@ -1,4 +1,6 @@
-# Scraping Module
+# Moroccan Real Estate
+
+## Scraping Module
 
 Web scraping is our go-to technique for collecting data from different real estate platforms.
 
@@ -13,13 +15,13 @@ The main platforms used for data collection are:
 
 The following is a description regarding practices and rules we followed while scraping data, as well as the limitations and challenges faced for each platform.
 
-## Avito
+### Avito
 
 [Avito](https://www.avito.ma/) is a large marketplace that provide a wide range of products in every category. But as real estate is a very large category on its own, the platform dedicated resources made specifically for this class of products.
 
 In our case, we are going to be looking at [appartments for sale](https://www.avito.ma/fr/maroc/appartements-%C3%A0_vendre), which currently contains more than 47k annoucements, making it our biggest data source.
 
-### Description
+#### Description
 
 - Each page contains about 44 announcements, with more than 1400 pages.
 - For each page, we can easily extract the link to each announcement, and then extract the information we need from each announcement page.
@@ -43,11 +45,11 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
   - Equipments (optional - list of predefined values: "Balcon", "Ascenseur", "Terrasse",  "Meublé", "Climatisation", "Chauffage", "Cuisine équipée", "Concierge", "Sécurité", "Parking", "Duplex", "Câblage téléphonique")
 - A page is estimated to take about 5 seconds to be scraped.
 
-### Rules
+#### Rules
 
 - The [robots.txt](https://www.avito.ma/robots.txt) file doesn't seem to contain rules that forbid the use of automated bots for retrieving data. However, considering the large ammount of data to be collected, we have to be very careful not to disturb the traffic.
 
-### Challenges
+#### Challenges
 
 - Huge number of requests to be made.
 - Premium announcements are JavaScript rendered (2 per page).
@@ -62,7 +64,7 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 
 - Extracted text is not always clean, some characters are replaced by their HTML entities, and arabic text is not displayed correclty.
 
-### Suggestions
+#### Suggestions
 
 - We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
 - Fortunately, we can extract this information from the announcements list page, as the information is displayed directly there and it is easier to process it. Here's how the information is displayed:
@@ -71,7 +73,7 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 
 - We can easily distinguish between internal and external websites (scrapy does this automatically via the allowed_domains attribute of the scrapper), making it easy to ignore those external redirections.
 
-## Tests
+#### Tests
 
 After navigating through the pages and announcements, we have come up with different cases against which we need to test our scrapper, the three main set of tests we need to have are:
 
@@ -93,3 +95,33 @@ For this, we have created a test file at `tests/scraping/avito.py`.
   - Last page
 
 For simplicity, we have choosen the function based approach for testing, for easy setting up the tests. As we add more scrapers, we can move to class based testing.
+
+## Automated CI and doc building
+
+Noxfile for automating various development tasks such as linting, formatting,
+type checking, testing, and documentation building.
+
+### How to Run Nox Sessions
+
+1. To run all predefined sessions (lint, formatting, typing, test):
+   `nox`
+
+2. To run a specific session:
+   `nox -s <session_name>`
+
+   Example: To run only the linting session:
+   `nox -s lint`
+
+   Available sessions:
+   - lint: Runs Ruff to check for linting issues.
+   - formatting: Runs Black and Isort to check code formatting.
+   - typing: Runs MyPy for static type checking.
+   - dev: Sets up a development environment.
+        - windows: Use when working on Windows.
+   - doc: Builds documentation using Sphinx.
+        - i: Use to build interactive documentation
+   - test: Runs the test suite with pytest and coverage.
+
+3. To run sessions with additional arguments (e.g., specifying os for dev session):
+
+`nox -s dev -- windows` (Example for running dev on Windows)

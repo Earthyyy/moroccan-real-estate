@@ -1,0 +1,3 @@
+sphinx == 8.0.2
+shibuya == 2024.8.27
+sphinx-autobuild == 2024.9.19
