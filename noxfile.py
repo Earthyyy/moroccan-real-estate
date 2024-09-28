@@ -30,10 +30,14 @@ def formatting(session):
     install_requirements(session, "requirements/format-requirements.txt")
 
     # Run Black and Isort on both source and test directories
-    for directory in ["./src", "./tests"]:
-        session.run("black", "--check", directory)
-        session.run("isort", "--check", directory)
-
+    if session.posargs and session.posargs[0] == "run":
+        for directory in ["./src", "./tests"]:
+            session.run("black", directory)
+            session.run("isort", directory)
+    else:
+        for directory in ["./src", "./tests"]:
+            session.run("black", "--check", directory)
+            session.run("isort", "--check", directory)
 
 # Typing session using MyPy for static type checking
 @nox.session(python=PYTHON_VERSION)
