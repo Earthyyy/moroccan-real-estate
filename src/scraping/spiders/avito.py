@@ -13,7 +13,7 @@ class AvitoSpider(scrapy.Spider):
     allowed_domains: ClassVar = ["www.avito.ma"]
     start_urls: ClassVar = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
 
-    def parse(self: scrapy.Spider, response: Response):
+    def parse(self, response: Response):
         # scrape each announcement
         announcements = AvitoSpider.get_announcements(response)
         for announcement in announcements:
@@ -30,7 +30,7 @@ class AvitoSpider(scrapy.Spider):
         # if next_page_url:
         #     yield response.follow(next_page_url, callback=self.parse)
 
-    def parse_announcement(self: scrapy.Spider, response: Response, **kwargs):
+    def parse_announcement(self, response: Response, **kwargs):
         item = kwargs["item"]
         item["title"], item["price"], item["city"], item["time"], item["user"] = (
             self.get_header(response)
@@ -120,7 +120,6 @@ class AvitoSpider(scrapy.Spider):
         Extract the next page url.
 
         Args:
-            self: the spider object.
             response: the response object of the page.
 
         Returns:
@@ -174,7 +173,6 @@ class AvitoSpider(scrapy.Spider):
         Extract extra equipements.
 
         Args:
-            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:
