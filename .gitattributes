@@ -1,0 +1,2 @@
+* text=auto
+tests/unit/scraping/cassettes/**/* -diff
