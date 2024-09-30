@@ -6,7 +6,9 @@ class AnnouncementItem(scrapy.Item):
 
 
 class AnnouncementsPageItem(scrapy.Item):
-    pass
+    announcements_selector = scrapy.Field()
+    next_page_url = scrapy.Field()
+    next_page_condition = scrapy.Field()
 
 
 class AvitoAnnouncementItem(scrapy.Item):
@@ -31,6 +33,25 @@ class AvitoAnnouncementItem(scrapy.Item):
     age = scrapy.Field()
     address = scrapy.Field()
     syndicate_price = scrapy.Field()
+
+    # helper fields: to be transformed in the pipeline
+    attributes = scrapy.Field()
+    equipements = scrapy.Field()
+
+class YakeeyAnnouncementItem(scrapy.Item):
+
+    # required fields
+    url = scrapy.Field()
+    title = scrapy.Field()
+    city = scrapy.Field()
+    n_bedrooms = scrapy.Field()
+    n_bathrooms = scrapy.Field()
+    type = scrapy.Field()
+    neighborhood = scrapy.Field()
+    living_area = scrapy.Field()
+
+    # optional fields
+    total_area = scrapy.Field()
 
     # helper fields: to be transformed in the pipeline
     attributes = scrapy.Field()

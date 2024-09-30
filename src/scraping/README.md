@@ -22,7 +22,6 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 ### Description
 
 - Each page contains about 44 announcements, with more than 1400 pages.
-- For each page, we can easily extract the link to each announcement, and then extract the information we need from each announcement page.
 - Here's a list of what an announcement page contains:
   - Title (required)
   - City (required)
@@ -96,12 +95,24 @@ For simplicity, we have choosen the function based approach for testing, for eas
 
 ## Yakeey
 
-### Description
+[Yakeey](https://yakeey.com/) is a marketplace specialized in real estate products in all categories (rent, sale, etc).
 
-### Rules
+We will get the desired data from the [appartments for sale](https://yakeey.com/fr-ma/achat/appartement/maroc) category, which is expected to contain a bit more than 800 announcements.
 
-### Challenges
+However, because this platform only deals with real estate, the data is expected to be more reliable with a high quality. the reason is because before any announcement is posted, it is visited by real estate consultants who verify the information and approve the announcement.
 
-### Suggestions
+### Description [Yakeey]
 
-### Tests
+- Each page contains 25 announcements, with more than 33 pages.
+- Information on the Announcement's page is:
+  - Adress (required)
+
+### Rules [Yakeey]
+
+- Again, the [robots.txt](https://yakeey.com/robots.txt) file doesn't seem to contain rules that forbid the use of automated bots for retrieving data.
+
+### Challenges [Yakeey]
+
+### Suggestions [Yakeey]
+
+### Tests [Yakeey]
