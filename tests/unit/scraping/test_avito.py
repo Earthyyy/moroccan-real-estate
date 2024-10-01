@@ -1,6 +1,6 @@
 import os
 import sys
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 import pytest
 
@@ -13,9 +13,14 @@ import var_avito as va
 # Tests based on the announcements listing page
 
 
+@pytest.fixture(scope="module")
+def vcr_cassette_dir():
+    return os.path.join("tests", "unit", "scraping", "cassettes", "avito")
+
+
 @pytest.mark.vcr
 def test_is_announcement_valid(avito_spider):
-    response = make_response(va.AVITO_PAGE_1)
+    response = make_response(va.AVITO_PAGES[1])
     announcements_a = response.css("div.sc-1nre5ec-1 a")
     for test in [*va.AVITO_ANNOUNCEMENTS, va.AVITO_ANNOUNCEMENT_IMMONEUF]:
         assert (
@@ -26,7 +31,7 @@ def test_is_announcement_valid(avito_spider):
 
 @pytest.mark.vcr
 def test_get_info_from_announcement_a(avito_spider):
-    response = make_response(va.AVITO_PAGE_1)
+    response = make_response(va.AVITO_PAGES[1])
     announcements_a = response.css("div.sc-1nre5ec-1 a")
     for test in va.AVITO_ANNOUNCEMENTS:
         assert (
@@ -37,19 +42,14 @@ def test_get_info_from_announcement_a(avito_spider):
 
 @pytest.mark.vcr
 @pytest.mark.parametrize(
-    ("url", "expected_url"),
-    [
-        (va.AVITO_PAGE_1, va.AVITO_PAGE_2),
-        (va.AVITO_PAGE_2, va.AVITO_PAGE_3),
-        (va.AVITO_PAGE_500, va.AVITO_PAGE_501),
-        (va.AVITO_PAGE_1000, va.AVITO_PAGE_1001),
-        (va.AVITO_PAGE_BEFORE_LAST, va.AVITO_PAGE_LAST),
-        (va.AVITO_PAGE_LAST, None),
-    ],
+    ("index", "expected_index"),
+    [(1, 2), (2, 3), (500, 501), (1000, 1001), (1359, 1360), (1360, 1361)],
 )
-def test_get_next_page_url(avito_spider, url: str, expected_url: str):
-    response = make_response(url)
-    assert avito_spider.get_next_page_url(response) == expected_url
+def test_get_next_page_url(avito_spider, index: int, expected_index: int):
+    response = make_response(va.AVITO_PAGES[index])
+    assert avito_spider.get_next_page_url(response) == (
+        va.AVITO_PAGES.get(expected_index, None)
+    )
 
 
 # Tests based on the announcement's page
@@ -57,29 +57,35 @@ def test_get_next_page_url(avito_spider, url: str, expected_url: str):
 
 @pytest.mark.vcr
 @pytest.mark.parametrize(
-    ("url", "expected"),
-    [(test["url"], test["header"]) for test in va.AVITO_ANNOUNCEMENTS],
+    "index",
+    range(len(va.AVITO_ANNOUNCEMENTS)),
 )
-def test_get_header(avito_spider, url: str, expected: Tuple[str, str, str, str, str]):
-    response = make_response(url)
-    assert avito_spider.get_header(response) == expected
+def test_get_header(avito_spider, index: int):
+    response = make_response(va.AVITO_ANNOUNCEMENTS[index]["url"])
+    assert avito_spider.get_header(response) == (
+        va.AVITO_ANNOUNCEMENTS[index]["header"]
+    )
 
 
 @pytest.mark.vcr
 @pytest.mark.parametrize(
-    ("url", "expected"),
-    [(test["url"], test["attributes"]) for test in va.AVITO_ANNOUNCEMENTS],
+    "index",
+    range(len(va.AVITO_ANNOUNCEMENTS)),
 )
-def test_get_attributes(avito_spider, url: str, expected: Dict[str, str]):
-    response = make_response(url)
-    assert avito_spider.get_attributes(response) == expected
+def test_get_attributes(avito_spider, index: int):
+    response = make_response(va.AVITO_ANNOUNCEMENTS[index]["url"])
+    assert avito_spider.get_attributes(response) == (
+        va.AVITO_ANNOUNCEMENTS[index]["attributes"]
+    )
 
 
 @pytest.mark.vcr
 @pytest.mark.parametrize(
-    ("url", "expected"),
-    [(test["url"], test["equipments"]) for test in va.AVITO_ANNOUNCEMENTS],
+    "index",
+    range(len(va.AVITO_ANNOUNCEMENTS)),
 )
-def test_get_equipments(avito_spider, url: str, expected: List[str]):
-    response = make_response(url)
-    assert avito_spider.get_equipments(response) == expected
+def test_get_equipments(avito_spider, index: int):
+    response = make_response(va.AVITO_ANNOUNCEMENTS[index]["url"])
+    assert avito_spider.get_equipments(response) == (
+        va.AVITO_ANNOUNCEMENTS[index]["equipments"]
+    )

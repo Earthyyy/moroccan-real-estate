@@ -7,15 +7,17 @@
 # but it might change in the future, as well as announcements within the pages,
 # or information in an announcement.
 
-AVITO_PAGE_1 = "https://www.avito.ma/fr/maroc/appartements-à_vendre"
-AVITO_PAGE_2 = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=2"
-AVITO_PAGE_3 = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=3"
-AVITO_PAGE_500 = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=500"
-AVITO_PAGE_501 = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=501"
-AVITO_PAGE_1000 = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1000"
-AVITO_PAGE_1001 = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1001"
-AVITO_PAGE_BEFORE_LAST = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1359"
-AVITO_PAGE_LAST = "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1360"
+AVITO_PAGES = {
+    1: "https://www.avito.ma/fr/maroc/appartements-à_vendre",
+    2: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=2",
+    3: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=3",
+    500: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=500",
+    501: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=501",
+    1000: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1000",
+    1001: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1001",
+    1359: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1359",
+    1360: "https://www.avito.ma/fr/maroc/appartements-à_vendre?o=1360",
+}
 
 AVITO_ANNOUNCEMENT = {
     "index": 0,
@@ -201,6 +203,7 @@ AVITO_ANNOUNCEMENT_NO_EQUIPMENTS = {
     },
     "equipments": [],
 }
+
 AVITO_ANNOUNCEMENT_IMMONEUF = {
     "index": 4,
     "url": "https://immoneuf.avito.ma/fr/unite/jfU?utm_source=avito_integration&utm_medium=listing_integration",
