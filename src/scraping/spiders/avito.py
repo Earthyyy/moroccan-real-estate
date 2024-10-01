@@ -60,10 +60,9 @@ class AvitoSpider(scrapy.Spider):
         )
         for a in announcements_a:
             url = a.attrib["href"]
-            n_rooms, n_bathrooms, total_area = AvitoSpider.get_info_from_announcement_a(
-                a
+            announcements.append(
+                [url, *AvitoSpider.get_info_from_announcement_a(a)]
             )
-            announcements.append((url, n_rooms, n_bathrooms, total_area))
         return announcements
 
     @staticmethod
