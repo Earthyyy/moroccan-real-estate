@@ -4,10 +4,28 @@
 # if these caches are deleted, links might not work as the information
 # is constantly changing.
 
-YAKEEY_PAGE_1 = "https://yakeey.com/fr-ma/achat/appartement/maroc?page=1"
-YAKEEY_PAGE_2 = "https://yakeey.com/fr-ma/achat/appartement/maroc?page=2"
-YAKEEY_PAGE_3 = "https://yakeey.com/fr-ma/achat/appartement/maroc?page=3"
-YAKEEY_PAGE_15 = "https://yakeey.com/fr-ma/achat/appartement/maroc?page=15"
-YAKEEY_PAGE_16 = "https://yakeey.com/fr-ma/achat/appartement/maroc?page=16"
-YAKEEY_PAGE_BEFORE_LAST = "https://yakeey.com/fr-ma/achat/appartement/maroc?page=32"
-YAKEEY_PAGE_LAST = "https://yakeey.com/fr-ma/achat/appartement/maroc?page=33"
+YAKEEY_PAGES = {
+    1: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=1",
+    2: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=2",
+    3: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=3",
+    15: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=15",
+    16: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=16",
+    33: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=33",
+    34: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=34",
+}
+
+YAKEEY_ANNOUNCEMENT = {
+
+}
+YAKEEY_ANNOUNCEMENT_LOCKED = {
+
+}
+YAKEEY_ANNOUNCEMENT_NEUF = {
+
+}
+
+YAKEEY_ANNOUNCEMENTS = [
+    YAKEEY_ANNOUNCEMENT,
+    YAKEEY_ANNOUNCEMENT_LOCKED,
+    YAKEEY_ANNOUNCEMENT_NEUF,
+]
