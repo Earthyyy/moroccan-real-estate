@@ -24,7 +24,7 @@ def test_is_announcement_valid(avito_spider):
     announcements_a = response.css("div.sc-1nre5ec-1 a")
     for test in [*va.AVITO_ANNOUNCEMENTS, va.AVITO_ANNOUNCEMENT_IMMONEUF]:
         assert (
-            avito_spider.is_announcement_valid(announcements_a[test["index"]])
+            avito_spider.is_announcement_valid(announcements_a[test["position"]])
             == test["is_valid"]
         )
 
@@ -35,7 +35,7 @@ def test_get_info_from_announcement_a(avito_spider):
     announcements_a = response.css("div.sc-1nre5ec-1 a")
     for test in va.AVITO_ANNOUNCEMENTS:
         assert (
-            avito_spider.get_info_from_announcement_a(announcements_a[test["index"]])
+            avito_spider.get_info_from_announcement_a(announcements_a[test["position"]])
             == test["info"]
         )
 

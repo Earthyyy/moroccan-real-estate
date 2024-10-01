@@ -14,18 +14,34 @@ YAKEEY_PAGES = {
     34: "https://yakeey.com/fr-ma/achat/appartement/maroc?page=34",
 }
 
-YAKEEY_ANNOUNCEMENT = {
-
+YAKEEY_ANNOUNCEMENT_1 = {
+    "position": 0,
+    "is_valid": True,
 }
-YAKEEY_ANNOUNCEMENT_LOCKED = {
-
+YAKEEY_ANNOUNCEMENT_2 = {
+    "position": 5,
+    "is_valid": True,
 }
-YAKEEY_ANNOUNCEMENT_NEUF = {
-
+YAKEEY_ANNOUNCEMENT_LOCKED_1 = {
+    "position": 18,
+    "is_valid": True,
+}
+YAKEEY_ANNOUNCEMENT_LOCKED_2 = {
+    "position": 21,
+    "is_valid": True,
+}
+YAKEEY_ANNOUNCEMENT_NEUF_1 = {
+    "position": 23,
+    "is_valid": False,
+}
+YAKEEY_ANNOUNCEMENT_NEUF_2 = {
+    "position": 24,
+    "is_valid": False,
 }
 
 YAKEEY_ANNOUNCEMENTS = [
-    YAKEEY_ANNOUNCEMENT,
-    YAKEEY_ANNOUNCEMENT_LOCKED,
-    YAKEEY_ANNOUNCEMENT_NEUF,
+    YAKEEY_ANNOUNCEMENT_1,
+    YAKEEY_ANNOUNCEMENT_2,
+    YAKEEY_ANNOUNCEMENT_LOCKED_1,
+    YAKEEY_ANNOUNCEMENT_LOCKED_2,
 ]

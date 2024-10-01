@@ -20,7 +20,7 @@ AVITO_PAGES = {
 }
 
 AVITO_ANNOUNCEMENT = {
-    "index": 0,
+    "position": 0,
     "url": "https://www.avito.ma/fr/autre_secteur/appartements/شقة_بواجهتين_بالقرب_من_ديكاتلون_فمنزل_R2__55576138.htm",
     "is_valid": True,
     "info": ("3", "3", "140 m²"),
@@ -52,7 +52,7 @@ AVITO_ANNOUNCEMENT = {
     ],
 }
 AVITO_ANNOUNCEMENT_STAR = {
-    "index": 27,
+    "position": 27,
     "url": "https://www.avito.ma/fr/skikina/appartements/Appartement_à_vendre_105_m²_à_Temara_55562047.htm",
     "is_valid": True,
     "info": ("3", "2", "105 m²"),
@@ -75,7 +75,7 @@ AVITO_ANNOUNCEMENT_STAR = {
     "equipments": ["Ascenseur", "Balcon", "Parking", "Sécurité"],
 }
 AVITO_ANNOUNCEMENT_VERIFIED = {
-    "index": 23,
+    "position": 23,
     "url": "https://www.avito.ma/fr/2_mars/appartements/Appartement_Spacieux_à_vendre_147_m²_à_Casablanca__55393976.htm",
     "is_valid": True,
     "info": ("3", "2", "147 m²"),
@@ -107,7 +107,7 @@ AVITO_ANNOUNCEMENT_VERIFIED = {
     ],
 }
 AVITO_ANNOUNCEMENT_REQUIRED_ONLY = {
-    "index": 11,
+    "position": 11,
     "url": "https://www.avito.ma/fr/khemisset/appartements/Appartement_à_vendre_1_m²_à_Khemisset_55576049.htm",
     "is_valid": True,
     "info": ("1", None, None),
@@ -127,7 +127,7 @@ AVITO_ANNOUNCEMENT_REQUIRED_ONLY = {
     "equipments": [],
 }
 AVITO_ANNOUNCEMENT_OPTIONAL_ALL = {
-    "index": 21,
+    "position": 21,
     "url": "https://www.avito.ma/fr/saidia/appartements/Apparemment__saidia_ap2_al_waha_55208892.htm",
     "is_valid": True,
     "info": ("2", "2", "117 m²"),
@@ -159,7 +159,7 @@ AVITO_ANNOUNCEMENT_OPTIONAL_ALL = {
     ],
 }
 AVITO_ANNOUNCEMENT_NO_PRICE = {
-    "index": 5,
+    "position": 5,
     "url": "https://www.avito.ma/fr/sakar/appartements/appartement_avec_jardin__55576063.htm",
     "is_valid": True,
     "info": ("3", "2", "281 m²"),
@@ -181,7 +181,7 @@ AVITO_ANNOUNCEMENT_NO_PRICE = {
     "equipments": ["Chauffage", "Climatisation", "Cuisine équipée", "Terrasse"],
 }
 AVITO_ANNOUNCEMENT_NO_EQUIPMENTS = {
-    "index": 2,
+    "position": 2,
     "url": "https://www.avito.ma/fr/oulfa/appartements/appartement_sourour_farah_salam__55440383.htm",
     "is_valid": True,
     "info": ("2", "1", "50 m²"),
@@ -205,7 +205,7 @@ AVITO_ANNOUNCEMENT_NO_EQUIPMENTS = {
 }
 
 AVITO_ANNOUNCEMENT_IMMONEUF = {
-    "index": 4,
+    "position": 4,
     "url": "https://immoneuf.avito.ma/fr/unite/jfU?utm_source=avito_integration&utm_medium=listing_integration",
     "is_valid": False,
     "info": None,

@@ -20,13 +20,15 @@ def vcr_cassette_dir():
 def test_is_announcement_valid(yakeey_spider):
     response = make_response(vy.YAKEEY_PAGES[1])
     announcements_a = response.css("div.mui-4oo2hv a")
-    print([a.attrib["href"] for a in announcements_a])
-    assert True
-    # for test in [*vy.YAKEEY_ANNOUNCEMENTS, vy.YAKEEY_ANNOUNCEMENT_NEUF]:
-    #     assert (
-    #         yakeey_spider.is_announcement_valid(announcements_a[test["index"]])
-    #         == test["is_valid"]
-    #     )
+    for test in [
+        *vy.YAKEEY_ANNOUNCEMENTS,
+        vy.YAKEEY_ANNOUNCEMENT_NEUF_1,
+        vy.YAKEEY_ANNOUNCEMENT_NEUF_2
+    ]:
+        assert (
+            yakeey_spider.is_announcement_valid(announcements_a[test["position"]])
+            == test["is_valid"]
+        )
 
 
 @pytest.mark.vcr
