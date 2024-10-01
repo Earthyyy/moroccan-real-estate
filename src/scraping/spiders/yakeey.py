@@ -32,7 +32,7 @@ class YakeeySpider(scrapy.Spider):
 
     @staticmethod
     def get_announcements(
-        response: HtmlResponse
+        response: HtmlResponse,
     ) -> List[Tuple[str, str, str, str, str, str, str, str]]:
         """
         Extract the url, number of rooms, bathrooms and total area from the
@@ -42,20 +42,17 @@ class YakeeySpider(scrapy.Spider):
             response: the response object of the page.
 
         Returns:
-            A list of tuples
-            (url, n_rooms, n_bathrooms (optional), total_area (optional)).
+            A list of tuples containing the url and announcements info.
         """
         announcements = []
         announcements_a = filter(
             YakeeySpider.is_announcement_valid, response.css("div.mui-4oo2hv a")
         )
         for a in announcements_a:
-            # TODO: fill the tuple with info from the announcement
-            url = a.attrib["href"]
-            n_rooms, n_bathrooms, total_area = YakeeySpider.get_info_from_announcement_a(
-                a
+            url = "https://yakeey.com" + a.attrib["href"]
+            announcements.append(
+                [url, *YakeeySpider.get_info_from_announcement_a(a)]
             )
-            announcements.append((url, n_rooms, n_bathrooms, total_area))
         return announcements
 
     @staticmethod
@@ -72,10 +69,43 @@ class YakeeySpider(scrapy.Spider):
         """
         return a.css("a > div > div:nth-child(1) > span::text").get() != "Neuf"
 
-
     @staticmethod
-    def get_info_from_announcement_a(a: Selector) -> Tuple[str, str, Optional[str]]:
-        pass
+    def get_info_from_announcement_a(
+        a: Selector,
+    ) -> Tuple[str, str, str, str, str, str, str]:
+        """
+        Extract announcement information from the announcements listing page.
+
+        Args:
+            a: the anchor tag of the announcement.
+
+        Returns:
+            A tuple of 7 strings:
+                type
+                price
+                neighborhood
+                city
+                total_area
+                n_rooms
+                n_bathrooms
+        """
+        property_type = a.css("a > div > div:nth-child(2) p")[0].css("::text").get()
+        _, price = a.css("a > div > div:nth-child(2) p")[1].css("::text").getall()
+        neighborhood, city = (
+            a.css("a > div > div:nth-child(2) p")[2].css("::text").get().split(" - ")
+        )
+        total_area = a.css("a > div > div:nth-child(2) p")[3].css("::text").get()
+        n_bedrooms = a.css("a > div > div:nth-child(2) p")[4].css("::text").get()
+        n_bathrooms = a.css("a > div > div:nth-child(2) p")[5].css("::text").get()
+        return (
+            property_type,
+            price,
+            neighborhood,
+            city,
+            total_area,
+            n_bedrooms,
+            n_bathrooms,
+        )
 
     @staticmethod
     def get_next_page_url(response: HtmlResponse) -> Optional[str]:
