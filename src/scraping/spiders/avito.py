@@ -26,9 +26,13 @@ class AvitoSpider(scrapy.Spider):
             )
 
         # go to the next page
-        # next_page_url = AvitoSpider.get_next_page_url(response)
-        # if next_page_url:
-        #     yield response.follow(next_page_url, callback=self.parse)
+        next_page_url = AvitoSpider.get_next_page_url(response)
+        if (
+            next_page_url
+            and next_page_url
+            != "https://www.avito.ma/fr/maroc/appartements-à_vendre?page=2"
+        ):
+            yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
         item = kwargs["item"]
@@ -60,9 +64,7 @@ class AvitoSpider(scrapy.Spider):
         )
         for a in announcements_a:
             url = a.attrib["href"]
-            announcements.append(
-                [url, *AvitoSpider.get_info_from_announcement_a(a)]
-            )
+            announcements.append([url, *AvitoSpider.get_info_from_announcement_a(a)])
         return announcements
 
     @staticmethod
@@ -98,9 +100,7 @@ class AvitoSpider(scrapy.Spider):
         n_rooms, n_bathrooms, total_area = "", None, None
         spans_text = [
             "".join(elem.css("::text").getall()).strip()
-            for elem in a.xpath(
-                './div[3]//span[contains(@class, "sc-1s278lr-0")]'
-            )
+            for elem in a.xpath('./div[3]//span[contains(@class, "sc-1s278lr-0")]')
         ]
         if spans_text:
             n_rooms = spans_text[0]
