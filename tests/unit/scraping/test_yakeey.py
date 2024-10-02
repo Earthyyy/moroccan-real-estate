@@ -1,6 +1,5 @@
 import os
 import sys
-from typing import Dict, List, Tuple
 
 import pytest
 
@@ -20,17 +19,15 @@ def vcr_cassette_dir():
 def test_is_announcement_valid(yakeey_spider):
     response = make_response(vy.YAKEEY_PAGES[1])
     announcements_a = response.css("div.mui-4oo2hv a")
-    print(["https://yakeey.com/" + a.attrib["href"] for a in announcements_a])
-    assert True
-    # for test in [
-    #     *vy.YAKEEY_ANNOUNCEMENTS,
-    #     vy.YAKEEY_ANNOUNCEMENT_NEUF_1,
-    #     vy.YAKEEY_ANNOUNCEMENT_NEUF_2,
-    # ]:
-    #     assert (
-    #         yakeey_spider.is_announcement_valid(announcements_a[test["position"]])
-    #         == test["is_valid"]
-    #     )
+    for test in [
+        *vy.YAKEEY_ANNOUNCEMENTS,
+        vy.YAKEEY_ANNOUNCEMENT_NEUF_1,
+        vy.YAKEEY_ANNOUNCEMENT_NEUF_2,
+    ]:
+        assert (
+            yakeey_spider.is_announcement_valid(announcements_a[test["position"]])
+            == test["is_valid"]
+        )
 
 
 @pytest.mark.vcr
@@ -39,7 +36,9 @@ def test_get_info_from_announcement_a(yakeey_spider):
     announcements_a = response.css("div.mui-4oo2hv a")
     for test in vy.YAKEEY_ANNOUNCEMENTS:
         assert (
-            yakeey_spider.get_info_from_announcement_a(announcements_a[test["position"]])
+            yakeey_spider.get_info_from_announcement_a(
+                announcements_a[test["position"]]
+            )
             == test["info"]
         )
 
@@ -56,3 +55,15 @@ def test_get_next_page_url(yakeey_spider, index: int, expected_index: int):
 
 
 # Tests based on the announcement's page
+
+
+@pytest.mark.vcr
+@pytest.mark.parametrize(
+    "index",
+    range(len(vy.YAKEEY_ANNOUNCEMENTS)),
+)
+def test_get_header(yakeey_spider, index: int):
+    response = make_response(vy.YAKEEY_ANNOUNCEMENTS[index]["url"])
+    assert yakeey_spider.get_header(response) == (
+        vy.YAKEEY_ANNOUNCEMENTS[index]["header"]
+    )
