@@ -18,19 +18,8 @@ YAKEEY_ANNOUNCEMENT_1 = {
     "position": 0,
     "url": "https://yakeey.com//fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002544",
     "is_valid": True,
-    "info": (
-        "Appartement",
-        "2 100 000 DH",
-        "Bourgogne (sidi belyout)",
-        "Casablanca",
-        "126 m²",
-        "3 Chambre(s)",
-        "2 Sdb",
-    ),
-    "header": {
-        "title": "Appartement à vendre de 126 m²",
-        "reference": "CA002544"
-    },
+    "info": ("Appartement", "2 100 000 DH", "Bourgogne (sidi belyout)", "Casablanca"),
+    "header": ("Appartement à vendre de 126 m²", "CA002544"),
     "attributes": {
         "Nb. de chambres": "3",
         "Nb. de salles de bains": "2",
@@ -40,7 +29,7 @@ YAKEEY_ANNOUNCEMENT_1 = {
         "Surface totale": "126 m²",
         "Surface habitable": "126 m²",
         "Surface balcon": "4 m²",
-        "Places de parking en sous-sol": "1"
+        "Places de parking en sous-sol": "1",
     },
     "equipments": [
         "Ascenseur",
@@ -49,26 +38,15 @@ YAKEEY_ANNOUNCEMENT_1 = {
         "Terrasse",
         "Place de parking en sous-sol",
         "Climatisation centralisée",
-        "Chauffage centralisé"
-    ]
+        "Chauffage centralisé",
+    ],
 }
 YAKEEY_ANNOUNCEMENT_2 = {
     "position": 5,
     "url": "https://yakeey.com//fr-ma/acheter-appartement-casablanca-maarif-extension-CA001118",
     "is_valid": True,
-    "info": (
-        "Appartement",
-        "1 990 000 DH",
-        "Maarif extension",
-        "Casablanca",
-        "109 m²",
-        "2 Chambre(s)",
-        "2 Sdb",
-    ),
-    "header": {
-        "title": "Appartement à vendre de 127 m² dont 109 m² habitables",
-        "reference": "CA001118"
-    },
+    "info": ("Appartement", "1 990 000 DH", "Maarif extension", "Casablanca"),
+    "header": ("Appartement à vendre de 127 m² dont 109 m² habitables", "CA001118"),
     "attributes": {
         "Nb. de chambres": "2",
         "Nb. de salles de bains": "2",
@@ -79,7 +57,7 @@ YAKEEY_ANNOUNCEMENT_2 = {
         "Surface terrasse": "10 m²",
         "Vue": "Vue dégagée",
         "Nb. de façades": "1",
-        "Résidence fermée": "Oui"
+        "Résidence fermée": "Oui",
     },
     "equipments": [
         "Ascenseur",
@@ -89,62 +67,40 @@ YAKEEY_ANNOUNCEMENT_2 = {
         "Terrasse",
         "Place de parking en sous-sol",
         "Agent de sécurité",
-        "Cuisine équipée"
-    ]
+        "Cuisine équipée",
+    ],
 }
 YAKEEY_ANNOUNCEMENT_LOCKED_1 = {
     "position": 18,
     "url": "https://yakeey.com//fr-ma/acheter-appartement-casablanca-la-gironde-CI061379",
     "is_valid": True,
-    "info": (
-        "Appartement",
-        "1 600 000 DH",
-        "La gironde",
-        "Casablanca",
-        "173 m²",
-        "3 Chambre(s)",
-        "2 Sdb",
-    ),
-    "header": {
-        "title": "Appartement à vendre de 199 m² dont 173 m² habitables",
-        "reference": "CI061379"
-    },
+    "info": ("Appartement", "1 600 000 DH", "La gironde", "Casablanca"),
+    "header": ("Appartement à vendre de 199 m² dont 173 m² habitables", "CI061379"),
     "attributes": {
         "Nb. de chambres": "3",
         "Nb. de salles de bains": "2",
         "Étage du bien": "1",
         "Nb. d'étages dans l'immeuble": "5",
         "Surface totale": "199 m²",
-        "Surface habitable": "173 m²"
+        "Surface habitable": "173 m²",
     },
-    "equipments": []
+    "equipments": [],
 }
 YAKEEY_ANNOUNCEMENT_LOCKED_2 = {
     "position": 21,
     "url": "https://yakeey.com//fr-ma/acheter-appartement-casablanca-derb-omar-FA061603",
     "is_valid": True,
-    "info": (
-        "Appartement",
-        "990 000 DH",
-        "Derb omar",
-        "Casablanca",
-        "97 m²",
-        "2 Chambre(s)",
-        "2 Sdb",
-    ),
-    "header": {
-        "title": "Appartement à vendre de 131 m² dont 97 m² habitables",
-        "reference": "FA061603"
-    },
+    "info": ("Appartement", "990 000 DH", "Derb omar", "Casablanca"),
+    "header": ("Appartement à vendre de 131 m² dont 97 m² habitables", "FA061603"),
     "attributes": {
         "Nb. de chambres": "2",
         "Nb. de salles de bains": "2",
         "Étage du bien": "4",
         "Nb. d'étages dans l'immeuble": "4",
         "Surface totale": "131 m²",
-        "Surface habitable": "97 m²"
+        "Surface habitable": "97 m²",
     },
-    "equipments": []
+    "equipments": [],
 }
 YAKEEY_ANNOUNCEMENT_NEUF_1 = {
     "position": 23,

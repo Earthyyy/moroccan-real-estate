@@ -69,7 +69,6 @@ def test_get_header(yakeey_spider, index: int):
     )
 
 
-
 @pytest.mark.vcr
 @pytest.mark.parametrize(
     "index",
