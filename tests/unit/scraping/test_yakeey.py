@@ -67,3 +67,29 @@ def test_get_header(yakeey_spider, index: int):
     assert yakeey_spider.get_header(response) == (
         vy.YAKEEY_ANNOUNCEMENTS[index]["header"]
     )
+
+
+
+@pytest.mark.vcr
+@pytest.mark.parametrize(
+    "index",
+    range(len(vy.YAKEEY_ANNOUNCEMENTS)),
+)
+def test_get_attributes(yakeey_spider, index: int):
+    response = make_response(vy.YAKEEY_ANNOUNCEMENTS[index]["url"])
+    assert yakeey_spider.get_attributes(response) == (
+        vy.YAKEEY_ANNOUNCEMENTS[index]["attributes"]
+    )
+
+
+@pytest.mark.skip("Not implemented yet")
+@pytest.mark.vcr
+@pytest.mark.parametrize(
+    "index",
+    range(len(vy.YAKEEY_ANNOUNCEMENTS)),
+)
+def test_get_equipments(yakeey_spider, index: int):
+    response = make_response(vy.YAKEEY_ANNOUNCEMENTS[index]["url"])
+    assert yakeey_spider.get_equipments(response) == (
+        vy.YAKEEY_ANNOUNCEMENTS[index]["equipments"]
+    )
