@@ -41,7 +41,16 @@ YAKEEY_ANNOUNCEMENT_1 = {
         "Surface habitable": "126 m²",
         "Surface balcon": "4 m²",
         "Places de parking en sous-sol": "1"
-    }
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Balcon",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Climatisation centralisée",
+        "Chauffage centralisé"
+    ]
 }
 YAKEEY_ANNOUNCEMENT_2 = {
     "position": 5,
@@ -71,7 +80,17 @@ YAKEEY_ANNOUNCEMENT_2 = {
         "Vue": "Vue dégagée",
         "Nb. de façades": "1",
         "Résidence fermée": "Oui"
-    }
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Piscine commune",
+        "Espaces verts",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Cuisine équipée"
+    ]
 }
 YAKEEY_ANNOUNCEMENT_LOCKED_1 = {
     "position": 18,
@@ -97,7 +116,8 @@ YAKEEY_ANNOUNCEMENT_LOCKED_1 = {
         "Nb. d'étages dans l'immeuble": "5",
         "Surface totale": "199 m²",
         "Surface habitable": "173 m²"
-    }
+    },
+    "equipments": []
 }
 YAKEEY_ANNOUNCEMENT_LOCKED_2 = {
     "position": 21,
@@ -123,7 +143,8 @@ YAKEEY_ANNOUNCEMENT_LOCKED_2 = {
         "Nb. d'étages dans l'immeuble": "4",
         "Surface totale": "131 m²",
         "Surface habitable": "97 m²"
-    }
+    },
+    "equipments": []
 }
 YAKEEY_ANNOUNCEMENT_NEUF_1 = {
     "position": 23,

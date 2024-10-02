@@ -82,7 +82,6 @@ def test_get_attributes(yakeey_spider, index: int):
     )
 
 
-@pytest.mark.skip("Not implemented yet")
 @pytest.mark.vcr
 @pytest.mark.parametrize(
     "index",
