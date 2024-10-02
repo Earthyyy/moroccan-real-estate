@@ -47,7 +47,7 @@ class YakeeySpider(scrapy.Spider):
     @staticmethod
     def get_announcements(
         response: HtmlResponse,
-    ) -> List[Tuple[str, str, str, str, str, str, str, str]]:
+    ) -> List[Tuple[str, str, str, str, str]]:
         """
         Extract the url, number of rooms, bathrooms and total area from the
         announcements page.
@@ -64,7 +64,7 @@ class YakeeySpider(scrapy.Spider):
         )
         for a in announcements_a:
             url = "https://yakeey.com" + a.attrib["href"]
-            announcements.append([url, *YakeeySpider.get_info_from_announcement_a(a)])
+            announcements.append((url, *YakeeySpider.get_info_from_announcement_a(a)))
         return announcements
 
     @staticmethod
