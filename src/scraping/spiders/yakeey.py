@@ -1,4 +1,4 @@
-from typing import ClassVar, List, Optional, Tuple
+from typing import ClassVar, Dict, List, Optional, Tuple
 
 import scrapy
 from scrapy.http import HtmlResponse
@@ -17,18 +17,32 @@ class YakeeySpider(scrapy.Spider):
         announcements = YakeeySpider.get_announcements(response)
         for announcement in announcements:
             item = YakeeyAnnouncementItem()
-            # TODO: fill the item with info from announcements listing
+            (
+                item["url"],
+                item["type"],
+                item["price"],
+                item["neighborhood"],
+                item["city"],
+            ) = announcement
             yield response.follow(
                 item["url"], callback=self.parse_announcement, cb_kwargs={"item": item}
             )
 
         # go to the next page
-        # next_page_url = YakeeySpider.get_next_page_url(response)
-        # if next_page_url:
-        #     yield response.follow(next_page_url, callback=self.parse)
+        next_page_url = YakeeySpider.get_next_page_url(response)
+        if (
+            next_page_url
+            and next_page_url
+            != "https://yakeey.com/fr-ma/achat/appartement/maroc?page=2"
+        ):
+            yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
-        pass
+        item = kwargs["item"]
+        item["title"], item["reference"] = self.get_header(response)
+        item["attributes"] = self.get_attributes(response)
+        item["equipements"] = self.get_equipments(response)
+        yield item
 
     @staticmethod
     def get_announcements(
@@ -50,9 +64,7 @@ class YakeeySpider(scrapy.Spider):
         )
         for a in announcements_a:
             url = "https://yakeey.com" + a.attrib["href"]
-            announcements.append(
-                [url, *YakeeySpider.get_info_from_announcement_a(a)]
-            )
+            announcements.append([url, *YakeeySpider.get_info_from_announcement_a(a)])
         return announcements
 
     @staticmethod
@@ -72,40 +84,22 @@ class YakeeySpider(scrapy.Spider):
     @staticmethod
     def get_info_from_announcement_a(
         a: Selector,
-    ) -> Tuple[str, str, str, str, str, str, str]:
+    ) -> Tuple[str, str, str, str]:
         """
-        Extract announcement information from the announcements listing page.
+        Extract the type, price, neighborhood and city.
 
         Args:
             a: the anchor tag of the announcement.
 
         Returns:
-            A tuple of 7 strings:
-                type
-                price
-                neighborhood
-                city
-                total_area
-                n_rooms
-                n_bathrooms
+            A dictionary of the announcement information.
         """
         property_type = a.css("a > div > div:nth-child(2) p")[0].css("::text").get()
         _, price = a.css("a > div > div:nth-child(2) p")[1].css("::text").getall()
         neighborhood, city = (
             a.css("a > div > div:nth-child(2) p")[2].css("::text").get().split(" - ")
         )
-        total_area = a.css("a > div > div:nth-child(2) p")[3].css("::text").get()
-        n_bedrooms = a.css("a > div > div:nth-child(2) p")[4].css("::text").get()
-        n_bathrooms = a.css("a > div > div:nth-child(2) p")[5].css("::text").get()
-        return (
-            property_type,
-            price,
-            neighborhood,
-            city,
-            total_area,
-            n_bedrooms,
-            n_bathrooms,
-        )
+        return (property_type, price, neighborhood, city)
 
     @staticmethod
     def get_next_page_url(response: HtmlResponse) -> Optional[str]:
@@ -122,3 +116,51 @@ class YakeeySpider(scrapy.Spider):
         if nav[-1].attrib.get("aria-disabled", "false") == "false":
             return "https://yakeey.com" + nav[-1].attrib["href"]
         return None
+
+    @staticmethod
+    def get_header(response: HtmlResponse) -> Tuple[str, str]:
+        """
+        Extract the title and reference.
+
+        Args:
+            response: the response object of the announcement page.
+
+        Returns:
+            A tuple of 2 strings: title and reference.
+        """
+        title = response.css("div.mui-6k8xca > div:nth-child(2) h1::text").get()
+        reference = response.url.split("-")[-1]
+        return title, reference
+
+    @staticmethod
+    def get_attributes(response: HtmlResponse) -> Dict[str, str]:
+        """
+        Extract the attributes.
+
+        Args:
+            response: the response object of the announcement page.
+
+        Returns:
+            A dictionary of the attributes.
+        """
+        attributes = {}
+        for div in response.css(
+            "div.mui-6k8xca > div:nth-child(6) div.mui-1ov46kg > div"
+        ):
+            for child_div in div.xpath("./div[2]/div"):
+                attr = child_div.css("p::text").getall()
+                attributes[attr[0]] = attr[1]
+        return attributes
+
+    @staticmethod
+    def get_equipments(response: HtmlResponse) -> List[str]:
+        """
+        Extract extra equipements.
+
+        Args:
+            response: the response object of the announcement page.
+
+        Returns:
+            A list representing the equipments.
+        """
+        return response.css("div.mui-6k8xca > div:nth-child(7) p::text").getall()
