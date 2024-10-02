@@ -18,7 +18,7 @@ authors = [
 ]
 
 # Project descriptions
-description = "A real estate data engineering project focusing on the Moroccan market."
+description = "A real estate data engineering project focusing on second hand appartments on sale on the Moroccan market."
 readme = "README.md"
 license = {file = "LICENSE"}
 
