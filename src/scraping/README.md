@@ -22,24 +22,6 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 ### Description
 
 - Each page contains about 44 announcements, with more than 1400 pages.
-- Here's a list of what an announcement page contains:
-  - Title (required)
-  - City (required)
-  - Time of publication (automatically set by the platform)
-  - Number of bedrooms (required - 1 -> 11)
-  - Description (required)
-  - Type (required - "Appartements, à vendre" in our case)
-  - Neighborhood (required)
-  - Living area (required)
-  - Floor (required)
-  - Price (optional - "Prix non spécifié" if not provided)
-  - Number of bathrooms (optional - 0 -> 8)
-  - Total area (optional)
-  - Number of living rooms (optional - 0 -> 8)
-  - Age (optional)
-  - Adress (optional)
-  - Syndicate price (optional)
-  - Equipments (optional - list of predefined values: "Balcon", "Ascenseur", "Terrasse",  "Meublé", "Climatisation", "Chauffage", "Cuisine équipée", "Concierge", "Sécurité", "Parking", "Duplex", "Câblage téléphonique")
 - A page is estimated to take about 5 seconds to be scraped.
 
 ### Rules
@@ -53,11 +35,11 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 - Description is not fully displayed, and requires a click to be shown.
 - Retrieving Javascript rendered attributes, such as the number of rooms, bathrooms, etc (represented by icons):
 
-![JS rendered](images/avito_js_rendered.png)
+![JS rendered](../../images/avito_js_rendered.png)
 
 - Some announcement links redirect to external websites:
 
-![External redirection](images/avito_external_redirection.png)
+![External redirection](../../images/avito_external_redirection.png)
 
 - Extracted text is not always clean, some characters are replaced by their HTML entities, and arabic text is not displayed correclty.
 
@@ -66,32 +48,9 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 - We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
 - Fortunately, we can extract this information from the announcements list page, as the information is displayed directly there and it is easier to process it. Here's how the information is displayed:
 
-![JS rendered](images/avito_announcement_list.png)
+![JS rendered](../../images/avito_announcement_list.png)
 
 - We can easily distinguish between internal and external websites (scrapy does this automatically via the allowed_domains attribute of the scrapper), making it easy to ignore those external redirections.
-
-### Tests
-
-After navigating through the pages and announcements, we have come up with different cases against which we need to test our scrapper, the three main set of tests we need to have are:
-
-- Retrieving all of the listed announcements from a page.
-- Extracting all of the required as well as the optional information from an announcement page.
-- Navigating through the pages.
-
-For this, we have created a test file at `tests/scraping/avito.py`.
-
-- There are 3 types of announcements:
-  - Regular announcement
-  - Star announcement
-  - External announcement
-  - (Note that there are also premium announcements which are out of the scope of this iteration as they require more discussions)
-
-- There are 3 types of pages:
-  - First page
-  - Middle page
-  - Last page
-
-For simplicity, we have choosen the function based approach for testing, for easy setting up the tests. As we add more scrapers, we can move to class based testing.
 
 ## Yakeey
 
@@ -99,13 +58,12 @@ For simplicity, we have choosen the function based approach for testing, for eas
 
 We will get the desired data from the [appartments for sale](https://yakeey.com/fr-ma/achat/appartement/maroc) category, which is expected to contain a bit more than 800 announcements.
 
-However, because this platform only deals with real estate, the data is expected to be more reliable with a high quality. the reason is because before any announcement is posted, it is visited by real estate consultants who verify the information and approve the announcement.
+However, because this platform only deals with real estate, the data is expected to be more reliable with a high quality. the reason is because before any announcement is posted, it is visited by real estate consultants who verify the information and approve the announcement. This means that we should expect a very low chance of an error while scraping the data.
 
 ### Description [Yakeey]
 
 - Each page contains 25 announcements, with more than 33 pages.
-- Information on the Announcement's page is:
-  - Adress (required)
+- For each page, we can expect 18 regular announcements, with an optional 5 locked announcements (not verified by the platform) and an optional 2 announcements for new projects.
 
 ### Rules [Yakeey]
 
@@ -113,6 +71,23 @@ However, because this platform only deals with real estate, the data is expected
 
 ### Challenges [Yakeey]
 
+- The platform is very reliable, and the data is very clean and well structured.
+- Here are the types of announcements we can expect to find:
+
+![Regular](../../images/yakeey_regular.png)
+
+![Locked](../../images/yakeey_locked.png)
+
+![New project](../../images/yakeey_new_project.png)
+
+- Each regular announcement contains three main sections:
+  - header: title, reference, neighborhood, etc.
+  - Attributes: number of rooms, bathrooms, etc.
+  - Equipments: air conditioning, heating, etc.
+- Some information is not available directly in HTML, but there is a workaround to get it from the announcements listing page.
+- There is no record for the time of the announcement.
+
 ### Suggestions [Yakeey]
 
-### Tests [Yakeey]
+- We are only interested on the regular type of announcements, locked ones will be transformed into regular ones after verification.
+- We are going to use the `reference` attribute of the announcement to know if we have already processed it or not. This is because there is no actual record for the time. However, we can guarantee the order of the announcements, as well as the uniqueness of the reference, meaning that as soon as we reach an announcement with a reference that we have already processed, we can stop the process.
