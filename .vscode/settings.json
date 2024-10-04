@@ -13,4 +13,5 @@
     },
     "black-formatter.args": ["--config", "pyproject.toml"],
     "isort.args": ["--profile", "black"],
+    "mypy-type-checker.args": ["--config-file=pyproject.toml"]
 }
