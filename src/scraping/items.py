@@ -51,4 +51,3 @@ class YakeeyAnnouncementItem(scrapy.Item):
     # helper fields: to be transformed in the pipeline
     attributes = scrapy.Field()
     equipements = scrapy.Field()
-    equipements = scrapy.Field()

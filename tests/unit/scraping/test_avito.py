@@ -96,7 +96,7 @@ def test_get_equipments(avito_spider, index: int):
 
 
 @pytest.mark.parametrize(
-    "time, delta",
+    ("time", "delta"),
     [
         ("il y a 1 minute", timedelta(minutes=1)),
         ("il y a 10 minutes", timedelta(minutes=10)),
