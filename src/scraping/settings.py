@@ -7,6 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+import datetime
+
+current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+
 BOT_NAME = "moroccan-real-estate"
 
 SPIDER_MODULES = ["src.scraping.spiders"]
@@ -62,9 +66,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    "scraping.pipelines.ScrapingPipeline": 300,
-# }
+ITEM_PIPELINES = {
+    "src.scraping.pipelines.AvitoTimePipeline": 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -91,3 +95,23 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+# FEEDS setting
+FEEDS = {
+    f"./data/avito/{current_date}_avito.json": {
+        "format": "json",
+        "encoding": "utf8",
+        "store_empty": False,
+        "fields": None,
+        "indent": 4,
+        "item_classes": ["src.scraping.items.AvitoAnnouncementItem"],
+    },
+    f"./data/yakeey/{current_date}_yakeey.json": {
+        "format": "json",
+        "encoding": "utf8",
+        "store_empty": False,
+        "fields": None,
+        "indent": 4,
+        "item_classes": ["src.scraping.items.YakeeyAnnouncementItem"],
+    },
+}

@@ -1,16 +1,6 @@
 import scrapy
 
 
-class AnnouncementItem(scrapy.Item):
-    pass
-
-
-class AnnouncementsPageItem(scrapy.Item):
-    announcements_selector = scrapy.Field()
-    next_page_url = scrapy.Field()
-    next_page_condition = scrapy.Field()
-
-
 class AvitoAnnouncementItem(scrapy.Item):
 
     # required fields
@@ -22,6 +12,9 @@ class AvitoAnnouncementItem(scrapy.Item):
     user = scrapy.Field()
     n_bedrooms = scrapy.Field()
     # to extract from pipeline
+    date_time = scrapy.Field()
+    year = scrapy.Field()
+    month = scrapy.Field()
     # type = scrapy.Field()
     # neighborhood = scrapy.Field()
     # floor = scrapy.Field()
@@ -57,4 +50,5 @@ class YakeeyAnnouncementItem(scrapy.Item):
 
     # helper fields: to be transformed in the pipeline
     attributes = scrapy.Field()
+    equipements = scrapy.Field()
     equipements = scrapy.Field()

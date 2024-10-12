@@ -14,7 +14,7 @@ class YakeeySpider(scrapy.Spider):
 
     def parse(self, response: HtmlResponse):
         # scrape each announcement
-        announcements = YakeeySpider.get_announcements(response)
+        announcements = self.get_announcements(response)
         for announcement in announcements:
             item = YakeeyAnnouncementItem()
             (
@@ -29,11 +29,11 @@ class YakeeySpider(scrapy.Spider):
             )
 
         # go to the next page
-        next_page_url = YakeeySpider.get_next_page_url(response)
+        next_page_url = self.get_next_page_url(response)
         if (
             next_page_url
             and next_page_url
-            != "https://yakeey.com/fr-ma/achat/appartement/maroc?page=2"
+            != "https://yakeey.com/fr-ma/achat/appartement/maroc?page=10"
         ):
             yield response.follow(next_page_url, callback=self.parse)
 
