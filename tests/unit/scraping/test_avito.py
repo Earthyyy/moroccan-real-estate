@@ -1,8 +1,10 @@
 import os
 import sys
+from datetime import datetime, timedelta
 
 import pytest
 
+from src.scraping.pipelines import AvitoTimePipeline
 from tests.unit.conftest import make_response
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
@@ -87,4 +89,31 @@ def test_get_equipments(avito_spider, index: int):
     response = make_response(va.AVITO_ANNOUNCEMENTS[index]["url"])
     assert avito_spider.get_equipments(response) == (
         va.AVITO_ANNOUNCEMENTS[index]["equipments"]
+    )
+
+
+# Tests for the item pipeline
+
+
+@pytest.mark.parametrize(
+    ("time", "delta"),
+    [
+        ("il y a 1 minute", timedelta(minutes=1)),
+        ("il y a 10 minutes", timedelta(minutes=10)),
+        ("il y a 1 heure", timedelta(hours=1)),
+        ("il y a 10 heures", timedelta(hours=10)),
+        ("il y a 1 jour", timedelta(days=1)),
+        ("il y a 10 jours", timedelta(days=10)),
+        ("il y a 1 mois", timedelta(days=31)),
+        ("il y a 10 mois", timedelta(days=10 * 31)),
+        ("il y a 1 an", timedelta(days=365)),
+        ("il y a 5 ans", timedelta(days=365 * 5)),
+    ],
+)
+def test_get_absolute_time(time: str, delta: timedelta):
+    expected_date = datetime.now() - delta
+    assert AvitoTimePipeline.get_absolute_time(time) == (
+        expected_date.strftime("%Y-%m-%d %H:%M"),
+        expected_date.year,
+        expected_date.month,
     )

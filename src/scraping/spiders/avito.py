@@ -15,7 +15,7 @@ class AvitoSpider(scrapy.Spider):
 
     def parse(self, response: HtmlResponse):
         # scrape each announcement
-        announcements = AvitoSpider.get_announcements(response)
+        announcements = self.get_announcements(response)
         for announcement in announcements:
             item = AvitoAnnouncementItem()
             item["url"], item["n_bedrooms"], item["n_bathrooms"], item["total_area"] = (
@@ -26,11 +26,11 @@ class AvitoSpider(scrapy.Spider):
             )
 
         # go to the next page
-        next_page_url = AvitoSpider.get_next_page_url(response)
+        next_page_url = self.get_next_page_url(response)
         if (
             next_page_url
             and next_page_url
-            != "https://www.avito.ma/fr/maroc/appartements-à_vendre?page=2"
+            != "https://www.avito.ma/fr/maroc/appartements-à_vendre?page=10"
         ):
             yield response.follow(next_page_url, callback=self.parse)
 

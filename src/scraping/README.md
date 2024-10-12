@@ -1,4 +1,12 @@
-# Scraping Module
+# Scraping Module (In Progress)
+
+## TODO
+
+- [ ] Implement rules for delta scraping.
+  - [ ] Delta scraping for Avito.
+  - [ ] Delta scraping for Yakeey.
+
+## Introduction
 
 Web scraping is our go-to technique for collecting data from different real estate platforms.
 
@@ -7,8 +15,6 @@ We are focusing on collecting data about appartments on sale throughout Morocco.
 The main platforms used for data collection are:
 
 - [Avito](https://www.avito.ma/)
-- [Mubawab](https://www.mubawab.ma/)
-- [Sarouty](https://www.sarouty.ma/)
 - [Yakeey](https://yakeey.com/fr-ma)
 
 The following is a description regarding practices and rules we followed while scraping data, as well as the limitations and challenges faced for each platform.
@@ -46,7 +52,7 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 ### Suggestions
 
 - We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
-- Fortunately, we can extract this information from the announcements list page, as the information is displayed directly there and it is easier to process it. Here's how the information is displayed:
+- Fortunately, we can extract JS rendered information from the announcements list page, as the information is displayed directly there and it is easier to process it. Here's how the information is displayed:
 
 ![JS rendered](../../images/avito_announcement_list.png)
 
