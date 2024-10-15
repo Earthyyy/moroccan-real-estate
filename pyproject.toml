@@ -1,56 +1,90 @@
-# Build System Configuration
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry>=1.8.3"]
+build-backend = "poetry.masonry.api"
 
 # Project Metadata
-[project]
+[tool.poetry]
+package-mode = false
 name = "moroccan-real-estate"
 version = "0.0.1"
-dynamic = ["dependencies"]  # Dependencies will be loaded dynamically (dev-requirements.txt)
-
-requires-python = ">3.10,<3.12"
-
+description = "A real estate data engineering project focusing on second hand apartments on sale in the Moroccan market."
 authors = [
-  {name = "EL MAMOUNI Saad", email = "elmamounisaad@gmail.com"},
-  {name = "NIJADE Mohamed", email = "mohammednijadi47@gmail.com"},
-  {name = "EL ARDI Anas", email= "anaselardi@gmail.com"},
+  "EL MAMOUNI Saad <elmamounisaad@gmail.com>",
+  "NIJADE Mohamed <mohammednijadi47@gmail.com>",
+  "EL ARDI Anas <anaselardi@gmail.com>"
 ]
-
-# Project descriptions
-description = "A real estate data engineering project focusing on second hand appartments on sale on the Moroccan market."
 readme = "README.md"
-license = {file = "LICENSE"}
-
-# Keywords for easier project discoverability
+license = "MIT"
 keywords = ["Real estate", "Data engineering", "Morocco", "ETL", "Data pipeline"]
 
 # Project URLs for easy access to resources
-[project.urls]
-Homepage = "https://example.com"
-Documentation = "https://example.com/docs"
-Repository = "https://github.com/Earthyyy/moroccan-real-estate"
-"Bug Tracker" = "https://github.com/Earthyyy/moroccan-real-estate/issues"
+[tool.poetry.urls]
+homepage = "https://example.com"
+documentation = "https://example.com/docs"
+repository = "https://github.com/Earthyyy/moroccan-real-estate"
+bug_tracker = "https://github.com/Earthyyy/moroccan-real-estate/issues"
 
-# Dynamic dependencies
-[tool.setuptools.dynamic]
-dependencies = {file = ["./requirements/dev-requirements.txt"]}  # Dynamically load dependencies from the file
+# Python version and dependencies
+[tool.poetry.dependencies]
+python = "^3.11"
+# Add your project's runtime dependencies here, for example:
+requests = "2.32.3"
+Scrapy = "2.11.2"
+ipython = "8.27.0"
+nox = "2024.4.15"
+numpy = "^2.1.2"
+plotly = "^5.24.1"
 
-# Optional Configuration for Packaging
-[tool.hatch.build.targets.wheel]
-packages = ["src"]  # Specify that the 'src' directory is the main source of the project
+[tool.poetry.group.lint]
+optional = true
+
+# Linting Group Dependencies
+[tool.poetry.group.lint.dependencies]
+ruff = "0.6.7"
+
+[tool.poetry.group.format]
+optional = true
+
+# Format Group Dependencies
+[tool.poetry.group.format.dependencies]
+black = "24.8.0"
+isort = "5.13.2"
+
+[tool.poetry.group.typing]
+optional = true
+
+# Typing Group Dependencies
+[tool.poetry.group.typing.dependencies]
+
+mypy = "^0.931"
+
+[tool.poetry.group.test]
+optional = true
+
+# Testing Group Dependencies
+[tool.poetry.group.test.dependencies]
+pytest = "8.3.3"
+pytest-vcr = "1.0.2"
+vcrpy = "5.1.0"
+coverage = "7.6.1"
+urllib3 = "2.2.3"
+
+
+[tool.poetry.group.doc]
+optional = true
+# Documentation Group Dependencies
+[tool.poetry.group.doc.dependencies]
+sphinx = "8.0.2"
+shibuya = "2024.8.27"
+sphinx-autobuild = "2024.9.19"
 
 # Linting Configuration for Ruff
 [tool.ruff]
 line-length = 88
-
-# Selected linting rules from various plugins
 lint.select = [
     "E", "F", "W", "B", "A", "C4", "T10", "EXE", "ISC", "G", "PIE", "T20", "PT", 
     "RSE", "RET", "TID", "ARG", "PGH", "PLC", "PLE", "PLW", "RUF"
 ]
-
-# Exclude common directories and files from linting
 extend-exclude = [
     "*.pyc",
     "__pycache__",
@@ -69,4 +103,4 @@ profile = "black"
 python_version = "3.11"
 follow_imports = "skip"
 ignore_missing_imports = true
-files = "src"  # Specify the directory for type checking
+files = ["src"]
