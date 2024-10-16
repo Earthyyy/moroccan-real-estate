@@ -10,7 +10,7 @@ version = "0.0.1"
 description = "A real estate data engineering project focusing on second hand apartments on sale in the Moroccan market."
 authors = [
   "EL MAMOUNI Saad <elmamounisaad@gmail.com>",
-  "NIJADE Mohamed <mohammednijadi47@gmail.com>",
+  "NIJADI Mohamed <mohammednijadi47@gmail.com>",
   "EL ARDI Anas <anaselardi@gmail.com>"
 ]
 readme = "README.md"
