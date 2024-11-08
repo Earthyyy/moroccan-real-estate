@@ -177,6 +177,6 @@ class AvitoSpider(scrapy.Spider):
         Returns:
             A list representing the equipments.
         """
-        return (
-            response.css("div.sc-1g3sn3w-15 > div > div:nth-child(1) ::text").getall()
-        )
+        return response.css(
+            "div.sc-1g3sn3w-15 > div > div:nth-child(1) ::text"
+        ).getall()

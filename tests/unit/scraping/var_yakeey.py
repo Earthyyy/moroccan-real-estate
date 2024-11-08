@@ -128,7 +128,7 @@ YAKEEY_ANNOUNCEMENT_NO_ADDRESS = {
         "Agent de sécurité",
         "Climatisation centralisée",
         "Chauffage centralisé",
-        "Cuisine équipée"
+        "Cuisine équipée",
     ],
 }
 

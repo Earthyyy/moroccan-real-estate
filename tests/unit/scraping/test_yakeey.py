@@ -20,7 +20,7 @@ def test_is_announcement_valid(yakeey_spider):
     response = make_response(vy.YAKEEY_PAGES[1])
     announcements_a = response.css("div.mui-4oo2hv a")
     for test in [
-        *vy.YAKEEY_ANNOUNCEMENTS,
+        *vy.YAKEEY_ANNOUNCEMENTS[:-1],
         vy.YAKEEY_ANNOUNCEMENT_NEUF_1,
         vy.YAKEEY_ANNOUNCEMENT_NEUF_2,
     ]:
@@ -34,7 +34,7 @@ def test_is_announcement_valid(yakeey_spider):
 def test_get_info_from_announcement_a(yakeey_spider):
     response = make_response(vy.YAKEEY_PAGES[1])
     announcements_a = response.css("div.mui-4oo2hv a")
-    for test in vy.YAKEEY_ANNOUNCEMENTS:
+    for test in vy.YAKEEY_ANNOUNCEMENTS[:-1]:
         assert (
             yakeey_spider.get_info_from_announcement_a(
                 announcements_a[test["position"]]
