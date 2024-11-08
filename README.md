@@ -31,7 +31,7 @@ poetry update
 
 ## Automated CI and doc building
 
-We use (nox)[https://nox.thea.codes/en/stable/] for automating various development tasks such as linting, formatting,
+We use [nox](https://nox.thea.codes/en/stable/) for automating various development tasks such as linting, formatting,
 type checking, testing, and documentation building.
 
 ### How to Run Nox Sessions

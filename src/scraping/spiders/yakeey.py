@@ -144,12 +144,12 @@ class YakeeySpider(scrapy.Spider):
             A dictionary of the attributes.
         """
         attributes = {}
-        for div in response.css(
-            "div.mui-6k8xca > div:nth-child(6) div.mui-1ov46kg > div"
-        ):
-            for child_div in div.xpath("./div[2]/div"):
-                attr = child_div.css("p::text").getall()
-                attributes[attr[0]] = attr[1]
+        for section in response.css("div.mui-6k8xca > div"):
+            if section.css("h2 ::text").get() == "Informations générales":
+                for div in section.css("div.mui-1ov46kg > div"):
+                    for child_div in div.xpath("./div[2]/div"):
+                        attr = child_div.css("p::text").getall()
+                        attributes[attr[0]] = attr[1]
         return attributes
 
     @staticmethod
@@ -163,4 +163,8 @@ class YakeeySpider(scrapy.Spider):
         Returns:
             A list representing the equipments.
         """
-        return response.css("div.mui-6k8xca > div:nth-child(7) p::text").getall()
+        equipments = []
+        for section in response.css("div.mui-6k8xca > div"):
+            if section.css("h2 ::text").get() == "Caractéristiques du bien":
+                equipments.extend(section.css("p::text").getall())
+        return equipments

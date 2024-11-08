@@ -34,6 +34,8 @@ ipython = "8.27.0"
 nox = "2024.4.15"
 numpy = "^2.1.2"
 plotly = "^5.24.1"
+pandas = "^2.2.3"
+notebook = "^7.2.2"
 
 [tool.poetry.group.lint]
 optional = true

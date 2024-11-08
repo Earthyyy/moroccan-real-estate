@@ -111,9 +111,31 @@ YAKEEY_ANNOUNCEMENT_NEUF_2 = {
     "is_valid": False,
 }
 
+YAKEEY_ANNOUNCEMENT_NO_ADDRESS = {
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-II063966",
+    "header": ("Appartement à vendre de 64 m²", "II063966"),
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Étage du bien": "3",
+        "Nb. d'étages dans l'immeuble": "4",
+        "Surface totale": "64 m²",
+        "Surface habitable": "64 m²",
+    },
+    "equipments": [
+        "Ascenseur",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Cuisine équipée",
+    ],
+}
+
 YAKEEY_ANNOUNCEMENTS = [
     YAKEEY_ANNOUNCEMENT_1,
     YAKEEY_ANNOUNCEMENT_2,
     YAKEEY_ANNOUNCEMENT_LOCKED_1,
     YAKEEY_ANNOUNCEMENT_LOCKED_2,
+    YAKEEY_ANNOUNCEMENT_NO_ADDRESS,
 ]

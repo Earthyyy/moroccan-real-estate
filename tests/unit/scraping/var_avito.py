@@ -203,6 +203,39 @@ AVITO_ANNOUNCEMENT_NO_EQUIPMENTS = {
     },
     "equipments": [],
 }
+AVITO_ANNOUNCEMENT_HIDDEN_EQUIPMENT = {
+    "url": "https://www.avito.ma/fr/gu%C3%A9liz/appartements/Studio_Appartement_Haut_Standing_Gueliz_55203172.htm",
+    "is_valid": True,
+    "info": ("2", "2", "51 m²"),
+    "header": (
+        "Studio-Appartement-Haut-Standing-Gueliz",
+        "19 000 DH",  # noqa: RUF001
+        "Marrakech",
+        "il y a 3 heures",
+        "CHEZ NIZAR",
+    ),
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Guéliz",
+        "Salons": "1",
+        "Surface habitable": "51",
+        "Âge du bien": "Neuf",
+        "Étage": "5",
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Duplex",
+        "Meublé",
+        "Parking",
+        "Sécurité",
+        "Terrasse",
+    ],
+}
 
 AVITO_ANNOUNCEMENT_IMMONEUF = {
     "position": 4,
@@ -222,4 +255,5 @@ AVITO_ANNOUNCEMENTS = [
     AVITO_ANNOUNCEMENT_OPTIONAL_ALL,
     AVITO_ANNOUNCEMENT_NO_PRICE,
     AVITO_ANNOUNCEMENT_NO_EQUIPMENTS,
+    AVITO_ANNOUNCEMENT_HIDDEN_EQUIPMENT,
 ]

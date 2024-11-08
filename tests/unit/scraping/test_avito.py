@@ -23,7 +23,7 @@ def vcr_cassette_dir():
 def test_is_announcement_valid(avito_spider):
     response = make_response(va.AVITO_PAGES[1])
     announcements_a = response.css("div.sc-1nre5ec-1 a")
-    for test in [*va.AVITO_ANNOUNCEMENTS, va.AVITO_ANNOUNCEMENT_IMMONEUF]:
+    for test in [*va.AVITO_ANNOUNCEMENTS[:-1], va.AVITO_ANNOUNCEMENT_IMMONEUF]:
         assert (
             avito_spider.is_announcement_valid(announcements_a[test["position"]])
             == test["is_valid"]
@@ -34,7 +34,7 @@ def test_is_announcement_valid(avito_spider):
 def test_get_info_from_announcement_a(avito_spider):
     response = make_response(va.AVITO_PAGES[1])
     announcements_a = response.css("div.sc-1nre5ec-1 a")
-    for test in va.AVITO_ANNOUNCEMENTS:
+    for test in va.AVITO_ANNOUNCEMENTS[:-1]:
         assert (
             avito_spider.get_info_from_announcement_a(announcements_a[test["position"]])
             == test["info"]
