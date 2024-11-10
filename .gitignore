@@ -53,8 +53,12 @@ cover/
 *.mo
 *.pot
 
-# Scrapy stuff:
+# Scrapy stuff
 .scrapy
+
+# PySpark
+_SUCCESS
+*.crc
 
 # Sphinx documentation
 docs/_build/
