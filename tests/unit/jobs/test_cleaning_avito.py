@@ -96,7 +96,7 @@ def test_clean_attributes_syndicate_price(spark):
     ]
     df = spark.createDataFrame(data)
     result_df = clean_attributes_syndicate_price(df)
-    result = [row.syndicate_price_per_month for row in result_df.collect()]
+    result = [row.monthly_syndicate_price for row in result_df.collect()]
     assert result == [100, 200, None]
 
 
