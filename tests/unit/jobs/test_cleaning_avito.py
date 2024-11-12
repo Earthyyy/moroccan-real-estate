@@ -154,7 +154,7 @@ def test_drop_irrelevant_columns(spark):
             title="test",
             user="test",
             time="test",
-            datetime="test",
+            date_time="test",
             attributes={"test_1": "test_1", "test_2": "test_2"},
             equipements=["test_1", "test_2"],
         )
