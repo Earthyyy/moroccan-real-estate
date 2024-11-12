@@ -91,7 +91,8 @@ def standardize_property_type(dataframe: DataFrame):
 
 # Rename and drop attributes function
 def rename_and_drop_attributes(dataframe: DataFrame):
-    """Rename the nested fields in the `attributes` column and drop irrelevant attributes
+    """Rename the nested fields in the `attributes` column and drop irrelevant
+    attributes
 
     Args:
         dataframe (DataFrame): The dataframe
