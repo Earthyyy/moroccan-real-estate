@@ -2,7 +2,7 @@ import pyspark.sql.functions as F
 from pyspark.sql import DataFrame, SparkSession
 
 
-def start_spark_session(app_name: str = "cleaning_yakeey"):
+def start_spark_session(app_name: str = "cleaning_yakeey") -> SparkSession:
     """Start the spark application
     Args:
         app_name (str, optional): The name of the application.
@@ -14,8 +14,7 @@ def start_spark_session(app_name: str = "cleaning_yakeey"):
     return SparkSession.builder.appName(app_name).getOrCreate()
 
 
-# Load JSON data function
-def load_data(spark: SparkSession, file_path: str):
+def load_data(spark: SparkSession, file_path: str) -> DataFrame:
     """Load data with spark from a specific file path
 
     Args:
@@ -27,7 +26,7 @@ def load_data(spark: SparkSession, file_path: str):
     return spark.read.option("multiLine", True).json(file_path)
 
 
-def drop_irrelevant_columns(dataframe: DataFrame, list_columns):
+def drop_irrelevant_columns(dataframe: DataFrame, list_columns) -> DataFrame:
     """Drop the specified columns from the dataframe
 
     Args:
@@ -40,7 +39,7 @@ def drop_irrelevant_columns(dataframe: DataFrame, list_columns):
     return dataframe.drop(*list_columns)
 
 
-def drop_na_records(dataframe: DataFrame, list_columns: list[str]):
+def drop_na_records(dataframe: DataFrame, list_columns: list[str]) -> DataFrame:
     """Drop the records that have null values in the provided columns
 
     Args:
@@ -53,8 +52,22 @@ def drop_na_records(dataframe: DataFrame, list_columns: list[str]):
     return dataframe.na.drop(subset=list_columns)
 
 
-# Clean price column function
-def clean_price_column(dataframe: DataFrame):
+def add_year_month_columns(dataframe: DataFrame, file_path: str) -> DataFrame:
+    """Add a year and month column
+
+    Args:
+        dataframe (DataFrame): The dataframe
+        file_path (str): The file path
+
+    Returns:
+        DataFrame: The modified dataframe
+    """
+    year, month, _ = map(int, file_path.split("/")[-1].split("_")[0].split("-"))
+
+    return dataframe.withColumn("year", F.lit(year)).withColumn("month", F.lit(month))
+
+
+def clean_price_column(dataframe: DataFrame) -> DataFrame:
     """Transform the price column to numeric value and remove the currency
 
     Args:
@@ -69,8 +82,7 @@ def clean_price_column(dataframe: DataFrame):
     return dataframe.withColumn("price", dataframe["price"].cast("integer"))
 
 
-# Standardize property type function
-def standardize_property_type(dataframe: DataFrame):
+def standardize_property_type(dataframe: DataFrame) -> DataFrame:
     """Standardize the naming of the types
 
     Args:
@@ -89,8 +101,7 @@ def standardize_property_type(dataframe: DataFrame):
     return dataframe
 
 
-# Rename and drop attributes function
-def rename_and_drop_attributes(dataframe: DataFrame):
+def rename_and_drop_attributes(dataframe: DataFrame) -> DataFrame:
     """Rename the nested fields in the `attributes` column and drop irrelevant
     attributes
 
@@ -115,8 +126,7 @@ def rename_and_drop_attributes(dataframe: DataFrame):
     )
 
 
-# Clean nested attributes function
-def clean_nested_attributes(dataframe: DataFrame):
+def clean_nested_attributes(dataframe: DataFrame) -> DataFrame:
     """Clean and transform the nested fields in the `attributes` column
 
     Args:
@@ -153,8 +163,7 @@ def clean_nested_attributes(dataframe: DataFrame):
     )
 
 
-# Calculate monthly syndicate fee function
-def calculate_monthly_syndicate_fee(dataframe: DataFrame):
+def calculate_monthly_syndicate_fee(dataframe: DataFrame) -> DataFrame:
     """Transform the annual syndicate fees to monthly fees
 
     Args:
@@ -169,8 +178,9 @@ def calculate_monthly_syndicate_fee(dataframe: DataFrame):
     ).drop("syndicate_price_per_year")
 
 
-# One-hot encode equipements function
-def one_hot_encode_equipements(dataframe: DataFrame, mappings: dict[str, str]):
+def one_hot_encode_equipements(
+    dataframe: DataFrame, mappings: dict[str, str]
+) -> DataFrame:
     """One-hot encode the equipment based on mappings
 
     Args:
@@ -187,7 +197,6 @@ def one_hot_encode_equipements(dataframe: DataFrame, mappings: dict[str, str]):
     return dataframe.drop("equipements")
 
 
-# Main function to run the pipeline
 def main(input_path, output_path):
     spark = start_spark_session()
 
@@ -211,12 +220,12 @@ def main(input_path, output_path):
         "Terrasse": "bool_terrace",
     }
 
-    # Apply the transformations in a chained manner
     dataframe = (
         dataframe.transform(
             lambda df: drop_irrelevant_columns(df, ["title", "reference"])
         )
         .transform(lambda df: drop_na_records(df, ["city", "neighborhood", "price"]))
+        .transform(lambda df: add_year_month_columns(df, input_path))
         .transform(clean_price_column)
         .transform(standardize_property_type)
         .transform(rename_and_drop_attributes)
@@ -225,13 +234,11 @@ def main(input_path, output_path):
         .transform(lambda df: one_hot_encode_equipements(df, mappings))
     )
 
-    # Show final result or save it to output path
-    dataframe.write.json(output_path)
+    dataframe.coalesce(1).write.csv(output_path, header=True, mode="overwrite")
 
     spark.stop()
 
 
-# Entry point
 if __name__ == "__main__":
     input_path = "data/raw/yakeey/2024-11-11_yakeey.json"
     output_path = input_path.replace("/raw/", "/clean/").replace(".json", "")

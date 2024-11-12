@@ -9,6 +9,7 @@ from pyspark.sql.types import (
 )
 
 from src.jobs.cleaning_yakeey import (
+    add_year_month_columns,
     calculate_monthly_syndicate_fee,
     clean_nested_attributes,
     clean_price_column,
@@ -55,6 +56,24 @@ def test_drop_na_records(spark):
     df = spark.createDataFrame(data, schema)
     cleaned_df = drop_na_records(df, ["city", "neighborhood", "price"])
     assert cleaned_df.count() == 0
+
+
+def test_add_year_month_columns(spark):
+    sample_data = [(1, "sample data"), (2, "more data")]
+    dataframe = spark.createDataFrame(sample_data, ["id", "value"])
+    file_path = "data/raw/yakeey/2024-11-11_yakeey.json"
+
+    result_df = add_year_month_columns(dataframe, file_path)
+
+    # Expected year and month
+    expected_year = 2024
+    expected_month = 11
+
+    result = result_df.select("year", "month").distinct().collect()
+
+    assert len(result) == 1  # Only one distinct year-month pair
+    assert result[0]["year"] == expected_year
+    assert result[0]["month"] == expected_month
 
 
 def test_clean_price_column(spark):
