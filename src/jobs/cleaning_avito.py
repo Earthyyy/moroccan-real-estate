@@ -211,7 +211,7 @@ def drop_irrelevant_columns(df: DataFrame) -> DataFrame:
     Returns:
         DataFrame: resulting DataFrame with irrelevant columns dropped
     """
-    return df.drop("title", "user", "time", "datetime", "attributes", "equipements")
+    return df.drop("title", "user", "time", "date_time", "attributes", "equipements")
 
 
 if __name__ == "__main__":
@@ -238,7 +238,7 @@ if __name__ == "__main__":
     )
 
     output_path = file_path.replace("/raw/", "/clean/").replace(".json", "")
-    df_cleaned.coalesce(1).write.csv(output_path, header=True, overwrite=True)
+    df_cleaned.coalesce(1).write.csv(output_path, header=True, mode="overwrite")
 
     # TODO: add logging output
 
