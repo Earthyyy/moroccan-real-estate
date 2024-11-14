@@ -217,7 +217,7 @@ def drop_irrelevant_columns(df: DataFrame) -> DataFrame:
 if __name__ == "__main__":
 
     # TODO: replace dummy file with runtime args
-    file_path = "./data/raw/avito/2024-10-12_avito.json"  # dummy Avito data json file
+    file_path = "./data/raw/avito/avito_2024-11-14.json"  # dummy Avito data json file
 
     spark = SparkSession.builder.appName("Avito Cleaning ETL").getOrCreate()
 

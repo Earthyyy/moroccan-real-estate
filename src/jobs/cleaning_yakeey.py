@@ -62,7 +62,7 @@ def add_year_month_columns(dataframe: DataFrame, file_path: str) -> DataFrame:
     Returns:
         DataFrame: The modified dataframe
     """
-    year, month, _ = map(int, file_path.split("/")[-1].split("_")[0].split("-"))
+    year, month, _ = map(int, file_path.split("/")[-1].split("_")[-1].split("-"))
 
     return dataframe.withColumn("year", F.lit(year)).withColumn("month", F.lit(month))
 
@@ -178,7 +178,7 @@ def calculate_monthly_syndicate_fee(dataframe: DataFrame) -> DataFrame:
     ).drop("syndicate_price_per_year")
 
 
-def one_hot_encode_equipements(
+def one_hot_encode_equipments(
     dataframe: DataFrame, mappings: dict[str, str]
 ) -> DataFrame:
     """One-hot encode the equipment based on mappings
@@ -192,9 +192,9 @@ def one_hot_encode_equipements(
     """
     for equip, col_name in mappings.items():
         dataframe = dataframe.withColumn(
-            col_name, F.expr(f"array_contains(equipements, '{equip}')").cast("int")
+            col_name, F.expr(f"array_contains(equipments, '{equip}')").cast("int")
         )
-    return dataframe.drop("equipements")
+    return dataframe.drop("equipments")
 
 
 def main(input_path, output_path):
@@ -231,7 +231,7 @@ def main(input_path, output_path):
         .transform(rename_and_drop_attributes)
         .transform(clean_nested_attributes)
         .transform(calculate_monthly_syndicate_fee)
-        .transform(lambda df: one_hot_encode_equipements(df, mappings))
+        .transform(lambda df: one_hot_encode_equipments(df, mappings))
     )
 
     dataframe.coalesce(1).write.csv(output_path, header=True, mode="overwrite")
@@ -240,6 +240,6 @@ def main(input_path, output_path):
 
 
 if __name__ == "__main__":
-    input_path = "data/raw/yakeey/2024-11-11_yakeey.json"
+    input_path = "./data/raw/yakeey/yakeey_2024-11-14.json"
     output_path = input_path.replace("/raw/", "/clean/").replace(".json", "")
     main(input_path, output_path)
