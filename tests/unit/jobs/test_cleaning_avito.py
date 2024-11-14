@@ -114,10 +114,10 @@ def test_add_neighborhood(spark):
 
 def test_add_type(spark):
     data = [
-        Row(title="Appartement", equipements=[]),
-        Row(title="Appartement", equipements=["Duplex"]),
-        Row(title="Studio", equipements=[]),
-        Row(title="Studio", equipements=["Duplex"]),
+        Row(title="Appartement", equipments=[]),
+        Row(title="Appartement", equipments=["Duplex"]),
+        Row(title="Studio", equipments=[]),
+        Row(title="Studio", equipments=["Duplex"]),
     ]
     df = spark.createDataFrame(data)
     result_df = add_type(df)
@@ -156,7 +156,7 @@ def test_drop_irrelevant_columns(spark):
             time="test",
             date_time="test",
             attributes={"test_1": "test_1", "test_2": "test_2"},
-            equipements=["test_1", "test_2"],
+            equipments=["test_1", "test_2"],
         )
     ]
     df = spark.createDataFrame(data)
