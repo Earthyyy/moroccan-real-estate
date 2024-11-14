@@ -139,7 +139,7 @@ def add_type(df: DataFrame) -> DataFrame:
     """
     return df.withColumn(
         "type",
-        F.when(F.array_contains(F.col("equipements"), "Duplex"), "duplex/triplex")
+        F.when(F.array_contains(F.col("equipments"), "Duplex"), "duplex/triplex")
         .when(F.lower(F.col("title")).contains("studio"), "studio")
         .otherwise("apartment"),
     )
@@ -157,47 +157,47 @@ def add_equipments_binary(df: DataFrame) -> DataFrame:
     return (
         df.withColumn(
             "bool_elevator",
-            F.when(F.array_contains(F.col("equipements"), "Ascenseur"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Ascenseur"), 1).otherwise(0),
         )
         .withColumn(
             "bool_balcony",
-            F.when(F.array_contains(F.col("equipements"), "Balcon"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Balcon"), 1).otherwise(0),
         )
         .withColumn(
             "bool_heating",
-            F.when(F.array_contains(F.col("equipements"), "Chauffage"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Chauffage"), 1).otherwise(0),
         )
         .withColumn(
             "bool_air_conditioning",
             F.when(
-                F.array_contains(F.col("equipements"), "Climatisation"), 1
+                F.array_contains(F.col("equipments"), "Climatisation"), 1
             ).otherwise(0),
         )
         .withColumn(
             "bool_concierge",
-            F.when(F.array_contains(F.col("equipements"), "Concierge"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Concierge"), 1).otherwise(0),
         )
         .withColumn(
             "bool_equipped_kitchen",
             F.when(
-                F.array_contains(F.col("equipements"), "Cuisine équipée"), 1
+                F.array_contains(F.col("equipments"), "Cuisine équipée"), 1
             ).otherwise(0),
         )
         .withColumn(
             "bool_furniture",
-            F.when(F.array_contains(F.col("equipements"), "Meublé"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Meublé"), 1).otherwise(0),
         )
         .withColumn(
             "bool_parking",
-            F.when(F.array_contains(F.col("equipements"), "Parking"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Parking"), 1).otherwise(0),
         )
         .withColumn(
             "bool_security",
-            F.when(F.array_contains(F.col("equipements"), "Sécurité"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Sécurité"), 1).otherwise(0),
         )
         .withColumn(
             "bool_terrace",
-            F.when(F.array_contains(F.col("equipements"), "Terrasse"), 1).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Terrasse"), 1).otherwise(0),
         )
     )
 
@@ -211,7 +211,7 @@ def drop_irrelevant_columns(df: DataFrame) -> DataFrame:
     Returns:
         DataFrame: resulting DataFrame with irrelevant columns dropped
     """
-    return df.drop("title", "user", "time", "date_time", "attributes", "equipements")
+    return df.drop("title", "user", "time", "date_time", "attributes", "equipments")
 
 
 if __name__ == "__main__":

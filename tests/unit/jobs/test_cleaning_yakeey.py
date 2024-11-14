@@ -15,7 +15,7 @@ from src.jobs.cleaning_yakeey import (
     clean_price_column,
     drop_irrelevant_columns,
     drop_na_records,
-    one_hot_encode_equipements,
+    one_hot_encode_equipments,
     rename_and_drop_attributes,
     standardize_property_type,
     start_spark_session,
@@ -61,7 +61,7 @@ def test_drop_na_records(spark):
 def test_add_year_month_columns(spark):
     sample_data = [(1, "sample data"), (2, "more data")]
     dataframe = spark.createDataFrame(sample_data, ["id", "value"])
-    file_path = "data/raw/yakeey/2024-11-11_yakeey.json"
+    file_path = "data/raw/yakeey/yakeey_2024-11-11.json"
 
     result_df = add_year_month_columns(dataframe, file_path)
 
@@ -166,16 +166,16 @@ def test_calculate_monthly_syndicate_fee(spark):
     assert cleaned_df.collect()[0]["syndicate_price_per_month"] == 100.0
 
 
-def test_one_hot_encode_equipements(spark):
+def test_one_hot_encode_equipments(spark):
     data = [(["Agent de sécurité", "Ascenseur"],), (["Balcon"],)]
-    schema = StructType([StructField("equipements", ArrayType(StringType()))])
+    schema = StructType([StructField("equipments", ArrayType(StringType()))])
     df = spark.createDataFrame(data, schema)
     mappings = {
         "Agent de sécurité": "bool_security",
         "Ascenseur": "bool_elevator",
         "Balcon": "bool_balcony",
     }
-    cleaned_df = one_hot_encode_equipements(df, mappings)
+    cleaned_df = one_hot_encode_equipments(df, mappings)
     for col in mappings.values():
         assert col in cleaned_df.columns
     assert cleaned_df.filter(F.col("bool_security") == 1).count() == 1

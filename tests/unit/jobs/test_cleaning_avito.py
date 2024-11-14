@@ -127,11 +127,11 @@ def test_add_type(spark):
 
 def test_add_equipments_binary(spark):
     data = [
-        Row(equipements=["test_1", "Sécurité"]),
-        Row(equipements=["test_2", "Concierge", "Climatisation"]),
-        Row(equipements=["Ascenseur", "Cuisine équipée", "Meublé"]),
-        Row(equipements=["Parking", "Terrasse"]),
-        Row(equipements=["Chauffage", "Balcon"]),
+        Row(equipments=["test_1", "Sécurité"]),
+        Row(equipments=["test_2", "Concierge", "Climatisation"]),
+        Row(equipments=["Ascenseur", "Cuisine équipée", "Meublé"]),
+        Row(equipments=["Parking", "Terrasse"]),
+        Row(equipments=["Chauffage", "Balcon"]),
     ]
     df = spark.createDataFrame(data)
     result_df = add_equipments_binary(df)

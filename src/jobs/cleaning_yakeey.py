@@ -62,7 +62,7 @@ def add_year_month_columns(dataframe: DataFrame, file_path: str) -> DataFrame:
     Returns:
         DataFrame: The modified dataframe
     """
-    year, month, _ = map(int, file_path.split("/")[-1].split("_")[-1].split("-"))
+    year, month = map(int, file_path.split("/")[-1].split("_")[-1].split("-")[:-1])
 
     return dataframe.withColumn("year", F.lit(year)).withColumn("month", F.lit(month))
 
