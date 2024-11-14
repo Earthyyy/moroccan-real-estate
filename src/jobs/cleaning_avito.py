@@ -169,9 +169,9 @@ def add_equipments_binary(df: DataFrame) -> DataFrame:
         )
         .withColumn(
             "bool_air_conditioning",
-            F.when(
-                F.array_contains(F.col("equipments"), "Climatisation"), 1
-            ).otherwise(0),
+            F.when(F.array_contains(F.col("equipments"), "Climatisation"), 1).otherwise(
+                0
+            ),
         )
         .withColumn(
             "bool_concierge",
