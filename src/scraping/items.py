@@ -1,5 +1,6 @@
 from scrapy import Field, Item
 
+
 class AvitoAnnouncementItem(Item):
     url = Field()
     attributes = Field()

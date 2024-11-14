@@ -15,19 +15,6 @@ class AvitoSpider(scrapy.Spider):
     page_counter: int = 0
     max_pages: int = 10
 
-    # @classmethod
-    # def from_crawler(cls, crawler, *args, **kwargs):
-    #     spider = super(AvitoSpider, cls).from_crawler(crawler, *args, **kwargs)
-    #     current_date = datetime.now().strftime("%Y-%m-%d")
-    #     log_file = f"./logs/scraping/{spider.name}_{current_date}.log"
-    #     spider.setup_logging(log_file)
-    #     return super().from_crawler(crawler, *args, **kwargs)
-
-    # def setup_logging(self, log_file: str):
-    #     logging.basicConfig(
-    #         filename=log_file,
-    #     )
-
     def parse(self, response: HtmlResponse):
         # increment the page counter
         self.page_counter += 1
