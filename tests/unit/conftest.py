@@ -31,9 +31,9 @@ def make_response(url: str) -> HtmlResponse:
 
 @pytest.fixture
 def avito_spider():
-    return AvitoSpider
+    return AvitoSpider()
 
 
 @pytest.fixture
 def yakeey_spider():
-    return YakeeySpider
+    return YakeeySpider()

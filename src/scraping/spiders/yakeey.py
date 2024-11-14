@@ -11,9 +11,31 @@ class YakeeySpider(scrapy.Spider):
     name = "yakeey"
     allowed_domains: ClassVar = ["yakeey.com"]
     start_urls: ClassVar = ["https://yakeey.com/fr-ma/achat/appartement/maroc"]
+    page_counter: int = 0
+    max_pages: int = 10
+
+    # @classmethod
+    # def from_crawler(cls, crawler, *args, **kwargs):
+    #     spider = super(YakeeySpider, cls).from_crawler(crawler, *args, **kwargs)
+    #     current_date = datetime.now().strftime("%Y-%m-%d")
+    #     log_file = f"./logs/scraping/{spider.name}_{current_date}.log"
+    #     spider.setup_logging(log_file)
+    #     return super().from_crawler(crawler, *args, **kwargs)
+
+    # def setup_logging(self, log_file: str):
+    #     logging.basicConfig(
+    #         filename=log_file,
+    #     )
 
     def parse(self, response: HtmlResponse):
-        # scrape each announcement
+        # increment the page counter
+        self.page_counter += 1
+        if self.page_counter > self.max_pages:
+            self.logger.info("Reached the maximum number of pages.")
+            self.crawler.engine.close_spider(
+                self, "Reached the maximum number of pages."
+            )
+        # get the announcements from list and parse them
         announcements = self.get_announcements(response)
         for announcement in announcements:
             item = YakeeyAnnouncementItem()
@@ -27,32 +49,27 @@ class YakeeySpider(scrapy.Spider):
             yield response.follow(
                 item["url"], callback=self.parse_announcement, cb_kwargs={"item": item}
             )
-
         # go to the next page
         next_page_url = self.get_next_page_url(response)
-        if (
-            next_page_url
-            and next_page_url
-            != "https://yakeey.com/fr-ma/achat/appartement/maroc?page=10"
-        ):
+        if next_page_url and self.page_counter < self.max_pages:
             yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
         item = kwargs["item"]
         item["title"], item["reference"] = self.get_header(response)
         item["attributes"] = self.get_attributes(response)
-        item["equipements"] = self.get_equipments(response)
+        item["equipments"] = self.get_equipments(response)
         yield item
 
-    @staticmethod
     def get_announcements(
+        self,
         response: HtmlResponse,
     ) -> List[Tuple[str, str, str, str, str]]:
-        """
-        Extract the url, number of rooms, bathrooms and total area from the
+        """Extract the url, number of rooms, bathrooms and total area from the
         announcements page.
 
         Args:
+            self: the spider object.
             response: the response object of the page.
 
         Returns:
@@ -60,20 +77,19 @@ class YakeeySpider(scrapy.Spider):
         """
         announcements = []
         announcements_a = filter(
-            YakeeySpider.is_announcement_valid, response.css("div.mui-4oo2hv a")
+            self.is_announcement_valid, response.css("div.mui-4oo2hv a")
         )
         for a in announcements_a:
             url = "https://yakeey.com" + a.attrib["href"]
-            announcements.append((url, *YakeeySpider.get_info_from_announcement_a(a)))
+            announcements.append((url, *self.get_info_from_announcement_a(a)))
         return announcements
 
-    @staticmethod
-    def is_announcement_valid(a: Selector) -> bool:
-        """
-        Check if the announcement is valid.
+    def is_announcement_valid(self, a: Selector) -> bool:
+        """Check if the announcement is valid.
         A valid announcement is one that doesn't point to a new real estate project.
 
         Args:
+            self: the spider object.
             a: the anchor tag of the announcement.
 
         Returns:
@@ -81,14 +97,14 @@ class YakeeySpider(scrapy.Spider):
         """
         return a.css("a > div > div:nth-child(1) > span::text").get() != "Neuf"
 
-    @staticmethod
     def get_info_from_announcement_a(
+        self,
         a: Selector,
     ) -> Tuple[str, str, str, str]:
-        """
-        Extract the type, price, neighborhood and city.
+        """Extract the type, price, neighborhood and city.
 
         Args:
+            self: the spider object.
             a: the anchor tag of the announcement.
 
         Returns:
@@ -101,12 +117,11 @@ class YakeeySpider(scrapy.Spider):
         )
         return (property_type, price, neighborhood, city)
 
-    @staticmethod
-    def get_next_page_url(response: HtmlResponse) -> Optional[str]:
-        """
-        Extract the next page url.
+    def get_next_page_url(self, response: HtmlResponse) -> Optional[str]:
+        """Extract the next page url.
 
         Args:
+            self: the spider object.
             response: the response object of the page.
 
         Returns:
@@ -117,12 +132,11 @@ class YakeeySpider(scrapy.Spider):
             return "https://yakeey.com" + nav[-1].attrib["href"]
         return None
 
-    @staticmethod
-    def get_header(response: HtmlResponse) -> Tuple[str, str]:
-        """
-        Extract the title and reference.
+    def get_header(self, response: HtmlResponse) -> Tuple[str, str]:
+        """Extract the title and reference.
 
         Args:
+            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:
@@ -132,12 +146,11 @@ class YakeeySpider(scrapy.Spider):
         reference = response.url.split("-")[-1]
         return title, reference
 
-    @staticmethod
-    def get_attributes(response: HtmlResponse) -> Dict[str, str]:
-        """
-        Extract the attributes.
+    def get_attributes(self, response: HtmlResponse) -> Dict[str, str]:
+        """Extract the attributes.
 
         Args:
+            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:
@@ -152,12 +165,11 @@ class YakeeySpider(scrapy.Spider):
                         attributes[attr[0]] = attr[1]
         return attributes
 
-    @staticmethod
-    def get_equipments(response: HtmlResponse) -> List[str]:
-        """
-        Extract extra equipements.
+    def get_equipments(self, response: HtmlResponse) -> List[str]:
+        """Extract extra equipments.
 
         Args:
+            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:
