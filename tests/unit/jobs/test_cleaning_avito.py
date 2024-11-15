@@ -114,10 +114,10 @@ def test_add_neighborhood(spark):
 
 def test_add_type(spark):
     data = [
-        Row(title="Appartement", equipements=[]),
-        Row(title="Appartement", equipements=["Duplex"]),
-        Row(title="Studio", equipements=[]),
-        Row(title="Studio", equipements=["Duplex"]),
+        Row(title="Appartement", equipments=[]),
+        Row(title="Appartement", equipments=["Duplex"]),
+        Row(title="Studio", equipments=[]),
+        Row(title="Studio", equipments=["Duplex"]),
     ]
     df = spark.createDataFrame(data)
     result_df = add_type(df)
@@ -127,11 +127,11 @@ def test_add_type(spark):
 
 def test_add_equipments_binary(spark):
     data = [
-        Row(equipements=["test_1", "Sécurité"]),
-        Row(equipements=["test_2", "Concierge", "Climatisation"]),
-        Row(equipements=["Ascenseur", "Cuisine équipée", "Meublé"]),
-        Row(equipements=["Parking", "Terrasse"]),
-        Row(equipements=["Chauffage", "Balcon"]),
+        Row(equipments=["test_1", "Sécurité"]),
+        Row(equipments=["test_2", "Concierge", "Climatisation"]),
+        Row(equipments=["Ascenseur", "Cuisine équipée", "Meublé"]),
+        Row(equipments=["Parking", "Terrasse"]),
+        Row(equipments=["Chauffage", "Balcon"]),
     ]
     df = spark.createDataFrame(data)
     result_df = add_equipments_binary(df)
@@ -156,7 +156,7 @@ def test_drop_irrelevant_columns(spark):
             time="test",
             date_time="test",
             attributes={"test_1": "test_1", "test_2": "test_2"},
-            equipements=["test_1", "test_2"],
+            equipments=["test_1", "test_2"],
         )
     ]
     df = spark.createDataFrame(data)

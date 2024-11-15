@@ -1,10 +1,4 @@
-# Scraping Module (In Progress)
-
-## TODO
-
-- [ ] Implement rules for delta scraping.
-  - [ ] Delta scraping for Avito.
-  - [ ] Delta scraping for Yakeey.
+# Scraping Module
 
 ## Introduction
 
@@ -51,7 +45,7 @@ In our case, we are going to be looking at [appartments for sale](https://www.av
 
 ### Suggestions
 
-- We can combine Avito's scrapper with the others, and running them in a way that makes requests split across the platforms, in order to give each platform a resting time.
+- On scraping settings, we have set the download delay to 0.5 second.
 - Fortunately, we can extract JS rendered information from the announcements list page, as the information is displayed directly there and it is easier to process it. Here's how the information is displayed:
 
 ![JS rendered](../../images/avito_announcement_list.png)

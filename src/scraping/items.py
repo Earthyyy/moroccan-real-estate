@@ -1,53 +1,60 @@
-import scrapy
+from scrapy import Field, Item
 
 
-class AvitoAnnouncementItem(scrapy.Item):
+class AvitoAnnouncementItem(Item):
+    url = Field()
+    attributes = Field()
+    equipments = Field()
 
     # required fields
     # from announcement
-    url = scrapy.Field()
-    title = scrapy.Field()
-    city = scrapy.Field()
-    time = scrapy.Field()
-    user = scrapy.Field()
-    n_bedrooms = scrapy.Field()
+    title = Field()
+    city = Field()
+    time = Field()
+    user = Field()
+    price = Field()
+    n_bedrooms = Field()
     # to extract from pipeline
-    date_time = scrapy.Field()
-    year = scrapy.Field()
-    month = scrapy.Field()
-    # type = scrapy.Field()
-    # neighborhood = scrapy.Field()
-    # floor = scrapy.Field()
-    # living_area = scrapy.Field()
+    date_time = Field()
+    year = Field()
+    month = Field()
+    # from self.attributes
+    # Type
+    # Secteur
+    # Étage
+    # Surface habitable
 
     # optional fields
-    price = scrapy.Field()
-    n_bathrooms = scrapy.Field()
-    total_area = scrapy.Field()
-    # to extract from pipeline
-    # n_living_rooms = scrapy.Field()
-    # age = scrapy.Field()
-    # address = scrapy.Field()
-    # syndicate_price = scrapy.Field()
-
-    # helper fields: to be transformed in the pipeline
-    attributes = scrapy.Field()
-    equipements = scrapy.Field()
+    # from announcement
+    n_bathrooms = Field()
+    total_area = Field()
+    # from self.attributes
+    # Salons
+    # Âge du bien
+    # Frais de syndic / mois
 
 
-class YakeeyAnnouncementItem(scrapy.Item):
+class YakeeyAnnouncementItem(Item):
+    url = Field()
+    attributes = Field()
+    equipments = Field()
 
     # required fields
-    url = scrapy.Field()
-    type = scrapy.Field()
-    price = scrapy.Field()
-    neighborhood = scrapy.Field()
-    city = scrapy.Field()
-    title = scrapy.Field()
-    reference = scrapy.Field()
+    # from announcement
+    type = Field()
+    price = Field()
+    neighborhood = Field()
+    city = Field()
+    title = Field()
+    reference = Field()
+    # from self.attributes
+    # Nb. de chambres
+    # Nb. de salles de bains
+    # Surface habitable
+    # Étage du bien
+    # Surface totale
+    # Nb. d'étages dans l'immeuble
+    # Nb. de salles d'eau
 
     # optional fields
-
-    # helper fields: to be transformed in the pipeline
-    attributes = scrapy.Field()
-    equipements = scrapy.Field()
+    # the rest of self.attributes

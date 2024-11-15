@@ -12,9 +12,18 @@ class AvitoSpider(scrapy.Spider):
     name = "avito"
     allowed_domains: ClassVar = ["www.avito.ma"]
     start_urls: ClassVar = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
+    page_counter: int = 0
+    max_pages: int = 10
 
     def parse(self, response: HtmlResponse):
-        # scrape each announcement
+        # increment the page counter
+        self.page_counter += 1
+        if self.page_counter > self.max_pages:
+            self.logger.info("Reached the maximum number of pages.")
+            self.crawler.engine.close_spider(
+                self, "Reached the maximum number of pages."
+            )
+        # get the announcements from list and parse them
         announcements = self.get_announcements(response)
         for announcement in announcements:
             item = AvitoAnnouncementItem()
@@ -24,14 +33,9 @@ class AvitoSpider(scrapy.Spider):
             yield response.follow(
                 item["url"], callback=self.parse_announcement, cb_kwargs={"item": item}
             )
-
         # go to the next page
         next_page_url = self.get_next_page_url(response)
-        if (
-            next_page_url
-            and next_page_url
-            != "https://www.avito.ma/fr/maroc/appartements-à_vendre?page=10"
-        ):
+        if next_page_url and self.page_counter < self.max_pages:
             yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
@@ -40,18 +44,18 @@ class AvitoSpider(scrapy.Spider):
             self.get_header(response)
         )
         item["attributes"] = self.get_attributes(response)
-        item["equipements"] = self.get_equipments(response)
+        item["equipments"] = self.get_equipments(response)
         yield item
 
-    @staticmethod
     def get_announcements(
+        self,
         response: HtmlResponse,
     ) -> List[Tuple[str, str, Optional[str], Optional[str]]]:
-        """
-        Extract the url, number of rooms, bathrooms and total area from the
+        """Extract the url, number of rooms, bathrooms and total area from the
         announcements page.
 
         Args:
+            self: the spider object.
             response: the response object of the page.
 
         Returns:
@@ -60,20 +64,19 @@ class AvitoSpider(scrapy.Spider):
         """
         announcements = []
         announcements_a = filter(
-            AvitoSpider.is_announcement_valid, response.css("div.sc-1nre5ec-1 a")
+            self.is_announcement_valid, response.css("div.sc-1nre5ec-1 a")
         )
         for a in announcements_a:
             url = a.attrib["href"]
-            announcements.append((url, *AvitoSpider.get_info_from_announcement_a(a)))
+            announcements.append((url, *self.get_info_from_announcement_a(a)))
         return announcements
 
-    @staticmethod
-    def is_announcement_valid(a: Selector) -> bool:
-        """
-        Check if the announcement is valid.
+    def is_announcement_valid(self, a: Selector) -> bool:
+        """Check if the announcement is valid.
         A valid announcement is one that doesn't redirect to any external domain.
 
         Args:
+            self: the spider object.
             a: the anchor tag of the announcement.
 
         Returns:
@@ -81,16 +84,16 @@ class AvitoSpider(scrapy.Spider):
         """
         url = a.attrib["href"]
         domain = urlparse(url).netloc
-        return domain in AvitoSpider.allowed_domains
+        return domain in self.allowed_domains
 
-    @staticmethod
     def get_info_from_announcement_a(
+        self,
         a: Selector,
     ) -> Tuple[str, Optional[str], Optional[str]]:
-        """
-        Extract the number of rooms, bathrooms and total area from the announcement.
+        """Extract the number of rooms, bathrooms and total area from the announcement.
 
         Args:
+            self: the spider object.
             a: the anchor tag of the announcement.
 
         Returns:
@@ -113,12 +116,11 @@ class AvitoSpider(scrapy.Spider):
                 n_bathrooms, total_area = spans_text[1:]
         return n_rooms, n_bathrooms, total_area
 
-    @staticmethod
-    def get_next_page_url(response: HtmlResponse) -> Optional[str]:
-        """
-        Extract the next page url.
+    def get_next_page_url(self, response: HtmlResponse) -> Optional[str]:
+        """Extract the next page url.
 
         Args:
+            self: the spider object.
             response: the response object of the page.
 
         Returns:
@@ -129,12 +131,11 @@ class AvitoSpider(scrapy.Spider):
             return nav[-1].attrib["href"]
         return None
 
-    @staticmethod
-    def get_header(response: HtmlResponse) -> Tuple[str, str, str, str, str]:
-        """
-        Extract the title, price, city, time and user.
+    def get_header(self, response: HtmlResponse) -> Tuple[str, str, str, str, str]:
+        """Extract the title, price, city, time and user.
 
         Args:
+            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:
@@ -149,12 +150,11 @@ class AvitoSpider(scrapy.Spider):
         user = header2.css("p::text").get()
         return title, price, city, time, user
 
-    @staticmethod
-    def get_attributes(response: HtmlResponse) -> Dict[str, str]:
-        """
-        Extract the attributes.
+    def get_attributes(self, response: HtmlResponse) -> Dict[str, str]:
+        """Extract the attributes.
 
         Args:
+            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:
@@ -166,12 +166,11 @@ class AvitoSpider(scrapy.Spider):
             attributes[key] = value
         return attributes
 
-    @staticmethod
-    def get_equipments(response: HtmlResponse) -> List[str]:
-        """
-        Extract extra equipements.
+    def get_equipments(self, response: HtmlResponse) -> List[str]:
+        """Extract extra equipments.
 
         Args:
+            self: the spider object.
             response: the response object of the announcement page.
 
         Returns:

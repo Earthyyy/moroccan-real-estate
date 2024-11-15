@@ -1,12 +1,58 @@
 import re
 from datetime import datetime, timedelta
-from typing import Tuple
+from typing import ClassVar, List, Tuple
 
 from itemadapter import ItemAdapter
+from scrapy.exceptions import DropItem
+
+
+class BaseFilterPipeline:
+    required_fields: ClassVar[List[str]] = []
+    required_attributes: ClassVar[List[str]] = []
+
+    def process_item(self, item, spider):  # noqa: ARG002
+        item_adapter = ItemAdapter(item)
+        for field in self.required_fields:
+            if not item_adapter.get(field):
+                raise DropItem(f"Missing {field} in {item}")
+        return item
+
+
+class AvitoFilterPipeline(BaseFilterPipeline):
+    required_fields: ClassVar[List[str]] = [
+        "title",
+        "city",
+        "time",
+        "user",
+        "price",
+        "n_bedrooms",
+        "attributes",
+    ]
+
+    def process_item(self, item, spider):
+        if spider.name != "avito":
+            return item
+        return super().process_item(item, spider)
+
+
+class YakeeyFilterPipeline(BaseFilterPipeline):
+    required_fields: ClassVar[List[str]] = [
+        "type",
+        "price",
+        "neighborhood",
+        "city",
+        "title",
+        "reference",
+        "attributes",
+    ]
+
+    def process_item(self, item, spider):
+        if spider.name != "yakeey":
+            return item
+        return super().process_item(item, spider)
 
 
 class AvitoTimePipeline:
-
     time_re = re.compile(r"il y a (\d+) (minutes?|heures?|jours?|mois|ans?)")
 
     def process_item(self, item, spider):
@@ -23,8 +69,7 @@ class AvitoTimePipeline:
 
     @staticmethod
     def get_absolute_time(relative_time: str) -> Tuple[str, int, int]:
-        """
-        Transform the relative time to absolute date.
+        """Transform the relative time to absolute date.
 
         Args:
             relative_time: the relative time.
