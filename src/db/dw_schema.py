@@ -29,7 +29,7 @@ def create_property_facts(con: db.DuckDBPyConnection) -> None:
         living_area INTEGER,
         floor INTEGER,
         price INTEGER,
-        syndicate_price_per_month DOUBLE,
+        monthly_syndicate_price DOUBLE,
         bool_security INTEGER CHECK (bool_security >= 0 AND bool_security <= 1),
         bool_elevator INTEGER CHECK (bool_elevator >= 0 AND bool_elevator <= 1),
         bool_balcony INTEGER CHECK (bool_balcony >= 0 AND bool_balcony <= 1),
@@ -123,8 +123,6 @@ if __name__ == "__main__":
 
     dev_dw = "./data/dw/datawarehouse.db"
     backup_dw = "./data/dw/backup_datawarehouse.db"
-    test_dw = "./tests/unit/data/dw/test_datawarehouse.db"
 
     main(dev_dw)
     main(backup_dw)
-    main(test_dw)
