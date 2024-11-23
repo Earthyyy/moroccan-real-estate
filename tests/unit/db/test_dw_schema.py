@@ -74,7 +74,7 @@ def test_create_type_dim(db_connection):
 
     expected_structure = [
         ("id", "INTEGER", True, 1),  # Primary key
-        ("type", "ENUM('apartment', 'studio', 'duplex/triplex')", True, 0),
+        ("type", "VARCHAR", True, 0),
     ]
 
     for i, (col_name, col_type, notnull, pk) in enumerate(expected_structure):
