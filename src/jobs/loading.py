@@ -14,13 +14,16 @@ def load_table_from_duckdb(spark: SparkSession, table: str) -> DataFrame:
         DataFrame: the desired duckdb table as a spark dataframe
     """
     duckdb_url = "jdbc:duckdb:data/dw/datawarehouse.db"
-    return (
+    connection = (
         spark.read.format("jdbc")
         .option("driver", "org.duckdb.DuckDBDriver")
         .option("url", duckdb_url)
-        .option("dbtable", table)
-        .load()
     )
+    if table == "type_dim":
+        return connection.option(
+            "query", "SELECT id, CAST(type AS STRING) AS type FROM type_dim"
+        ).load()
+    return connection.option("dbtable", table).load()
 
 
 def create_type_dim(df: DataFrame, type_dim_existing: DataFrame) -> DataFrame:
@@ -36,9 +39,9 @@ def create_type_dim(df: DataFrame, type_dim_existing: DataFrame) -> DataFrame:
     types = df.select("type").distinct()
     new_types = types.join(type_dim_existing, on="type", how="left_anti")
     new_types = new_types.withColumn(
-        "id", F.monotonically_increasing_id() + F.lit(type_dim_existing.count())
+        "id", F.monotonically_increasing_id() + F.lit(type_dim_existing.count() + 1)
     )
-    return type_dim_existing.union(new_types)
+    return type_dim_existing.select("id", "type").union(new_types.select("id", "type"))
 
 
 def create_date_dim(df: DataFrame, date_dim_existing: DataFrame) -> DataFrame:
@@ -54,9 +57,12 @@ def create_date_dim(df: DataFrame, date_dim_existing: DataFrame) -> DataFrame:
     dates = df.select("year", "month").distinct()
     new_dates = dates.join(date_dim_existing, on=["year", "month"], how="left_anti")
     new_dates = new_dates.withColumn(
-        "id", F.concat(F.col("year"), F.format_string("%02d", F.col("month")))
+        "id",
+        F.concat(F.col("year"), F.format_string("%02d", F.col("month"))).cast("int"),
     )
-    return date_dim_existing.union(new_dates)
+    return date_dim_existing.select("id", "year", "month").union(
+        new_dates.select("id", "year", "month")
+    )
 
 
 def create_location_dim(df: DataFrame, location_dim_existing: DataFrame) -> DataFrame:
@@ -74,9 +80,11 @@ def create_location_dim(df: DataFrame, location_dim_existing: DataFrame) -> Data
         location_dim_existing, on=["city", "neighborhood"], how="left_anti"
     )
     new_locations = new_locations.withColumn(
-        "id", F.monotonically_increasing_id() + F.lit(location_dim_existing.count())
+        "id", F.monotonically_increasing_id() + 1 + F.lit(location_dim_existing.count())
     )
-    return location_dim_existing.union(new_locations)
+    return location_dim_existing.select("id", "city", "neighborhood").union(
+        new_locations.select("id", "city", "neighborhood")
+    )
 
 
 def create_source_dim(df: DataFrame, source_dim_existing: DataFrame) -> DataFrame:
@@ -92,9 +100,11 @@ def create_source_dim(df: DataFrame, source_dim_existing: DataFrame) -> DataFram
     sources = df.select("source").distinct()
     new_sources = sources.join(source_dim_existing, on="source", how="left_anti")
     new_sources = new_sources.withColumn(
-        "id", F.monotonically_increasing_id() + F.lit(source_dim_existing.count())
+        "id", F.monotonically_increasing_id() + 1 + F.lit(source_dim_existing.count())
     )
-    return source_dim_existing.union(new_sources)
+    return source_dim_existing.select("id", "source").union(
+        new_sources.select("id", "source")
+    )
 
 
 def create_property_facts(
@@ -119,48 +129,35 @@ def create_property_facts(
         DataFrame: the resulting fact table
     """
     # replace dimension values with their coresponding ids
-    df = df.join(source_dim, on="source", how="inner").withColumnRenamed(
-        "id", "source_id"
+    df = (
+        df.join(source_dim, on="source", how="inner")
+        .withColumnRenamed("id", "source_id")
+        .drop("source")
     )
-    df = df.join(type_dim, on="type", how="inner").withColumnRenamed("id", "type_id")
-    df = df.join(
-        location_dim, on=["city", "neighborhood"], how="inner"
-    ).withColumnRenamed("id", "location_id")
-    df = df.join(date_dim, on=["year", "month"], how="inner").withColumnRenamed(
-        "id", "date_id"
+    df = (
+        df.join(type_dim, on="type", how="inner")
+        .withColumnRenamed("id", "type_id")
+        .drop("type")
     )
-    # add id column
-    df = df.withColumn(
-        "id", F.monotonically_increasing_id() + F.lit(property_facts_existing.count())
+    df = (
+        df.join(location_dim, on=["city", "neighborhood"], how="inner")
+        .withColumnRenamed("id", "location_id")
+        .drop("city", "neighborhood")
     )
-    return df.select(
+    df = (
+        df.join(date_dim, on=["year", "month"], how="inner")
+        .withColumnRenamed("id", "date_id")
+        .drop("year", "month")
+    )
+    return df.withColumn(
         "id",
-        "url",
-        "n_bedrooms",
-        "n_bathrooms",
-        "total_area",
-        "living_area",
-        "floor",
-        "price",
-        "monthly_syndicate_price",
-        "source_id"
-        "type_id",
-        "location_id",
-        "date_id",
-        "bool_elevator",
-        "bool_balcony",
-        "bool_heating",
-        "bool_air_conditioning",
-        "bool_concierge",
-        "bool_equipped_kitchen",
-        "bool_furniture",
-        "bool_parking",
-        "bool_security",
-        "bool_terrace"
+        F.monotonically_increasing_id() + 1 + F.lit(property_facts_existing.count()),
     )
+
 
 def load_dim_table(dim_df: DataFrame):
     pass
+
 
 def load_fact_table(fact_df: DataFrame):
     pass
