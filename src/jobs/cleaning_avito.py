@@ -3,6 +3,10 @@ from pyspark.sql import functions as F
 from pyspark.sql.dataframe import DataFrame
 
 
+def spark_setup() -> SparkSession:
+    return SparkSession.builder.appName("Avito Cleaning ETL").getOrCreate()
+
+
 def clean_n_bedrooms(df: DataFrame) -> DataFrame:
     """Chaging the data type of the n_bedrooms column to int
 
@@ -145,6 +149,18 @@ def add_type(df: DataFrame) -> DataFrame:
     )
 
 
+def add_source(df: DataFrame) -> DataFrame:
+    """Add source "avito" column to the dataframe
+
+    Args:
+        df (DataFrame): dataframe to be cleaned
+
+    Returns:
+        DataFrame: resulting dataframe with the source column added
+    """
+    return df.withColumn("source", F.lit("avito"))
+
+
 def add_equipments_binary(df: DataFrame) -> DataFrame:
     """Add binary columns for each equipment
 
@@ -216,10 +232,9 @@ def drop_irrelevant_columns(df: DataFrame) -> DataFrame:
 
 if __name__ == "__main__":
 
-    # TODO: replace dummy file with runtime args
     file_path = "./data/raw/avito/avito_2024-11-14.json"  # dummy Avito data json file
 
-    spark = SparkSession.builder.appName("Avito Cleaning ETL").getOrCreate()
+    spark = spark_setup()
 
     df = spark.read.json(file_path, multiLine=True)
 
@@ -239,7 +254,5 @@ if __name__ == "__main__":
 
     output_path = file_path.replace("/raw/", "/clean/").replace(".json", "")
     df_cleaned.coalesce(1).write.csv(output_path, header=True, mode="overwrite")
-
-    # TODO: add logging output
 
     spark.stop()

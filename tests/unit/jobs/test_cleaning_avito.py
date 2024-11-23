@@ -1,9 +1,10 @@
 import pytest
-from pyspark.sql import Row, SparkSession
+from pyspark.sql import Row
 
 from src.jobs.cleaning_avito import (
     add_equipments_binary,
     add_neighborhood,
+    add_source,
     add_type,
     clean_attributes_floor_number,
     clean_attributes_living_area,
@@ -13,12 +14,15 @@ from src.jobs.cleaning_avito import (
     clean_price,
     clean_total_area,
     drop_irrelevant_columns,
+    spark_setup,
 )
 
 
 @pytest.fixture(scope="module")
 def spark():
-    return SparkSession.builder.master("local[1]").appName("pytest").getOrCreate()
+    spark = spark_setup()
+    yield spark
+    spark.stop()
 
 
 def test_clean_n_bedrooms(spark):
@@ -123,6 +127,18 @@ def test_add_type(spark):
     result_df = add_type(df)
     result = [row.type for row in result_df.collect()]
     assert result == ["apartment", "duplex/triplex", "studio", "duplex/triplex"]
+
+
+def test_add_source(spark):
+    data = [
+        Row(n_bedrooms=2),
+        Row(n_bedrooms=3),
+        Row(n_bedrooms=4),
+    ]
+    df = spark.createDataFrame(data)
+    result_df = add_source(df)
+    result = [row.source for row in result_df.collect()]
+    assert result == ["avito", "avito", "avito"]
 
 
 def test_add_equipments_binary(spark):
