@@ -101,16 +101,10 @@ def create_type_dim(con: db.DuckDBPyConnection) -> None:
     Args:
         con (db.DuckDBPyConnection): The connection to the database
     """
-    if not con.sql(
-        "SELECT * FROM duckdb_types WHERE type_name = 'type_enum'"
-    ).fetchall():
-        con.execute(
-            "CREATE TYPE type_enum AS ENUM ('apartment', 'studio', 'duplex/triplex')"
-        )
     con.execute(
         """CREATE TABLE IF NOT EXISTS type_dim(
                 id INTEGER NOT NULL PRIMARY KEY,
-                type type_enum NOT NULL )
+                type VARCHAR NOT NULL )
                 """
     )
 
