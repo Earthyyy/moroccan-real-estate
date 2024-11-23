@@ -161,7 +161,7 @@ def test_create_property_facts(db_connection):
         ("living_area", "INTEGER", False, 0),
         ("floor", "INTEGER", False, 0),
         ("price", "INTEGER", False, 0),
-        ("syndicate_price_per_month", "DOUBLE", False, 0),
+        ("monthly_syndicate_price", "DOUBLE", False, 0),
         ("bool_security", "INTEGER", False, 0),
         ("bool_elevator", "INTEGER", False, 0),
         ("bool_balcony", "INTEGER", False, 0),
