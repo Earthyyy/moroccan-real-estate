@@ -101,27 +101,36 @@ def create_type_dim(con: db.DuckDBPyConnection) -> None:
     Args:
         con (db.DuckDBPyConnection): The connection to the database
     """
+    if not con.sql(
+        "SELECT * FROM duckdb_types WHERE type_name = 'type_enum'"
+    ).fetchall():
+        con.execute(
+            "CREATE TYPE type_enum AS ENUM ('apartment', 'studio', 'duplex/triplex')"
+        )
     con.execute(
-        """CREATE TYPE type_enum AS ENUM ('apartment', 'studio', 'duplex/triplex');
-                CREATE TABLE IF NOT EXISTS type_dim(
+        """CREATE TABLE IF NOT EXISTS type_dim(
                 id INTEGER NOT NULL PRIMARY KEY,
                 type type_enum NOT NULL )
                 """
     )
 
 
+def main(database):
+    con = setup_duckdb(database)
+    create_date_dim(con)
+    create_location_dim(con)
+    create_type_dim(con)
+    create_source_dim(con)
+    create_property_facts(con)
+    con.close()
+
+
 if __name__ == "__main__":
 
-    # Set the connexion
-    con = setup_duckdb("./data/dw/datawarehouse.db")
+    dev_dw = "./data/dw/datawarehouse.db"
+    backup_dw = "./data/dw/backup_datawarehouse.db"
+    test_dw = "./tests/unit/data/dw/test_datawarehouse.db"
 
-    # Create the date dimension table
-    create_date_dim(con)
-    # Create the location dimension table
-    create_location_dim(con)
-    # Create the source dimension table
-    create_source_dim(con)
-    # Create the type dimension table
-    create_type_dim(con)
-    # Create the facts table
-    create_property_facts(con)
+    main(dev_dw)
+    main(backup_dw)
+    main(test_dw)
