@@ -6,7 +6,7 @@ from src.jobs.cleaning_avito import (
     add_neighborhood,
     add_source,
     add_type,
-    clean_attributes_floor_number,
+    clean_attributes_floor,
     clean_attributes_living_area,
     clean_attributes_syndicate_price,
     clean_n_bathrooms,
@@ -14,13 +14,13 @@ from src.jobs.cleaning_avito import (
     clean_price,
     clean_total_area,
     drop_irrelevant_columns,
-    spark_setup,
+    start_spark_session,
 )
 
 
 @pytest.fixture(scope="module")
 def spark():
-    spark = spark_setup()
+    spark = start_spark_session("")
     yield spark
     spark.stop()
 
@@ -67,7 +67,7 @@ def test_clean_price(spark):
     assert result == [830000, None, 1480000, None]
 
 
-def test_clean_attributes_floor_number(spark):
+def test_clean_attributes_floor(spark):
     data = [
         Row(attributes={"Étage": "1"}),
         Row(attributes={"Étage": "Rez de chaussée"}),
@@ -75,8 +75,8 @@ def test_clean_attributes_floor_number(spark):
         Row(attributes={"Étage": None}),
     ]
     df = spark.createDataFrame(data)
-    result_df = clean_attributes_floor_number(df)
-    result = [row.floor_number for row in result_df.collect()]
+    result_df = clean_attributes_floor(df)
+    result = [row.floor for row in result_df.collect()]
     assert result == [1, 0, 7, None]
 
 
