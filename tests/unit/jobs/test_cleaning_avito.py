@@ -1,4 +1,3 @@
-import pytest
 from pyspark.sql import Row
 
 from src.jobs.cleaning_avito import (
@@ -14,15 +13,7 @@ from src.jobs.cleaning_avito import (
     clean_price,
     clean_total_area,
     drop_irrelevant_columns,
-    start_spark_session,
 )
-
-
-@pytest.fixture(scope="module")
-def spark():
-    spark = start_spark_session("")
-    yield spark
-    spark.stop()
 
 
 def test_clean_n_bedrooms(spark):

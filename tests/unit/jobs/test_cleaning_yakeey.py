@@ -1,5 +1,4 @@
 import pyspark.sql.functions as F
-import pytest
 from pyspark.sql.types import (
     ArrayType,
     IntegerType,
@@ -19,15 +18,7 @@ from src.jobs.cleaning_yakeey import (
     one_hot_encode_equipments,
     rename_and_drop_attributes,
     standardize_property_type,
-    start_spark_session,
 )
-
-
-@pytest.fixture(scope="module")
-def spark():
-    spark = start_spark_session("test_cleaning_yakeey")
-    yield spark
-    spark.stop()
 
 
 def test_drop_irrelevant_columns(spark):
