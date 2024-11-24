@@ -2,9 +2,31 @@ from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.dataframe import DataFrame
 
+from constraints import COLUMNS
 
-def spark_setup() -> SparkSession:
-    return SparkSession.builder.appName("Avito Cleaning ETL").getOrCreate()
+
+def start_spark_session(app_name: str = "Avito Cleaning ETL") -> SparkSession:
+    """Start the spark application
+    Args:
+        app_name (str, optional): The name of the application.
+        Defaults to "Avito Cleaning ETL".
+
+    Returns:
+        SparkSession: The spark session
+    """
+    return SparkSession.builder.appName(app_name).getOrCreate()
+
+
+def load_data(spark: SparkSession, file_path: str) -> DataFrame:
+    """Load data with spark from a specific file path
+
+    Args:
+        spark (SparkSession): The spark session
+        file_path (str): The file path
+    Returns:
+        DataFrame: The loaded dataframe
+    """
+    return spark.read.option("multiLine", True).json(file_path)
 
 
 def clean_n_bedrooms(df: DataFrame) -> DataFrame:
@@ -73,7 +95,7 @@ def clean_price(df: DataFrame) -> DataFrame:
     )
 
 
-def clean_attributes_floor_number(df: DataFrame) -> DataFrame:
+def clean_attributes_floor(df: DataFrame) -> DataFrame:
     """Cleaning the attributes.Étage column by changing the data type to int
 
     Args:
@@ -83,7 +105,7 @@ def clean_attributes_floor_number(df: DataFrame) -> DataFrame:
         DataFrame: resulting DataFrame with floor_number column as int
     """
     return df.withColumn(
-        "floor_number",
+        "floor",
         F.when(F.col("attributes.Étage") == "Rez de chaussée", "0")
         .when(F.col("attributes.Étage") == "+7", "7")
         .otherwise(F.col("attributes.Étage"))
@@ -230,29 +252,33 @@ def drop_irrelevant_columns(df: DataFrame) -> DataFrame:
     return df.drop("title", "user", "time", "date_time", "attributes", "equipments")
 
 
-if __name__ == "__main__":
-
-    file_path = "./data/raw/avito/avito_2024-11-14.json"  # dummy Avito data json file
-
-    spark = spark_setup()
-
-    df = spark.read.json(file_path, multiLine=True)
-
+def main(input_path: str, output_path: str):
+    spark = start_spark_session()
+    df = load_data(spark, input_path)
     df_cleaned = (
         df.transform(clean_n_bedrooms)
         .transform(clean_n_bathrooms)
         .transform(clean_total_area)
         .transform(clean_price)
-        .transform(clean_attributes_floor_number)
+        .transform(clean_attributes_floor)
         .transform(clean_attributes_living_area)
         .transform(clean_attributes_syndicate_price)
         .transform(add_neighborhood)
         .transform(add_type)
+        .transform(add_source)
         .transform(add_equipments_binary)
         .transform(drop_irrelevant_columns)
     )
-
-    output_path = file_path.replace("/raw/", "/clean/").replace(".json", "")
-    df_cleaned.coalesce(1).write.csv(output_path, header=True, mode="overwrite")
-
+    # check with constraints (columns)
+    if sorted(df_cleaned.columns) != sorted(COLUMNS):
+        raise ValueError("Column mismatch")
+    df_cleaned.select(*COLUMNS).coalesce(1).write.csv(
+        output_path, header=True, mode="overwrite"
+    )
     spark.stop()
+
+
+if __name__ == "__main__":
+    input_path = "./data/raw/avito/avito_2024-11-14.json"
+    output_path = input_path.replace("/raw/", "/clean/").replace(".json", "")
+    main(input_path, output_path)

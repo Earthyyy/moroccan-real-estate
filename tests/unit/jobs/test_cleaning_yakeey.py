@@ -9,6 +9,7 @@ from pyspark.sql.types import (
 )
 
 from src.jobs.cleaning_yakeey import (
+    add_source,
     add_year_month_columns,
     calculate_monthly_syndicate_fee,
     clean_nested_attributes,
@@ -24,7 +25,6 @@ from src.jobs.cleaning_yakeey import (
 
 @pytest.fixture(scope="module")
 def spark():
-    """Create a Spark session for testing."""
     spark = start_spark_session("test_cleaning_yakeey")
     yield spark
     spark.stop()
@@ -91,6 +91,15 @@ def test_standardize_property_type(spark):
     cleaned_df = standardize_property_type(df)
     types = [row["type"] for row in cleaned_df.collect()]
     assert types == ["duplex/triplex", "apartment", "studio", "duplex/triplex"]
+
+
+def test_add_source(spark):
+    data = [(2,), (3,), (4,)]
+    schema = StructType([StructField("n_bedrooms", IntegerType())])
+    df = spark.createDataFrame(data, schema)
+    cleaned_df = add_source(df)
+    sources = [row["source"] for row in cleaned_df.collect()]
+    assert sources == ["yakeey", "yakeey", "yakeey"]
 
 
 def test_rename_and_drop_attributes(spark):
@@ -162,8 +171,8 @@ def test_calculate_monthly_syndicate_fee(spark):
     schema = StructType([StructField("syndicate_price_per_year", IntegerType())])
     df = spark.createDataFrame(data, schema)
     cleaned_df = calculate_monthly_syndicate_fee(df)
-    assert "syndicate_price_per_month" in cleaned_df.columns
-    assert cleaned_df.collect()[0]["syndicate_price_per_month"] == 100.0
+    assert "monthly_syndicate_price" in cleaned_df.columns
+    assert cleaned_df.collect()[0]["monthly_syndicate_price"] == 100.0
 
 
 def test_one_hot_encode_equipments(spark):

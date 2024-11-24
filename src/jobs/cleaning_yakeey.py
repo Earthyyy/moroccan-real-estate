@@ -1,12 +1,14 @@
 import pyspark.sql.functions as F
 from pyspark.sql import DataFrame, SparkSession
 
+from constraints import COLUMNS
 
-def start_spark_session(app_name: str = "cleaning_yakeey") -> SparkSession:
+
+def start_spark_session(app_name: str = "Yakeey Cleaning ETL") -> SparkSession:
     """Start the spark application
     Args:
         app_name (str, optional): The name of the application.
-        Defaults to "cleaning_yakeey".
+        Defaults to "Yakeey Cleaning ETL".
 
     Returns:
         SparkSession: The spark session
@@ -101,6 +103,18 @@ def standardize_property_type(dataframe: DataFrame) -> DataFrame:
     return dataframe
 
 
+def add_source(dataframe: DataFrame) -> DataFrame:
+    """Add source "Yakeey" to the cleaned dataframe
+
+    Args:
+        dataframe (DataFrame): input dataframe to clean
+
+    Returns:
+        DataFrame: resulting dataframe with the source column added
+    """
+    return dataframe.withColumn("source", F.lit("yakeey"))
+
+
 def rename_and_drop_attributes(dataframe: DataFrame) -> DataFrame:
     """Rename the nested fields in the `attributes` column and drop irrelevant
     attributes
@@ -173,7 +187,7 @@ def calculate_monthly_syndicate_fee(dataframe: DataFrame) -> DataFrame:
         DataFrame: The modified dataframe
     """
     return dataframe.withColumn(
-        "syndicate_price_per_month",
+        "monthly_syndicate_price",
         (F.col("syndicate_price_per_year") / 12).cast("double"),
     ).drop("syndicate_price_per_year")
 
@@ -213,7 +227,7 @@ def main(input_path, output_path):
         "Climatisation centralisée": "bool_air_conditioning",
         "Climatisation split": "bool_air_conditioning",
         "Concierge": "bool_concierge",
-        "Cuisine équipée": "bool_equiped_kitchen",
+        "Cuisine équipée": "bool_equipped_kitchen",
         "Meublé": "bool_furniture",
         "Place de parking en extérieur": "bool_parking",
         "Place de parking en sous-sol": "bool_parking",
@@ -222,20 +236,24 @@ def main(input_path, output_path):
 
     dataframe = (
         dataframe.transform(
-            lambda df: drop_irrelevant_columns(df, ["title", "reference"])
+            drop_irrelevant_columns, list_columns=["title", "reference"]
         )
-        .transform(lambda df: drop_na_records(df, ["city", "neighborhood", "price"]))
-        .transform(lambda df: add_year_month_columns(df, input_path))
+        .transform(drop_na_records, list_columns=["city", "neighborhood", "price"])
+        .transform(add_year_month_columns, file_path=input_path)
         .transform(clean_price_column)
         .transform(standardize_property_type)
+        .transform(add_source)
         .transform(rename_and_drop_attributes)
         .transform(clean_nested_attributes)
         .transform(calculate_monthly_syndicate_fee)
-        .transform(lambda df: one_hot_encode_equipments(df, mappings))
+        .transform(one_hot_encode_equipments, mappings=mappings)
     )
-
-    dataframe.coalesce(1).write.csv(output_path, header=True, mode="overwrite")
-
+    # check with constraints (columns)
+    if sorted(dataframe.columns) != sorted(COLUMNS):
+        raise ValueError("Column mismatch")
+    dataframe.select(*COLUMNS).coalesce(1).write.csv(
+        output_path, header=True, mode="overwrite"
+    )
     spark.stop()
 
 
