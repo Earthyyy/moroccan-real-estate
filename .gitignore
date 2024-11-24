@@ -123,6 +123,3 @@ cython_debug/
 
 # nox
 .nox
-
-# jar files
-/libs
