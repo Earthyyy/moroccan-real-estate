@@ -1,6 +1,13 @@
+import os
+import sys
+
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.dataframe import DataFrame
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+
+from src.jobs.utils import DF_SCHEMA, spark_setup
 
 
 def load_table_from_duckdb(spark: SparkSession, table: str) -> DataFrame:
@@ -14,45 +21,42 @@ def load_table_from_duckdb(spark: SparkSession, table: str) -> DataFrame:
         DataFrame: the desired duckdb table as a spark dataframe
     """
     duckdb_url = "jdbc:duckdb:data/dw/datawarehouse.db"
-    connection = (
+    return (
         spark.read.format("jdbc")
         .option("driver", "org.duckdb.DuckDBDriver")
         .option("url", duckdb_url)
+        .option("dbtable", table)
+        .load()
     )
-    if table == "type_dim":
-        return connection.option(
-            "query", "SELECT id, CAST(type AS STRING) AS type FROM type_dim"
-        ).load()
-    return connection.option("dbtable", table).load()
 
 
-def create_type_dim(df: DataFrame, type_dim_existing: DataFrame) -> DataFrame:
-    """Create the dimension table for the type column
+def create_type_dim_new(df: DataFrame, type_dim_existing: DataFrame) -> DataFrame:
+    """Create the new dimension table data for the type column
 
     Args:
         df (DataFrame): the input dataframe
         type_dim_existing (DataFrame): type_dim from duckdb
 
     Returns:
-        DataFrame: the resulting type dimension table
+        DataFrame: new values for the type dimension table
     """
     types = df.select("type").distinct()
     new_types = types.join(type_dim_existing, on="type", how="left_anti")
     new_types = new_types.withColumn(
         "id", F.monotonically_increasing_id() + F.lit(type_dim_existing.count() + 1)
     )
-    return type_dim_existing.select("id", "type").union(new_types.select("id", "type"))
+    return new_types.select("id", "type")
 
 
-def create_date_dim(df: DataFrame, date_dim_existing: DataFrame) -> DataFrame:
-    """Create the dimension table for the year and month columns
+def create_date_dim_new(df: DataFrame, date_dim_existing: DataFrame) -> DataFrame:
+    """Create the new dimension table data for the year and month columns
 
     Args:
         df (DataFrame): the input dataframe
         date_dim_existing (DataFrame): date_dim from duckdb
 
     Returns:
-        DataFrame: the resulting date dimension table
+        DataFrame: new values for the date dimension table
     """
     dates = df.select("year", "month").distinct()
     new_dates = dates.join(date_dim_existing, on=["year", "month"], how="left_anti")
@@ -60,20 +64,20 @@ def create_date_dim(df: DataFrame, date_dim_existing: DataFrame) -> DataFrame:
         "id",
         F.concat(F.col("year"), F.format_string("%02d", F.col("month"))).cast("int"),
     )
-    return date_dim_existing.select("id", "year", "month").union(
-        new_dates.select("id", "year", "month")
-    )
+    return new_dates.select("id", "year", "month")
 
 
-def create_location_dim(df: DataFrame, location_dim_existing: DataFrame) -> DataFrame:
-    """Create the dimension table for the city and neighborhood columns
+def create_location_dim_new(
+    df: DataFrame, location_dim_existing: DataFrame
+) -> DataFrame:
+    """Create the new dimension table data for the city and neighborhood columns
 
     Args:
         df (DataFrame): the input dataframe
         location_dim_existing (DataFrame): location_dim from duckdb
 
     Returns:
-        DataFrame: the resulting location dimension table
+        DataFrame: new values for the location dimension table
     """
     locations = df.select("city", "neighborhood").distinct()
     new_locations = locations.join(
@@ -82,29 +86,25 @@ def create_location_dim(df: DataFrame, location_dim_existing: DataFrame) -> Data
     new_locations = new_locations.withColumn(
         "id", F.monotonically_increasing_id() + 1 + F.lit(location_dim_existing.count())
     )
-    return location_dim_existing.select("id", "city", "neighborhood").union(
-        new_locations.select("id", "city", "neighborhood")
-    )
+    return new_locations.select("id", "city", "neighborhood")
 
 
-def create_source_dim(df: DataFrame, source_dim_existing: DataFrame) -> DataFrame:
-    """Create the dimension table for the source column
+def create_source_dim_new(df: DataFrame, source_dim_existing: DataFrame) -> DataFrame:
+    """Create the new dimension table data for the source column
 
     Args:
         df (DataFrame): the input dataframe
         source_dim_existing (DataFrame): source_dim from duckdb
 
     Returns:
-        DataFrame: the resulting source dimension table
+        DataFrame: new values for the source dimension table
     """
     sources = df.select("source").distinct()
     new_sources = sources.join(source_dim_existing, on="source", how="left_anti")
     new_sources = new_sources.withColumn(
         "id", F.monotonically_increasing_id() + 1 + F.lit(source_dim_existing.count())
     )
-    return source_dim_existing.select("id", "source").union(
-        new_sources.select("id", "source")
-    )
+    return new_sources.select("id", "source")
 
 
 def create_property_facts(
@@ -155,60 +155,144 @@ def create_property_facts(
     )
 
 
-def load_dim_table(dim_df: DataFrame):
-    pass
+def load_source_dim_to_duckdb(source_dim: DataFrame, duckdb_path: str):
+    """Load source dimension data into duckdb table
+
+    Args:
+        source_dim (DataFrame): source dimension dataframe
+        duckdb_path (str): path to the duckdb data warehouse
+    """
+    duckdb_url = "jdbc:duckdb:" + duckdb_path
+    (
+        source_dim.write.format("jdbc")
+        .option("driver", "org.duckdb.DuckDBDriver")
+        .option("url", duckdb_url)
+        .option("dbtable", "source_dim")
+        .mode("append")
+        .save()
+    )
 
 
-def load_fact_table(fact_df: DataFrame):
-    pass
+def load_location_dim_to_duckdb(location_dim: DataFrame, duckdb_path: str):
+    """Load location dimension data into duckdb table
+
+    Args:
+        location_dim (DataFrame): location dimension dataframe
+        duckdb_path (str): path to the duckdb data warehouse
+    """
+    duckdb_url = "jdbc:duckdb:" + duckdb_path
+    (
+        location_dim.write.format("jdbc")
+        .option("driver", "org.duckdb.DuckDBDriver")
+        .option("url", duckdb_url)
+        .option("dbtable", "location_dim")
+        .mode("append")
+        .save()
+    )
+
+
+def load_type_dim_to_duckdb(type_dim: DataFrame, duckdb_path: str):
+    """Load type dimension data into duckdb table
+
+    Args:
+        type_dim (DataFrame): type dimension dataframe
+        duckdb_path (str): path to the duckdb data warehouse
+    """
+    duckdb_url = "jdbc:duckdb:" + duckdb_path
+    (
+        type_dim.write.format("jdbc")
+        .option("driver", "org.duckdb.DuckDBDriver")
+        .option("url", duckdb_url)
+        .option("dbtable", "type_dim")
+        .mode("append")
+        .save()
+    )
+
+
+def load_date_dim_to_duckdb(date_dim: DataFrame, duckdb_path: str):
+    """Load date dimension data into duckdb table
+
+    Args:
+        date_dim (DataFrame): date dimension dataframe
+        duckdb_path (str): path to the duckdb data warehouse
+    """
+    duckdb_url = "jdbc:duckdb:" + duckdb_path
+    # insert all of the dimension values
+    (
+        date_dim.write.format("jdbc")
+        .option("driver", "org.duckdb.DuckDBDriver")
+        .option("url", duckdb_url)
+        .option("dbtable", "date_dim")
+        .mode("append")
+        .save()
+    )
+
+
+def load_fact_table_to_duckdb(property_facts: DataFrame, duckdb_path: str):
+    """Load facts data into duckdb table
+
+    Args:
+        property_facts (DataFrame): facts dataframe
+        duckdb_path (str): path to the duckdb data warehouse
+    """
+    duckdb_url = "jdbc:duckdb:" + duckdb_path
+    (
+        property_facts.write.format("jdbc")
+        .option("driver", "org.duckdb.DuckDBDriver")
+        .option("url", duckdb_url)
+        .option("dbtable", "property_facts")
+        .mode("append")
+        .save()
+    )
 
 
 if __name__ == "__main__":
 
-    file_path = (
-        ".data/clean/avito/avito_2024-11-14/"
-        "part-00000-31df9b63-1454-48d6-8bf4-20cb34de3625-c000.csv"
-    )
+    paths = [
+        "./data/clean/avito/avito_2024-11-14/part-00000-c5ec7435-1b09-464e-b4eb-4c5fee81b8d5-c000.csv",
+        "./data/clean/yakeey/yakeey_2024-11-14/part-00000-da053eb4-d1dd-42e1-bc71-f47c78c62e09-c000.csv",
+    ]
 
-    duckdb_jdbc_jar = "./libs/duckdb_jdbc-1.1.3.jar"
+    spark = spark_setup("Loading ETL")
 
-    spark = (
-        SparkSession.builder.appName("Avito Cleaning ETL")
-        .config("spark.jars", duckdb_jdbc_jar)
-        .getOrCreate()
-    )
+    for path in paths:
+        # load clean csv file
 
-    # load clean csv file
-    df = spark.read.csv(file_path, header=True)
+        df = spark.read.csv(path, header=True, schema=DF_SCHEMA)
 
-    # load existing dim and fact tables from duckdb
-    source_dim_existing = load_table_from_duckdb(spark, "source_dim")
-    type_dim_existing = load_table_from_duckdb(spark, "type_dim")
-    location_dim_existing = load_table_from_duckdb(spark, "location_dim")
-    date_dim_existing = load_table_from_duckdb(spark, "date_dim")
-    property_facts_existing = load_table_from_duckdb(spark, "property_facts")
+        # load existing dim and fact tables from duckdb
+        source_dim_existing = load_table_from_duckdb(spark, "source_dim")
+        type_dim_existing = load_table_from_duckdb(spark, "type_dim")
+        location_dim_existing = load_table_from_duckdb(spark, "location_dim")
+        date_dim_existing = load_table_from_duckdb(spark, "date_dim")
+        property_facts_existing = load_table_from_duckdb(spark, "property_facts")
 
-    # update dim tables with new dim values from the clean data
-    source_dim = create_source_dim(df, source_dim_existing)
-    location_dim = create_location_dim(df, location_dim_existing)
-    type_dim = create_type_dim(df, type_dim_existing)
-    date_dim = create_date_dim(df, date_dim_existing)
+        # update dim tables with new dim values from the clean data
+        source_dim_new = create_source_dim_new(df, source_dim_existing)
+        location_dim_new = create_location_dim_new(df, location_dim_existing)
+        type_dim_new = create_type_dim_new(df, type_dim_existing)
+        date_dim_new = create_date_dim_new(df, date_dim_existing)
 
-    # transform clean data into a fact table
-    df = df.transform(
-        create_property_facts,
-        property_facts_existing=property_facts_existing,
-        source_dim=source_dim,
-        type_dim=type_dim,
-        location_dim=location_dim,
-        date_dim=date_dim,
-    )
+        # transform clean data into a fact table
+        property_facts = df.transform(
+            create_property_facts,
+            property_facts_existing=property_facts_existing,
+            source_dim=source_dim_existing.select("id", "source").union(source_dim_new),
+            type_dim=type_dim_existing.select("id", "type").union(type_dim_new),
+            location_dim=location_dim_existing.select(
+                "id", "city", "neighborhood"
+            ).union(location_dim_new),
+            date_dim=date_dim_existing.select("id", "year", "month").union(
+                date_dim_new
+            ),
+        )
 
-    # TODO: load dim tables into duckdb (overwrite)
-    load_dim_table(source_dim)
-    load_dim_table(type_dim)
-    load_dim_table(location_dim)
-    load_dim_table(date_dim)
+        # load to dev dw
+        dev_dw_path = "data/dw/datawarehouse.db"
+        load_source_dim_to_duckdb(source_dim_new, dev_dw_path)
+        load_location_dim_to_duckdb(location_dim_new, dev_dw_path)
+        load_type_dim_to_duckdb(type_dim_new, dev_dw_path)
+        load_date_dim_to_duckdb(date_dim_new, dev_dw_path)
+        load_fact_table_to_duckdb(property_facts, dev_dw_path)
 
-    # TODO: load fact table into duckdb (append)
-    load_fact_table(df)
+    spark.stop()
