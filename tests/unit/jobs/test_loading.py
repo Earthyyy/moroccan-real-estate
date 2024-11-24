@@ -1,31 +1,30 @@
-from typing import List, Tuple
+import os
+from typing import List, Set, Tuple
 
+import duckdb
 import pytest
-from pyspark.sql import Row, SparkSession
+from pyspark.sql import Row
 from pyspark.sql import types as T
 from pyspark.sql.dataframe import DataFrame
 
+from src.db.dw_schema import main
 from src.jobs.loading import (
-    create_date_dim,
-    create_location_dim,
+    create_date_dim_new,
+    create_location_dim_new,
     create_property_facts,
-    create_source_dim,
-    create_type_dim,
+    create_source_dim_new,
+    create_type_dim_new,
+    load_date_dim_to_duckdb,
+    load_fact_table_to_duckdb,
+    load_location_dim_to_duckdb,
+    load_source_dim_to_duckdb,
     load_table_from_duckdb,
+    load_type_dim_to_duckdb,
 )
 
 
-@pytest.fixture(scope="session")
-def spark():
-    duckdb_jdbc_jar = "./libs/duckdb_jdbc-1.1.3.jar"
-    spark = (
-        SparkSession.builder.master("local[1]")
-        .appName("pytest loading")
-        .config("spark.jars", duckdb_jdbc_jar)
-        .getOrCreate()
-    )
-    yield spark
-    spark.stop()
+def _test_datawarehouse(duckdb_path):
+    main(duckdb_path)
 
 
 @pytest.mark.parametrize(
@@ -39,14 +38,19 @@ def test_load_table_from_duckdb(spark, table_name: str):
 
 
 @pytest.mark.parametrize(
-    "type_dim_data",
+    ("type_dim_data", "expected_types", "expected_ids"),
     [
-        [],
-        [(1, "apartment"), (2, "studio")],
-        [(1, "apartment"), (2, "studio"), (3, "duplex/triplex")],
+        ([], {"apartment", "duplex/triplex", "studio"}, [1, 2, 3]),
+        ([(1, "apartment"), (2, "studio")], {"duplex/triplex"}, [3]),
+        ([(1, "apartment"), (2, "studio"), (3, "duplex/triplex")], set(), []),
     ],
 )
-def test_create_type_dim(spark, type_dim_data: List[Tuple[int, str]]):
+def test_create_type_dim_new(
+    spark,
+    type_dim_data: List[Tuple[int, str]],
+    expected_types: Set[str],
+    expected_ids: List[int],
+):
     property_df = spark.createDataFrame(
         [("apartment",), ("studio",), ("studio",), ("duplex/triplex",)],
         ["type"],
@@ -58,23 +62,25 @@ def test_create_type_dim(spark, type_dim_data: List[Tuple[int, str]]):
         ]
     )
     type_dim_existing = spark.createDataFrame(type_dim_data, type_dim_schema)
-    result_df = create_type_dim(df=property_df, type_dim_existing=type_dim_existing)
+    result_df = create_type_dim_new(df=property_df, type_dim_existing=type_dim_existing)
     rows = [row.asDict() for row in result_df.collect()]
     types = {row["type"] for row in rows}
     ids = sorted([row["id"] for row in rows])
-    assert types == {"apartment", "duplex/triplex", "studio"}
-    assert ids == [1, 2, 3]
+    assert types == expected_types
+    assert ids == expected_ids
 
 
 @pytest.mark.parametrize(
-    "date_dim_data",
+    ("date_dim_data", "expected_ids"),
     [
-        [],
-        [(202312, 2023, 12), (202401, 2024, 1)],
-        [(202312, 2023, 12), (202401, 2024, 1), (202412, 2024, 12)],
+        ([], {202312, 202401, 202412}),
+        ([(202312, 2023, 12), (202401, 2024, 1)], {202412}),
+        ([(202312, 2023, 12), (202401, 2024, 1), (202412, 2024, 12)], set()),
     ],
 )
-def test_create_date_dim(spark, date_dim_data: List[Tuple[int, int, int]]):
+def test_create_date_dim_new(
+    spark, date_dim_data: List[Tuple[int, int, int]], expected_ids: Set[int]
+):
     property_df = spark.createDataFrame(
         [(2023, 12), (2024, 1), (2024, 1), (2024, 12)],
         ["year", "month"],
@@ -87,39 +93,51 @@ def test_create_date_dim(spark, date_dim_data: List[Tuple[int, int, int]]):
         ]
     )
     date_dim_existing = spark.createDataFrame(date_dim_data, date_dim_schema)
-    result_df = create_date_dim(df=property_df, date_dim_existing=date_dim_existing)
+    result_df = create_date_dim_new(df=property_df, date_dim_existing=date_dim_existing)
     rows = [row.asDict() for row in result_df.collect()]
-    assert {row["id"] for row in rows} == {202312, 202401, 202412}
+    assert {row["id"] for row in rows} == expected_ids
 
 
 @pytest.mark.parametrize(
-    "location_dim_data",
+    ("location_dim_data", "expected_locations"),
     [
-        [],
-        [
-            (1, "casablanca", "oulfa"),
-            (2, "casablanca", "hay hassani"),
-            (3, "rabat", "alirfane"),
-            (4, "agadir", "hay hassani"),
-        ],
-        [
-            (1, "casablanca", "oulfa"),
-            (2, "casablanca", "hay hassani"),
-            (3, "rabat", "alirfane"),
-            (4, "agadir", "hay hassani"),
-            (5, "agadir", "alquds"),
-            (6, "fes", "zouagha"),
-        ],
+        (
+            [],
+            [
+                "agadir hay hassani",
+                "casablanca hay hassani",
+                "casablanca oulfa",
+                "rabat alirfane",
+            ],
+        ),
+        (
+            [
+                (1, "casablanca", "oulfa"),
+                (2, "casablanca", "hay hassani"),
+            ],
+            ["agadir hay hassani", "rabat alirfane"],
+        ),
+        (
+            [
+                (1, "casablanca", "oulfa"),
+                (2, "casablanca", "hay hassani"),
+                (3, "rabat", "alirfane"),
+                (4, "agadir", "hay hassani"),
+            ],
+            [],
+        ),
     ],
 )
-def test_create_location_dim(spark, location_dim_data: List[Tuple[int, str, str]]):
+def test_create_location_dim_new(
+    spark,
+    location_dim_data: List[Tuple[int, str, str]],
+    expected_locations: List[str],
+):
     property_df = spark.createDataFrame(
         [
             ("casablanca", "oulfa"),
             ("casablanca", "oulfa"),
-            ("agadir", "alquds"),
             ("rabat", "alirfane"),
-            ("fes", "zouagha"),
             ("rabat", "alirfane"),
             ("casablanca", "hay hassani"),
             ("agadir", "hay hassani"),
@@ -136,24 +154,27 @@ def test_create_location_dim(spark, location_dim_data: List[Tuple[int, str, str]
     location_dim_existing = spark.createDataFrame(
         location_dim_data, location_dim_schema
     )
-    result_df = create_location_dim(
+    result_df = create_location_dim_new(
         df=property_df, location_dim_existing=location_dim_existing
     )
     rows = [row.asDict() for row in result_df.collect()]
-    assert sorted([row["city"] + " " + row["neighborhood"] for row in rows]) == [
-        "agadir alquds",
-        "agadir hay hassani",
-        "casablanca hay hassani",
-        "casablanca oulfa",
-        "fes zouagha",
-        "rabat alirfane",
-    ]
+    assert (
+        sorted([row["city"] + " " + row["neighborhood"] for row in rows])
+        == expected_locations
+    )
 
 
 @pytest.mark.parametrize(
-    "source_dim_data", [[], [(1, "avito")], [(1, "avito"), (2, "yakeey")]]
+    ("source_dim_data", "expected_sources"),
+    [
+        ([], ["avito", "yakeey"]),
+        ([(1, "avito")], ["yakeey"]),
+        ([(1, "avito"), (2, "yakeey")], []),
+    ],
 )
-def test_create_source_dim(spark, source_dim_data: List[Tuple[int, str]]):
+def test_create_source_dim_new(
+    spark, source_dim_data: List[Tuple[int, str]], expected_sources: List[str]
+):
     property_df = spark.createDataFrame(
         [
             ("avito",),
@@ -168,11 +189,11 @@ def test_create_source_dim(spark, source_dim_data: List[Tuple[int, str]]):
         [T.StructField("id", T.IntegerType()), T.StructField("source", T.StringType())]
     )
     source_dim_existing = spark.createDataFrame(source_dim_data, source_dim_schema)
-    result_df = create_source_dim(
+    result_df = create_source_dim_new(
         df=property_df, source_dim_existing=source_dim_existing
     )
     rows = [row.asDict()["source"] for row in result_df.collect()]
-    assert sorted(rows) == ["avito", "yakeey"]
+    assert sorted(rows) == expected_sources
 
 
 @pytest.mark.parametrize(
@@ -190,7 +211,9 @@ def test_create_source_dim(spark, source_dim_data: List[Tuple[int, str]]):
     ],
 )
 def test_create_property_facts(
-    spark, property_facts_data: List[Tuple[int, int, int, int, int]], start_id: int
+    spark,
+    property_facts_data: List[Tuple[int, int, int, int, int]],
+    start_id: int,
 ):
     property_df = spark.createDataFrame(
         [
@@ -287,3 +310,266 @@ def test_create_property_facts(
             "source_id": 1,
         },
     ]
+
+
+def test_load_source_dim_to_duckdb(spark):
+    duckdb_path = "./data/dw/temp.db"
+    try:
+        # build temporary datawarehouse
+        _test_datawarehouse(duckdb_path)
+        # add data to source_dim
+        with duckdb.connect(duckdb_path) as conn:
+            conn.execute(
+                """
+                INSERT INTO source_dim VALUES
+                    (1, 'avito');
+                """
+            )
+        # create source_dim dataframe
+        source_dim_df = spark.createDataFrame([(2, "yakeey")], ["id", "source"])
+        # load source_dim dataframe to duckdb
+        load_source_dim_to_duckdb(source_dim_df, duckdb_path)
+        # check if the data is loaded correctly
+        with duckdb.connect(duckdb_path) as conn:
+            results = conn.sql("SELECT * FROM source_dim").fetchall()
+            assert results == [(1, "avito"), (2, "yakeey")]
+    except Exception as e:
+        raise AssertionError(f"Test failed: {e}") from None
+    finally:
+        os.remove(duckdb_path)
+
+
+def test_load_type_dim_to_duckdb(spark):
+    duckdb_path = "./data/dw/temp.db"
+    try:
+        # build temporary datawarehouse
+        _test_datawarehouse(duckdb_path)
+        # add data to type_dim
+        with duckdb.connect(duckdb_path) as conn:
+            conn.execute(
+                """
+                INSERT INTO type_dim VALUES
+                    (1, 'apartment');
+                """
+            )
+        # create type_dim dataframe
+        type_dim_df = spark.createDataFrame(
+            [
+                (2, "studio"),
+            ],
+            ["id", "type"],
+        )
+        # load type_dim dataframe to duckdb
+        load_type_dim_to_duckdb(type_dim_df, duckdb_path)
+        # check if the data is loaded correctly
+        with duckdb.connect(duckdb_path) as conn:
+            results = conn.sql("SELECT * FROM type_dim").fetchall()
+            assert results == [(1, "apartment"), (2, "studio")]
+    except Exception as e:
+        raise AssertionError(f"Test failed: {e}") from None
+    finally:
+        os.remove(duckdb_path)
+
+
+def test_load_location_dim_to_duckdb(spark):
+    duckdb_path = "./data/dw/temp.db"
+    try:
+        # build temporary datawarehouse
+        _test_datawarehouse(duckdb_path)
+        # add data to location_dim
+        with duckdb.connect(duckdb_path) as conn:
+            conn.execute(
+                """
+                INSERT INTO location_dim VALUES
+                    (1, 'casablanca', 'oulfa');
+                """
+            )
+        # create location_dim dataframe
+        location_dim_df = spark.createDataFrame(
+            [
+                (2, "casablanca", "maarif"),
+            ],
+            ["id", "city", "neighborhood"],
+        )
+        # load location_dim dataframe to duckdb
+        load_location_dim_to_duckdb(location_dim_df, duckdb_path)
+        # check if the data is loaded correctly
+        with duckdb.connect(duckdb_path) as conn:
+            results = conn.sql("SELECT * FROM location_dim").fetchall()
+            assert results == [(1, "casablanca", "oulfa"), (2, "casablanca", "maarif")]
+    except Exception as e:
+        raise AssertionError(f"Test failed: {e}") from None
+    finally:
+        os.remove(duckdb_path)
+
+
+def test_load_date_dim_to_duckdb(spark):
+    duckdb_path = "./data/dw/temp.db"
+    try:
+        # build temporary datawarehouse
+        _test_datawarehouse(duckdb_path)
+        # add data to date_dim
+        with duckdb.connect(duckdb_path) as conn:
+            conn.execute(
+                """
+                INSERT INTO date_dim VALUES
+                    (202301, 2023, 1);
+                """
+            )
+        # create date_dim dataframe
+        date_dim_df = spark.createDataFrame(
+            [
+                (202310, 2023, 10),
+            ],
+            ["id", "year", "month"],
+        )
+        # load date_dim dataframe to duckdb
+        load_date_dim_to_duckdb(date_dim_df, duckdb_path)
+        # check if the data is loaded correctly
+        with duckdb.connect(duckdb_path) as conn:
+            results = conn.sql("SELECT * FROM date_dim").fetchall()
+            assert results == [(202301, 2023, 1), (202310, 2023, 10)]
+    except Exception as e:
+        raise AssertionError(f"Test failed: {e}") from None
+    finally:
+        os.remove(duckdb_path)
+
+
+def test_load_fact_table_to_duckdb(spark):
+    try:
+        # create test dw table
+        duckdb_path = "./data/dw/temp.db"
+        _test_datawarehouse(duckdb_path)
+        row1 = (
+            1,
+            "test1",
+            1,
+            1,
+            50,
+            50,
+            2,
+            250000,
+            50,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            202301,
+            1,
+        )
+        row2 = (
+            2,
+            "test2",
+            2,
+            1,
+            60,
+            60,
+            2,
+            300000,
+            100,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            2,
+            202301,
+            1,
+        )
+        row3 = (
+            3,
+            "test3",
+            2,
+            2,
+            70,
+            75,
+            3,
+            500000,
+            150,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            2,
+            1,
+            202310,
+            2,
+        )
+        with duckdb.connect(duckdb_path) as con:
+            con.execute(
+                f"""
+                INSERT INTO source_dim VALUES
+                    (1, 'avito'),
+                    (2, 'yakeey');
+                INSERT INTO type_dim VALUES
+                    (1, 'apartment'),
+                    (2, 'studio'),
+                    (3, 'duplex/triplex');
+                INSERT INTO location_dim VALUES
+                    (1, 'casablanca', 'oulfa'),
+                    (2, 'casablanca', 'maarif'),
+                    (3, 'rabat', 'alirfane');
+                INSERT INTO date_dim VALUES
+                    (202301, 2023, 1),
+                    (202310, 2023, 10);
+                INSERT INTO property_facts VALUES {row1}
+                """
+            )
+        property_facts = spark.createDataFrame(
+            [row2, row3],
+            [
+                "id",
+                "url",
+                "n_bedrooms",
+                "n_bathrooms",
+                "total_area",
+                "living_area",
+                "floor",
+                "price",
+                "monthly_syndicate_price",
+                "bool_security",
+                "bool_elevator",
+                "bool_balcony",
+                "bool_heating",
+                "bool_air_conditioning",
+                "bool_concierge",
+                "bool_equipped_kitchen",
+                "bool_furniture",
+                "bool_parking",
+                "bool_terrace",
+                "location_id",
+                "type_id",
+                "date_id",
+                "source_id",
+            ],
+        )
+        load_fact_table_to_duckdb(property_facts, duckdb_path)
+        with duckdb.connect(duckdb_path) as con:
+            results = con.sql("SELECT * FROM property_facts").fetchall()
+            for row in [row1, row2, row3]:
+                assert row in results
+    except Exception as e:
+        raise AssertionError(f"Test failed! {e}") from None
+    finally:
+        # delete the test dw
+        os.remove(duckdb_path)
