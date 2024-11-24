@@ -5,6 +5,8 @@ import pytest
 import requests
 from scrapy.http import HtmlResponse
 
+from src.jobs.utils import spark_setup
+
 # add the project's root directory to the Python path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
@@ -37,3 +39,10 @@ def avito_spider():
 @pytest.fixture
 def yakeey_spider():
     return YakeeySpider()
+
+
+@pytest.fixture(scope="session")
+def spark():
+    spark = spark_setup("Testing ETLs")
+    yield spark
+    spark.stop()

@@ -1,19 +1,12 @@
+import os
+import sys
+
 import pyspark.sql.functions as F
 from pyspark.sql import DataFrame, SparkSession
 
-from constraints import COLUMNS
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
-
-def start_spark_session(app_name: str = "Yakeey Cleaning ETL") -> SparkSession:
-    """Start the spark application
-    Args:
-        app_name (str, optional): The name of the application.
-        Defaults to "Yakeey Cleaning ETL".
-
-    Returns:
-        SparkSession: The spark session
-    """
-    return SparkSession.builder.appName(app_name).getOrCreate()
+from src.jobs.utils import COLUMNS, spark_setup
 
 
 def load_data(spark: SparkSession, file_path: str) -> DataFrame:
@@ -212,7 +205,7 @@ def one_hot_encode_equipments(
 
 
 def main(input_path, output_path):
-    spark = start_spark_session()
+    spark = spark_setup("Yakeey Cleaning Job")
 
     # Load data
     dataframe = load_data(spark, input_path)

@@ -1,20 +1,13 @@
+import os
+import sys
+
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.dataframe import DataFrame
 
-from constraints import COLUMNS
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
-
-def start_spark_session(app_name: str = "Avito Cleaning ETL") -> SparkSession:
-    """Start the spark application
-    Args:
-        app_name (str, optional): The name of the application.
-        Defaults to "Avito Cleaning ETL".
-
-    Returns:
-        SparkSession: The spark session
-    """
-    return SparkSession.builder.appName(app_name).getOrCreate()
+from src.jobs.utils import COLUMNS, spark_setup
 
 
 def load_data(spark: SparkSession, file_path: str) -> DataFrame:
@@ -253,7 +246,7 @@ def drop_irrelevant_columns(df: DataFrame) -> DataFrame:
 
 
 def main(input_path: str, output_path: str):
-    spark = start_spark_session()
+    spark = spark_setup("Avito Cleaning Job")
     df = load_data(spark, input_path)
     df_cleaned = (
         df.transform(clean_n_bedrooms)
