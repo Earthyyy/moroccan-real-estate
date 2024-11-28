@@ -1,3 +1,6 @@
+import glob
+import json
+from datetime import datetime
 from typing import ClassVar, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 
@@ -10,10 +13,18 @@ from src.scraping.items import AvitoAnnouncementItem
 
 class AvitoSpider(scrapy.Spider):
     name = "avito"
-    allowed_domains: ClassVar = ["www.avito.ma"]
-    start_urls: ClassVar = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
+    allowed_domains: ClassVar[List[str]] = ["www.avito.ma"]
+    start_urls: ClassVar[List[str]] = [
+        "https://www.avito.ma/fr/maroc/appartements-à_vendre"
+    ]
     page_counter: int = 0
     max_pages: int = 10
+    recent_date: datetime
+
+    def start_requests(self):
+        glob_path = "./data/raw/avito/*.json"
+        self.recent_date = self.set_recent_date(glob_path)
+        return super().start_requests()
 
     def parse(self, response: HtmlResponse):
         # increment the page counter
@@ -35,7 +46,10 @@ class AvitoSpider(scrapy.Spider):
             )
         # go to the next page
         next_page_url = self.get_next_page_url(response)
-        if next_page_url and self.page_counter < self.max_pages:
+        if (
+            next_page_url
+            and self.page_counter < self.max_pages
+        ):
             yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
@@ -179,3 +193,33 @@ class AvitoSpider(scrapy.Spider):
         return response.css(
             "div.sc-1g3sn3w-15 > div > div:nth-child(1) ::text"
         ).getall()
+
+    def set_recent_date(self, glob_path: str) -> datetime:
+        """Get the date of the most recent scraped announcement.
+
+        Returns:
+            datetime: The date of the most recent announcement.
+        """
+        try:
+            # get the most recent json file
+            files = glob.glob(glob_path)
+            recent_file = max(
+                files,
+                key=lambda file: datetime.strptime(
+                    file.split("/")[-1].split("_")[-1].split(".")[0], "%Y-%m-%d"
+                ),
+            )
+            # get the most recent date from the file
+            with open(recent_file, "r") as file:
+                data = json.load(file)
+                return max(
+                    [
+                        datetime.strptime(row["date_time"], "%Y-%m-%d %H:%M")
+                        for row in data
+                    ]
+                )
+        # return the base date if no file is found
+        except (ValueError, FileNotFoundError, json.JSONDecodeError):
+            return datetime(
+                2024, 1, 1
+            )  # we are going to ignore announcements older than this date

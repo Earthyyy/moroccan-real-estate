@@ -9,6 +9,24 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "."))
 
 import var_yakeey as vy
 
+# Tests based on spider attributes
+
+
+def test_set_references(yakeey_spider):
+    glob_path = "./tests/unit/data/raw/yakeey/*.json"
+    assert yakeey_spider.set_references(glob_path) == [
+        "CA001095",
+        "CI067647",
+        "CI068492",
+        "SI067739",
+        "SI067053",
+        "CI068796",
+        "CA002008",
+        "CA002431",
+        "CA001579",
+        "CA002544",
+    ]
+
 
 @pytest.fixture(scope="module")
 def vcr_cassette_dir():

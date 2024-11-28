@@ -24,6 +24,7 @@ DOWNLOAD_DELAY = 0.5
 
 # configure item pipelines
 ITEM_PIPELINES = {
+    "src.scraping.pipelines.DeltaPipeline": 500,
     "src.scraping.pipelines.AvitoTimePipeline": 400,
     "src.scraping.pipelines.AvitoFilterPipeline": 300,
     "src.scraping.pipelines.YakeeyFilterPipeline": 200,

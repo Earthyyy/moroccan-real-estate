@@ -1,0 +1,257 @@
+[
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001095",
+        "type": "Appartement",
+        "price": "1 750 000 DH",
+        "neighborhood": "Hopitaux",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 126 m² dont 101 m² habitables",
+        "reference": "CA001095",
+        "attributes": {
+            "Nb. de chambres": "2",
+            "Nb. de salles de bains": "1",
+            "Nb. de salles d'eau": "1",
+            "Étage du bien": "5",
+            "Nb. d'étages dans l'immeuble": "5",
+            "Surface totale": "126 m²",
+            "Surface habitable": "101 m²",
+            "Surface balcon": "8 m²",
+            "Places de parking en sous-sol": "1",
+            "Vue": "Vue dégagée",
+            "Orientation": "Ouest, Sud-Ouest",
+            "Nb. de façades": "1"
+        },
+        "equipments": [
+            "Ascenseur",
+            "Balcon",
+            "Place de parking en sous-sol",
+            "Agent de sécurité",
+            "Climatisation centralisée",
+            "Chauffage centralisé"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CI067647",
+        "type": "Appartement",
+        "price": "1 500 000 DH",
+        "neighborhood": "Lekrimat",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 128 m²",
+        "reference": "CI067647",
+        "attributes": {
+            "Nb. de chambres": "3",
+            "Nb. de salles de bains": "2",
+            "Étage du bien": "4",
+            "Nb. d'étages dans l'immeuble": "4",
+            "Surface totale": "128 m²",
+            "Surface habitable": "128 m²"
+        },
+        "equipments": [
+            "Balcon",
+            "Box titré",
+            "Cuisine équipée"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CI068492",
+        "type": "Appartement",
+        "price": "1 800 000 DH",
+        "neighborhood": "Hopitaux",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 133 m²",
+        "reference": "CI068492",
+        "attributes": {
+            "Nb. de chambres": "3",
+            "Nb. de salles de bains": "2",
+            "Étage du bien": "4",
+            "Nb. d'étages dans l'immeuble": "6",
+            "Surface totale": "133 m²",
+            "Surface habitable": "133 m²"
+        },
+        "equipments": [
+            "Ascenseur",
+            "Balcon",
+            "Cuisine équipée"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-sale-hay-safae-SI067739",
+        "type": "Appartement",
+        "price": "750 000 DH",
+        "neighborhood": "Hay safae",
+        "city": "Salé",
+        "title": "Appartement à vendre de 94 m²",
+        "reference": "SI067739",
+        "attributes": {
+            "Nb. de chambres": "1",
+            "Nb. de salles de bains": "1",
+            "Étage du bien": "1",
+            "Nb. d'étages dans l'immeuble": "1",
+            "Surface totale": "94 m²",
+            "Surface habitable": "94 m²"
+        },
+        "equipments": [
+            "Cuisine équipée"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-sale-hay-chmaou-SI067053",
+        "type": "Appartement",
+        "price": "690 000 DH",
+        "neighborhood": "Hay chmaou",
+        "city": "Salé",
+        "title": "Appartement à vendre de 82 m²",
+        "reference": "SI067053",
+        "attributes": {
+            "Nb. de chambres": "2",
+            "Nb. de salles de bains": "1",
+            "Étage du bien": "Rez-de-chaussée",
+            "Nb. d'étages dans l'immeuble": "1",
+            "Surface totale": "82 m²",
+            "Surface habitable": "82 m²"
+        },
+        "equipments": [
+            "Terrasse",
+            "Place de parking en sous-sol"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CI068796",
+        "type": "Appartement",
+        "price": "3 900 000 DH",
+        "neighborhood": "Les princesses",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 204 m²",
+        "reference": "CI068796",
+        "attributes": {
+            "Nb. de chambres": "4",
+            "Nb. de salles de bains": "3",
+            "Étage du bien": "7",
+            "Nb. d'étages dans l'immeuble": "7",
+            "Surface totale": "204 m²",
+            "Surface habitable": "204 m²"
+        },
+        "equipments": [
+            "Ascenseur",
+            "Terrasse",
+            "Place de parking en sous-sol",
+            "Climatisation centralisée",
+            "Cuisine équipée"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA002008",
+        "type": "Appartement",
+        "price": "950 000 DH",
+        "neighborhood": "Belvedere (roches noires)",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 103 m²",
+        "reference": "CA002008",
+        "attributes": {
+            "Nb. de chambres": "2",
+            "Nb. de salles de bains": "1",
+            "Nb. de salles d'eau": "1",
+            "Étage du bien": "9",
+            "Nb. d'étages dans l'immeuble": "10",
+            "Frais de syndic (DH/an)": "2400 DH",
+            "Surface totale": "103 m²",
+            "Surface habitable": "103 m²",
+            "Vue": "Vue dégagée",
+            "Orientation": "Nord",
+            "Nb. de façades": "2"
+        },
+        "equipments": [
+            "Ascenseur",
+            "Interphone",
+            "Balcon",
+            "Concierge",
+            "Cuisine équipée"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-palmier-(maarif)-CA002431",
+        "type": "Appartement",
+        "price": "2 530 000 DH",
+        "neighborhood": "Palmier (maarif)",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 151 m²",
+        "reference": "CA002431",
+        "attributes": {
+            "Nb. de chambres": "3",
+            "Nb. de salles de bains": "2",
+            "Étage du bien": "5",
+            "Nb. d'étages dans l'immeuble": "7",
+            "Surface totale": "151 m²",
+            "Surface habitable": "151 m²"
+        },
+        "equipments": [
+            "Ascenseur",
+            "Interphone",
+            "Place de parking en sous-sol",
+            "Agent de sécurité",
+            "Climatisation centralisée",
+            "Chauffage centralisé",
+            "Chambre de service",
+            "Cuisine équipée"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001579",
+        "type": "Appartement",
+        "price": "2 600 000 DH",
+        "neighborhood": "Hopitaux",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 171 m² dont 159 m² habitables",
+        "reference": "CA001579",
+        "attributes": {
+            "Nb. de chambres": "3",
+            "Nb. de salles de bains": "2",
+            "Nb. de salles d'eau": "1",
+            "Étage du bien": "3",
+            "Nb. d'étages dans l'immeuble": "7",
+            "Surface totale": "171 m²",
+            "Surface habitable": "159 m²",
+            "Places de parking en sous-sol": "1"
+        },
+        "equipments": [
+            "Ascenseur",
+            "Interphone",
+            "Résidence fermée",
+            "Espaces verts",
+            "Balcon",
+            "Place de parking en sous-sol",
+            "Agent de sécurité",
+            "Cheminée",
+            "Cuisine équipée"
+        ]
+    },
+    {
+        "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002544",
+        "type": "Appartement",
+        "price": "2 100 000 DH",
+        "neighborhood": "Bourgogne (sidi belyout)",
+        "city": "Casablanca",
+        "title": "Appartement à vendre de 126 m²",
+        "reference": "CA002544",
+        "attributes": {
+            "Nb. de chambres": "3",
+            "Nb. de salles de bains": "2",
+            "Nb. de salles d'eau": "1",
+            "Étage du bien": "7",
+            "Nb. d'étages dans l'immeuble": "7",
+            "Surface totale": "126 m²",
+            "Surface habitable": "126 m²",
+            "Surface balcon": "4 m²",
+            "Places de parking en sous-sol": "1"
+        },
+        "equipments": [
+            "Ascenseur",
+            "Interphone",
+            "Balcon",
+            "Terrasse",
+            "Place de parking en sous-sol",
+            "Climatisation centralisée",
+            "Chauffage centralisé"
+        ]
+    }
+    ]

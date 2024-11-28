@@ -1,0 +1,1300 @@
+[
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA001164",
+    "type": "Appartement",
+    "price": "1 800 000 DH",
+    "neighborhood": "Derb omar",
+    "city": "Casablanca",
+    "title": "Appartement meublé à vendre de 133 m²",
+    "reference": "CA001164",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "6",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Frais de syndic (DH/an)": "3000 DH",
+        "Surface totale": "133 m²",
+        "Surface habitable": "133 m²",
+        "Surface terrasse": "30 m²",
+        "Places de parking en sous-sol": "2",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Ouest",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Meublé",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-sebaa-CA069348",
+    "type": "Appartement",
+    "price": "850 000 DH",
+    "neighborhood": "Ain sebaa",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 77 m²",
+    "reference": "CA069348",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Frais de syndic (DH/an)": "2400 DH",
+        "Surface totale": "77 m²",
+        "Surface habitable": "77 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vue dégagée",
+        "Orientation": "Ouest",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Place de parking en sous-sol",
+        "Concierge",
+        "Chauffe-eau électrique",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA069341",
+    "type": "Appartement",
+    "price": "1 150 000 DH",
+    "neighborhood": "Les princesses",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 91 m²",
+    "reference": "CA069341",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Étage du bien": "4",
+        "Nb. d'étages dans l'immeuble": "6",
+        "Surface totale": "91 m²",
+        "Surface habitable": "91 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Balcon",
+        "Jardin privatif",
+        "Agent de sécurité",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-mohammedia-hassania-MI069746",
+    "type": "Appartement",
+    "price": "650 000 DH",
+    "neighborhood": "Hassania",
+    "city": "Mohammédia",
+    "title": "Appartement à vendre de 65 m²",
+    "reference": "MI069746",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "1",
+        "Nb. d'étages dans l'immeuble": "1",
+        "Surface totale": "65 m²",
+        "Surface habitable": "65 m²"
+    },
+    "equipments": [
+        "Balcon",
+        "Terrasse"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-mohammedia-la-seista-MI069168",
+    "type": "Appartement",
+    "price": "2 230 000 DH",
+    "neighborhood": "La seista",
+    "city": "Mohammédia",
+    "title": "Appartement à vendre de 169 m²",
+    "reference": "MI069168",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "Rez-de-jardin",
+        "Nb. d'étages dans l'immeuble": "2",
+        "Surface totale": "169 m²",
+        "Surface habitable": "169 m²"
+    },
+    "equipments": [
+        "Résidence fermée",
+        "Terrasse",
+        "Jardin privatif",
+        "Piscine privative",
+        "Place de parking en sous-sol",
+        "Box titré",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-mohammedia-diour-dokala-MI069195",
+    "type": "Appartement",
+    "price": "1 450 000 DH",
+    "neighborhood": "Diour dokala",
+    "city": "Mohammédia",
+    "title": "Appartement à vendre de 169 m²",
+    "reference": "MI069195",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "Rez-de-jardin",
+        "Nb. d'étages dans l'immeuble": "2",
+        "Surface totale": "169 m²",
+        "Surface habitable": "169 m²"
+    },
+    "equipments": [
+        "Résidence fermée",
+        "Terrasse",
+        "Jardin privatif",
+        "Piscine privative",
+        "Place de parking en sous-sol",
+        "Box titré",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001095",
+    "type": "Appartement",
+    "price": "1 750 000 DH",
+    "neighborhood": "Hopitaux",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 126 m² dont 101 m² habitables",
+    "reference": "CA001095",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "126 m²",
+        "Surface habitable": "101 m²",
+        "Surface balcon": "8 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vue dégagée",
+        "Orientation": "Ouest, Sud-Ouest",
+        "Nb. de façades": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA000806",
+    "type": "Appartement",
+    "price": "1 450 000 DH",
+    "neighborhood": "Nassim",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 132 m² dont 105 m² habitables",
+    "reference": "CA000806",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Frais de syndic (DH/an)": "3600 DH",
+        "Surface totale": "132 m²",
+        "Surface habitable": "105 m²",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Est",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Résidence fermée",
+        "Espaces verts",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Box titré",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Cheminée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002002",
+    "type": "Appartement",
+    "price": "2 000 000 DH",
+    "neighborhood": "Bourgogne (sidi belyout)",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 145 m² dont 125 m² habitables",
+    "reference": "CA002002",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Surface totale": "145 m²",
+        "Surface habitable": "125 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Espaces verts",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA002604",
+    "type": "Appartement",
+    "price": "1 350 000 DH",
+    "neighborhood": "Liberte",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 101 m²",
+    "reference": "CA002604",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "1",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "101 m²",
+        "Surface habitable": "101 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-duplex-casablanca-sidi-moumen-CD001034",
+    "type": "Duplex",
+    "price": "1 250 000 DH",
+    "neighborhood": "Sidi moumen",
+    "city": "Casablanca",
+    "title": "Duplex à vendre de 102 m² dont 82 m² habitables",
+    "reference": "CD001034",
+    "attributes": {
+        "Nb. de chambres": "4",
+        "Nb. de salles de bains": "3",
+        "Nb. de salles d'eau": "3",
+        "Étage du bien": "3",
+        "Nb. d'étages dans l'immeuble": "3",
+        "Surface totale": "102 m²",
+        "Surface habitable": "82 m²",
+        "Vue": "Vue dégagée",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Place de parking en sous-sol",
+        "Chauffe-eau électrique",
+        "Cuisine américaine",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA000819",
+    "type": "Appartement",
+    "price": "2 160 000 DH",
+    "neighborhood": "Mandarouna",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 144 m²",
+    "reference": "CA000819",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "Rez-de-chaussée",
+        "Nb. d'étages dans l'immeuble": "3",
+        "Frais de syndic (DH/an)": "4800 DH",
+        "Surface totale": "144 m²",
+        "Surface habitable": "144 m²",
+        "Places de parking en sous-sol": "1",
+        "Places de parking extérieur": "2",
+        "Orientation": "Sud-Ouest, Sud-Est, Est",
+        "Nb. de façades": "3",
+        "Résidence fermée": "Oui"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Résidence fermée",
+        "Espaces verts",
+        "Place de parking en sous-sol",
+        "Place de parking en extérieur",
+        "Agent de sécurité",
+        "Climatisation split",
+        "Chauffe-eau électrique",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002544",
+    "type": "Appartement",
+    "price": "2 100 000 DH",
+    "neighborhood": "Bourgogne (sidi belyout)",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 126 m²",
+    "reference": "CA002544",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "7",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Surface totale": "126 m²",
+        "Surface habitable": "126 m²",
+        "Surface balcon": "4 m²",
+        "Places de parking en sous-sol": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Balcon",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Climatisation centralisée",
+        "Chauffage centralisé"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-palmier-(maarif)-CA002431",
+    "type": "Appartement",
+    "price": "2 530 000 DH",
+    "neighborhood": "Palmier (maarif)",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 151 m²",
+    "reference": "CA002431",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Surface totale": "151 m²",
+        "Surface habitable": "151 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Chambre de service",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA002008",
+    "type": "Appartement",
+    "price": "950 000 DH",
+    "neighborhood": "Belvedere (roches noires)",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 103 m²",
+    "reference": "CA002008",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "9",
+        "Nb. d'étages dans l'immeuble": "10",
+        "Frais de syndic (DH/an)": "2400 DH",
+        "Surface totale": "103 m²",
+        "Surface habitable": "103 m²",
+        "Vue": "Vue dégagée",
+        "Orientation": "Nord",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Balcon",
+        "Concierge",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA000820",
+    "type": "Appartement",
+    "price": "6 800 000 DH",
+    "neighborhood": "Maarif",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 418 m² dont 350 m² habitables",
+    "reference": "CA000820",
+    "attributes": {
+        "Nb. de chambres": "4",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "6",
+        "Surface totale": "418 m²",
+        "Surface habitable": "350 m²",
+        "Surface balcon": "50 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vue dégagée",
+        "Orientation": "Ouest, Sud-Est",
+        "Nb. de façades": "3"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Box titré",
+        "Concierge",
+        "Cheminée",
+        "Chambre de service",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA000686",
+    "type": "Appartement",
+    "price": "1 950 000 DH",
+    "neighborhood": "Tamaris2",
+    "city": "Dar bouazza",
+    "title": "Appartement à vendre de 124 m² dont 103 m² habitables",
+    "reference": "DA000686",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "2",
+        "Nb. d'étages dans l'immeuble": "2",
+        "Surface totale": "124 m²",
+        "Surface habitable": "103 m²"
+    },
+    "equipments": []
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-kenitra-bir-rami-ouest-KI069602",
+    "type": "Appartement",
+    "price": "1 300 000 DH",
+    "neighborhood": "Bir rami ouest",
+    "city": "Kénitra",
+    "title": "Appartement à vendre de 164 m²",
+    "reference": "KI069602",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "6",
+        "Surface totale": "164 m²",
+        "Surface habitable": "164 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-rabat-riyad-extension-RI069463",
+    "type": "Appartement",
+    "price": "3 000 000 DH",
+    "neighborhood": "Riyad extension",
+    "city": "Rabat",
+    "title": "Appartement à vendre de 159 m²",
+    "reference": "RI069463",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "159 m²",
+        "Surface habitable": "159 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Agent de sécurité"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-sale-hay-karima-SI069531",
+    "type": "Appartement",
+    "price": "900 000 DH",
+    "neighborhood": "Hay karima",
+    "city": "Salé",
+    "title": "Appartement à vendre de 93 m²",
+    "reference": "SI069531",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "4",
+        "Nb. d'étages dans l'immeuble": "4",
+        "Surface totale": "93 m²",
+        "Surface habitable": "93 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Place de parking en sous-sol"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-studio-casablanca-casablanca-marina-CS069366",
+    "type": "Studio",
+    "price": "2 500 000 DH",
+    "neighborhood": "Casablanca marina",
+    "city": "Casablanca",
+    "title": "Studio meublé à vendre de 69 m² dont 54 m² habitables",
+    "reference": "CS069366",
+    "attributes": {
+        "Nb. de chambres": "1",
+        "Nb. de salles de bains": "1",
+        "Étage du bien": "3",
+        "Nb. d'étages dans l'immeuble": "12",
+        "Frais de syndic (DH/an)": "9120 DH",
+        "Surface totale": "69 m²",
+        "Surface habitable": "54 m²",
+        "Surface balcon": "7 m²",
+        "Places de parking en sous-sol": "1",
+        "Orientation": "Nord-Ouest, Sud-Ouest",
+        "Nb. de façades": "2",
+        "Résidence fermée": "Oui"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Digicode",
+        "Résidence fermée",
+        "Espaces verts",
+        "Balcon",
+        "Jardin privatif",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Chauffe-eau électrique"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA004198",
+    "type": "Appartement",
+    "price": "1 400 000 DH",
+    "neighborhood": "Derb omar",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 142 m² dont 134 m² habitables",
+    "reference": "CA004198",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "2",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "142 m²",
+        "Surface habitable": "134 m²",
+        "Surface balcon": "8 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Est",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-bernoussi-CA003696",
+    "type": "Appartement",
+    "price": "1 160 000 DH",
+    "neighborhood": "Sidi bernoussi",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 104 m² dont 98 m² habitables",
+    "reference": "CA003696",
+    "attributes": {
+        "Nb. de chambres": "4",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "2",
+        "Nb. d'étages dans l'immeuble": "3",
+        "Surface totale": "104 m²",
+        "Surface habitable": "98 m²",
+        "Orientation": "Sud-Ouest",
+        "Résidence fermée": "Oui"
+    },
+    "equipments": [
+        "Résidence fermée",
+        "Espaces verts",
+        "Terrasse",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA005097",
+    "type": "Appartement",
+    "price": "2 400 000 DH",
+    "neighborhood": "Bourgogne (anfa)",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 134 m² dont 116 m² habitables",
+    "reference": "CA005097",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "Rez-de-chaussée",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Frais de syndic (DH/an)": "3600 DH",
+        "Surface totale": "134 m²",
+        "Surface habitable": "116 m²",
+        "Vue": "Vis à vis",
+        "Orientation": "Sud",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Résidence fermée",
+        "Terrasse",
+        "Jardin privatif",
+        "Place de parking en sous-sol",
+        "Concierge",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Chauffe-eau électrique"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-benmsick-CA004818",
+    "type": "Appartement",
+    "price": "700 000 DH",
+    "neighborhood": "Benmsick",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 63 m²",
+    "reference": "CA004818",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Étage du bien": "1",
+        "Nb. d'étages dans l'immeuble": "4",
+        "Surface totale": "63 m²",
+        "Surface habitable": "63 m²",
+        "Vue": "Vue dégagée",
+        "Nb. de façades": "2"
+    },
+    "equipments": []
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-studio-casablanca-oulfa-CS003752",
+    "type": "Studio",
+    "price": "590 000 DH",
+    "neighborhood": "Oulfa",
+    "city": "Casablanca",
+    "title": "Studio à vendre de 62 m²",
+    "reference": "CS003752",
+    "attributes": {
+        "Nb. de chambres": "1",
+        "Nb. de salles de bains": "1",
+        "Étage du bien": "Rez-de-chaussée",
+        "Nb. d'étages dans l'immeuble": "3",
+        "Frais de syndic (DH/an)": "1200 DH",
+        "Surface totale": "62 m²",
+        "Surface habitable": "62 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vis à vis",
+        "Orientation": "Nord-Est",
+        "Nb. de façades": "1"
+    },
+    "equipments": [
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA004319",
+    "type": "Appartement",
+    "price": "1 200 000 DH",
+    "neighborhood": "Nassim",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 88 m² dont 83 m² habitables",
+    "reference": "CA004319",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "2",
+        "Étage du bien": "4",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Frais de syndic (DH/an)": "3000 DH",
+        "Surface totale": "88 m²",
+        "Surface habitable": "83 m²",
+        "Surface balcon": "3 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vue dégagée",
+        "Orientation": "Ouest, Est",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Résidence fermée",
+        "Aire de jeux pour enfants",
+        "Espaces verts",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Concierge",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA003628",
+    "type": "Appartement",
+    "price": "1 150 000 DH",
+    "neighborhood": "Les princesses",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 92 m²",
+    "reference": "CA003628",
+    "attributes": {
+        "Nb. de chambres": "4",
+        "Nb. de salles de bains": "1",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "3",
+        "Nb. d'étages dans l'immeuble": "6",
+        "Surface totale": "92 m²",
+        "Surface habitable": "92 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Ouest",
+        "Résidence fermée": "Oui"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Espaces verts",
+        "Balcon",
+        "Concierge",
+        "Agent de sécurité"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA003124",
+    "type": "Appartement",
+    "price": "4 800 000 DH",
+    "neighborhood": "Gauthier",
+    "city": "Casablanca",
+    "title": "Appartement meublé à vendre de 249 m² dont 220 m² habitables",
+    "reference": "CA003124",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "3",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Surface totale": "249 m²",
+        "Surface habitable": "220 m²",
+        "Places de parking en sous-sol": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation split",
+        "Buanderie",
+        "Meublé",
+        "Chambre de service",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA003115",
+    "type": "Appartement",
+    "price": "1 650 000 DH",
+    "neighborhood": "Val fleury",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 121 m²",
+    "reference": "CA003115",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "4",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Frais de syndic (DH/an)": "3600 DH",
+        "Surface totale": "121 m²",
+        "Surface habitable": "121 m²",
+        "Places de parking en sous-sol": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Balcon",
+        "Jardin privatif",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA003904",
+    "type": "Appartement",
+    "price": "1 710 000 DH",
+    "neighborhood": "Lekrimat",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 114 m²",
+    "reference": "CA003904",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Nb. de salles d'eau": "2",
+        "Étage du bien": "Rez-de-chaussée",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "114 m²",
+        "Surface habitable": "114 m²",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Est",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Espaces verts",
+        "Place de parking en extérieur",
+        "Agent de sécurité",
+        "Cheminée",
+        "Buanderie",
+        "Chambre de service",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA002956",
+    "type": "Appartement",
+    "price": "3 700 000 DH",
+    "neighborhood": "Maarif",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 148 m² dont 142 m² habitables",
+    "reference": "CA002956",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "148 m²",
+        "Surface habitable": "142 m²",
+        "Surface box titré": "6 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Ouest",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Digicode",
+        "Balcon",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Box titré",
+        "Concierge",
+        "Agent de sécurité",
+        "Climatisation split",
+        "Climatisation centralisée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA004031",
+    "type": "Appartement",
+    "price": "1 580 000 DH",
+    "neighborhood": "La gironde",
+    "city": "Casablanca",
+    "title": "Appartement meublé à vendre de 129 m² dont 113 m² habitables",
+    "reference": "CA004031",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "1",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Surface totale": "129 m²",
+        "Surface habitable": "113 m²",
+        "Surface terrasse": "16 m²",
+        "Vue": "Vue dégagée"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Meublé",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA003627",
+    "type": "Appartement",
+    "price": "1 537 000 DH",
+    "neighborhood": "Val fleury",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 123 m² dont 110 m² habitables",
+    "reference": "CA003627",
+    "attributes": {
+        "Nb. de chambres": "4",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "Rez-de-chaussée",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "123 m²",
+        "Surface habitable": "110 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Terrasse",
+        "Agent de sécurité"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA004940",
+    "type": "Appartement",
+    "price": "1 450 000 DH",
+    "neighborhood": "Liberte",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 109 m² dont 87 m² habitables",
+    "reference": "CA004940",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "3",
+        "Nb. d'étages dans l'immeuble": "4",
+        "Surface totale": "109 m²",
+        "Surface habitable": "87 m²",
+        "Places de parking en sous-sol": "1",
+        "Vue": "Vis à vis",
+        "Orientation": "Ouest",
+        "Nb. de façades": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Box titré",
+        "Climatisation split",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA004842",
+    "type": "Appartement",
+    "price": "1 900 000 DH",
+    "neighborhood": "Hopitaux",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 208 m² dont 155 m² habitables",
+    "reference": "CA004842",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "Rez-de-chaussée",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "208 m²",
+        "Surface habitable": "155 m²",
+        "Surface terrasse": "30 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Terrasse",
+        "Place de parking en sous-sol",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA004614",
+    "type": "Appartement",
+    "price": "980 000 DH",
+    "neighborhood": "Val fleury",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 77 m²",
+    "reference": "CA004614",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "2",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Frais de syndic (DH/an)": "2400 DH",
+        "Surface totale": "77 m²",
+        "Surface habitable": "77 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Digicode",
+        "Place de parking en sous-sol",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA004399",
+    "type": "Appartement",
+    "price": "1 990 000 DH",
+    "neighborhood": "Val fleury",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 153 m² dont 132 m² habitables",
+    "reference": "CA004399",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "3",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "153 m²",
+        "Surface habitable": "132 m²",
+        "Surface balcon": "10 m²",
+        "Places de parking en sous-sol": "1",
+        "Orientation": "Sud-Ouest",
+        "Résidence fermée": "Oui"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Résidence fermée",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-triplex-casablanca-maarif-CT002721",
+    "type": "Triplex",
+    "price": "7 200 000 DH",
+    "neighborhood": "Maarif",
+    "city": "Casablanca",
+    "title": "Triplex à vendre de 150 m² dont 705 m² habitables",
+    "reference": "CT002721",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "4",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Surface totale": "150 m²",
+        "Surface habitable": "705 m²",
+        "Vue": "Vue dégagée",
+        "Orientation": "Nord, Nord-Ouest, Ouest",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Balcon",
+        "Terrasse"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001579",
+    "type": "Appartement",
+    "price": "2 600 000 DH",
+    "neighborhood": "Hopitaux",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 171 m² dont 159 m² habitables",
+    "reference": "CA001579",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "1",
+        "Étage du bien": "3",
+        "Nb. d'étages dans l'immeuble": "7",
+        "Surface totale": "171 m²",
+        "Surface habitable": "159 m²",
+        "Places de parking en sous-sol": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Résidence fermée",
+        "Espaces verts",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Cheminée",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA000311",
+    "type": "Appartement",
+    "price": "3 900 000 DH",
+    "neighborhood": "Maarif",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 230 m² dont 220 m² habitables",
+    "reference": "CA000311",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "3",
+        "Nb. de salles d'eau": "2",
+        "Étage du bien": "7",
+        "Nb. d'étages dans l'immeuble": "8",
+        "Surface totale": "230 m²",
+        "Surface habitable": "220 m²",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Ouest",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Résidence fermée",
+        "Piscine commune",
+        "Aire de jeux pour enfants",
+        "Espaces verts",
+        "Concierge",
+        "Agent de sécurité",
+        "Climatisation split",
+        "Buanderie",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA000601",
+    "type": "Appartement",
+    "price": "3 000 000 DH",
+    "neighborhood": "Gauthier",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 218 m² dont 177 m² habitables",
+    "reference": "CA000601",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Nb. de salles d'eau": "2",
+        "Étage du bien": "8",
+        "Nb. d'étages dans l'immeuble": "11",
+        "Surface totale": "218 m²",
+        "Surface habitable": "177 m²",
+        "Surface balcon": "5 m²",
+        "Places de parking en sous-sol": "2",
+        "Vue": "Vue dégagée",
+        "Orientation": "Ouest, Est",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Digicode",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Concierge",
+        "Agent de sécurité",
+        "Climatisation centralisée",
+        "Chauffage centralisé",
+        "Buanderie",
+        "Chambre de service"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA002607",
+    "type": "Appartement",
+    "price": "1 400 000 DH",
+    "neighborhood": "Bourgogne (anfa)",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 100 m² dont 95 m² habitables",
+    "reference": "CA002607",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Étage du bien": "4",
+        "Nb. d'étages dans l'immeuble": "5",
+        "Frais de syndic (DH/an)": "1800 DH",
+        "Surface totale": "100 m²",
+        "Surface habitable": "95 m²"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Balcon",
+        "Place de parking en sous-sol",
+        "Concierge",
+        "Chauffe-eau électrique"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-maarouf-CA000995",
+    "type": "Appartement",
+    "price": "1 290 000 DH",
+    "neighborhood": "Sidi maarouf",
+    "city": "Casablanca",
+    "title": "Appartement à vendre de 105 m² dont 82 m² habitables",
+    "reference": "CA000995",
+    "attributes": {
+        "Nb. de chambres": "3",
+        "Nb. de salles de bains": "2",
+        "Étage du bien": "5",
+        "Nb. d'étages dans l'immeuble": "6",
+        "Frais de syndic (DH/an)": "3600 DH",
+        "Surface totale": "105 m²",
+        "Surface habitable": "82 m²",
+        "Surface box titré": "23 m²",
+        "Vue": "Vue dégagée",
+        "Orientation": "Sud-Ouest",
+        "Nb. de façades": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Interphone",
+        "Résidence fermée",
+        "Espaces verts",
+        "Place de parking en sous-sol",
+        "Box titré",
+        "Concierge",
+        "Agent de sécurité",
+        "Cheminée",
+        "Chauffe-eau électrique",
+        "Cuisine équipée"
+    ]
+},
+{
+    "url": "https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA002581",
+    "type": "Appartement",
+    "price": "980 000 DH",
+    "neighborhood": "Tamaris2",
+    "city": "Dar bouazza",
+    "title": "Appartement à vendre de 94 m² dont 70 m² habitables",
+    "reference": "DA002581",
+    "attributes": {
+        "Nb. de chambres": "2",
+        "Nb. de salles de bains": "1",
+        "Étage du bien": "Rez-de-chaussée",
+        "Nb. d'étages dans l'immeuble": "2",
+        "Surface totale": "94 m²",
+        "Surface habitable": "70 m²"
+    },
+    "equipments": [
+        "Résidence fermée",
+        "Balcon",
+        "Jardin privatif",
+        "Piscine privative",
+        "Place de parking en sous-sol",
+        "Agent de sécurité",
+        "Cuisine équipée"
+    ]
+}
+]
