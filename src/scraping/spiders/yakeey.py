@@ -1,3 +1,6 @@
+import glob
+import json
+from datetime import datetime
 from typing import ClassVar, Dict, List, Optional, Tuple
 
 import scrapy
@@ -9,10 +12,18 @@ from src.scraping.items import YakeeyAnnouncementItem
 
 class YakeeySpider(scrapy.Spider):
     name = "yakeey"
-    allowed_domains: ClassVar = ["yakeey.com"]
-    start_urls: ClassVar = ["https://yakeey.com/fr-ma/achat/appartement/maroc"]
+    allowed_domains: ClassVar[List[str]] = ["yakeey.com"]
+    start_urls: ClassVar[List[str]] = [
+        "https://yakeey.com/fr-ma/achat/appartement/maroc"
+    ]
     page_counter: int = 0
     max_pages: int = 10
+    references: List[str]
+
+    def start_requests(self):
+        glob_path = "./data/raw/yakeey/*.json"
+        self.references = self.set_references(glob_path)
+        return super().start_requests()
 
     def parse(self, response: HtmlResponse):
         # increment the page counter
@@ -38,7 +49,10 @@ class YakeeySpider(scrapy.Spider):
             )
         # go to the next page
         next_page_url = self.get_next_page_url(response)
-        if next_page_url and self.page_counter < self.max_pages:
+        if (
+            next_page_url
+            and self.page_counter < self.max_pages
+        ):
             yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
@@ -167,3 +181,26 @@ class YakeeySpider(scrapy.Spider):
             if section.css("h2 ::text").get() == "Caractéristiques du bien":
                 equipments.extend(section.css("p::text").getall())
         return equipments
+
+    def set_references(self, glob_path: str):
+        """Get the list of existing references.
+
+        Args:
+            references (List[str]): The existing references list.
+        """
+        try:
+            # get the most recent json file
+            files = glob.glob(glob_path)
+            recent_file = max(
+                files,
+                key=lambda file: datetime.strptime(
+                    file.split("/")[-1].split("_")[-1].split(".")[0], "%Y-%m-%d"
+                ),
+            )
+            # get the existing references list
+            with open(recent_file, "r") as file:
+                data = json.load(file)
+                return [row["reference"] for row in data]
+        # if no file is found we return an empty list
+        except (ValueError, FileNotFoundError, json.JSONDecodeError):
+            return []

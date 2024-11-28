@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from typing import ClassVar, List, Tuple
 
 from itemadapter import ItemAdapter
-from scrapy.exceptions import DropItem
+from scrapy.exceptions import CloseSpider, DropItem
 
 
 class BaseFilterPipeline:
@@ -101,3 +101,19 @@ class AvitoTimePipeline:
             date.year,
             date.month,
         )
+
+
+class DeltaPipeline:
+    def process_item(self, item, spider):
+        if spider.name == "avito":
+            adapter = ItemAdapter(item)
+            item_date_str = adapter.get("date_time")
+            item_date = datetime.strptime(item_date_str, "%Y-%m-%d %H:%M")
+            if item_date < spider.recent_date:
+                raise CloseSpider("No more recent announcements")
+        elif spider.name == "yakeey":
+            adapter = ItemAdapter(item)
+            item_reference = adapter.get("reference")
+            if item_reference in spider.references:
+                raise CloseSpider("No more recent announcements")
+        return item

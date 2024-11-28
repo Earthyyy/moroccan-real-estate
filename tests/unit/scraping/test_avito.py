@@ -11,6 +11,14 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "."))
 
 import var_avito as va
 
+# Tests based on spider attributes
+
+
+def test_set_recent_date(avito_spider):
+    glob_path = "./tests/unit/data/raw/avito/*.json"
+    assert avito_spider.set_recent_date(glob_path) == datetime(2024, 11, 14, 15, 53)
+
+
 # Tests based on the announcements listing page
 
 
