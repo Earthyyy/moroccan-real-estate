@@ -196,17 +196,14 @@ class AvitoSpider(scrapy.Spider):
         Returns:
             datetime: The date of the most recent announcement.
         """
-        try:
-            # get the most recent extraction date
-            files = glob.glob(glob_path)
-            return max(
+        # get the most recent extraction date
+        recent_date = datetime(2024, 1, 1)
+        files = glob.glob(glob_path)
+        if files:
+            recent_date = max(
                 [
                     datetime.strptime(file.split("/")[-1][:-11], "%Y-%m-%dT%H-%M-%S")
                     for file in files
                 ]
             )
-        # return the base date if no file is found
-        except ValueError:
-            return datetime(
-                2024, 1, 1
-            )  # we are going to ignore announcements older than this date
+        return recent_date

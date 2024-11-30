@@ -1,0 +1,17 @@
+url,n_bedrooms,n_bathrooms,total_area,living_area,floor,price,monthly_syndicate_price,city,neighborhood,type,year,month,source,bool_elevator,bool_balcony,bool_heating,bool_air_conditioning,bool_concierge,bool_equipped_kitchen,bool_furniture,bool_parking,bool_security,bool_terrace
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002544,3,2,126,126,7,2100000,,Casablanca,Bourgogne (sidi belyout),apartment,2024,11,yakeey,1,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA001164,3,2,133,133,6,1800000,250.0,Casablanca,Derb omar,apartment,2024,11,yakeey,1,1,0,0,0,1,1,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA000686,2,2,124,103,2,1950000,,Dar bouazza,Tamaris2,apartment,2024,11,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001095,2,1,126,101,5,1750000,,Casablanca,Hopitaux,apartment,2024,11,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002002,3,2,145,125,5,2000000,,Casablanca,Bourgogne (sidi belyout),apartment,2024,11,yakeey,1,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-sidi-moumen-CD001034,4,3,102,82,3,1250000,,Casablanca,Sidi moumen,duplex/triplex,2024,11,yakeey,0,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA000820,4,2,418,350,5,6800000,,Casablanca,Maarif,apartment,2024,11,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA002581,2,1,94,70,0,980000,,Dar bouazza,Tamaris2,apartment,2024,11,yakeey,0,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA000819,3,2,144,144,0,2160000,400.0,Casablanca,Mandarouna,apartment,2024,11,yakeey,1,0,0,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA000311,3,3,230,220,7,3900000,,Casablanca,Maarif,apartment,2024,11,yakeey,1,0,0,1,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-maarif-CT002721,3,4,150,705,5,7200000,,Casablanca,Maarif,duplex/triplex,2024,11,yakeey,0,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA000806,3,2,132,105,5,1450000,300.0,Casablanca,Nassim,apartment,2024,11,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA002604,2,2,101,101,1,1350000,,Casablanca,Liberte,apartment,2024,11,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-maarouf-CA000995,3,2,105,82,5,1290000,300.0,Casablanca,Sidi maarouf,apartment,2024,11,yakeey,1,0,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-palmier-(maarif)-CA002431,3,2,151,151,5,2530000,,Casablanca,Palmier (maarif),apartment,2024,11,yakeey,1,0,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001579,3,2,171,159,3,2600000,,Casablanca,Hopitaux,apartment,2024,11,yakeey,1,1,0,0,0,1,0,1,1,0
