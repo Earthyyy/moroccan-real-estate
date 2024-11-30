@@ -61,7 +61,7 @@ DF_SCHEMA = T.StructType(
 
 
 def spark_setup(app_name: str = "ETL") -> SparkSession:
-    duckdb_jdbc_jar = "./libs/duckdb_jdbc-1.1.3.jar"
+    duckdb_jdbc_jar = "./libs/duckdb_jdbc.jar"
     return (
         SparkSession.builder.appName(app_name)
         .config("spark.jars", duckdb_jdbc_jar)
