@@ -1,6 +1,5 @@
 import glob
 import json
-from datetime import datetime
 from typing import ClassVar, Dict, List, Optional, Tuple
 
 import scrapy
@@ -49,10 +48,7 @@ class YakeeySpider(scrapy.Spider):
             )
         # go to the next page
         next_page_url = self.get_next_page_url(response)
-        if (
-            next_page_url
-            and self.page_counter < self.max_pages
-        ):
+        if next_page_url and self.page_counter < self.max_pages:
             yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
@@ -96,7 +92,10 @@ class YakeeySpider(scrapy.Spider):
         Returns:
             True if the announcement is valid, False otherwise.
         """
-        return a.css("a > div > div:nth-child(1) > span::text").get() != "Neuf"
+        return a.css("a > div > div:nth-child(1) ::text").get() not in [
+            "Neuf",
+            "Bientôt disponible",
+        ]
 
     def get_info_from_announcement_a(
         self,
@@ -113,9 +112,10 @@ class YakeeySpider(scrapy.Spider):
         """
         property_type = a.css("a > div > div:nth-child(2) p")[0].css("::text").get()
         _, price = a.css("a > div > div:nth-child(2) p")[1].css("::text").getall()
-        neighborhood, city = (
+        *neighborhoods, city = (
             a.css("a > div > div:nth-child(2) p")[2].css("::text").get().split(" - ")
         )
+        neighborhood = " - ".join(neighborhoods)
         return (property_type, price, neighborhood, city)
 
     def get_next_page_url(self, response: HtmlResponse) -> Optional[str]:
@@ -188,19 +188,11 @@ class YakeeySpider(scrapy.Spider):
         Args:
             references (List[str]): The existing references list.
         """
-        try:
-            # get the most recent json file
-            files = glob.glob(glob_path)
-            recent_file = max(
-                files,
-                key=lambda file: datetime.strptime(
-                    file.split("/")[-1].split("_")[-1].split(".")[0], "%Y-%m-%d"
-                ),
-            )
-            # get the existing references list
-            with open(recent_file, "r") as file:
-                data = json.load(file)
-                return [row["reference"] for row in data]
-        # if no file is found we return an empty list
-        except (ValueError, FileNotFoundError, json.JSONDecodeError):
-            return []
+        files = glob.glob(glob_path)
+        references = []
+        # get the existing references list
+        for file in files:
+            with open(file, "r") as f:
+                data = json.load(f)
+                references.extend([item["reference"] for item in data])
+        return references
