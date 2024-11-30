@@ -45,10 +45,7 @@ class AvitoSpider(scrapy.Spider):
             )
         # go to the next page
         next_page_url = self.get_next_page_url(response)
-        if (
-            next_page_url
-            and self.page_counter < self.max_pages
-        ):
+        if next_page_url and self.page_counter < self.max_pages:
             yield response.follow(next_page_url, callback=self.parse)
 
     def parse_announcement(self, response: HtmlResponse, **kwargs):
@@ -204,9 +201,8 @@ class AvitoSpider(scrapy.Spider):
             files = glob.glob(glob_path)
             return max(
                 [
-                    datetime.strptime(
-                        file.split("/")[-1][:-11], "%Y-%m-%dT%H-%M-%S"
-                    ) for file in files
+                    datetime.strptime(file.split("/")[-1][:-11], "%Y-%m-%dT%H-%M-%S")
+                    for file in files
                 ]
             )
         # return the base date if no file is found
