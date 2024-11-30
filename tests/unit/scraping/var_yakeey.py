@@ -72,35 +72,11 @@ YAKEEY_ANNOUNCEMENT_2 = {
 }
 YAKEEY_ANNOUNCEMENT_LOCKED_1 = {
     "position": 18,
-    "url": "https://yakeey.com//fr-ma/acheter-appartement-casablanca-la-gironde-CI061379",
-    "is_valid": True,
-    "info": ("Appartement", "1 600 000 DH", "La gironde", "Casablanca"),
-    "header": ("Appartement à vendre de 199 m² dont 173 m² habitables", "CI061379"),
-    "attributes": {
-        "Nb. de chambres": "3",
-        "Nb. de salles de bains": "2",
-        "Étage du bien": "1",
-        "Nb. d'étages dans l'immeuble": "5",
-        "Surface totale": "199 m²",
-        "Surface habitable": "173 m²",
-    },
-    "equipments": [],
+    "is_valid": False,
 }
 YAKEEY_ANNOUNCEMENT_LOCKED_2 = {
     "position": 21,
-    "url": "https://yakeey.com//fr-ma/acheter-appartement-casablanca-derb-omar-FA061603",
-    "is_valid": True,
-    "info": ("Appartement", "990 000 DH", "Derb omar", "Casablanca"),
-    "header": ("Appartement à vendre de 131 m² dont 97 m² habitables", "FA061603"),
-    "attributes": {
-        "Nb. de chambres": "2",
-        "Nb. de salles de bains": "2",
-        "Étage du bien": "4",
-        "Nb. d'étages dans l'immeuble": "4",
-        "Surface totale": "131 m²",
-        "Surface habitable": "97 m²",
-    },
-    "equipments": [],
+    "is_valid": False,
 }
 YAKEEY_ANNOUNCEMENT_NEUF_1 = {
     "position": 23,
@@ -135,7 +111,5 @@ YAKEEY_ANNOUNCEMENT_NO_ADDRESS = {
 YAKEEY_ANNOUNCEMENTS = [
     YAKEEY_ANNOUNCEMENT_1,
     YAKEEY_ANNOUNCEMENT_2,
-    YAKEEY_ANNOUNCEMENT_LOCKED_1,
-    YAKEEY_ANNOUNCEMENT_LOCKED_2,
     YAKEEY_ANNOUNCEMENT_NO_ADDRESS,
 ]

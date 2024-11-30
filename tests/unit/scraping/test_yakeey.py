@@ -39,6 +39,8 @@ def test_is_announcement_valid(yakeey_spider):
     announcements_a = response.css("div.mui-4oo2hv a")
     for test in [
         *vy.YAKEEY_ANNOUNCEMENTS[:-1],
+        vy.YAKEEY_ANNOUNCEMENT_LOCKED_1,
+        vy.YAKEEY_ANNOUNCEMENT_LOCKED_2,
         vy.YAKEEY_ANNOUNCEMENT_NEUF_1,
         vy.YAKEEY_ANNOUNCEMENT_NEUF_2,
     ]:
