@@ -1,0 +1,342 @@
+url,n_bedrooms,n_bathrooms,total_area,living_area,floor,price,monthly_syndicate_price,city,neighborhood,type,year,month,source,bool_elevator,bool_balcony,bool_heating,bool_air_conditioning,bool_concierge,bool_equipped_kitchen,bool_furniture,bool_parking,bool_security,bool_terrace
+https://www.avito.ma/fr/sidi_bouzekri/appartements/Appartement_110m²_en_Vente_à_Meknès_52553240.htm,3,2,110,110,3,380000,,Meknès,Sidi Bouzekri,apartment,2024,11,avito,0,1,0,1,1,0,0,1,1,1
+https://www.avito.ma/fr/racine/appartements/CMN_MA_1716___Appartement_à_vendre_à_Racine_55580837.htm,2,2,162,162,3,3100000,,Casablanca,Racine,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/palmier/appartements/CMN_MA_1546___Appartement_à_vendre_à_Palmier_55085087.htm,3,2,150,150,2,2500000,,Casablanca,Palmier,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/maamora/appartements/joli_appartement__plein_maamora_55834409.htm,2,2,121,111,2,1130000,250,Kénitra,Maamora,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/khouribga/appartements/_شقة_سفلية_حي_فتح_قرب_مقاطقة_5_55834411.htm,2,1,106,106,0,,,Khouribga,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/centre/appartements/Appartements_de_Luxe_à_Vendre_à_Tanger_55823572.htm,3,2,96,96,3,,,Tanger,Centre,apartment,2024,11,avito,1,1,0,1,0,1,1,1,1,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre__DE_92_M_MONICA_A__1250000_DH_55834428.htm,2,2,92,92,3,1250000,,Mohammedia,Autre secteur,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/triangle_d'or/appartements/CMN_AN_1628___Appartement_à_vendre_à_Triangle_d_or_55264687.htm,3,2,158,158,1,2550000,,Casablanca,Triangle d'Or,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/malabata/appartements/Appartement_à_vendre_102_m²_à_Tanger_55834431.htm,3,2,102,102,2,,,Tanger,Malabata,apartment,2024,11,avito,1,0,1,1,1,1,0,1,1,0
+https://www.avito.ma/fr/wilaya/appartements/Appartement_à_vendre_171_m²_à_Tétouan_55728755.htm,3,2,171,168,4,1800000,150,Tétouan,Wilaya,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/bouskoura_centre/appartements/Appart_62m2_quartier_Perla_sortie_ville_verte_49962978.htm,2,2,62,62,3,632000,250,Bouskoura,Bouskoura centre,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/maamora/appartements/joli_appartement_à_maamora_55834444.htm,2,2,121,111,2,,250,Kénitra,Maamora,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/sidi_bernoussi/appartements/Appartement_al_firdaous_55834454.htm,2,1,56,,3,45000,,Casablanca,Sidi Bernoussi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/sidi_bernoussi/appartements/Belle_appartement_de_luxe_au_meilleur_prix_55591617.htm,3,,77,77,1,693000,,Casablanca,Sidi Bernoussi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/agdal/appartements/RBA_AG_1095___Appartement_à_vendre_à_Agdal_55802172.htm,1,1,67,67,4,1500000,,Rabat,Agdal,apartment,2024,11,avito,1,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/quartier_des_hôpitaux/appartements/appartement_à_vendre__55834464.htm,3,2,188,178,1,,,Casablanca,Quartier des Hôpitaux,apartment,2024,11,avito,1,0,0,1,1,0,0,1,0,1
+https://www.avito.ma/fr/palmier/appartements/Studio_Neuf_59m2_2è_Clim_Garage_Palmier_55740690.htm,1,1,59,59,2,1240000,,Casablanca,Palmier,studio,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/route_ain_chkaf/appartements/شقة_للبيع_بحي_الراشيدية_2_53304702.htm,2,1,60,60,4,250000,,Fès,Route Ain Chkaf,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/sidi_moumen/appartements/Appart_à_vendre_56m²_à_Sidi_Moumen_Casablanca__55805284.htm,2,1,56,56,3,380000,,Casablanca,Sidi Moumen,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/val_fleuri/appartements/Appartement_en_vente_désistement_à_val_fleuri_55754791.htm,2,1,55,55,2,550000,150,Tanger,Val Fleuri,apartment,2024,11,avito,1,1,0,0,1,1,0,0,1,0
+https://www.avito.ma/fr/les_princesses/appartements/Superbe_appartement_3Chs_agréables_Les_Princesses_55775170.htm,3,2,117,117,1,2000000,300,Casablanca,Les Princesses,apartment,2024,11,avito,1,0,1,1,1,1,0,1,1,0
+https://www.avito.ma/fr/2_mars/appartements/Appartement_à_vendre_111_m²_à_Casablanca_55218668.htm,2,2,111,106,3,1400000,,Casablanca,2 Mars,apartment,2024,11,avito,1,1,0,0,1,0,0,1,0,0
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_83m²_à_vendre_à_H_Adil_Casablanca__42572319.htm,3,1,83,83,3,640000,60,Casablanca,Hay Mohammadi,apartment,2024,11,avito,0,0,0,0,0,0,0,1,0,0
+https://www.avito.ma/fr/berrechid/appartements/شقة_فاخرة_للبيع_عندها_باب_مستقل__55834344.htm,3,2,97,97,0,555000,2,Berrechid,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement__65_m²_socoma__55631428.htm,3,1,65,65,0,530000,,Marrakech,Autre secteur,apartment,2024,11,avito,0,0,0,1,0,1,0,0,0,1
+https://www.avito.ma/fr/guich_oudaya/appartements/appartement_duplex_à_vendre__55834354.htm,3,3,150,150,2,1160000,,Rabat,Guich Oudaya,duplex/triplex,2024,11,avito,0,0,1,0,0,0,0,1,1,0
+https://www.avito.ma/fr/fnideq/appartements/Appartement_à_vendre_81_m²_à_Fnideq_55785544.htm,2,1,,81,3,780000,,Fnideq,Toute la ville,apartment,2024,11,avito,0,1,1,0,0,1,1,0,0,0
+https://www.avito.ma/fr/bourgogne/appartements/Appartement_140m²_8ème_sans_vis_à_vis_à_Bourgogne_55381548.htm,2,1,140,140,8,1550000,,Casablanca,Bourgogne,apartment,2024,11,avito,1,1,0,0,1,1,0,0,0,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_Vendre_Tamesna__53715084.htm,3,0,,101,2,650000,,Rabat,Autre secteur,apartment,2024,11,avito,1,0,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/ain_sebaa/appartements/Bel_Appartement_à_vendre_85_m²_à_Aïn_Sebaa_54707603.htm,2,2,,85,1,937000,,Casablanca,Ain Sebaa,duplex/triplex,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/dar_bouazza/appartements/Appartement_à_Marina_Blanca_54401684.htm,2,2,,98,1,1600000,,Dar Bouazza,Toute la ville,apartment,2024,11,avito,0,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/route_d'amezmiz/appartements/villa_moderne_ref_0182_55174795.htm,5,6,2000,350,1,4800000,,Marrakech,Route d'Amezmiz,duplex/triplex,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_Duplex_à_vendre_154_m²_à_Casablanca_54390927.htm,4,2,174,154,2,1150000,,Casablanca,Hay Mohammadi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_79m_Proche_Casaneachor__55645218.htm,2,2,79,79,0,700000,,Casablanca,Sidi Maarouf,apartment,2024,11,avito,1,1,0,0,0,0,0,1,1,0
+https://www.avito.ma/fr/martil/appartements/Appartement_à_vendre_à_Costa_mar_55735561.htm,2,2,,85,3,1700000,,Martil,Toute la ville,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/najmat_al_janoub/appartements/Appart_seul_escalier_163_m²_à_côté_Marjane_3_face__55003068.htm,3,2,,163,2,1180000,,El Jadida,Najmat Al Janoub,apartment,2024,11,avito,0,1,0,0,0,1,0,0,1,1
+https://www.avito.ma/fr/hay_dakhla/appartements/appartement_à_vendre__55014645.htm,2,2,82,82,3,870000,,Agadir,Hay Dakhla,apartment,2024,11,avito,0,1,0,0,0,1,1,1,1,0
+https://www.avito.ma/fr/centre_ville/appartements/Appartement_à_vendre_121_m²_à_Temara_49655081.htm,3,2,,121,3,1350000,,Temara,Centre Ville,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,0
+https://www.avito.ma/fr/el_mansouria/appartements/Appart_à_vendre_68m²_avec_piscine_à_El_Mansouria_54240959.htm,2,1,68,68,3,680000,150,El Mansouria,Toute la ville,apartment,2024,11,avito,0,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/a_vendre_très_beau_appartement__tout_équipé__55834278.htm,2,2,86,86,2,550000,100,Rabat,Autre secteur,apartment,2024,11,avito,1,0,0,0,1,1,1,1,0,0
+https://www.avito.ma/fr/oasis/appartements/Studio_neuf_à_vendre_à_Oasis_55232268.htm,1,1,,39,1,900000,,Casablanca,Oasis,studio,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/centre/appartements/Dublex_villa_340_m²_a_Ibn_badis_yakota_3_face__55572856.htm,6,3,340,340,2,,,El Jadida,Centre,duplex/triplex,2024,11,avito,0,0,0,0,0,1,0,0,1,0
+https://www.avito.ma/fr/derb_ghallef/appartements/CMN_MA_1794___Appartement_à_vendre_à_Plateau_55765769.htm,3,2,137,137,1,2900000,,Casablanca,Derb Ghallef,apartment,2024,11,avito,1,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/asilah/appartements/Appartement_à_vendre_74_m²_à_Asilah_54451286.htm,2,1,74,74,1,1050000,250,Urgent,Toute la ville,apartment,2024,11,avito,1,0,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/béni_mellal/appartements/Appartement_à_vendre_55583799.htm,3,2,126,106,3,660000,,Béni Mellal,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,1,0,1,1,0
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_à_vendre_81_m²_à_Casablanca_55224497.htm,2,2,81,81,0,700000,,Casablanca,Hay Mohammadi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/centre_ville/appartements/شقة_سكنية_للبيع_ساروت_قرب_حي_الإداري_وسط_المدينة_55753160.htm,1,1,,50,4,170000,,Tanger,Centre ville,apartment,2024,11,avito,0,1,1,0,1,1,1,0,1,0
+https://www.avito.ma/fr/agdal/appartements/Superbe_Appartement_2_Façades__55834292.htm,2,2,150,135,2,720000,,Fès,Agdal,apartment,2024,11,avito,0,1,0,0,0,1,0,1,1,1
+https://www.avito.ma/fr/bourgogne/appartements/Appartement_132m²_7ème_sans_vis_à_vis_face_Lyautey_53925741.htm,3,2,132,120,,1450000,250,Casablanca,Bourgogne,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_de_99m²_à_vendre_Casablanca__55793468.htm,2,2,99,66,1,850000,,Casablanca,Sidi Maarouf,apartment,2024,11,avito,1,0,0,0,0,1,0,1,1,1
+https://www.avito.ma/fr/centre_ville/appartements/Appartement_à_vendre_110_m²_à_Mohammedia_55747589.htm,2,2,120,110,1,1656000,500,Mohammedia,Centre Ville,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_à_vendre_50_m²_à_Casa_Sidi_Maarouf_55529426.htm,2,1,50,50,3,510000,50,Casablanca,Sidi Maarouf,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/bab_al_bahr/appartements/Bel_Appartement_à_vendre__Marina_de_Salé_53607610.htm,3,2,,240,0,3500000,,Salé,Bab Al Bahr,apartment,2024,11,avito,1,0,0,1,1,0,0,1,1,1
+https://www.avito.ma/fr/guéliz/appartements/App__centre_66m²__bin_kchali__55115399.htm,2,1,66,66,2,630000,,Marrakech,Guéliz,apartment,2024,11,avito,0,1,0,1,0,1,0,0,0,1
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_F3__à_vendre__Hay_Mohammadi_Agadir___55801330.htm,2,1,63,,2,740000,,Agadir,Hay Mohammadi,apartment,2024,11,avito,1,0,0,0,0,1,1,1,1,0
+https://www.avito.ma/fr/martil/appartements/شقق_بجودة_خيالية_للبيع_بمرتيل_55357250.htm,2,2,63,63,3,560000,,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/hay_chmaou/appartements/شقة_للبيع_بسلا_55672595.htm,3,2,104,104,2,1000000,200,Salé,Hay Chmaou,apartment,2024,11,avito,1,1,0,1,1,0,0,1,1,0
+https://www.avito.ma/fr/guéliz/appartements/Appartement_2_chambres_en_plein_centre_de_guéliz_55539762.htm,2,2,89,89,4,1350000,,Marrakech,Guéliz,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/asilah/appartements/شقق_للبيع_بمدينة_أصيلة__55127721.htm,2,2,76,76,1,,,Asilah,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/maârif_extension/appartements/CMN_MA_1781___Appartement_à_vendre_à_Maârif_55716228.htm,1,1,87,87,1,1250000,,Casablanca,Maârif Extension,apartment,2024,11,avito,0,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/riad_oulad_mtaa/appartements/Appartement_à_vendre_106m²_5_min_à_Hay_Riad__55708529.htm,3,2,106,106,1,1680000,,Temara,Riad Oulad Mtaa,apartment,2024,11,avito,0,1,1,1,0,1,0,0,1,0
+https://www.avito.ma/fr/souissi/appartements/Appartement_Rez_de_jardin_à_vendre_Souissi_Rabat_53746747.htm,2,2,134,80,0,3250000,,Rabat,Souissi,apartment,2024,11,avito,1,0,0,0,0,1,0,1,0,1
+https://www.avito.ma/fr/centre/appartements/Appartement_de_prestige_résidence_balzac_43696790.htm,2,2,89,84,1,870000,,Kénitra,Centre,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/racine/appartements/CMN_AN_1124___Appartement_à_vendre_à_Racine_54561850.htm,3,3,130,130,4,2300000,,Casablanca,Racine,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/oulfa/appartements/Appartement_à_vendre_78_m²_à_Casa_lot_zoubir__55834161.htm,2,2,85,78,1,720000,100,Casablanca,Oulfa,apartment,2024,11,avito,0,0,1,1,0,0,0,0,0,1
+https://www.avito.ma/fr/val_fleuri/appartements/TNG_TA_1077___Appartement_à_vendre_à_Val_Fleuri_55779540.htm,2,1,86,86,3,750000,,Tanger,Val Fleuri,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/martil/appartements/شقق_بجودة_عالية_للبيع_تتوفر_على__راج_55543144.htm,3,2,80,80,1,760000,,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/oued_eddahab/appartements/Appartement_neuf_à_vendre_120_m²_à_Temara_49751135.htm,3,2,,120,0,1200000,,Temara,Oued Eddahab,apartment,2024,11,avito,0,0,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/abdelmoumen/appartements/Appartement_à_vendre_123_m²_à_Casablanca_55834014.htm,1,1,,123,1,,,Casablanca,Abdelmoumen,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/mimosas/appartements/Appartement_de_587_m2_à_Kenitra_Mimosas_55739653.htm,4,5,586,250,5,2700000,449,Kénitra,Mimosas,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/ain_sebaa/appartements/Appartement_à_vendre_96_m²_à_Ain_Sebaa_Casablanca_54515753.htm,2,2,96,96,1,990000,200,Casablanca,Ain Sebaa,apartment,2024,11,avito,1,0,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/semlalia/appartements/Appartement_elle_est_neuf__55711099.htm,2,1,,82,1,1350000,250,Marrakech,Semlalia,duplex/triplex,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/oulfa/appartements/Appartement_à_vendre_50_m²_à_Casablanca__55157638.htm,2,1,50,50,3,300000,,Casablanca,Oulfa,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appart_89m²_avec_piscines_à_vendre_à_Mohammedia__55798021.htm,2,1,89,89,1,1050000,330,Mohammedia,Autre secteur,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/sidi_bernoussi/appartements/شقة_بحي_الأزخر_بالطابق_التاني_46486804.htm,2,1,80,80,2,500000,,Casablanca,Sidi Bernoussi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/oulfa/appartements/بيع_شقة_رياض_الألفة_55834065.htm,2,1,50,45,2,345000,35,Casablanca,Oulfa,apartment,2024,11,avito,0,0,0,0,1,0,0,1,1,0
+https://www.avito.ma/fr/californie/appartements/Appartement_à_vendre_96_m²_à_Porte_Californie_Casa_55755774.htm,2,2,,96,2,1500000,,Casablanca,Californie,apartment,2024,11,avito,1,1,0,1,0,1,0,1,1,0
+https://www.avito.ma/fr/roches_noires/appartements/Appartement_à_vendre_Meuble_81_m²_à_Roche_Noir_55779690.htm,2,1,81,81,3,900000,150,Casablanca,Roches Noires,apartment,2024,11,avito,1,0,1,1,1,1,1,1,1,0
+https://www.avito.ma/fr/had_soualem/appartements/Des_appartements_haut_standing_a_had_soualem_55046794.htm,3,2,102,102,1,,,Had Soualem,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,1
+https://www.avito.ma/fr/martil/appartements/appartement_du_lux_à_martil__54610093.htm,2,2,60,60,1,540000,,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/tamesna/appartements/Appartement_haute_standing_100m_hiba_choka__50631819.htm,3,,,115,0,640000,,Tamesna,Toute la ville,apartment,2024,11,avito,1,1,0,0,0,0,0,1,1,1
+https://www.avito.ma/fr/oulfa/appartements/Appartement_3_chambres_à_vendre_78_m²_à_Oulfa__55778166.htm,3,2,81,78,2,775800,,Casablanca,Oulfa,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/bouskoura_centre/appartements/Duplex_avec_cour___146_m²_55830357.htm,3,2,160,146,0,1422000,,Bouskoura,Bouskoura centre,apartment,2024,11,avito,1,0,0,1,0,1,0,1,0,1
+https://www.avito.ma/fr/massira/appartements/Appartement_de_100m2_à_Massira_cym_Rabat__55767070.htm,2,1,100,100,4,1250000,,Rabat,Massira,apartment,2024,11,avito,0,1,0,0,1,0,0,1,1,1
+https://www.avito.ma/fr/bourgogne/appartements/CMN_AN_1650___Appartement_à_vendre_à_Bourgogne_55518303.htm,2,2,83,83,0,1050000,,Casablanca,Bourgogne,apartment,2024,11,avito,1,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/marina/appartements/Appartement_à_vendre_185_m²_à_Agadir_52951735.htm,3,2,,185,5,,,Agadir,Marina,apartment,2024,11,avito,1,1,0,1,1,1,1,1,1,1
+https://www.avito.ma/fr/hay_charaf/appartements/Appartement_à_vendre_62_m²_à__HAY_LFADL_Marrakech_55833855.htm,2,1,62,62,1,440000,100,Marrakech,Hay Charaf,apartment,2024,11,avito,0,0,0,0,1,0,0,1,1,0
+https://www.avito.ma/fr/quartier_des_hôpitaux/appartements/Appartement_de_130m2_au_quartier_des_hôpitaux_55826444.htm,2,2,130,130,3,1570000,,Casablanca,Quartier des Hôpitaux,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appart__104_m²_à_Agadir___Hay_Mohammadi__55515286.htm,3,2,104,104,3,1140000,,Agadir,Hay Mohammadi,apartment,2024,11,avito,1,1,0,0,0,1,0,0,0,1
+https://www.avito.ma/fr/al_kawtar/appartements/Apart_2_Façades_à_vend_101_m²_3ème_étage_à_Bouznk_54043501.htm,3,1,,101,1,650000,,Bouznika,Al Kawtar,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/oulfa/appartements/appartement_à_vendre_ou_à_louer__55833891.htm,2,2,63,60,4,,,Casablanca,Oulfa,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/malabata/appartements/appart_46_mlion_neuf_syndic_5_min_malabata__55833896.htm,2,1,54,54,1,,,Tanger,Malabata,apartment,2024,11,avito,1,1,0,0,1,0,0,1,1,0
+https://www.avito.ma/fr/maarif/appartements/Studio_à_vendre_44_m²_à_Casablanca_55821453.htm,1,1,47,44,2,850000,1,Casablanca,Maarif,studio,2024,11,avito,1,0,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_vide_à_vendre_à_hay_mohammadi_Agadir__55815552.htm,2,1,62,,3,700000,,Agadir,Hay Mohammadi,apartment,2024,11,avito,1,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/ain_sebaa/appartements/appartement_entre_73_m_et_91_m_53852934.htm,2,2,73,73,3,840000,300,Casablanca,Ain Sebaa,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/dar_bouazza/appartements/Rez_de_jardin_sur_Darb_55469139.htm,3,2,326,147,0,3200000,,Dar Bouazza,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/marchan/appartements/شقق_للبيع_150_m²_في_طنجة_حي_حافة_مام_البحر_55833906.htm,3,2,150,150,2,,200,Tanger,Marchan,apartment,2024,11,avito,1,1,1,1,1,1,1,0,1,0
+https://www.avito.ma/fr/ain_sebaa/appartements/Appartement_neuf_à_vendre_84M2_55818858.htm,2,2,,84,4,11000,,Casablanca,Ain Sebaa,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/agdal/appartements/Appartements_de_luxe_à_Bouremana_48808599.htm,3,,120,120,2,,,Fès,Agdal,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/salé/appartements/Appartement_à_vendre_à_Salé_55263022.htm,2,2,86,81,2,820000,200,Salé,Toute la ville,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/el_houda/appartements/appartement__55550436.htm,3,2,114,114,1,1368000,,Agadir,El Houda,apartment,2024,11,avito,1,0,0,0,1,1,0,1,0,0
+https://www.avito.ma/fr/anfa/appartements/CMN_MA_1779___Appartement_à_vendre_à_Massira_Khadra_55709671.htm,3,2,141,141,2,2700000,,Casablanca,Anfa,apartment,2024,11,avito,1,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/tilila/appartements/appartement_à_vendre__55658989.htm,2,1,68,68,3,560000,,Agadir,Tilila,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/palmeraie/appartements/Appartement_à_vendre_87_m²_à_Marrakech_55778470.htm,2,2,87,87,3,1350000,848,Marrakech,Palmeraie,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/wifak/appartements/Appartement_à_vendre_75_m²_à_Temara_52486758.htm,2,1,75,75,2,720000,,Temara,Wifak,apartment,2024,11,avito,0,1,0,0,0,0,0,1,1,1
+https://www.avito.ma/fr/maarif/appartements/Studio_42m_Neuf_Haut_Standing_Maarif_Ex__55633665.htm,1,1,42,42,3,966000,,Casablanca,Maarif,studio,2024,11,avito,1,1,0,1,1,0,0,0,0,0
+https://www.avito.ma/fr/mimosas/appartements/Appartement_65_m²_à_Kénitra_43872455.htm,2,1,,65,5,580000,,Kénitra,Mimosas,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/mehdia/appartements/Appartement_à_vendre_41_m²_à_Mehdia_55751065.htm,1,1,41,41,2,,,Mehdia,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/mehdia/appartements/Appartement_à_vendre_86_m²_à_Mehdia_55751104.htm,2,2,,86,3,,,Mehdia,Toute la ville,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/agdal/appartements/Appartement_à_vendre_Agdal_54110447.htm,4,2,150,100,0,2000000,,Rabat,Agdal,apartment,2024,11,avito,1,0,0,0,0,1,0,1,0,0
+https://www.avito.ma/fr/hay_charaf/appartements/شقة_بقا_جديدة_في_حي_الشرف__55833744.htm,2,1,76,76,2,720000,,Marrakech,Hay Charaf,apartment,2024,11,avito,0,0,0,0,0,1,0,0,1,1
+https://www.avito.ma/fr/hay_riad/appartements/appartement_a_vendre_ahayriad_55809931.htm,3,2,130,116,3,2200000,250,Rabat,Hay Riad,apartment,2024,11,avito,1,1,0,0,1,0,0,1,1,1
+https://www.avito.ma/fr/dar_bouazza/appartements/BOU_DA_1015___Appartement_à_vendre_à_Tamaris_55774493.htm,2,1,100,100,1,1150000,,Dar Bouazza,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/al_qods/appartements/appt_à_vendre__55766514.htm,3,1,111,111,2,,,Mohammedia,Al Qods,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_2CH_à_DCHEIRA_FADISSA_55762220.htm,2,1,,64,2,575000,,Agadir,Autre secteur,apartment,2024,11,avito,0,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/saidia/appartements/Appartement_de_120_m2_à_Saidia_vue_sur_mer_34864803.htm,2,2,120,120,1,,,Saidia,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/martil/appartements/appartement_du_lux__54265518.htm,2,2,63,63,1,540000,,Martil,Toute la ville,apartment,2024,11,avito,0,1,1,0,0,1,1,0,1,1
+https://www.avito.ma/fr/malabata/appartements/Appartement_haut_standing_à_vendre_malabata_Tanger_55720747.htm,2,2,,75,4,1900000,,Tanger,Malabata,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,0
+https://www.avito.ma/fr/mediouna/appartements/appartement_à_vendre_a_Mediouna_55743101.htm,2,1,,70,2,270000,,Mediouna,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/hivernage/appartements/Duplex_à_vendre_à_hivernage__55753744.htm,3,2,,107,0,1500000,,Marrakech,Hivernage,duplex/triplex,2024,11,avito,1,0,0,0,1,0,0,0,1,0
+https://www.avito.ma/fr/hay_mohammadi/appartements/appartement_à_vendre__55393636.htm,2,1,75,68,0,890000,,Agadir,Hay Mohammadi,apartment,2024,11,avito,0,0,1,1,1,1,1,1,1,0
+https://www.avito.ma/fr/martil/appartements/Appartement_de_standing_à_vendre_à_Martil_55830228.htm,1,1,70,70,2,,,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/bourgogne/appartements/CMN_AN_1582___Appartement_à_vendre_à_Bourgogne_55151751.htm,2,1,76,76,2,890000,,Casablanca,Bourgogne,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/hay_riad/appartements/Vente_appartement_Prestigia_Rabat_52745307.htm,3,2,,116,4,2700000,,Rabat,Hay Riad,apartment,2024,11,avito,1,1,0,0,0,1,0,1,1,0
+https://www.avito.ma/fr/cabo_negro/appartements/Appartement_84_m²_au_complexe_jardin_du_cabo_55774404.htm,2,1,84,84,1,1350000,,Cabo Negro,Toute la ville,apartment,2024,11,avito,0,1,0,1,1,1,1,1,1,0
+https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_3_chambres_84_m²_à_Sidi_Maarouf_55781703.htm,3,2,84,84,1,875000,,Casablanca,Sidi Maarouf,apartment,2024,11,avito,1,1,0,0,0,1,0,1,1,1
+https://www.avito.ma/fr/mimosas/appartements/Studio_à_vendre_à_rock_island_à_ne_pas_rater_55750914.htm,1,1,57,57,0,930000,500,Mohammedia,Mimosas,studio,2024,11,avito,1,1,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/APPARTEMENT_VUE_MER_80_m²_à_TAMRAGHT_55762334.htm,2,1,136,80,4,2100000,,Agadir,Autre secteur,apartment,2024,11,avito,1,0,0,1,1,1,1,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_meublé_101_m²_vue_dégagée_Eden_Park_55818493.htm,2,3,115,101,3,1300000,300,Mohammedia,Autre secteur,apartment,2024,11,avito,1,1,0,0,1,1,1,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/عرض_شقق_للبيع_قرب_مجمع_بنيس_طنجة__55583940.htm,3,2,,100,1,14000,,Tanger,Autre secteur,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/hay_hassani/appartements/Appartement_à_vendre_59_m²_à_Casablanca_55766554.htm,2,1,58,59,4,460000,,Casablanca,Hay Hassani,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/saidia/appartements/Appartement__a_vendr_à_3_minute_de_la_plage__43031297.htm,2,1,88,80,1,,,Saidia,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/av_abdelkrim_el_khattabi/appartements/Appartement_84m2_entre_Mc_Donald_et_Marjane_55696610.htm,2,1,,84,2,840000,,Marrakech,Av Abdelkrim El Khattabi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/oulfa/appartements/Apt_Ensoleillé_familial_Propre_4ème_Étg_Riad_Oulfa_55533976.htm,2,1,56,56,4,265000,,Casablanca,Oulfa,apartment,2024,11,avito,0,0,0,0,0,0,0,0,1,0
+https://www.avito.ma/fr/anfa/appartements/Appartement_à_vendre_142_m²_à_Casablanca_55788581.htm,3,2,,142,4,1200000,,Casablanca,Anfa,apartment,2024,11,avito,0,1,0,0,1,0,0,0,0,0
+https://www.avito.ma/fr/bir_rami/appartements/Appartement_2_chambres_85m2__55698510.htm,2,2,84,92,1,640000,,Kénitra,Bir Rami,apartment,2024,11,avito,1,0,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/maarif/appartements/Appartement_à_vendre_119_m²_à_Casablanca_55644356.htm,3,3,,119,5,1720000,,Casablanca,Maarif,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,0
+https://www.avito.ma/fr/martil/appartements/شقق_محفظة_للبيع_بجودة_عالية__55112119.htm,3,2,86,86,1,650000,,Martil,Toute la ville,apartment,2024,11,avito,0,1,0,0,1,1,1,0,1,0
+https://www.avito.ma/fr/m'hamid/appartements/شقة_فاخرة_للبيع_بالمحاميد__مؤهلة_لدعم_سكن___55716965.htm,3,1,,87,1,660000,,Marrakech,M'Hamid,apartment,2024,11,avito,0,1,0,0,0,1,0,0,1,1
+https://www.avito.ma/fr/branes_1/appartements/Appartement_à_vendre_à_Tanger_55830809.htm,3,1,,,2,,,Tanger,Branes 1,apartment,2024,11,avito,1,1,0,0,1,0,0,0,1,0
+https://www.avito.ma/fr/m'hamid/appartements/Appartement_à_vendre_130_m²_à_Marrakech_55658225.htm,3,2,130,130,0,740000,,Marrakech,M'Hamid,apartment,2024,11,avito,0,1,0,0,0,1,0,0,1,0
+https://www.avito.ma/fr/sidi_moumen/appartements/Appartement_à_vendre_81_m²_à_Casablanca_55833575.htm,2,1,81,81,1,620000,100,Casablanca,Sidi Moumen,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/moujahidine/appartements/عرض_شقق_للبيع_قرب_مستودع_كوكاكولا_مجاهدين_54427711.htm,3,2,100,100,0,,,Tanger,Moujahidine,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/anfa/appartements/Appartement_et_studios_disponible_55771704.htm,2,2,71,71,1,,,Casablanca,Anfa,studio,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/2_mars/appartements/Appart_112m_Finition_Moderne_Résidence_Sécurisé__55523044.htm,2,2,112,112,2,1450000,,Casablanca,2 Mars,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,0
+https://www.avito.ma/fr/saidia/appartements/Appartement_à_vendre_a_saidia_votre_porte_seul_30714833.htm,2,1,100,85,1,,,Saidia,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/2_mars/appartements/Apt_3chambre_Haut_Standing_Ensoleillé__55373933.htm,3,2,105,105,2,1450000,,Casablanca,2 Mars,apartment,2024,11,avito,1,0,1,0,1,1,0,1,1,0
+https://www.avito.ma/fr/aakkari/appartements/Studio_avendre_à_akari_55753332.htm,1,1,29,29,1,390000,,Rabat,Aakkari,studio,2024,11,avito,0,0,0,0,1,0,0,1,0,0
+https://www.avito.ma/fr/hay_al_wahda/appartements/appartement_a_vendre__55731416.htm,2,1,,52,1,520000,,Mohammedia,Hay Al Wahda,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/sidi_bernoussi/appartements/Opportunité_Appartement_96_m²_plein_Bernoussi__55293539.htm,3,2,96,96,3,900000,,Casablanca,Sidi Bernoussi,apartment,2024,11,avito,0,1,0,0,1,1,0,1,1,0
+https://www.avito.ma/fr/la_ville_haute/appartements/Appartement_à_vendre_117_m²_à_Kénitra_54593226.htm,2,2,117,117,1,,250,Kénitra,La Ville Haute,apartment,2024,11,avito,1,1,1,1,1,1,0,1,0,0
+https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_à_vendre_104_m²_à_Casablanca_55775640.htm,2,2,104,104,3,1100000,150,Casablanca,Sidi Maarouf,apartment,2024,11,avito,0,1,0,1,1,0,0,1,1,0
+https://www.avito.ma/fr/mimosas/appartements/Appartement_à_vendre_197_m²_à_Kénitra_55777804.htm,3,3,,197,4,1600000,1,Kénitra,Mimosas,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/skikina/appartements/Appartement_à_vendre_98_m²_à_Temara_36996024.htm,2,2,98,98,4,750000,,Temara,Skikina,apartment,2024,11,avito,0,1,0,0,1,1,0,0,1,0
+https://www.avito.ma/fr/talaa/appartements/Appartement_à_vendre_93_m²_à_Temara_55330668.htm,2,2,93,93,4,950000,100,Temara,Talaa,apartment,2024,11,avito,0,1,0,0,0,0,0,0,1,0
+https://www.avito.ma/fr/ain_atig/appartements/Appartement_de_rêve_à_vendre__à_Ain_Atiq__50972579.htm,3,2,,105,1,8200,,Temara,Ain Atig,apartment,2024,11,avito,1,1,0,0,1,1,0,1,0,1
+https://www.avito.ma/fr/oulfa/appartements/Appartement_à_vendre_avec_garage__54700610.htm,2,2,100,100,2,,,Casablanca,Oulfa,apartment,2024,11,avito,0,0,0,0,1,0,1,1,0,0
+https://www.avito.ma/fr/azli/appartements/شقة_للبيع_بواجهتين__الطابق_الاول__55427605.htm,2,1,73,73,1,650000,100,Marrakech,Azli,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/mehdia/appartements/Appartement_à_vendre_78_m²_à_Mehdia_55751009.htm,2,1,78,78,1,,,Mehdia,Toute la ville,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/martil/appartements/شقق_بجودة_خيالية_للبيع_تتوفر_على_مصعد__55416027.htm,2,1,62,62,1,560000,,Martil,Toute la ville,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/asilah/appartements/Appartement_a_vendre_Asilah_Marina_golf_54029892.htm,1,1,53,53,1,630000,,Asilah,Toute la ville,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/asilah/appartements/Asilah_marina_golf_appartement__54594264.htm,2,2,81,81,1,870000,,Asilah,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/wifak/appartements/Bel_appartement_de_80m2_sur_El_Wifak_Temara_55033187.htm,2,1,80,80,3,720000,,Temara,Wifak,apartment,2024,11,avito,0,1,0,0,0,0,0,1,1,0
+https://www.avito.ma/fr/2_mars/appartements/Luxe_Appart_111m_2façade_Assenceur_et_Parking__55373824.htm,2,2,111,111,3,1370000,,Casablanca,2 Mars,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/شقة_جديدة_للبيع_بالهراويين_الجديدة_بالدار_البيضاء_55661853.htm,2,1,,66,3,487000,,Casablanca,Autre secteur,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,0
+https://www.avito.ma/fr/sidi_moumen/appartements/Appartement_à_vendre_72_m²_à_Casablanca_55830124.htm,2,0,40,72,1,828000,,Casablanca,Sidi Moumen,apartment,2024,11,avito,1,0,0,1,0,1,0,1,0,1
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_en_Vente_à_Bouznika_44799287.htm,2,1,63,63,2,490000,,Bouznika,Autre secteur,apartment,2024,11,avito,1,1,0,0,1,1,0,0,1,0
+https://www.avito.ma/fr/saidia/appartements/Résidence_fermée_Lux_SAIDIA_55120843.htm,2,1,82,,1,630000,,Saidia,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/2_mars/appartements/Appartement__nuef_149_m²_à_rue_roma_due_mars_54870114.htm,3,2,,149,4,1850000,,Casablanca,2 Mars,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/alsace_lorraine/appartements/appartement_avec_garage_et_terasse__55833702.htm,1,1,70,55,1,760000,200,Casablanca,Alsace Lorraine,apartment,2024,11,avito,1,1,0,0,1,0,0,1,1,1
+https://www.avito.ma/fr/oasis/appartements/Appart_à_vendre_H_S__à_Bachkou_Casablanca__55124454.htm,3,2,120,110,1,1500000,,Casablanca,Oasis,apartment,2024,11,avito,1,1,0,1,1,1,0,1,0,1
+https://www.avito.ma/fr/2_mars/appartements/Appartement_105_m²_à_2_Mars_2FASAD_55773009.htm,3,2,,105,1,1500000,200,Casablanca,2 Mars,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,0
+https://www.avito.ma/fr/autre_secteur/appartements/عرض_شقة_للبيع_قرب_منار_تطل_على_بحر_طنجة_51271628.htm,2,1,80,80,1,13000,,Tanger,Autre secteur,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,0
+https://www.avito.ma/fr/sidi_bouknadel/appartements/Rez_de_Jardin_Haut_Standing__Vue_Partielle_sur_Mer_48108502.htm,3,2,210,210,0,2800000,,Sidi Bouknadel,Toute la ville,apartment,2024,11,avito,1,1,0,1,1,1,1,1,1,1
+https://www.avito.ma/fr/massira_1/appartements/Appartement_à_vendre_100_m²_à_Temara_54933897.htm,4,2,100,100,2,1300000,100,Temara,Massira 1,apartment,2024,11,avito,0,1,0,1,0,1,1,0,0,0
+https://www.avito.ma/fr/tiznit/appartements/Appartement_à_vendre_80_m²_à_Tiznit_55588242.htm,3,2,105,80,1,450000,,Tiznit,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,1,1,1
+https://www.avito.ma/fr/centre_ville/appartements/appartement_ryad_tetouan_128_m_en_vente_55340066.htm,2,2,70,128,1,1590000,,Tanger,Centre ville,apartment,2024,11,avito,1,1,0,0,1,0,0,1,0,0
+https://www.avito.ma/fr/hay_riad/appartements/Joli_appart_à_Prestigia__55446495.htm,3,3,113,130,0,2650000,,Rabat,Hay Riad,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_3_chambres__84_m²_à_Sidi_Maarouf_55778479.htm,3,2,84,84,1,833000,,Casablanca,Sidi Maarouf,apartment,2024,11,avito,1,1,0,0,0,1,0,1,1,1
+https://www.avito.ma/fr/mehdia/appartements/Appartement_à_vendre_68_m²_à_Mehdia_55751041.htm,2,1,68,68,3,,,Mehdia,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/tabriquet/appartements/Appartement_à_vendre_138_m²_à_Salé_53228093.htm,4,2,138,138,4,1445000,,Salé,Tabriquet,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/roches_noires/appartements/Spacieux_appartement_avec_balcon_55171364.htm,2,2,,91,3,970000,,Casablanca,Roches Noires,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/guéliz/appartements/Studio_En_5ème_Étage_En_plein_gueliz_55770292.htm,1,1,55,55,5,1375000,,Marrakech,Guéliz,studio,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/martil/appartements/شقة_مفروشة_للبيع_55735504.htm,2,1,56,56,3,400000,100,Martil,Toute la ville,apartment,2024,11,avito,0,1,0,0,1,1,1,1,1,0
+https://www.avito.ma/fr/bir_rami/appartements/Appartement_Moderne_75m²___55833717.htm,2,2,75,75,3,400000,,Kénitra,Bir Rami,apartment,2024,11,avito,0,0,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/route_de_safi/appartements/Joli_Duplex_3_Chambres_À_Vendre_54745372.htm,3,2,,86,0,1200000,,Marrakech,Route de Safi,apartment,2024,11,avito,1,1,0,1,1,0,0,1,1,0
+https://www.avito.ma/fr/sidi_moumen/appartements/Appartement_avec_cour_privative_de_111_m²_55830096.htm,2,1,111,75,1,837000,,Casablanca,Sidi Moumen,apartment,2024,11,avito,1,0,0,1,0,1,0,1,0,1
+https://www.avito.ma/fr/quartier_des_hôpitaux/appartements/Appartement_dernier_étage_orienté_Sud_55757706.htm,3,2,214,173,5,2300000,375,Casablanca,Quartier des Hôpitaux,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,0
+https://www.avito.ma/fr/maarif/appartements/Bel_appartement_2Chs_80m2_Maarif_Extension_55694565.htm,2,2,80,80,2,1150000,300,Casablanca,Maarif,apartment,2024,11,avito,0,0,1,1,1,1,0,1,1,0
+https://www.avito.ma/fr/sidi_rahal/appartements/Appartement_à_vendre_85_m²_à_ola_blanca__55763857.htm,2,1,,85,0,1000000,,Sidi Rahal,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/dcheira/appartements/appartement_à_vendre__55792684.htm,2,1,52,52,1,490000,,Dcheira,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/marina/appartements/appartement_à_vendre__55485579.htm,2,2,106,106,2,2800000,,Agadir,Marina,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,0
+https://www.avito.ma/fr/bourgogne/appartements/lux_appartement_à_Bourgogne__53572705.htm,3,2,128,116,1,1300000,200,Casablanca,Bourgogne,apartment,2024,11,avito,1,1,0,1,0,0,0,0,1,0
+https://www.avito.ma/fr/oulfa/appartements/Appartement_vente_Zoubair_69_m2_55166789.htm,2,1,69,69,1,580000,,Casablanca,Oulfa,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/cabo_negro/appartements/Appartement_à_vendre_105m²_à_Lilac_Garden__55762536.htm,2,1,105,105,3,,,Cabo Negro,Toute la ville,apartment,2024,11,avito,1,0,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/centre_ville/appartements/appartement_neuf__110_m__ryad_tetouan_55060632.htm,3,3,110,110,1,1550000,,Tanger,Centre ville,apartment,2024,11,avito,1,1,0,0,1,1,0,0,1,1
+https://www.avito.ma/fr/oued_laou/appartements/Appartement_à_vendre_96_m²_à_Oued_Laou_55302097.htm,2,1,96,96,3,,,Oued Laou,Toute la ville,apartment,2024,11,avito,1,1,1,1,0,1,1,1,0,1
+https://www.avito.ma/fr/mehdia/appartements/Appartement_à_vendre_76_m²_à_Mehdia_55751103.htm,2,2,,76,3,,,Mehdia,Toute la ville,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/martil/appartements/Appartement_titré_proche_de_la_plage_à_Martil__55403559.htm,2,1,76,70,1,510000,1,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/centre_ville/appartements/Vente_Appart_Haut_standing_meublé_au_centre_Agadir_55833733.htm,2,2,,100,3,1690000,,Agadir,Centre Ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/el_bassatine/appartements/تجزئة_لطفي_الطابق_التاني_البساتين_مكناس_55822943.htm,3,1,120,115,2,660000,,Urgent,El Bassatine,apartment,2024,11,avito,0,1,1,1,0,0,0,1,0,0
+https://www.avito.ma/fr/guéliz/appartements/Appart_106m_Guéliz_hôtel_Kabir_habitat_commercial__55087636.htm,1,,,1,1,1600000,,Marrakech,Guéliz,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/agdal/appartements/Appartement_à_vendre_187_m²_à_Agdal_50898518.htm,3,2,,187,3,3400000,,Rabat,Agdal,apartment,2024,11,avito,1,0,1,0,1,1,0,1,1,0
+https://www.avito.ma/fr/hay_dakhla/appartements/appartement_à_vendre__55567859.htm,2,2,87,87,3,890000,,Agadir,Hay Dakhla,apartment,2024,11,avito,0,0,0,0,0,1,0,1,1,0
+https://www.avito.ma/fr/mimosas/appartements/appartement_a_vendre__55785079.htm,3,2,,126,3,,,Mohammedia,Mimosas,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_118_m²_à_Salé_53227964.htm,3,2,118,118,2,1225000,,Rabat,Autre secteur,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/martil/appartements/شقق_بجودة_عالية_للبيع__التصريح_كلي__54292317.htm,2,1,74,74,1,570000,,Martil,Toute la ville,apartment,2024,11,avito,0,1,0,0,1,1,0,0,1,0
+https://www.avito.ma/fr/martil/appartements/شقة_محفضة_للبيع_طابق_الأول_مدينة_مرتيل_55738599.htm,2,1,54,54,1,340000,100,Martil,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,0,1,1,1,0
+https://www.avito.ma/fr/autre_secteur/appartements/Immeuble_clôturé_à_Bouznika_55444803.htm,2,1,,70,3,6000,,Bouznika,Autre secteur,apartment,2024,11,avito,1,1,1,0,1,0,0,0,1,1
+https://www.avito.ma/fr/av_mohammed_vi/appartements/Appartement_à_vendre_96_m²_à__Prestigia_Marrakech_55807304.htm,3,2,96,96,1,24000000,,Marrakech,Av Mohammed VI,apartment,2024,11,avito,0,1,1,1,0,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/apparemment_à_vendre__55830068.htm,2,1,70,70,2,,,El Jadida,Autre secteur,apartment,2024,11,avito,0,0,0,0,0,1,0,1,1,0
+https://www.avito.ma/fr/mehdia/appartements/Appartement_à_vendre_98_m²_à_Mehdia_55751123.htm,2,2,,98,3,,,Mehdia,Toute la ville,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/mehdia/appartements/Appartement_à_vendre_75_m²_à_Mehdia_55751042.htm,2,1,75,75,3,,,Mehdia,Toute la ville,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/racine/appartements/CMN_AN_1684___Appartement_à_vendre_à_Racine_55794001.htm,4,3,230,230,5,5700000,,Casablanca,Racine,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/hay_salam/appartements/Appartement_F3_vide_à_vendre_situé_à_Salam_AGADIR__55815524.htm,2,1,103,,0,730000,,Agadir,Hay Salam,apartment,2024,11,avito,0,0,0,0,0,0,0,0,1,1
+https://www.avito.ma/fr/sidi_moumen/appartements/Appartement_à_vendre_62_m²_à_Casablanca_43421554.htm,2,2,62,62,4,370000,60,Casablanca,Sidi Moumen,apartment,2024,11,avito,0,0,0,0,0,1,0,1,1,0
+https://www.avito.ma/fr/hay_charaf/appartements/شقة_مفروشة_3_غرف_صالون_للبيع_بحي_الشرف_قرب_مرجان__55530252.htm,3,2,97,97,2,1050000,,مراكش,Hay Charaf,apartment,2024,11,avito,1,1,1,1,1,1,1,0,1,0
+https://www.avito.ma/fr/maarif/appartements/Belle_opportunité_à_Maarif_55512268.htm,1,,42,42,3,945000,,Casablanca,Maarif,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/ain_sebaa/appartements/Appartement_à_vendre__3_chambres_Salon_à_Casa_55246502.htm,3,2,109,109,2,,,Casablanca,Ain Sebaa,duplex/triplex,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_haut_stinding_55833800.htm,2,1,58,58,4,,100,El Jadida,Autre secteur,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/guéliz/appartements/RAK_GU_1016___Appartement_à_vendre_à_Guéliz_54561953.htm,2,2,113,113,5,1360000,,Marrakech,Guéliz,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/had_soualem/appartements/Appartement_à_vendre_120_m²_à_Had_Soualem_55833813.htm,3,2,144,120,3,700000,,Had Soualem,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,1
+https://www.avito.ma/fr/ain_sebaa/appartements/Appartement_à_vendre_à_Casablanca__55331719.htm,2,2,42,35,1,402500,,Casablanca,Ain Sebaa,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/quartier_des_hôpitaux/appartements/Appartement_neuf_60m²_au_Boulevard_Anoual__54987776.htm,2,2,60,60,1,1110000,,Casablanca,Quartier des Hôpitaux,apartment,2024,11,avito,1,0,0,1,1,1,0,1,1,0
+https://www.avito.ma/fr/le_centre_ville/appartements/Appartement_à_vendre_47_m²_à_Agadir_55818891.htm,1,1,,47,2,,,Agadir,Le centre-ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/maarif/appartements/Jolie_Appartement_à_vendre_131_m²_à_Casablanca_55644011.htm,3,2,,131,3,1780000,,Casablanca,Maarif,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/martil/appartements/شقة_ملكية_عدلية_3_غرف_55833838.htm,3,1,70,80,1,430000,60,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,1,0,0,0
+https://www.avito.ma/fr/maârif_extension/appartements/Appartement_dernier_étage_sans_vis_à_vis__55704308.htm,3,2,148,142,5,3700000,,Casablanca,Maârif Extension,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/el_mdrassi/appartements/شقة_مفروشة_للبيع_محفظة_مرتيل__55833842.htm,2,1,80,80,2,,,Tétouan,El Mdrassi,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/tamaris/appartements/Appartement_à_vendre1er_étage_à_Tamaris_Aqua_parc_51522778.htm,2,1,,51,1,360000,50,Tamaris,Toute la ville,apartment,2024,11,avito,0,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/malabata/appartements/appart_neuf_l_aide_l_état_6_min_malabata__55833921.htm,2,1,76,76,2,850000,,Tanger,Malabata,apartment,2024,11,avito,1,1,0,1,0,0,0,0,1,0
+https://www.avito.ma/fr/maamora/appartements/شقة_للبيع_وسط_المدينة_القنيطرة_55833922.htm,3,2,118,105,4,,120,Kénitra,Maamora,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/belvédère/appartements/appartement_a_vendre_a_belvedere_54898095.htm,2,2,,178,6,1600000,,Casablanca,Belvédère,apartment,2024,11,avito,1,1,0,1,1,1,0,1,0,0
+https://www.avito.ma/fr/aïn_chock/appartements/Appartement_à_vendre_79_m²_à_Casablanca_55459310.htm,3,1,,79,3,800000,,Casablanca,Aïn Chock,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/victoria/appartements/Appartement_neuf_à_vendre_à_Bouskoura_Victoria__54966217.htm,2,2,,84,4,740000,,Bouskoura,Victoria,apartment,2024,11,avito,1,1,1,1,1,1,0,0,1,1
+https://www.avito.ma/fr/hay_riad/appartements/Appts_à_Wifak_Témara_à_5min_Hay_Riad_53755248.htm,2,2,99,99,1,,,Rabat,Hay Riad,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_en_Vente_à_Bouznika_49664981.htm,2,1,65,65,2,490000,,Bouznika,Autre secteur,apartment,2024,11,avito,1,1,0,0,1,1,0,0,1,0
+https://www.avito.ma/fr/autre_secteur/appartements/RAK_TA_1063___Appartement_à_vendre_à_Quartier_Ch____55761382.htm,2,1,89,89,2,1200000,,Marrakech,Autre secteur,apartment,2024,11,avito,1,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/maamora/appartements/Appartement_à_vendre_centre_ville_maamora_Kénitra_50228791.htm,3,2,180,164,1,1120000,200,Kénitra,Maamora,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/dar_mehrez/appartements/appt_a_vendre__55833946.htm,3,2,,114,2,520000,,Fès,Dar Mehrez,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_MANISMANE_A_760000_DH_55833950.htm,2,2,74,86,2,760000,,Mohammedia,Autre secteur,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/agdal/appartements/Étage_villa__55346496.htm,1,,200,200,1,,,Rabat,Agdal,apartment,2024,11,avito,0,1,1,0,1,1,0,1,1,1
+https://www.avito.ma/fr/bourgogne/appartements/un_très_joli_appartement_à_vendre__55744968.htm,2,2,169,160,2,15000000,200,Casablanca,Bourgogne,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/had_soualem/appartements/appartement__luxe_de_luxe__52676535.htm,3,2,140,140,3,620000,12,Had Soualem,Toute la ville,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,1
+https://www.avito.ma/fr/errahma/appartements/Appartement_à_vendre_66_m²_à_Casablanca_54727807.htm,2,2,66,66,2,525000,,Casablanca,Errahma,apartment,2024,11,avito,0,1,0,0,0,1,0,0,1,1
+https://www.avito.ma/fr/nassim/appartements/Appartement_à_vendre_61_m²_à_Mohammedia_55833975.htm,2,1,,61,0,,,Mohammedia,Nassim,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/bourgogne/appartements/Grand_Appartement_4Chs_579_m²_à_Bourgogne_55762606.htm,4,3,310,579,5,3800000,,Casablanca,Bourgogne,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/mghogha/appartements/Appartement_à_DOHA_Meghogha_60m2_bon_prix__55752193.htm,2,1,,60,1,270000,,Tanger,Mghogha,apartment,2024,11,avito,0,1,0,0,0,0,1,0,1,0
+https://www.avito.ma/fr/tamesna/appartements/Duplex_kasba_115m_bonne_affaire__53953464.htm,2,,,116,1,680000,,Tamesna,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/oulfa/appartements/Appartement_à_vendre_54_m²_à_Casablanca_54903537.htm,2,1,,54,3,500000,,Casablanca,Oulfa,apartment,2024,11,avito,0,0,0,0,0,0,0,0,1,1
+https://www.avito.ma/fr/martil/appartements/appartement_a_vendre_a_cabo_negro_55316017.htm,2,1,,70,0,1250000,,Martil,Toute la ville,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/martil/appartements/شقة_للبيع_بمجمع_البيت_العتيق_الطابق_الثالث__54211040.htm,2,1,60,60,3,370000,,Martil,Toute la ville,apartment,2024,11,avito,0,1,0,0,1,0,0,1,1,0
+https://www.avito.ma/fr/al_kawtar/appartements/Apart_2_Façades_à_vendre_87_m²_3ème_étage_à_Bouzka_54043552.htm,2,1,,87,1,600000,,Bouznika,Al Kawtar,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/hay_salam/appartements/Appartement_à_vendre_87_m²_à_Hay_Salam_55754541.htm,3,2,,87,2,,,Agadir,Hay Salam,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/ain_atig/appartements/vente_appartement__55724718.htm,2,1,61,61,2,,,Temara,Ain Atig,apartment,2024,11,avito,0,1,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/abdelmoumen/appartements/Appartement_à_vendre__à_Moulay_Idriss_1_Casa_55755826.htm,3,2,,201,5,2800000,,Casablanca,Abdelmoumen,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,0
+https://www.avito.ma/fr/martil/appartements/شقق_عصرية_فاخرة_للبيع__55553772.htm,2,1,65,65,1,550000,,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_92M_SIESTA_RESORT_A1250000_55834083.htm,2,1,92,92,1,1250000,,Mohammedia,Autre secteur,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/al_kawtar/appartements/Appartement_à_vendre_84_m²_à_Bouznika__3ème_étage__54043561.htm,2,1,,84,1,570000,,Bouznika,Al Kawtar,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/tamesna/appartements/Appartement_haute_standing_choka_au_boulevard___55638789.htm,3,2,,118,2,1100000,,Tamesna,Toute la ville,apartment,2024,11,avito,1,1,0,1,0,1,0,1,1,1
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_à_vendre_3chambre_salon_à_Agadir_55434425.htm,3,2,93,89,1,970000,20,Agadir,Hay Mohammadi,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/hay_massira/appartements/Appartement_à_vendre_84_m²_à_Agadir_55381802.htm,3,2,108,84,2,600000,,Agadir,Hay Massira,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/guéliz/appartements/Studio_En_Plein_Coeur_Gueliz_55818971.htm,1,1,,43,4,1050000,,Marrakech,Guéliz,studio,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/oued_laou/appartements/شقق_للبيع_وادلو_55396254.htm,2,1,82,82,4,490000,100,Oued Laou,Toute la ville,apartment,2024,11,avito,1,1,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/ain_sebaa/appartements/Appartement_à_vendre_116_m²_à_Casablanca_51851919.htm,3,2,116,116,1,1250000,350,Casablanca,Ain Sebaa,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/souissi/appartements/Joli_appartement_basatin_el_Menzeh__55623172.htm,2,2,,70,2,1400000,,Rabat,Souissi,apartment,2024,11,avito,0,0,0,1,1,1,0,1,1,0
+https://www.avito.ma/fr/hamria/appartements/Appartement_à_vendre_208_m²_à_Meknès_52616781.htm,3,3,,208,,,250,Meknès,Hamria,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/racine/appartements/CMN_MA_1816___Appartement_à_vendre_à_Racine_55801316.htm,3,2,168,168,4,2800000,,Casablanca,Racine,apartment,2024,11,avito,1,1,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/anfa/appartements/CMN_AN_1530___Appartement_à_vendre_à_Anfa_55068233.htm,2,2,135,135,5,1820000,,Casablanca,Anfa,apartment,2024,11,avito,1,1,0,0,0,0,0,1,1,1
+https://www.avito.ma/fr/mediouna/appartements/شقق_مؤهلة_لدعم_السكن_بمديونة_55476825.htm,2,1,63,63,2,410000,,Mediouna,Toute la ville,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/aïn_borja/appartements/Appartement_de_standing_bd_ibnou_tachfine_54727876.htm,2,1,101,101,2,950000,200,Urgent,Aïn Borja,apartment,2024,11,avito,1,1,0,1,1,1,1,1,1,1
+https://www.avito.ma/fr/béni_mellal/appartements/شقة_سكنية_للبيع__55748982.htm,3,1,110,,2,550000,,Béni Mellal,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/harhoura/appartements/Appartement_114_m²_à_résidence_les_sables__45814550.htm,2,2,,114,1,1450000,,Temara,Harhoura,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,0
+https://www.avito.ma/fr/oasis/appartements/Appartement_neuf__à_vendre_à_Oasis_55483660.htm,2,2,,68,2,1240000,,Casablanca,Oasis,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/agdal/appartements/appartement_a_vendre_sur_quartier_d_agdal__55801197.htm,2,1,81,70,4,1500000,200,Rabat,Agdal,apartment,2024,11,avito,1,1,0,0,1,0,0,1,1,1
+https://www.avito.ma/fr/agdal/appartements/Bel_Apparemment_Haut_Agdal__55743684.htm,3,2,90,90,3,1750000,50,Rabat,Agdal,apartment,2024,11,avito,0,1,1,1,0,0,0,1,1,0
+https://www.avito.ma/fr/centre_ville/appartements/Appartement_à_vendre_85_m²_à_Tétouan_53687854.htm,3,1,85,85,2,520000,150,Urgent,Centre ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_treeplex_à_vendre_128_m²_à_H_M_Casa__55797441.htm,3,2,128,128,2,860000,,Casablanca,Hay Mohammadi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,1
+https://www.avito.ma/fr/najd/appartements/Appartt_à_70_m²_à_Najd_2_face_fiha_chorot_daam__54747026.htm,2,1,70,70,1,570000,,El Jadida,Najd,apartment,2024,11,avito,1,0,0,1,0,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Résidence_Premium_à_Kénitra_52157216.htm,2,2,86,80,1,850000,,Kénitra,Autre secteur,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/had_soualem/appartements/Appartement_à_vendre_98_m²_à_Had_Soualem_53897601.htm,3,2,128,98,1,,300,Had Soualem,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/hay_mohammadi/appartements/vendre_appartement__55834265.htm,3,2,169,157,3,,150,Casablanca,Hay Mohammadi,apartment,2024,11,avito,0,1,0,1,1,0,0,0,1,0
+https://www.avito.ma/fr/amal/appartements/Appartt_seul_escalier_130_m²_à_Mlle_cheikh_3_face__55072897.htm,3,2,130,130,2,890000,,El Jadida,Amal,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,1
+https://www.avito.ma/fr/aïn_borja/appartements/Magnifique_bureau_à_vendre_à_Ibnou_tachfine_55433802.htm,1,1,,43,3,595000,,Casablanca,Aïn Borja,apartment,2024,11,avito,1,1,1,1,1,0,0,1,1,0
+https://www.avito.ma/fr/autre_secteur/appartements/Bel_Appartement_Spacieux_à_Bouznika_55435258.htm,3,1,,90,2,650000,,Bouznika,Autre secteur,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/bourgogne/appartements/Appartement_moderne_110m²_résd__fermée_surCorniche_55216866.htm,2,3,136,110,2,1990000,300,Casablanca,Bourgogne,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/had_soualem/appartements/شقة_مفروشة_اقتصادية_باحد_سوالم_36_54733441.htm,2,2,55,60,2,237500,100,Promo -5%,Toute la ville,apartment,2024,11,avito,0,1,0,1,0,0,1,0,0,0
+https://www.avito.ma/fr/californie/appartements/Bel_appart_2pc1s_residence_a_californie__55444124.htm,2,1,58,58,2,560000,,Casablanca,Californie,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/sidi_bernoussi/appartements/شقة_مصلوحة_بحي_الازهر__54852190.htm,2,1,70,70,0,400000,,Casablanca,Sidi Bernoussi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/ville_verte/appartements/BOU_BO_1008___Appartement_à_vendre_à_Ville_Verte_55777542.htm,3,3,146,146,1,3100000,,Bouskoura,Ville verte,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_à_vendre_62_m²_à_BOUSKOURA_49684955.htm,2,2,62,62,2,632000,250,Casablanca,Sidi Maarouf,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/seyad/appartements/Appartement_à_vendre_80_m²_à_le_vallon_Kénitra_55481290.htm,2,2,82,82,2,630000,,Kénitra,Seyad,apartment,2024,11,avito,1,1,0,1,1,1,0,0,1,1
+https://www.avito.ma/fr/palmeraie/appartements/Appartement_lumineux_à_vendre_à_la_palmeraie__55741876.htm,2,1,,82,1,1800000,,Marrakech,Palmeraie,apartment,2024,11,avito,0,1,0,1,1,1,1,1,1,1
+https://www.avito.ma/fr/hay_riad/appartements/Appartement_202_m²_à_Rabat_55060608.htm,4,3,212,202,1,4500000,500,Rabat,Hay Riad,apartment,2024,11,avito,1,1,0,1,1,0,0,1,1,1
+https://www.avito.ma/fr/guéliz/appartements/Appartement_à_vendre_juste_Zara_carré_Eden_55718355.htm,3,2,,139,5,2000000,,Marrakech,Guéliz,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_68m²_à_Bouznika_53254155.htm,2,1,68,68,1,490000,,Bouznika,Autre secteur,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/route_de_sefrou/appartements/Appartement_à_vendre_181_m²_à_Fès_55447687.htm,3,2,180,145,1,925000,47,Fès,Route de Sefrou,apartment,2024,11,avito,0,1,0,1,0,1,0,0,0,1
+https://www.avito.ma/fr/mimosas/appartements/Appartement_à_vendre_95_m²_à_Mohammedia_55462984.htm,2,1,87,95,2,1470000,400,Mohammedia,Mimosas,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/hay_izdihar/appartements/شقة_مفروشة_للبيع_بحي_الإزدهار_قرب_مرجان__55213265.htm,2,1,55,55,4,450000,,Marrakech,Hay Izdihar,apartment,2024,11,avito,1,1,1,1,1,1,1,0,1,0
+https://www.avito.ma/fr/agdal/appartements/RBA_AG_1089___Appartement_à_vendre_à_Agdal_55486418.htm,2,1,114,114,4,1900000,,Rabat,Agdal,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/wifak/appartements/Appartement_à_vendre_43_m²_à_Temara_55716248.htm,1,1,43,43,1,,100,Temara,Wifak,apartment,2024,11,avito,0,1,0,0,1,1,0,1,1,0
+https://www.avito.ma/fr/guéliz/appartements/Studio_à_vendre_guéliz_51_m²_à_Marrakech___55762855.htm,1,1,,51,3,1050000,,Marrakech,Guéliz,studio,2024,11,avito,1,1,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/val_fleuri/appartements/Appartement_à_vendre_137_m²_à_Val_fleuri_55751426.htm,3,2,,137,2,2200000,,Casablanca,Val Fleuri,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,1
+https://www.avito.ma/fr/franceville/appartements/Appartement_91m²_FranceVille_TRAM_54065931.htm,2,2,102,91,2,1360000,,Casablanca,Franceville,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/najd/appartements/Appartement_68_m²_à_El_Jadida_52514508.htm,3,1,81,68,1,530000,,El Jadida,Najd,apartment,2024,11,avito,1,1,0,0,0,0,0,1,0,1
+https://www.avito.ma/fr/martil/appartements/Appartement_à_vendre_89_m²_à_Martil_55735757.htm,3,1,95,89,5,590000,,Martil,Toute la ville,apartment,2024,11,avito,0,0,0,0,0,1,0,0,0,1
+https://www.avito.ma/fr/ville_verte/appartements/_Appartement_Bouskoura_Ville_Verte_La_Palmeraie_55573254.htm,4,3,166,441,1,4700000,,Bouskoura,Ville verte,apartment,2024,11,avito,1,1,1,1,0,1,0,1,1,0
+https://www.avito.ma/fr/les_princesses/appartements/Studio_à_vendre_60_m²_à_Casablanca_55801051.htm,1,1,,60,1,,,Casablanca,Les Princesses,studio,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/bourgogne/appartements/Appartement_à_vendre_40_m²_à_Casablanca_54767502.htm,1,1,,40,1,780000,,Casablanca,Bourgogne,apartment,2024,11,avito,1,0,0,1,0,1,1,0,1,0
+https://www.avito.ma/fr/hay_mohammadi/appartements/Joli_Appartement_à_vendre_62M²_2ème_ètage_55666528.htm,2,2,,62,2,,,Agadir,Hay Mohammadi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/les_princesses/appartements/Appartement_HS_109_m²_à_Casablanca_55088937.htm,3,2,,109,2,1590000,400,Casablanca,Les Princesses,apartment,2024,11,avito,1,0,0,1,0,0,0,1,1,0
+https://www.avito.ma/fr/abdelmoumen/appartements/Appartement_à_vendre_121_m²_à_Casablanca_55495144.htm,3,2,,121,4,1420000,,Casablanca,Abdelmoumen,apartment,2024,11,avito,1,1,0,0,1,0,0,1,1,0
+https://www.avito.ma/fr/bir_rami_ouest/appartements/Appartement_à_vendre_111_m²_à_Kénitra_55797148.htm,3,3,120,111,2,775000,,Kénitra,Bir Rami Ouest,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,0
+https://www.avito.ma/fr/maamora/appartements/Appartement_à_vendre_Centre_Ville__55794280.htm,2,1,77,66,3,,,Kénitra,Maamora,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/bir_rami_ouest/appartements/Appartement_à_vendre_100_m²_à_Kénitra_55797207.htm,2,2,,100,3,699999,,Kénitra,Bir Rami Ouest,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,0
+https://www.avito.ma/fr/agdal/appartements/Appartement_à_vendre_135_m²_à_Rabat_55384796.htm,3,2,135,135,4,2599998,,Rabat,Agdal,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/aviation___mabella/appartements/RBA_YO_1077___Appartement_à_vendre_à_Aviation_______55623760.htm,2,2,114,114,3,1800000,,Rabat,Aviation - Mabella,apartment,2024,11,avito,1,0,0,0,0,0,0,1,0,0
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_à_vendre_89m²_à_H_M_Casablanca_55797652.htm,2,2,89,89,4,850000,,Casablanca,Hay Mohammadi,apartment,2024,11,avito,1,0,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/oulfa/appartements/Appartement_3_chambres_84_m²_à_Oulfa_55778406.htm,3,2,,84,1,790000,,Casablanca,Oulfa,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/hay_riad/appartements/appartement_130m²_à_Hayriad_envente__55453631.htm,3,2,130,116,3,2240000,,Rabat,Hay Riad,apartment,2024,11,avito,0,1,0,1,1,1,0,1,1,0
+https://www.avito.ma/fr/ain_sebaa/appartements/Appartement__de_luxe_à_vendre_100_m²_à_Casablanca_55810873.htm,2,2,100,88,1,1050000,299,Casablanca,Ain Sebaa,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/errahma/appartements/Appartement_à_vendre_87_m²_à_Casablanca_55342053.htm,2,2,87,87,1,696000,300,Casablanca,Errahma,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/route_de_ceuta/appartements/Appartements_de_luxe_près_de_Marjane_Tétouan_55775265.htm,2,2,70,70,1,700000,,Tétouan,Route de Ceuta,apartment,2024,11,avito,1,1,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_61_m²_à_Tétouan_55834475.htm,2,1,61,61,3,360000,,Tétouan,Autre secteur,apartment,2024,11,avito,0,1,0,0,0,1,0,0,0,0
+https://www.avito.ma/fr/oasis/appartements/Appartement_à_vendre_73_m²_à_Casablanca_55005240.htm,2,2,,73,2,1560000,,Casablanca,Oasis,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/quartier_des_hôpitaux/appartements/a_vendre_appart_sur_quartier_des_hopitaux__55815461.htm,2,2,,87,3,1350000,,Casablanca,Quartier des Hôpitaux,apartment,2024,11,avito,1,1,0,1,0,0,0,1,1,0
+https://www.avito.ma/fr/sidi_bernoussi/appartements/joli_apparemment_65m2_à_Sidi_Bernoussi_55580106.htm,3,,65,65,3,585000,,Casablanca,Sidi Bernoussi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/hay_oued_dahab/appartements/شقة_للبيع_مصلوحة__55834484.htm,2,1,90,90,2,350000,,Salé,Hay Oued Dahab,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/hay_atlas/appartements/Appartement_à_vendre_Hay_Atlas_Fes_52607676.htm,3,2,154,150,1,820000,100,Fès,Hay Atlas,apartment,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/hay_mohammadi/appartements/Appartement_à_vendre_67_m²_à_H_M_Casablanca_55793566.htm,1,1,67,67,3,630000,150,Casablanca,Hay Mohammadi,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_100_m²_à_Kénitra_55827222.htm,3,1,,100,1,,,Kénitra,Autre secteur,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/route_de_casablanca/appartements/Appartement_à_vendre_87_m²_à_Marrakech_55808099.htm,2,2,,87,3,1350000,,Marrakech,Route de Casablanca,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/bouskoura_centre/appartements/Studio_59m2_terrasse_Odyssia_Bouskoura_51952619.htm,1,2,15,44,2,535000,250,Bouskoura,Bouskoura centre,studio,2024,11,avito,1,1,0,0,1,1,0,1,1,1
+https://www.avito.ma/fr/autre_secteur/appartements/Top_appart_au_1er_étage_83m²_à_vendre__à_Bouznika__55365892.htm,3,1,,83,1,750000,150,Bouznika,Autre secteur,apartment,2024,11,avito,1,0,0,1,0,1,0,1,0,1
+https://www.avito.ma/fr/medina/appartements/Salé_Lamrissa_Appât_neuf_à_vendre_au_1er_étage_55819509.htm,2,1,,80,1,640000,,Salé,Medina,apartment,2024,11,avito,0,0,0,0,0,0,0,0,0,0
+https://www.avito.ma/fr/route_de_casablanca/appartements/Appartement_à_vendre_76_m²_à_Marrakech_55626939.htm,2,2,,76,1,912000,,Marrakech,Route de Casablanca,apartment,2024,11,avito,1,1,0,1,0,1,0,1,1,0
+https://www.avito.ma/fr/hamria/appartements/appartement_134_m_a_vendre__55771863.htm,3,3,134,130,0,850000,,Meknès,Hamria,apartment,2024,11,avito,1,0,1,0,1,0,0,1,1,1
+https://www.avito.ma/fr/malabata/appartements/Appartement_luxe_Vue_Mer_à_vendre_Tanger_Malabata_55611359.htm,3,3,400,166,0,4800000,,Tanger,Malabata,duplex/triplex,2024,11,avito,1,0,0,1,1,1,0,1,1,1
+https://www.avito.ma/fr/guéliz/appartements/Appartement_à_vendre_103_m²_à_Marrakech_55803709.htm,2,1,,103,2,1751000,,Marrakech,Guéliz,apartment,2024,11,avito,1,1,0,0,0,0,0,0,1,1
+https://www.avito.ma/fr/guéliz/appartements/Appartement_à_vendre_123_m²_à_Marrakech_Gueliz__53946556.htm,2,1,123,123,1,,,Marrakech,Guéliz,apartment,2024,11,avito,1,1,1,1,1,1,0,1,1,1
+https://www.avito.ma/fr/maamora/appartements/Appartement_sublime_118_m²_à_vendre_à_Kénitra_55259536.htm,3,2,118,118,4,1180000,1,Kénitra,Maamora,apartment,2024,11,avito,1,1,1,1,1,1,1,1,1,0
