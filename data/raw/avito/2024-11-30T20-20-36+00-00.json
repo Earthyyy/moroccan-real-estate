@@ -1,0 +1,1818 @@
+[
+{
+    "url": "https://www.avito.ma/fr/ain_atig/appartements/Appartement_à_vendre_51_m²_à_Temara_52635121.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": "50 m²",
+    "title": "Appartement à vendre 51 m² à Temara",
+    "price": "350 000 DH",
+    "city": "Temara",
+    "time": "il y a 7 minutes",
+    "user": "Agence le Caire",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Ain Atig",
+        "Frais de syndic / mois": "50",
+        "Salons": "1",
+        "Surface habitable": "51",
+        "Âge du bien": "6-10 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Balcon"
+    ],
+    "date_time": "2024-11-30 21:13",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/tamesna/appartements/appartement_à_vendre_à_tamesna_marina_d_or__55824425.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": null,
+    "title": "appartement à vendre à tamesna marina d'or ",
+    "price": "300 000 DH",
+    "city": "Tamesna",
+    "time": "il y a 36 minutes",
+    "user": "samira ait Abi",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Toute la ville",
+        "Salons": "1",
+        "Surface habitable": "50",
+        "Âge du bien": "6-10 ans",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [
+        "Cuisine équipée"
+    ],
+    "date_time": "2024-11-30 20:44",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/mers_el_kheir/appartements/شقة_للبيع_موقع_مميز__55835607.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": "72 m²",
+    "title": "شقة للبيع موقع مميز ",
+    "price": "600 000 DH",
+    "city": "Mers El Kheir",
+    "time": "il y a 34 minutes",
+    "user": "طارق",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Toute la ville",
+        "Frais de syndic / mois": "100",
+        "Salons": "1",
+        "Surface habitable": "72",
+        "Âge du bien": "6-10 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Balcon",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:46",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/aviation/appartements/Appartement_à_vendre_135_m²_à_Tanger_53687956.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "135 m²",
+    "title": "Appartement à vendre 135 m² à Tanger",
+    "price": "11 000 DH",
+    "city": "Tanger",
+    "time": "il y a 34 minutes",
+    "user": "Darcom Maroc",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Aviation",
+        "Salons": "1",
+        "Surface habitable": "135",
+        "Étage": "2"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:46",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/wifak/appartements/Appartement_à_vendre_43_m²_à_Temara_55716248.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "43 m²",
+    "title": "Appartement à vendre 43 m² à Temara",
+    "price": "Prix non spécifié",
+    "city": "Temara",
+    "time": "il y a 33 minutes",
+    "user": "Abderrahman",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Wifak",
+        "Frais de syndic / mois": "100",
+        "Salons": "1",
+        "Surface habitable": "43",
+        "Âge du bien": "11-20 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Balcon",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:47",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/malabata/appartements/Appartement_à_vendre_90_m²_à_Playa__54867948.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "90 m²",
+    "title": "Appartement à vendre 90 m² à Playa ",
+    "price": "1 700 000 DH",
+    "city": "Tanger",
+    "time": "il y a 33 minutes",
+    "user": "Darcom Maroc",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Malabata",
+        "Salons": "1",
+        "Surface habitable": "90",
+        "Âge du bien": "6-10 ans",
+        "Étage": "7+"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking"
+    ],
+    "date_time": "2024-11-30 20:47",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/sidi_maarouf/appartements/Appartement_3_chambres_84_m²_à_Sidi_Maarouf_55781703.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "84 m²",
+    "title": "Appartement 3 chambres 84 m² à Sidi Maarouf",
+    "price": "875 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 37 minutes",
+    "user": " O Maison",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Sidi Maarouf",
+        "Salons": "1",
+        "Surface habitable": "84",
+        "Âge du bien": "Neuf",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:43",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/derb_ghallef/appartements/CMN_MA_1794___Appartement_à_vendre_à_Plateau_55765769.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "137 m²",
+    "title": "CMN-MA-1794 - Appartement à vendre à Plateau",
+    "price": "2 900 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 37 minutes",
+    "user": "AGENZ.MA",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Derb Ghallef",
+        "Surface habitable": "137",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:43",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_75_m²_à_Kénitra_52349036.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "75 m²",
+    "title": "Appartement à vendre 75 m² à Kénitra",
+    "price": "500 000 DH",
+    "city": "Kénitra",
+    "time": "il y a 32 minutes",
+    "user": "Kénitra sakane  Groupe mabani amalaz",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Autre secteur",
+        "Salons": "1",
+        "Surface habitable": "75",
+        "Âge du bien": "Neuf",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [
+        "Balcon",
+        "Climatisation",
+        "Cuisine équipée",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:48",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/oulfa/appartements/Appartement__55835625.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "108 m²",
+    "title": "Appartement ",
+    "price": "Prix non spécifié",
+    "city": "Casablanca",
+    "time": "il y a 30 minutes",
+    "user": "khalid",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Oulfa",
+        "Salons": "0",
+        "Surface habitable": "108",
+        "Étage": "2"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:50",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/plage_rose_marae/appartements/villa_à_400_mètres_de_la_plage_skhirat_55835627.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": null,
+    "title": "villa à 400 mètres de la plage skhirat",
+    "price": "28 000 000 DH",
+    "city": "Skhirat",
+    "time": "il y a 30 minutes",
+    "user": "Mounir Asseraf",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Plage rose marae",
+        "Salons": "1",
+        "Surface habitable": "140",
+        "Âge du bien": "21+ ans",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Cuisine équipée",
+        "Duplex",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:50",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/hay_targa/appartements/vente_Appt_de_3_chambre_salon_piscine__targa_55809133.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "124 m²",
+    "title": "vente Appt de 3 chambre salon,piscine, targa",
+    "price": "17 000 DH",
+    "city": "Marrakech",
+    "time": "il y a 30 minutes",
+    "user": "ASASTI IMMO",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Hay Targa",
+        "Salons": "1",
+        "Surface habitable": "124",
+        "Âge du bien": "1-5 ans",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:50",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/quartier_des_hôpitaux/appartements/Appartement_à_vendre_145m²_à_Casablanca_54135288.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": "145 m²",
+    "title": "Appartement à vendre 145m² à Casablanca",
+    "price": "1 150 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 32 minutes",
+    "user": "Benmoussa immobilier",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Quartier des Hôpitaux",
+        "Frais de syndic / mois": "400",
+        "Salons": "1",
+        "Surface habitable": "85",
+        "Âge du bien": "11-20 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Concierge",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:48",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/oulfa/appartements/Casablanca__55835643.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "108 m²",
+    "title": "Casablanca ",
+    "price": "Prix non spécifié",
+    "city": "Casablanca",
+    "time": "il y a 29 minutes",
+    "user": "khalid",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Oulfa",
+        "Salons": "1",
+        "Surface habitable": "108",
+        "Étage": "2"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:51",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/val_fleuri/appartements/Appartement_à_vendre_109_m²_à_Casablanca_55620057.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "118 m²",
+    "title": "Appartement à vendre 109 m² à Casablanca",
+    "price": "1 500 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 27 minutes",
+    "user": "fatima",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Val Fleuri",
+        "Frais de syndic / mois": "400",
+        "Salons": "2",
+        "Surface habitable": "109",
+        "Âge du bien": "11-20 ans",
+        "Étage": "5"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:53",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/anfa/appartements/CMN_AN_1530___Appartement_à_vendre_à_Anfa_55068233.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "135 m²",
+    "title": "CMN-AN-1530 - Appartement à vendre à Anfa",
+    "price": "1 820 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 32 minutes",
+    "user": "AGENZ.MA",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Anfa",
+        "Surface habitable": "135",
+        "Étage": "5"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:48",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/manar/appartements/Appartement_à_vendre_95m²_à_Tanger_55403148.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "95 m²",
+    "title": "Appartement à vendre 95m² à Tanger",
+    "price": "Prix non spécifié",
+    "city": "Tanger",
+    "time": "il y a 27 minutes",
+    "user": "Darcom Maroc",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "manar",
+        "Salons": "1",
+        "Surface habitable": "95",
+        "Âge du bien": "Neuf",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Meublé",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:53",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/maârif_extension/appartements/CMN_MA_1781___Appartement_à_vendre_à_Maârif_55716228.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "87 m²",
+    "title": "CMN-MA-1781 - Appartement à vendre à Maârif",
+    "price": "1 250 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "AGENZ.MA",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Maârif Extension",
+        "Surface habitable": "87",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Balcon",
+        "Parking",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/sidi_bernoussi/appartements/Appartement_à_vendre_64_m²_à_Casablanca_37621456.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": null,
+    "total_area": null,
+    "title": "Appartement à vendre 64 m² à Casablanca",
+    "price": "Prix non spécifié",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Groupe Ikamati",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Sidi Bernoussi",
+        "Surface habitable": "64",
+        "Âge du bien": "Neuf",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Climatisation",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/bouskoura_centre/appartements/Appartement_à_vendre_à_Bouskoura_51389883.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "91 m²",
+    "title": "Appartement à vendre à Bouskoura",
+    "price": "780 000 DH",
+    "city": "Bouskoura",
+    "time": "il y a 1 heure",
+    "user": "akare ma",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Bouskoura centre",
+        "Salons": "1",
+        "Surface habitable": "75",
+        "Âge du bien": "Neuf",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/bourgogne/appartements/68346_Vente_Appt_à_Casablanca_Bourgogne__Anfa__de__55753025.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "129 m²",
+    "title": "68346-Vente Appt à Casablanca Bourgogne (Anfa) de ",
+    "price": "2 500 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Bourgogne",
+        "Surface habitable": "129",
+        "Âge du bien": "21+ ans",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Cuisine équipée",
+        "Meublé",
+        "Parking",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/hay_hassani/appartements/66370_Vente_Appt_à_Casablanca_Hay_Hassani_de_111_m_55715924.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "111 m²",
+    "title": "66370-Vente Appt à Casablanca Hay Hassani de 111 m",
+    "price": "1 195 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Hay Hassani",
+        "Frais de syndic / mois": "2400",
+        "Surface habitable": "98",
+        "Âge du bien": "11-20 ans",
+        "Étage": "5"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Cuisine équipée",
+        "Parking"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/oasis/appartements/Appartement_neuf__à_vendre_à_Oasis_55483660.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": null,
+    "title": "Appartement neuf  à vendre à Oasis",
+    "price": "1 240 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "akare ma",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Oasis",
+        "Salons": "1",
+        "Surface habitable": "68",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/ville_verte/appartements/Appartement_Raffiné_82_m²_à_Bouskoura_55756291.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "82 m²",
+    "title": "Appartement Raffiné 82 m² à Bouskoura",
+    "price": "815 000 DH",
+    "city": "Bouskoura",
+    "time": "il y a 1 heure",
+    "user": "Casa Immo",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Ville verte",
+        "Salons": "1",
+        "Surface habitable": "82",
+        "Âge du bien": "Neuf",
+        "Étage": "3"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/centre_ville/appartements/شقق_فاخرة_للبيع_بجوار_مرجان_تطوان_55802279.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "1",
+    "total_area": "102 m²",
+    "title": "شقق فاخرة للبيع بجوار مرجان تطوان",
+    "price": "Prix non spécifié",
+    "city": "Tétouan",
+    "time": "il y a 1 heure",
+    "user": "Asidq Immobiliere",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Centre ville",
+        "Salons": "1",
+        "Surface habitable": "102",
+        "Âge du bien": "Neuf",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/sbata/appartements/Appartement_à_vendre_à_Salmia_2_51529993.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": null,
+    "title": "Appartement à vendre à Salmia 2",
+    "price": "825 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "akare ma",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Sbata",
+        "Salons": "1",
+        "Surface habitable": "97",
+        "Âge du bien": "Neuf",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Climatisation",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/hay_zaytoun/appartements/Terrain_villa_Hay_Zaitoun_à_vendre_354_m²_à_Agadir_53554134.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "0",
+    "total_area": "354 m²",
+    "title": "Terrain villa Hay Zaitoun à vendre 354 m² à Agadir",
+    "price": "Prix non spécifié",
+    "city": "Agadir",
+    "time": "il y a 1 heure",
+    "user": "369 Oasisimmoagadir Thierry",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Hay Zaytoun",
+        "Salons": "0",
+        "Surface habitable": "354",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_58_m²_à_El_Jadida_55654332.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": null,
+    "title": "Appartement à vendre 58 m² à El Jadida",
+    "price": "390 000 DH",
+    "city": "El Jadida",
+    "time": "il y a 59 minutes",
+    "user": "abdelhak",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Autre secteur",
+        "Frais de syndic / mois": "50",
+        "Salons": "1",
+        "Surface habitable": "58",
+        "Âge du bien": "6-10 ans",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Parking"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/racine/appartements/CMN_AN_1124___Appartement_à_vendre_à_Racine_54561850.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "3",
+    "total_area": "130 m²",
+    "title": "CMN-AN-1124 - Appartement à vendre à Racine",
+    "price": "2 300 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "AGENZ.MA",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Racine",
+        "Surface habitable": "130",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Parking",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/administratif/appartements/TNG_TA_1075___Appartement_à_vendre_à_Administratif_55771652.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "138 m²",
+    "title": "TNG-TA-1075 - Appartement à vendre à Administratif",
+    "price": "2 400 000 DH",
+    "city": "Tanger",
+    "time": "il y a 1 heure",
+    "user": "AGENZ.MA",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Administratif",
+        "Surface habitable": "138",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/centre_ville/appartements/شقق_120_m²_للبيع_في_ولاية_تطوان_55802290.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "1",
+    "total_area": "120 m²",
+    "title": "شقق 120 m² للبيع في ولاية تطوان",
+    "price": "Prix non spécifié",
+    "city": "Tétouan",
+    "time": "il y a 1 heure",
+    "user": "Asidq Immobiliere",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Centre ville",
+        "Salons": "1",
+        "Surface habitable": "120",
+        "Âge du bien": "1-5 ans",
+        "Étage": "3"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Cuisine équipée",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/diour_jamaa/appartements/Appartement_à_vendre_50_m²_à_Rabat_55835548.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": "50 m²",
+    "title": "Appartement à vendre 50 m² à Rabat",
+    "price": "430 000 DH",
+    "city": "Rabat",
+    "time": "il y a 58 minutes",
+    "user": "Fatima",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Diour Jamaa",
+        "Salons": "1",
+        "Surface habitable": "50",
+        "Âge du bien": "11-20 ans",
+        "Étage": "1"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:22",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/triangle_d'or/appartements/TRIANGLE_D_OR_BEL_APPT_A_VENDRE_AVEC_TERRASSE__55809049.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "267 m²",
+    "title": "TRIANGLE D’OR BEL APPT A VENDRE AVEC TERRASSE ",
+    "price": "4 500 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "PERIMETRE FONCIER",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Triangle d'Or",
+        "Salons": "2",
+        "Surface habitable": "189",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:20",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/had_soualem/appartements/appartement__49938504.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "143 m²",
+    "title": "appartement ",
+    "price": "620 000 DH",
+    "city": "Had Soualem",
+    "time": "il y a 1 heure",
+    "user": "Al aouni immobilier",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Toute la ville",
+        "Salons": "2",
+        "Surface habitable": "120",
+        "Âge du bien": "Neuf",
+        "Étage": "3"
+    },
+    "equipments": [
+        "Balcon",
+        "Cuisine équipée",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/maarif/appartements/Appartement_80m²_Maarif_Ext_54055210.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": "80 m²",
+    "title": "Appartement 80m² Maarif Ext",
+    "price": "1 150 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "ABAMNY Immobilier",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Maarif",
+        "Salons": "1",
+        "Surface habitable": "80",
+        "Âge du bien": "11-20 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Concierge",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/maarif/appartements/Studio_37m_Neuf_haut_standing_Maarif_Ex_54506742.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "37 m²",
+    "title": "Studio 37m Neuf haut standing Maarif Ex",
+    "price": "Prix non spécifié",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Logic Immo",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Maarif",
+        "Salons": "1",
+        "Surface habitable": "37",
+        "Âge du bien": "Neuf",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Climatisation"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/ferme_bretone/appartements/65019_Vente_Appt_à_Casablanca_Ferme_Bretonne_de_15_55825049.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "3",
+    "total_area": "152 m²",
+    "title": "65019-Vente Appt à Casablanca Ferme Bretonne de 15",
+    "price": "3 200 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Ferme Bretone",
+        "Surface habitable": "152",
+        "Âge du bien": "6-10 ans",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/bourgogne/appartements/CMN_AN_1676___Appartement_à_vendre_à_Bourgogne_55741028.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": "75 m²",
+    "title": "CMN-AN-1676 - Appartement à vendre à Bourgogne",
+    "price": "950 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "AGENZ.MA",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Bourgogne",
+        "Surface habitable": "75",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [
+        "Balcon",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/les_princesses/appartements/LES_PRINCESSES_JOLI_STUDIO_A_VENDRE_AVEC_TERRASSE_55414854.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "57 m²",
+    "title": "LES PRINCESSES JOLI STUDIO A VENDRE AVEC TERRASSE",
+    "price": "1 280 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "PERIMETRE FONCIER",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Les Princesses",
+        "Salons": "1",
+        "Surface habitable": "51",
+        "Âge du bien": "Neuf",
+        "Étage": "5"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Climatisation",
+        "Concierge",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/oulfa/appartements/appartement_pour_les_familles__55835467.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": null,
+    "title": "appartement pour les familles ",
+    "price": "Prix non spécifié",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Johan youssef",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Oulfa",
+        "Salons": "1",
+        "Surface habitable": "70",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Cuisine équipée",
+        "Meublé",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_48_m²_à_Mohammedia_55420918.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": null,
+    "title": "Appartement à vendre 48 m² à Mohammedia",
+    "price": "Prix non spécifié",
+    "city": "Mohammedia",
+    "time": "il y a 1 heure",
+    "user": "Khalid",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Autre secteur",
+        "Salons": "1",
+        "Surface habitable": "48",
+        "Âge du bien": "6-10 ans",
+        "Étage": "1"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/autre_secteur/appartements/App_avec_garage_102_m²_à_Marrakech_2_faç_55040221.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "102 m²",
+    "title": "App avec garage 102 m² à Marrakech 2 faç",
+    "price": "830 000 DH",
+    "city": "Marrakech",
+    "time": "il y a 1 heure",
+    "user": "Badr",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Autre secteur",
+        "Salons": "2",
+        "Surface habitable": "102",
+        "Âge du bien": "Neuf",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [
+        "Climatisation",
+        "Cuisine équipée",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/agdal/appartements/Appartement_à_vendre_200_m²_à_Rabat_51636267.htm",
+    "n_bedrooms": "4",
+    "n_bathrooms": "3",
+    "total_area": "200 m²",
+    "title": "Appartement à vendre 200 m² à Rabat",
+    "price": "3 200 000 DH",
+    "city": "Rabat",
+    "time": "il y a 1 heure",
+    "user": "Between bonnes affaires immo",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Agdal",
+        "Salons": "2",
+        "Surface habitable": "200",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Concierge",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/maârif_extension/appartements/MAARIF_EXTENSION_JOLI_APPARTEMENT_A_VENDRE_135_m²_54984203.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "135 m²",
+    "title": "MAARIF EXTENSION JOLI APPARTEMENT A VENDRE 135 m²",
+    "price": "1 620 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "PERIMETRE FONCIER",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Maârif Extension",
+        "Salons": "1",
+        "Surface habitable": "135",
+        "Étage": "5"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/aida/appartements/Appartement_à_vendre_97_m²_à_Tanger_55529881.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "97 m²",
+    "title": "Appartement à vendre 97 m² à Tanger",
+    "price": "1 100 000 DH",
+    "city": "Tanger",
+    "time": "il y a 1 heure",
+    "user": "Darcom Maroc",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Aida",
+        "Frais de syndic / mois": "250",
+        "Salons": "1",
+        "Surface habitable": "97",
+        "Âge du bien": "6-10 ans",
+        "Étage": "3"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/aïn_borja/appartements/31813_Vente_Appt_à_Casablanca_Ain_Borja_de_77_m²_54688099.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": "77 m²",
+    "title": "31813-Vente Appt à Casablanca Ain Borja de 77 m²",
+    "price": "970 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Aïn Borja",
+        "Surface habitable": "77",
+        "Âge du bien": "6-10 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Chauffage",
+        "Cuisine équipée",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/quartier_des_hôpitaux/appartements/54295_Vente_Appt_à_Casablanca_Hopitaux_de_166_m²_55265014.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "166 m²",
+    "title": "54295-Vente Appt à Casablanca Hopitaux de 166 m²",
+    "price": "2 200 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Quartier des Hôpitaux",
+        "Surface habitable": "166",
+        "Âge du bien": "11-20 ans",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Cuisine équipée",
+        "Parking",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/centre_ville/appartements/Appartement_à_vendre_109_m²_à_Tétouan_55392328.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "109 m²",
+    "title": "Appartement à vendre 109 m² à Tétouan",
+    "price": "820 000 DH",
+    "city": "Tétouan",
+    "time": "il y a 1 heure",
+    "user": "Madame",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Centre ville",
+        "Frais de syndic / mois": "150",
+        "Salons": "2",
+        "Surface habitable": "109",
+        "Âge du bien": "6-10 ans",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Concierge",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/ain_sebaa/appartements/Appartement_Neuf_3_CH_109_m²_à_Ain_sebaa_55113064.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "3",
+    "total_area": "109 m²",
+    "title": "Appartement Neuf 3 CH 109 m² à Ain sebaa",
+    "price": "1 110 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Avito Immo Neuf",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Ain Sebaa",
+        "Salons": "1",
+        "Surface habitable": "109",
+        "Âge du bien": "Neuf",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/cité_adrar/appartements/appartement_a_vendre__55835328.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "72 m²",
+    "title": "appartement a vendre ",
+    "price": "690 000 DH",
+    "city": "Agadir",
+    "time": "il y a 2 heures",
+    "user": "morad",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Cité Adrar",
+        "Frais de syndic / mois": "1800",
+        "Salons": "0",
+        "Surface habitable": "72",
+        "Âge du bien": "6-10 ans",
+        "Étage": "5"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Meublé",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 19:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/gauthier/appartements/GAUTHIER_JOLI_STUDIO_A_VENDRE__55355264.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "61 m²",
+    "title": "GAUTHIER JOLI STUDIO A VENDRE ",
+    "price": "1 200 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 2 heures",
+    "user": "PERIMETRE FONCIER",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Gauthier",
+        "Salons": "1",
+        "Surface habitable": "54",
+        "Étage": "5"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 19:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/fonciere/appartements/48719_Vente_Appt_à_Casablanca_Fonciere_de_70_m²_55229592.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "70 m²",
+    "title": "48719-Vente Appt à Casablanca Fonciere de 70 m²",
+    "price": "850 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 2 heures",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Fonciere",
+        "Frais de syndic / mois": "4320",
+        "Surface habitable": "54",
+        "Âge du bien": "11-20 ans",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Chauffage",
+        "Cuisine équipée",
+        "Meublé",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 19:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/bouskoura_centre/appartements/Appartement_Confortable_82_m²_à_Bouskoura_55756046.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "82 m²",
+    "title": "Appartement Confortable 82 m² à Bouskoura",
+    "price": "815 000 DH",
+    "city": "Bouskoura",
+    "time": "il y a 2 heures",
+    "user": "Casa Immo",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Bouskoura centre",
+        "Salons": "1",
+        "Surface habitable": "82",
+        "Âge du bien": "Neuf",
+        "Étage": "3"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 19:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/val_fleuri/appartements/VAL_FLEURI_BEL_APPARTEMENT_A_VENDRE_160_m²_54834414.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "160 m²",
+    "title": "VAL FLEURI BEL APPARTEMENT A VENDRE 160 m²",
+    "price": "2 480 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "PERIMETRE FONCIER",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Val Fleuri",
+        "Salons": "2",
+        "Surface habitable": "160",
+        "Âge du bien": "11-20 ans",
+        "Étage": "2"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/bourgogne/appartements/CMN_AN_1650___Appartement_à_vendre_à_Bourgogne_55518303.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "83 m²",
+    "title": "CMN-AN-1650 - Appartement à vendre à Bourgogne",
+    "price": "1 050 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "AGENZ.MA",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Bourgogne",
+        "Surface habitable": "83",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [
+        "Ascenseur"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/maârif_extension/appartements/64631_Vente_Appt_à_Casablanca_Maarif_Extension_de__55662183.htm",
+    "n_bedrooms": "3",
+    "n_bathrooms": "2",
+    "total_area": "292 m²",
+    "title": "64631-Vente Appt à Casablanca Maarif Extension de ",
+    "price": "4 600 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Maârif Extension",
+        "Frais de syndic / mois": "9600",
+        "Surface habitable": "200",
+        "Âge du bien": "11-20 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Cuisine équipée",
+        "Parking",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/sidi_belyout/appartements/Studio_en_vente_vue_sur_mer_55636837.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "57 m²",
+    "title": "Studio en vente vue sur mer",
+    "price": "26 000 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Paradis Solution Immobilier",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Sidi Belyout",
+        "Frais de syndic / mois": "850",
+        "Salons": "1",
+        "Surface habitable": "57",
+        "Âge du bien": "1-5 ans",
+        "Étage": "5"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Meublé",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/belvédère/appartements/appartement_à_vendre__55835380.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "56 m²",
+    "title": "appartement à vendre ",
+    "price": "600 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "ASAGREN IMMOBILIER",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Belvédère",
+        "Salons": "1",
+        "Surface habitable": "56",
+        "Étage": "4"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Concierge",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/bir_rami_ouest/appartements/Appt_78_m²_2_Chambres__Offres_très_Limitée_55741224.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "85 m²",
+    "title": "Appt 78 m²,2 Chambres, Offres très Limitée",
+    "price": "546 000 DH",
+    "city": "Kénitra",
+    "time": "il y a 1 heure",
+    "user": "Lead Advisory Consulting",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Bir Rami Ouest",
+        "Salons": "2",
+        "Surface habitable": "78",
+        "Âge du bien": "Neuf",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Climatisation",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre_108_m²_à_Benslimane_55835182.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "108 m²",
+    "title": "Appartement à vendre 108 m² à Benslimane",
+    "price": "1 099 999 DH",
+    "city": "Benslimane",
+    "time": "il y a 1 heure",
+    "user": "HOJOZ IMMO",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Autre secteur",
+        "Salons": "2",
+        "Surface habitable": "108",
+        "Âge du bien": "11-20 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/autre_secteur/appartements/Appartement_à_vendre__55835397.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "1",
+    "total_area": null,
+    "title": "Appartement à vendre ",
+    "price": "32 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "zahra abd",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Autre secteur",
+        "Salons": "1",
+        "Surface habitable": "1",
+        "Âge du bien": "11-20 ans",
+        "Étage": "4"
+    },
+    "equipments": [],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/maarif/appartements/Maârif_extension_Bel_APPARTEMENT_A_VENDRE_224_M²_54128372.htm",
+    "n_bedrooms": "4",
+    "n_bathrooms": "3",
+    "total_area": "241 m²",
+    "title": "Maârif extension Bel APPARTEMENT A VENDRE 224 M²",
+    "price": "4 000 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "PERIMETRE FONCIER",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Maarif",
+        "Salons": "3",
+        "Surface habitable": "224",
+        "Âge du bien": "Neuf",
+        "Étage": "7+"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Concierge",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/malabata/appartements/Studio_à_vendre_55_m²_à_Tanger_55768717.htm",
+    "n_bedrooms": "1",
+    "n_bathrooms": "1",
+    "total_area": "55 m²",
+    "title": "Studio à vendre 55 m² à Tanger",
+    "price": "Prix non spécifié",
+    "city": "Tanger",
+    "time": "il y a 1 heure",
+    "user": "Darcom Maroc",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Malabata",
+        "Salons": "1",
+        "Surface habitable": "55",
+        "Âge du bien": "11-20 ans",
+        "Étage": "1"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Concierge",
+        "Meublé"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/casablanca_finance_city/appartements/70511_Vente_Appt_à_Casablanca_Casablanca_Finance_C_55815002.htm",
+    "n_bedrooms": "4",
+    "n_bathrooms": "3",
+    "total_area": "392 m²",
+    "title": "70511-Vente Appt à Casablanca Casablanca Finance C",
+    "price": "5 300 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Casablanca Finance City",
+        "Surface habitable": "260",
+        "Âge du bien": "6-10 ans",
+        "Étage": "Rez de chaussée"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Cuisine équipée",
+        "Duplex",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+},
+{
+    "url": "https://www.avito.ma/fr/bourgogne/appartements/60564_Vente_Appt_à_Casablanca_Bourgogne__Anfa__de__55539456.htm",
+    "n_bedrooms": "2",
+    "n_bathrooms": "2",
+    "total_area": "148 m²",
+    "title": "60564-Vente Appt à Casablanca Bourgogne (Anfa) de ",
+    "price": "1 950 000 DH",
+    "city": "Casablanca",
+    "time": "il y a 1 heure",
+    "user": "Yakeey",
+    "attributes": {
+        "Type": "Appartements, à vendre",
+        "Secteur": "Bourgogne",
+        "Frais de syndic / mois": "5500",
+        "Surface habitable": "94",
+        "Âge du bien": "11-20 ans",
+        "Étage": "7+"
+    },
+    "equipments": [
+        "Ascenseur",
+        "Balcon",
+        "Chauffage",
+        "Climatisation",
+        "Cuisine équipée",
+        "Parking",
+        "Sécurité",
+        "Terrasse"
+    ],
+    "date_time": "2024-11-30 20:21",
+    "year": 2024,
+    "month": 11
+}
+]
