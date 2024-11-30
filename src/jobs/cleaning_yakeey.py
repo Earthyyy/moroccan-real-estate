@@ -251,6 +251,6 @@ def main(input_path, output_path):
 
 
 if __name__ == "__main__":
-    input_path = "./data/raw/yakeey/2024-11-30T19-32-14+00-00.json"
+    input_path = "./data/raw/yakeey/2024-11-30T19-39-41+00-00.json"
     output_path = input_path.replace("/raw/", "/clean/").replace(".json", "")
     main(input_path, output_path)
