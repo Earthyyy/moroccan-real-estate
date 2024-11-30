@@ -1,5 +1,4 @@
 import glob
-import json
 from datetime import datetime
 from typing import ClassVar, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
@@ -201,25 +200,17 @@ class AvitoSpider(scrapy.Spider):
             datetime: The date of the most recent announcement.
         """
         try:
-            # get the most recent json file
+            # get the most recent extraction date
             files = glob.glob(glob_path)
-            recent_file = max(
-                files,
-                key=lambda file: datetime.strptime(
-                    file.split("/")[-1].split("_")[-1].split(".")[0], "%Y-%m-%d"
-                ),
+            return max(
+                [
+                    datetime.strptime(
+                        file.split("/")[-1][:-11], "%Y-%m-%dT%H-%M-%S"
+                    ) for file in files
+                ]
             )
-            # get the most recent date from the file
-            with open(recent_file, "r") as file:
-                data = json.load(file)
-                return max(
-                    [
-                        datetime.strptime(row["date_time"], "%Y-%m-%d %H:%M")
-                        for row in data
-                    ]
-                )
         # return the base date if no file is found
-        except (ValueError, FileNotFoundError, json.JSONDecodeError):
+        except ValueError:
             return datetime(
                 2024, 1, 1
             )  # we are going to ignore announcements older than this date

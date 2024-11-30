@@ -16,7 +16,7 @@ import var_avito as va
 
 def test_set_recent_date(avito_spider):
     glob_path = "./tests/unit/data/raw/avito/*.json"
-    assert avito_spider.set_recent_date(glob_path) == datetime(2024, 11, 14, 15, 53)
+    assert avito_spider.set_recent_date(glob_path) == datetime(2024, 11, 30, 14, 44, 37)
 
 
 # Tests based on the announcements listing page
