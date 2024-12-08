@@ -123,3 +123,5 @@ cython_debug/
 
 # nox
 .nox
+
+libs/

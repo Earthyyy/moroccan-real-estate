@@ -52,7 +52,7 @@ def test_drop_na_records(spark):
 def test_add_year_month_columns(spark):
     sample_data = [(1, "sample data"), (2, "more data")]
     dataframe = spark.createDataFrame(sample_data, ["id", "value"])
-    file_path = "data/raw/yakeey/yakeey_2024-11-11.json"
+    file_path = "./tests/unit/data/raw/yakeey/2024-11-14T14:44:37+00-00.json"
 
     result_df = add_year_month_columns(dataframe, file_path)
 

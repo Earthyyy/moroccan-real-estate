@@ -249,8 +249,8 @@ def load_fact_table_to_duckdb(property_facts: DataFrame, duckdb_path: str):
 if __name__ == "__main__":
 
     paths = [
-        "./data/clean/avito/avito_2024-11-14/part-00000-c5ec7435-1b09-464e-b4eb-4c5fee81b8d5-c000.csv",
-        "./data/clean/yakeey/yakeey_2024-11-14/part-00000-da053eb4-d1dd-42e1-bc71-f47c78c62e09-c000.csv",
+        "./data/clean/avito/2024-11-30T19-40-08+00-00/part-00000-39b01b3c-97a4-4bb6-ab7f-126d272f899c-c000.csv",
+        "./data/clean/yakeey/2024-11-30T19-39-41+00-00/part-00000-b9cf4e76-8f31-45d0-a47d-b6a59fdd750e-c000.csv",
     ]
 
     spark = spark_setup("Loading ETL")

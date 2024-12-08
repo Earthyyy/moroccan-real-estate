@@ -57,7 +57,7 @@ def add_year_month_columns(dataframe: DataFrame, file_path: str) -> DataFrame:
     Returns:
         DataFrame: The modified dataframe
     """
-    year, month = map(int, file_path.split("/")[-1].split("_")[-1].split("-")[:-1])
+    year, month = map(int, file_path.split("/")[-1].split("-")[:2])
 
     return dataframe.withColumn("year", F.lit(year)).withColumn("month", F.lit(month))
 
@@ -251,6 +251,6 @@ def main(input_path, output_path):
 
 
 if __name__ == "__main__":
-    input_path = "./data/raw/yakeey/yakeey_2024-11-14.json"
+    input_path = "./data/raw/yakeey/2024-11-30T19-39-41+00-00.json"
     output_path = input_path.replace("/raw/", "/clean/").replace(".json", "")
     main(input_path, output_path)

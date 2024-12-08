@@ -101,3 +101,23 @@ class AvitoTimePipeline:
             date.year,
             date.month,
         )
+
+
+class DeltaPipeline:
+    def process_item(self, item, spider):
+        if spider.name == "avito":
+            adapter = ItemAdapter(item)
+            item_date_str = adapter.get("date_time")
+            item_date = datetime.strptime(item_date_str, "%Y-%m-%d %H:%M")
+            if item_date < spider.recent_date:
+                spider.crawler.engine.close_spider(
+                    spider, "No more recent announcements"
+                )
+        elif spider.name == "yakeey":
+            adapter = ItemAdapter(item)
+            item_reference = adapter.get("reference")
+            if item_reference in spider.references:
+                spider.crawler.engine.close_spider(
+                    spider, "No more recent announcements"
+                )
+        return item

@@ -1,3 +1,5 @@
+import glob
+import json
 from typing import ClassVar, Dict, List, Optional, Tuple
 
 import scrapy
@@ -9,10 +11,18 @@ from src.scraping.items import YakeeyAnnouncementItem
 
 class YakeeySpider(scrapy.Spider):
     name = "yakeey"
-    allowed_domains: ClassVar = ["yakeey.com"]
-    start_urls: ClassVar = ["https://yakeey.com/fr-ma/achat/appartement/maroc"]
+    allowed_domains: ClassVar[List[str]] = ["yakeey.com"]
+    start_urls: ClassVar[List[str]] = [
+        "https://yakeey.com/fr-ma/achat/appartement/maroc"
+    ]
     page_counter: int = 0
     max_pages: int = 10
+    references: List[str]
+
+    def start_requests(self):
+        glob_path = "./data/raw/yakeey/*.json"
+        self.references = self.set_references(glob_path)
+        return super().start_requests()
 
     def parse(self, response: HtmlResponse):
         # increment the page counter
@@ -82,7 +92,10 @@ class YakeeySpider(scrapy.Spider):
         Returns:
             True if the announcement is valid, False otherwise.
         """
-        return a.css("a > div > div:nth-child(1) > span::text").get() != "Neuf"
+        return a.css("a > div > div:nth-child(1) ::text").get() not in [
+            "Neuf",
+            "Bientôt disponible",
+        ]
 
     def get_info_from_announcement_a(
         self,
@@ -99,9 +112,10 @@ class YakeeySpider(scrapy.Spider):
         """
         property_type = a.css("a > div > div:nth-child(2) p")[0].css("::text").get()
         _, price = a.css("a > div > div:nth-child(2) p")[1].css("::text").getall()
-        neighborhood, city = (
+        *neighborhoods, city = (
             a.css("a > div > div:nth-child(2) p")[2].css("::text").get().split(" - ")
         )
+        neighborhood = " - ".join(neighborhoods)
         return (property_type, price, neighborhood, city)
 
     def get_next_page_url(self, response: HtmlResponse) -> Optional[str]:
@@ -167,3 +181,18 @@ class YakeeySpider(scrapy.Spider):
             if section.css("h2 ::text").get() == "Caractéristiques du bien":
                 equipments.extend(section.css("p::text").getall())
         return equipments
+
+    def set_references(self, glob_path: str):
+        """Get the list of existing references.
+
+        Args:
+            references (List[str]): The existing references list.
+        """
+        files = glob.glob(glob_path)
+        references = []
+        # get the existing references list
+        for file in files:
+            with open(file, "r") as f:
+                data = json.load(f)
+                references.extend([item["reference"] for item in data])
+        return references

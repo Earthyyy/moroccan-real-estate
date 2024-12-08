@@ -1,3 +1,5 @@
+import glob
+from datetime import datetime
 from typing import ClassVar, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 
@@ -10,10 +12,18 @@ from src.scraping.items import AvitoAnnouncementItem
 
 class AvitoSpider(scrapy.Spider):
     name = "avito"
-    allowed_domains: ClassVar = ["www.avito.ma"]
-    start_urls: ClassVar = ["https://www.avito.ma/fr/maroc/appartements-à_vendre"]
+    allowed_domains: ClassVar[List[str]] = ["www.avito.ma"]
+    start_urls: ClassVar[List[str]] = [
+        "https://www.avito.ma/fr/maroc/appartements-à_vendre"
+    ]
     page_counter: int = 0
     max_pages: int = 10
+    recent_date: datetime
+
+    def start_requests(self):
+        glob_path = "./data/raw/avito/*.json"
+        self.recent_date = self.set_recent_date(glob_path)
+        return super().start_requests()
 
     def parse(self, response: HtmlResponse):
         # increment the page counter
@@ -179,3 +189,21 @@ class AvitoSpider(scrapy.Spider):
         return response.css(
             "div.sc-1g3sn3w-15 > div > div:nth-child(1) ::text"
         ).getall()
+
+    def set_recent_date(self, glob_path: str) -> datetime:
+        """Get the date of the most recent scraped announcement.
+
+        Returns:
+            datetime: The date of the most recent announcement.
+        """
+        # get the most recent extraction date
+        recent_date = datetime(2024, 1, 1)
+        files = glob.glob(glob_path)
+        if files:
+            recent_date = max(
+                [
+                    datetime.strptime(file.split("/")[-1][:-11], "%Y-%m-%dT%H-%M-%S")
+                    for file in files
+                ]
+            )
+        return recent_date
