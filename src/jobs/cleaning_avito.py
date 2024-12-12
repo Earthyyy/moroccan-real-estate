@@ -245,7 +245,7 @@ def drop_irrelevant_columns(df: DataFrame) -> DataFrame:
     return df.drop("title", "user", "time", "date_time", "attributes", "equipments")
 
 
-def main(input_path: str, output_path: str):
+def clean_avito(input_path: str, output_path: str):
     spark = spark_setup("Avito Cleaning Job")
     df = load_data(spark, input_path)
     df_cleaned = (
@@ -274,4 +274,4 @@ def main(input_path: str, output_path: str):
 if __name__ == "__main__":
     input_path = "./data/raw/avito/2024-11-30T19-40-08+00-00.json"
     output_path = input_path.replace("/raw/", "/clean/").replace(".json", "")
-    main(input_path, output_path)
+    clean_avito(input_path, output_path)
