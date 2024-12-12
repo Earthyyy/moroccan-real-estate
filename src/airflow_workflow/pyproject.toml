@@ -1,0 +1,112 @@
+[build-system]
+requires = ["poetry>=1.8.3"]
+build-backend = "poetry.masonry.api"
+
+# Project Metadata
+[tool.poetry]
+package-mode = false
+name = "moroccan-real-estate"
+version = "0.0.1"
+description = "A real estate data engineering project focusing on second hand apartments on sale in the Moroccan market."
+authors = [
+  "EL MAMOUNI Saad <elmamounisaad@gmail.com>",
+  "NIJADI Mohamed <mohammednijadi47@gmail.com>",
+  "EL ARDI Anas <anaselardi@gmail.com>"
+]
+readme = "README.md"
+license = "MIT"
+keywords = ["Real estate", "Data engineering", "Morocco", "ETL", "Data pipeline"]
+
+# Project URLs for easy access to resources
+[tool.poetry.urls]
+homepage = "https://example.com"
+documentation = "https://example.com/docs"
+repository = "https://github.com/Earthyyy/moroccan-real-estate"
+bug_tracker = "https://github.com/Earthyyy/moroccan-real-estate/issues"
+
+# Python version and dependencies
+[tool.poetry.dependencies]
+python = "3.11.10"
+# Add your project's runtime dependencies here, for example:
+requests = "2.32.3"
+Scrapy = "2.11.2"
+ipython = "8.27.0"
+nox = "2024.4.15"
+numpy = "^2.1.2"
+plotly = "^5.24.1"
+pandas = "^2.2.3"
+notebook = "^7.2.2"
+pyspark = "^3.5.3"
+types-requests = "^2.32.0.20241016"
+duckdb = "^1.1.3"
+apache-airflow = "^2.10.3"
+
+[tool.poetry.group.lint]
+optional = true
+
+# Linting Group Dependencies
+[tool.poetry.group.lint.dependencies]
+ruff = "0.6.7"
+
+[tool.poetry.group.format]
+optional = true
+
+# Format Group Dependencies
+[tool.poetry.group.format.dependencies]
+black = "24.8.0"
+isort = "5.13.2"
+
+[tool.poetry.group.typing]
+optional = true
+
+# Typing Group Dependencies
+[tool.poetry.group.typing.dependencies]
+
+mypy = "^0.931"
+
+[tool.poetry.group.test]
+optional = true
+
+# Testing Group Dependencies
+[tool.poetry.group.test.dependencies]
+pytest = "8.3.3"
+pytest-vcr = "1.0.2"
+vcrpy = "5.1.0"
+coverage = "7.6.1"
+urllib3 = "2.2.3"
+
+
+[tool.poetry.group.doc]
+optional = true
+# Documentation Group Dependencies
+[tool.poetry.group.doc.dependencies]
+sphinx = "8.0.2"
+shibuya = "2024.8.27"
+sphinx-autobuild = "2024.9.19"
+
+# Linting Configuration for Ruff
+[tool.ruff]
+line-length = 88
+lint.select = [
+    "E", "F", "W", "B", "A", "C4", "T10", "EXE", "ISC", "G", "PIE", "T20", "PT", 
+    "RSE", "RET", "TID", "ARG", "PGH", "PLC", "PLE", "PLW", "RUF"
+]
+extend-exclude = [
+    "*.pyc",
+    "__pycache__",
+]
+
+# Black code formatter configuration
+[tool.black]
+line-length = 88
+
+# isort (import sorting) configuration aligned with black's style
+[tool.isort]
+profile = "black"
+
+# Mypy type checking configuration
+[tool.mypy]
+python_version = "3.11"
+follow_imports = "skip"
+ignore_missing_imports = true
+files = ["src"]
