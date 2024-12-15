@@ -87,6 +87,8 @@ def test(session):
     # Install only the testing dependencies group
     install_poetry_dependencies(session, "test")
 
+    session.run("airflow", "db", "init")
+
     # Run tests and measure coverage
     session.run("pytest", "./tests")
     session.run("coverage", "run", "--source=src", "-m", "pytest", "./tests")

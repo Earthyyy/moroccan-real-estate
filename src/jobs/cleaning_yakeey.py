@@ -204,7 +204,7 @@ def one_hot_encode_equipments(
     return dataframe.drop("equipments")
 
 
-def main(input_path, output_path):
+def clean_yakeey(input_path, output_path):
     spark = spark_setup("Yakeey Cleaning Job")
 
     # Load data
@@ -253,4 +253,4 @@ def main(input_path, output_path):
 if __name__ == "__main__":
     input_path = "./data/raw/yakeey/2024-11-30T19-39-41+00-00.json"
     output_path = input_path.replace("/raw/", "/clean/").replace(".json", "")
-    main(input_path, output_path)
+    clean_yakeey(input_path, output_path)

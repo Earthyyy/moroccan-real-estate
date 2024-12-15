@@ -246,16 +246,10 @@ def load_fact_table_to_duckdb(property_facts: DataFrame, duckdb_path: str):
     )
 
 
-if __name__ == "__main__":
-
-    paths = [
-        "./data/clean/avito/2024-11-30T19-40-08+00-00/part-00000-39b01b3c-97a4-4bb6-ab7f-126d272f899c-c000.csv",
-        "./data/clean/yakeey/2024-11-30T19-39-41+00-00/part-00000-b9cf4e76-8f31-45d0-a47d-b6a59fdd750e-c000.csv",
-    ]
-
+def populate_datawarehouse(input_paths, dw_path) -> None:
     spark = spark_setup("Loading ETL")
 
-    for path in paths:
+    for path in input_paths:
         # load clean csv file
 
         df = spark.read.csv(path, header=True, schema=DF_SCHEMA)
@@ -287,12 +281,22 @@ if __name__ == "__main__":
             ),
         )
 
-        # load to dev dw
-        dev_dw_path = "data/dw/datawarehouse.db"
-        load_source_dim_to_duckdb(source_dim_new, dev_dw_path)
-        load_location_dim_to_duckdb(location_dim_new, dev_dw_path)
-        load_type_dim_to_duckdb(type_dim_new, dev_dw_path)
-        load_date_dim_to_duckdb(date_dim_new, dev_dw_path)
-        load_fact_table_to_duckdb(property_facts, dev_dw_path)
+        load_source_dim_to_duckdb(source_dim_new, dw_path)
+        load_location_dim_to_duckdb(location_dim_new, dw_path)
+        load_type_dim_to_duckdb(type_dim_new, dw_path)
+        load_date_dim_to_duckdb(date_dim_new, dw_path)
+        load_fact_table_to_duckdb(property_facts, dw_path)
 
     spark.stop()
+
+
+if __name__ == "__main__":
+
+    paths = [
+        "./data/clean/avito/2024-11-30T19-40-08+00-00/part-00000-39b01b3c-97a4-4bb6-ab7f-126d272f899c-c000.csv",
+        "./data/clean/yakeey/2024-11-30T19-39-41+00-00/part-00000-b9cf4e76-8f31-45d0-a47d-b6a59fdd750e-c000.csv",
+    ]
+    # load to dev dw
+    dev_dw_path = "data/dw/datawarehouse.db"
+
+    populate_datawarehouse(paths, dev_dw_path)

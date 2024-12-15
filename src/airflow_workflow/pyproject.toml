@@ -26,7 +26,7 @@ bug_tracker = "https://github.com/Earthyyy/moroccan-real-estate/issues"
 
 # Python version and dependencies
 [tool.poetry.dependencies]
-python = "3.11.6"
+python = "3.11.10"
 # Add your project's runtime dependencies here, for example:
 requests = "2.32.3"
 Scrapy = "2.11.2"
