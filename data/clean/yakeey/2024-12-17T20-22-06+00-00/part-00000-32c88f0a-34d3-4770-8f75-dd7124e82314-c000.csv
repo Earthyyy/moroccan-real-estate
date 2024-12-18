@@ -1,0 +1,636 @@
+url,n_bedrooms,n_bathrooms,total_area,living_area,floor,price,monthly_syndicate_price,city,neighborhood,type,year,month,source,bool_elevator,bool_balcony,bool_heating,bool_air_conditioning,bool_concierge,bool_equipped_kitchen,bool_furniture,bool_parking,bool_security,bool_terrace
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA002008,2,1,103,103,9,950000,200.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA002581,2,1,94,70,0,980000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA000806,3,2,132,105,5,1450000,300.0,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA000819,3,2,144,144,0,2160000,400.0,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,0,0,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA002607,2,1,100,95,4,1400000,150.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001579,3,2,171,159,3,2600000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA000311,3,3,230,220,7,3900000,,Casablanca,Maarif,apartment,2024,12,yakeey,1,0,0,1,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA000686,2,2,124,103,2,1950000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA002604,2,2,101,101,1,1350000,,Casablanca,Liberte,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA000820,4,2,418,350,5,6800000,,Casablanca,Maarif,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-maarouf-CA000995,3,2,105,82,5,1290000,300.0,Casablanca,Sidi maarouf,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA001095,2,1,126,101,5,1750000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002002,3,2,145,125,5,2000000,,Casablanca,Bourgogne (sidi belyout),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-palmier-(maarif)-CA002431,3,2,151,151,5,2530000,,Casablanca,Palmier (maarif),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA002544,3,2,126,126,7,2100000,,Casablanca,Bourgogne (sidi belyout),apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA001164,3,2,133,133,6,1800000,250.0,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,0,1,1,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA004614,2,1,77,77,2,980000,200.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-inara-CA005099,2,1,84,84,4,840000,,Casablanca,Inara,apartment,2024,12,yakeey,0,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA005097,3,2,134,116,0,2400000,300.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA003115,3,2,121,121,4,1650000,300.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA004031,3,2,129,113,1,1580000,,Casablanca,La gironde,apartment,2024,12,yakeey,1,0,0,0,0,1,1,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA004940,2,2,109,87,3,1450000,,Casablanca,Liberte,apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-bernoussi-CA003696,4,2,104,98,2,1160000,,Casablanca,Sidi bernoussi,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA004842,2,2,208,155,0,1900000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA004399,2,2,153,132,3,1990000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA003628,4,1,92,92,3,1150000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA002956,3,2,148,142,5,3700000,,Casablanca,Maarif,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-oulfa-CS003752,1,1,62,62,0,590000,100.0,Casablanca,Oulfa,studio,2024,12,yakeey,0,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA004319,2,2,88,83,4,1200000,250.0,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA004198,2,2,142,134,5,1400000,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-benmsick-CA004818,2,1,63,63,1,700000,,Casablanca,Benmsick,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA003124,3,3,249,220,5,4800000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,1,0,1,1,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA005986,3,2,165,113,1,1897500,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA006075,3,2,130,115,3,1586000,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-al-azhar-CA005934,4,2,99,99,2,1200000,,Casablanca,Al azhar,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-el-hank-CA006443,3,2,129,116,5,2000000,,Casablanca,El hank,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA006070,2,2,123,111,4,1476000,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA006417,3,2,115,113,3,1450000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA006687,2,1,100,88,5,1100000,,Casablanca,Liberte,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-hopitaux-CD006551,4,2,296,296,2,4200000,,Casablanca,Hopitaux,duplex/triplex,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA006375,2,1,101,80,4,1800000,480.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA006429,5,3,162,152,1,2500000,25.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,1,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-temara-hay-al-wifaq-TA005151,3,2,116,116,3,1530000,,Témara,Hay al wifaq,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA006067,3,2,128,115,2,1600000,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA006691,1,1,149,149,0,1000000,,Casablanca,Oulfa,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA006349,3,3,201,182,1,2650000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-temara-centre-temara-TA005356,3,2,97,97,4,1170000,,Témara,Centre temara,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-bouznika-plage-oued-cherrat-BA008089,3,2,252,155,2,2900000,,Bouznika,Plage oued cherrat,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-temara-hay-al-wifaq-TA008794,2,1,110,76,0,1080000,,Témara,Hay al wifaq,apartment,2024,12,yakeey,0,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA007013,2,2,108,96,3,1000000,200.0,Casablanca,La gironde,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-bouznika-plage-oued-cherrat-BA008101,3,2,187,120,3,1900000,,Bouznika,Plage oued cherrat,apartment,2024,12,yakeey,0,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA008650,2,2,118,104,2,2150000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA006880,2,1,90,81,1,1530000,400.0,Casablanca,Maarif,apartment,2024,12,yakeey,1,0,0,1,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA008888,3,3,222,210,2,3500000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA007379,2,,113,103,1,1620000,200.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA007008,2,1,77,76,3,730000,,Casablanca,Oulfa,apartment,2024,12,yakeey,0,1,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA006935,2,2,166,110,1,1600000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA007872,2,2,122,104,4,2150000,300.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-bouznika-plage-oued-cherrat-BA008097,3,2,135,84,3,1600000,,Bouznika,Plage oued cherrat,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA007149,2,2,120,100,0,1450000,200.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-bettana-SA008846,2,2,147,95,1,1350000,,Salé,Bettana,apartment,2024,12,yakeey,0,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-triangle-d'or-CS011464,1,1,58,43,2,1300000,400.0,Casablanca,Triangle d'or,studio,2024,12,yakeey,1,1,0,0,1,1,1,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA011382,3,2,136,114,3,2700000,,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-rabat-guich-oudaya-TA011854,3,3,150,138,1,1700000,,Rabat,Guich oudaya,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-beausejour-CD009707,3,2,189,182,4,2400000,,Casablanca,Beausejour,duplex/triplex,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA009559,3,3,211,180,2,4150000,950.0,Casablanca,Gauthier,apartment,2024,12,yakeey,1,0,0,0,0,0,1,1,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-hopitaux-CS012319,1,1,66,58,1,850000,300.0,Casablanca,Hopitaux,studio,2024,12,yakeey,1,0,0,0,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA009381,3,3,178,155,2,2100000,500.0,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA011981,3,1,92,92,5,1100000,108.33333333333333,Casablanca,Les princesses,apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA011675,2,2,77,66,0,900000,,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-hay-chmaou-SA010767,3,1,104,104,2,960000,,Salé,Hay chmaou,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-rabat-quartier-allaymoun-RA011488,2,2,134,84,1,2050000,,Rabat,Quartier allaymoun,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ouled-ziane-CA012394,2,1,58,58,1,800000,,Casablanca,Ouled ziane,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA012266,3,2,141,141,6,2050000,,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA012269,3,2,174,162,1,2880000,352.0,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA011103,1,2,87,79,5,980000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-hopitaux-CS012320,1,1,70,64,1,850000,300.0,Casablanca,Hopitaux,studio,2024,12,yakeey,1,0,0,0,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-othmane-CA011072,3,2,87,87,1,850000,,Casablanca,Sidi othmane,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA013491,2,2,178,165,12,2700000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA014186,3,2,113,108,5,1400000,,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA012977,4,2,263,234,5,3800000,500.0,Casablanca,Maarif,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA012588,3,2,160,138,3,2900000,433.3333333333333,Casablanca,Gauthier,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-sebaa-CA014815,2,1,63,63,2,540000,,Casablanca,Ain sebaa,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA012598,2,1,120,120,0,1850000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,0,0,0,0,0,1,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-othmane-CA014932,3,2,82,75,3,740000,,Casablanca,Sidi othmane,apartment,2024,12,yakeey,0,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA015132,1,1,46,46,0,750000,200.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-tanger-branes-1-TA014874,3,1,152,152,5,1500000,150.0,Tanger,Branes 1,apartment,2024,12,yakeey,1,1,0,1,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-triplex-tanger-mujahidine-TT013373,6,4,458,120,3,3300000,,Tanger,Mujahidine,duplex/triplex,2024,12,yakeey,0,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-sebaa-CA013706,3,2,132,132,4,1482000,,Casablanca,Ain sebaa,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-fadaat-al-mouhit-DA012402,3,2,128,128,3,1400000,,Casablanca,Fadaat al mouhit,apartment,2024,12,yakeey,0,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA013321,3,1,114,110,4,1250000,25.0,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA012823,3,2,293,178,1,4450000,,Casablanca,Maarif,apartment,2024,12,yakeey,0,1,0,1,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA013066,3,1,287,150,0,1900000,300.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA012763,3,2,111,111,1,1600000,,Casablanca,Bourgogne (sidi belyout),apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-tanger-lalla-chafia-TA013511,4,3,183,183,6,2480000,,Tanger,Lalla chafia,apartment,2024,12,yakeey,1,1,0,0,1,1,1,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bouskoura-BA013621,2,1,75,68,4,600000,100.0,Casablanca,Bouskoura,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-casablanca-finance-city-CA011478,2,2,138,100,5,2790000,500.0,Casablanca,Casablanca finance city,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bachkou-CA016658,3,2,135,125,1,1900000,300.0,Casablanca,Bachkou,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-bernoussi-CA015715,2,1,67,67,2,750000,,Casablanca,Sidi bernoussi,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-tanger-branes-1-TA018920,3,2,137,127,1,1600000,,Tanger,Branes 1,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-maarif-extension-CS017391,1,1,80,72,5,1000000,300.0,Casablanca,Maarif extension,studio,2024,12,yakeey,1,0,0,1,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA016702,3,2,108,108,4,2050000,350.0,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA016894,3,2,213,190,5,2495000,300.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA018144,2,1,81,81,5,1100000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-villette-CA015761,2,1,84,78,5,850000,,Casablanca,La villette,apartment,2024,12,yakeey,1,1,1,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA016102,2,1,101,101,2,1350000,250.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,1,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-tanger-quartier-administratif-TA016630,3,1,113,113,1,1130000,150.0,Tanger,Quartier administratif,apartment,2024,12,yakeey,1,0,0,0,0,0,1,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA017576,3,2,126,111,3,1971000,480.0,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-casa-green-town-BA017791,3,2,154,122,1,2800000,,Casablanca,Casa green town,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-bernoussi-CA015713,2,1,67,67,1,750000,,Casablanca,Sidi bernoussi,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-bernoussi-CA015717,2,1,67,67,3,750000,,Casablanca,Sidi bernoussi,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bachkou-CA015615,3,2,199,199,0,2400000,,Casablanca,Bachkou,apartment,2024,12,yakeey,0,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA018623,3,2,109,109,2,1850000,350.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA015269,3,2,103,103,1,1750000,416.6666666666667,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-tanger-branes-2-TA016891,4,3,299,250,4,1800000,,Tanger,Branes 2,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA008649,2,2,118,104,1,2150000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA020995,4,3,241,224,7,3950000,860.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA019753,4,2,137,137,2,1403000,,Casablanca,Liberte,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-triplex-rabat-haut-agdal-RT019165,7,6,990,601,5,10000000,600.0,Rabat,Haut agdal,duplex/triplex,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bachkou-BA021213,2,1,96,94,3,700000,,Casablanca,Bachkou,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA020412,3,3,132,132,2,1716000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-borja-CA019098,3,1,122,85,1,1150000,250.0,Casablanca,Ain borja,apartment,2024,12,yakeey,1,0,0,0,1,0,1,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-annasr-BA021249,3,3,162,162,2,1480000,,Casablanca,Annasr,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-casablanca-finance-city-CD020502,2,2,205,105,4,4200000,1158.3333333333333,Casablanca,Casablanca finance city,duplex/triplex,2024,12,yakeey,1,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-lehouaoura-2-SA021409,3,1,69,69,0,500000,,Sidi rahal,Lehouaoura 2,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA020209,2,2,150,125,6,1716000,,Casablanca,Bourgogne (sidi belyout),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-temara-lotissement-namssia-TA020648,2,1,94,94,2,1350000,300.0,Témara,Lotissement namssia,apartment,2024,12,yakeey,0,1,0,1,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-quartier-bd-med-v-CA021204,2,1,84,84,4,900000,100.0,Casablanca,Quartier bd med v,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-said-hajji-SA021417,3,1,87,87,4,735000,125.0,Salé,Said hajji,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-CA020599,3,2,138,138,1,2450000,,Casablanca,Californie,apartment,2024,12,yakeey,1,0,0,1,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nouaceur-NA021198,2,2,110,110,2,1069000,,Casablanca,Nouaceur,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-hopitaux-CT023162,7,7,704,704,5,7800000,,Casablanca,Hopitaux,duplex/triplex,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-triangle-d'or-CD021522,4,2,318,278,2,4600000,,Casablanca,Triangle d'or,duplex/triplex,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-facultes-route-d'el-jadida-CA023390,3,,127,124,1,2300000,300.0,Casablanca,Facultes - route d'el jadida,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris1-DA021420,3,2,199,199,2,3100000,1300.0,Dar bouazza,Tamaris1,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-gauthier-CD023314,4,2,210,210,1,4100000,200.0,Casablanca,Gauthier,duplex/triplex,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-zone-industrielle-ain-sebaa-CA022173,3,2,111,111,2,1246000,,Casablanca,Zone industrielle ain sebaa,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA023329,3,2,210,190,3,2500000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-ghalef-CA021592,3,2,124,115,4,1550000,216.66666666666666,Casablanca,Derb ghalef,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-MA022154,3,1,120,120,3,1250000,250.0,Mohammedia,Mansouria,apartment,2024,12,yakeey,0,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-tanger-golf-TA022523,3,1,104,93,3,1000000,250.0,Tanger,Golf,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA022755,2,1,155,150,2,1988000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-zone-industrielle-ain-sebaa-CA022175,3,2,123,117,1,1314000,,Casablanca,Zone industrielle ain sebaa,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-plage-de-sidi-rahal-SA021679,2,1,66,66,1,600000,,Sidi rahal,Plage de sidi rahal,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-hay-charaf-SA021572,2,1,75,60,4,850000,,Sidi rahal,Hay charaf,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA023303,3,2,128,128,5,1200000,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA021859,2,1,88,88,5,1030000,250.0,Casablanca,Bourgogne (sidi belyout),apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-said-hajji-SA021604,4,1,95,90,3,720000,100.0,Salé,Said hajji,apartment,2024,12,yakeey,0,1,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-el-jadida-californie-EA022221,2,2,104,104,2,800000,,El jadida,Californie,apartment,2024,12,yakeey,1,1,0,1,1,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-laabissa-BD021418,4,3,191,181,0,1750000,,Casablanca,Laabissa,duplex/triplex,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-tanger-dradeb-TA020789,2,2,97,87,4,1200000,,Tanger,Dradeb,apartment,2024,12,yakeey,1,0,0,0,1,1,1,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-ghalef-CA023805,3,2,132,126,4,1490000,,Casablanca,Derb ghalef,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA025451,3,3,174,170,4,3200000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,0,0,1,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-beausejour-CA026134,2,2,105,105,1,1190000,,Casablanca,Beausejour,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-racine-CD023777,5,3,282,250,1,5500000,,Casablanca,Racine,duplex/triplex,2024,12,yakeey,1,1,1,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-daoudiat-MA024736,2,1,102,91,4,950000,,Marrakech,Daoudiat,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA023712,3,2,212,155,1,1700000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nouaceur-NA024593,2,2,110,97,3,840000,,Casablanca,Nouaceur,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-inara-CA024552,3,1,90,90,1,950000,,Casablanca,Inara,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-fes-al-adarissa-FA024364,3,3,164,164,4,760000,,Fès,Al adarissa,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA023456,2,1,74,74,5,820000,,Casablanca,Oulfa,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA023984,3,1,88,88,2,1100000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA024859,2,2,88,76,4,1060000,,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA025441,3,2,187,165,4,3200000,450.0,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-duplex-mohammedia-houria-MD023612,4,3,193,153,3,1100000,,Mohammédia,Houria,duplex/triplex,2024,12,yakeey,0,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-hay-chmaou-SA024230,3,1,116,97,0,682000,50.0,Salé,Hay chmaou,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-florida-mandarona-CA023617,2,1,61,61,,1200000,,Casablanca,Florida - mandarona,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-casa-green-town-BA026488,3,2,242,232,0,3600000,750.0,Casablanca,Casa green town,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA026172,2,1,89,89,6,900000,,Casablanca,La gironde,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA026598,2,2,86,86,1,1500000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-triangle-d'or-CT026502,4,4,577,389,5,6500000,,Casablanca,Triangle d'or,duplex/triplex,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA027036,3,2,115,97,3,1950000,400.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-TA027133,2,2,160,100,0,1080000,,Tamesna,Tamesna,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-said-hajji-SA027505,3,1,84,80,4,750000,,Salé,Said hajji,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-annasr-BA026935,2,2,112,104,1,963000,,Casablanca,Annasr,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-maarouf-CA027779,3,2,119,119,3,1200000,,Casablanca,Sidi maarouf,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA026854,3,3,158,141,3,1750000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA026420,3,2,198,176,4,2500000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-annasr-BD026637,4,2,197,180,,1880000,,Casablanca,Annasr,duplex/triplex,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA027212,3,2,171,148,0,1850000,250.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA027358,2,1,143,126,1,2000000,331.6666666666667,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA026532,3,2,119,119,5,1500000,,Casablanca,Oulfa,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-cil-CA027499,2,1,62,62,1,740000,,Casablanca,Cil,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA026393,4,4,272,244,2,5700000,,Casablanca,Maarif,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-MA023433,2,2,97,86,1,2250000,,Mohammédia,Mohammédia,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-burger-CA023649,3,2,164,164,5,2200000,,Casablanca,Burger,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ibn-tachfine-CA026828,3,2,134,113,7,1350000,,Casablanca,Ibn tachfine,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-ghalef-CA007050,3,1,161,141,4,2250000,300.0,Casablanca,Derb ghalef,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-roches-noires-CA030195,2,2,103,100,2,1030000,,Casablanca,Roches noires,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-borja-CA029739,2,1,88,74,4,920000,250.0,Casablanca,Ain borja,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA031167,3,2,142,112,3,1690000,,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-florida-mandarona-CA028113,3,2,96,81,3,1700000,,Casablanca,Florida - mandarona,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA028140,3,2,138,127,5,2250000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA029738,3,2,139,139,4,1700000,,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-othmane-CA029816,3,1,61,61,2,582230,,Casablanca,Sidi othmane,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA031311,3,2,122,110,2,1650000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-azhar-oulfa-CA029792,2,2,78,78,4,970000,200.0,Casablanca,Azhar oulfa,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-medina-SA028463,3,1,91,91,3,840000,12.5,Salé,Medina,apartment,2024,12,yakeey,1,1,1,1,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA030460,2,1,84,84,3,1170000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-tanger-gueznaia-TA028094,3,2,97,97,4,700000,,Tanger,Gueznaia,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-rachidia-MA030991,2,2,88,88,2,720000,,Mohammédia,Rachidia,apartment,2024,12,yakeey,0,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA028008,4,1,88,88,4,980000,,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA029096,3,3,139,139,2,2650000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-gauthier-CS030928,1,1,44,44,5,1200000,,Casablanca,Gauthier,studio,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-sebaa-CA029362,3,1,94,94,1,720000,,Casablanca,Ain sebaa,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-temara-hay-al-wifaq-TA008798,3,1,91,88,3,1120000,,Témara,Hay al wifaq,apartment,2024,12,yakeey,0,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA003627,4,2,123,110,0,1537000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA006006,3,2,126,114,2,1575000,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-benmsick-CA031740,4,2,189,163,7,1800000,,Casablanca,Benmsick,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-villette-CA031598,3,1,68,68,1,780000,,Casablanca,La villette,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA006879,2,1,79,70,4,1190000,300.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lusitania-CA032575,3,2,125,125,5,1500000,250.0,Casablanca,Lusitania,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA032912,3,2,109,109,3,1480000,,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-azhar-oulfa-CA032615,2,1,79,79,1,920000,300.0,Casablanca,Azhar oulfa,apartment,2024,12,yakeey,1,0,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-nouaceur-ND031592,4,4,131,580,2,2700000,,Casablanca,Nouaceur,duplex/triplex,2024,12,yakeey,0,1,0,1,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA032537,2,1,52,52,3,500000,,Casablanca,Oulfa,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA031398,2,2,100,100,4,1760000,,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-diour-dokala-MA031889,2,2,76,76,3,1050000,291.6666666666667,Mohammédia,Diour dokala,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA033614,2,2,89,89,1,1100000,250.0,Casablanca,Liberte,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA032667,3,3,125,120,3,2950000,500.0,Casablanca,Racine,apartment,2024,12,yakeey,1,0,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-fida-CA031888,2,2,87,65,7,800000,,Casablanca,Fida,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA033040,4,4,302,225,1,3926000,,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-moumen-CA032040,2,2,55,55,4,440000,50.0,Casablanca,Sidi moumen,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-roches-noires-CA033650,3,2,129,129,3,1291000,,Casablanca,Roches noires,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA031502,3,2,145,97,4,1400000,200.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA035251,2,1,112,112,4,800000,,Casablanca,Les princesses,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-duplex-sale-hay-safae-SD033975,3,2,103,72,2,780000,,Salé,Hay safae,duplex/triplex,2024,12,yakeey,0,0,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA034038,3,3,170,165,5,2150000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lissasfa-CA034634,2,1,75,75,3,990000,250.0,Casablanca,Lissasfa,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA034667,3,2,129,117,1,1990000,300.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA034674,3,2,229,205,1,3400000,700.0,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,1,1,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA034706,5,2,125,120,5,1600000,,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA034803,2,1,105,93,5,1150000,200.0,Casablanca,Liberte,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA034945,3,2,130,114,1,1769000,300.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,0,1,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA034542,3,1,129,129,3,900000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-said-hajji-SA034681,2,1,84,78,4,630000,200.0,Salé,Said hajji,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA034676,5,2,175,175,5,2950000,500.0,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,1,1,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-azhar-oulfa-2-CA034301,2,1,61,61,4,600000,200.0,Casablanca,Azhar oulfa 2,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-soualem-had-soualem-(ben-abid)-CA034794,2,1,92,92,2,1290000,,Soualem,Had soualem (ben abid),apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA033780,2,2,132,132,5,1800000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-douar-lkoudia-MA035377,3,1,112,112,4,720000,150.0,Marrakech,Douar lkoudia ,apartment,2024,12,yakeey,0,1,0,1,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA035179,3,3,175,157,6,3000000,300.0,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-casa-green-town-BA034799,2,2,136,100,,1870000,900.0,Casablanca,Casa green town,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA037746,2,2,125,108,4,2600000,,Casablanca,Bourgogne (sidi belyout),apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-almaz-(hay-hassani)-CA035521,3,2,183,144,3,2380000,,Casablanca,Almaz (hay hassani),apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-almaz-(hay-hassani)-CA035560,2,2,89,89,,1550000,,Casablanca,Almaz (hay hassani),apartment,2024,12,yakeey,1,0,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-sala-el-jadida-SA036157,3,2,116,116,1,1400000,,Salé,Sala el jadida,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA037058,3,2,125,115,2,2500000,400.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-anassi-CA039372,4,1,74,74,2,550000,,Casablanca,Anassi,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-hay-chmaou-SA038647,3,1,115,112,1,990000,,Salé,Hay chmaou,apartment,2024,12,yakeey,0,1,1,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-beausejour-CA037917,3,1,234,220,1,3500000,,Casablanca,Beausejour,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA038282,2,2,128,128,3,2000000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-lusitania-CD035889,4,2,407,320,5,4000000,450.0,Casablanca,Lusitania,duplex/triplex,2024,12,yakeey,1,1,0,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-anassi-CA039446,4,1,74,74,3,550000,,Casablanca,Anassi,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA037321,3,2,133,133,6,1600000,,Casablanca,La gironde,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-anassi-CA039450,4,1,74,74,4,550000,,Casablanca,Anassi,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA039451,3,2,217,196,0,2400000,,Casablanca,Lekrimat,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ibn-tachfine-CA038796,2,2,81,81,7,1123000,375.0,Casablanca,Ibn tachfine,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ibn-tachfine-CA040963,1,1,363,56,0,1150000,200.0,Casablanca,Ibn tachfine,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-DA040665,2,2,88,88,1,1350000,200.0,Casablanca,Lekrimat,apartment,2024,12,yakeey,1,1,0,1,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-anassi-CA039458,4,1,71,71,4,550000,,Casablanca,Anassi,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-triplex-kenitra-haddada-KT040418,6,4,195,195,3,850000,,Kénitra,Haddada,duplex/triplex,2024,12,yakeey,0,1,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-dyar-dakhama-BA040648,3,2,111,111,1,1260000,,Casablanca,Dyar dakhama,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-hay-al-wafae-MA042011,3,2,115,115,2,1000000,100.0,Mohammédia,Hay al wafae,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-sebaa-CA042292,3,1,89,89,1,890000,100.0,Casablanca,Ain sebaa,apartment,2024,12,yakeey,0,1,0,1,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-annasr-BA040487,3,2,150,150,1,1540000,100.0,Casablanca,Annasr,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA040378,3,2,161,153,6,2800000,,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(sidi-belyout)-CA040779,1,1,51,38,3,1100000,400.0,Casablanca,Bourgogne (sidi belyout),apartment,2024,12,yakeey,1,0,0,1,1,0,1,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-centre-ville-MA039644,2,2,126,126,3,1100000,166.66666666666666,Mohammédia,Centre ville,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA040310,3,3,201,172,2,3200000,,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA041492,2,2,104,82,3,1185000,300.0,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA041466,2,2,170,155,0,2050000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA039560,3,2,139,132,1,2600000,300.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hay-mohammadi-(ain-sebaa)-CA040693,3,1,101,101,2,1111000,,Casablanca,Hay mohammadi (ain sebaa),apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA040414,3,1,119,119,5,1000000,300.0,Casablanca,La gironde,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-maarif-CT040333,8,8,148,592,4,4000000,,Casablanca,Maarif,duplex/triplex,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA037069,2,,139,120,2,1850000,300.0,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-tabriquet-SA044089,4,2,94,94,2,1125000,,Salé,Tabriquet,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-annasr-BA039281,3,2,127,98,,1000000,380.0,Casablanca,Annasr,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA043596,2,2,78,76,2,1070000,250.0,Casablanca,La gironde,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA043675,3,2,129,113,2,1950000,400.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA043181,3,2,177,177,,2900000,1150.0,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,1,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA042440,2,3,144,125,7,2800000,500.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,1,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA042746,3,2,83,82,3,995000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA043686,4,3,387,350,4,4800000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA042563,3,3,137,137,0,1877000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-burger-CA043346,3,3,320,206,1,3100000,400.0,Casablanca,Burger,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-plage-de-sidi-rahal-SA042890,3,2,159,97,1,1700000,750.0,Sidi rahal,Plage de sidi rahal,apartment,2024,12,yakeey,0,1,0,1,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-riad-essalam-MA042656,3,2,91,91,2,1000000,,Mohammédia,Riad essalam,apartment,2024,12,yakeey,0,1,0,1,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA043052,2,2,98,65,1,1450000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-duplex-marrakech-gueliz-MD043128,2,2,277,263,5,3400000,833.3333333333334,Marrakech,Gueliz ,duplex/triplex,2024,12,yakeey,1,0,0,0,1,0,1,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-lehouaoura-2-SA043967,2,1,90,90,0,700000,,Sidi rahal,Lehouaoura 2,apartment,2024,12,yakeey,0,0,1,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-palmier-(maarif)-CA043589,3,2,203,169,1,2970000,,Casablanca,Palmier (maarif),apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-almaz-(hay-hassani)-CA043527,3,1,78,78,3,1175000,,Casablanca,Almaz (hay hassani),apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-diour-dokala-MA043608,3,3,158,158,3,2700000,500.0,Mohammédia,Diour dokala,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-triplex-sale-cherkaoui-marzouka-ST044938,9,3,81,81,3,1400000,,Salé,"Cherkaoui - marzouka",duplex/triplex,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-riad-essalam-MA045075,3,2,92,92,4,680000,,Mohammédia,Riad essalam,apartment,2024,12,yakeey,0,1,0,0,0,0,1,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-skhirate-skhirat-plage-SA044261,2,2,96,92,2,1800000,333.3333333333333,Skhirate,Skhirat plage,apartment,2024,12,yakeey,0,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA044848,2,4,214,137,0,2600000,,Casablanca,Mers sultan,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bachkou-CA045925,3,1,141,124,2,1750000,,Casablanca,Bachkou,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-roches-noires-CA045418,3,1,144,130,4,1350000,250.0,Casablanca,Roches noires,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-DA045428,4,2,227,227,4,3600000,300.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-quartier-bd-med-v-CA044195,2,2,80,80,2,1000000,,Casablanca,Quartier bd med v,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA045352,3,2,195,189,2,2390000,300.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,1,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA045515,2,2,124,106,1,1550000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA044960,2,2,120,120,5,2400000,,Casablanca,Racine,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA045852,2,1,85,85,5,1174800,150.0,Casablanca,La gironde,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA045253,2,2,107,85,3,1160000,350.0,Casablanca,Nassim,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA045069,3,2,168,168,4,3000000,,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA045055,3,2,170,170,5,3400000,,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,0,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-roches-noires-CA045302,3,2,165,165,6,1760000,,Casablanca,Roches noires,apartment,2024,12,yakeey,1,1,0,1,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA045901,3,2,165,154,5,2400000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,1,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-gueliz-MA046868,3,2,234,234,0,2400000,25.0,Marrakech,Gueliz ,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-sindibad-CT046952,3,2,368,336,3,8000000,1200.0,Casablanca,Sindibad,duplex/triplex,2024,12,yakeey,1,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-rabat-dar-essalam-RA046458,4,3,248,186,0,5800000,,Rabat,Dar essalam,apartment,2024,12,yakeey,1,0,1,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA046788,3,2,151,151,3,1640000,250.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-abouab-sala-SA046908,2,1,96,96,3,890000,100.0,Salé,Abouab sala,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA046343,4,2,210,210,2,4200000,,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-fida-CA046785,2,1,66,66,2,840000,,Casablanca,Fida,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-burger-CA046645,2,1,110,110,3,1100000,100.0,Casablanca,Burger,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-roches-noires-CA046914,2,1,96,93,1,940000,200.0,Casablanca,Roches noires,apartment,2024,12,yakeey,1,0,0,0,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA046654,3,2,186,186,1,2500000,,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,1,1,0,0,1,1,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA046694,3,2,151,145,3,3450000,300.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA046603,4,3,349,281,5,3650000,300.0,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-kenitra-mimosas-KA046087,3,2,152,152,5,1500000,,Kénitra,Mimosas,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-hopitaux-CD046903,3,2,185,167,5,2350000,300.0,Casablanca,Hopitaux,duplex/triplex,2024,12,yakeey,1,0,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA046355,2,2,104,85,1,1950000,440.3333333333333,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-ghalef-CA046422,2,1,90,87,6,1000000,,Casablanca,Derb ghalef,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-casa-green-town-BA046590,2,2,114,102,2,1900000,,Casablanca,Casa green town,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-beausejour-CA046592,2,2,135,122,3,1920000,625.0,Casablanca,Beausejour,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-plage-de-sidi-rahal-SA047022,2,1,83,83,0,1300000,625.0,Sidi rahal,Plage de sidi rahal,apartment,2024,12,yakeey,0,0,0,0,0,0,1,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-garden-beach-SA046996,2,1,100,86,3,1500000,,Sidi rahal,Garden beach,apartment,2024,12,yakeey,0,1,0,0,0,0,1,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA047118,3,1,169,169,1,1800000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,0,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-CA047554,2,2,109,89,2,1350000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,0,0,1,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA047596,2,2,135,115,5,1850000,400.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-casablanca-finance-city-CA047153,1,1,97,84,6,2360000,,Casablanca,Casablanca finance city,apartment,2024,12,yakeey,1,0,0,1,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-DA047024,2,1,85,80,4,800000,150.0,Casablanca,La gironde,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-CA047096,2,2,168,126,2,1800000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-mkinssia-SA047516,2,2,86,86,0,1139000,200.0,Salé,Mkinssia,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA047057,3,2,145,129,4,2200000,500.0,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,1,0,0,1,0,1,1,1,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-sidi-othmane-CD047114,4,2,119,119,4,1100000,,Casablanca,Sidi othmane,duplex/triplex,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA047448,3,2,125,118,4,1500000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,1,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-hay-safae-SA047200,4,2,114,114,3,1110000,,Salé,Hay safae,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-portes-de-marrakech-addoha-MA047413,3,2,79,79,1,520000,150.0,Marrakech,Portes de marrakech addoha ,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-triplex-marrakech-azzouzia-MT047341,8,4,128,380,1,2000000,,Marrakech,Azzouzia,duplex/triplex,2024,12,yakeey,0,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-plage-de-sidi-rahal-SA047447,2,2,84,75,2,1300000,,Sidi rahal,Plage de sidi rahal,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-hay-menara-MA048365,2,1,87,87,3,640000,116.66666666666667,Marrakech,Hay menara,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA047856,4,2,180,169,4,3500000,300.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA048159,2,2,113,113,1,2000000,300.0,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-temara-skikina-TA048272,3,2,140,140,4,1150000,100.0,Témara,Skikina,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-casablanca-finance-city-CS047837,1,1,75,55,4,2200000,,Casablanca,Casablanca finance city,studio,2024,12,yakeey,1,0,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA047779,2,2,166,140,6,2500000,,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-hopitaux-CS048182,1,1,65,57,1,1100000,,Casablanca,Hopitaux,studio,2024,12,yakeey,1,0,0,0,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-temara-ibnou-rochd-TA048173,3,2,123,110,0,1500000,250.0,Témara,Ibnou rochd,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-ferme-bretonne-CS047824,1,1,62,62,1,1470000,300.0,Casablanca,Ferme bretonne,studio,2024,12,yakeey,1,0,1,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-belvedere-(roches-noires)-CS048309,1,1,71,50,4,700000,,Casablanca,Belvedere (roches noires),studio,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA047909,2,1,125,125,5,1175000,150.0,Casablanca,La gironde,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA048098,2,2,93,73,3,1790000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-errahma-AA047964,2,2,91,91,2,740000,,Dar bouazza,Errahma,apartment,2024,12,yakeey,0,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-temara-massira-i-TA048433,3,2,97,92,4,700000,,Témara,Massira i,apartment,2024,12,yakeey,0,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA048253,3,1,103,103,1,1905000,300.0,Casablanca,Lekrimat,apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA048168,2,2,126,126,2,1250000,,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-bab-al-bahr-SA048935,2,2,152,136,3,3650000,650.0,Salé,Bab al bahr,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA048618,2,2,87,87,3,1900000,400.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA048441,2,2,128,128,2,1000000,,Casablanca,Derb omar,apartment,2024,12,yakeey,0,0,0,0,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sale-tabriquet-SA048993,3,2,103,103,4,870000,,Salé,Tabriquet,apartment,2024,12,yakeey,0,0,0,0,0,0,1,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-DA049196,2,2,98,98,3,1700000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA049298,3,2,194,190,5,3000000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-sebaa-CA049161,5,2,113,113,2,1300000,,Casablanca,Ain sebaa,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-temara-lotissement-namssia-TA049163,3,1,109,109,1,1200000,,Témara,Lotissement namssia,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-CA048627,2,2,219,108,0,2900000,500.0,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,0,0,1,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA048498,3,2,114,101,3,2900000,300.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA049003,3,2,116,116,2,2500000,350.0,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,1,1,1,1,1,1
+https://yakeey.com/fr-ma/acheter-duplex-marrakech-m'hamid-MD049243,6,3,136,136,0,2800000,,Marrakech,M'hamid,duplex/triplex,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA049235,3,2,161,157,4,3500000,500.0,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA048745,3,2,125,91,5,1430000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-rabat-hay-al-massira-RA048434,3,1,118,118,1,1850000,100.0,Rabat,Hay al massira,apartment,2024,12,yakeey,0,0,0,1,0,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-fonciere-CS048719,1,1,70,54,2,795500,360.0,Casablanca,Fonciere,studio,2024,12,yakeey,1,0,0,0,1,1,1,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-gueliz-MA050770,3,1,202,202,0,1840000,,Marrakech,Gueliz ,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-alsace-loraine-DA050924,3,2,133,115,3,1250000,200.0,Casablanca,Alsace loraine,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA050829,2,1,78,76,4,770000,200.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA049937,3,2,128,128,5,1750000,300.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA049471,2,2,95,95,1,1150000,550.0,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,1,0,1,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-issil-MA050691,2,1,99,99,2,880000,200.0,Marrakech,Issil ,apartment,2024,12,yakeey,1,1,0,1,1,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA050546,3,2,120,110,3,1690000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-palmier-(maarif)-CD049438,3,3,447,447,7,3622300,500.0,Casablanca,Palmier (maarif),duplex/triplex,2024,12,yakeey,1,1,0,1,1,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-temara-hay-al-wifaq-TA050884,3,2,129,110,2,1400000,,Témara,Hay al wifaq,apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA050805,3,2,146,140,2,1400000,,Casablanca,Liberte,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-temara-chigaa-TA049665,3,2,100,100,1,950000,,Témara,Chigaa,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-nassim-CD050796,3,2,141,139,2,1850000,200.0,Casablanca,Nassim,duplex/triplex,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-ghalef-CA050781,3,2,153,144,1,1850000,,Casablanca,Derb ghalef,apartment,2024,12,yakeey,1,1,1,0,1,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nouaceur-NA049457,2,2,94,94,2,900000,,Casablanca,Nouaceur,apartment,2024,12,yakeey,0,1,0,0,0,0,1,1,0,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-bourgogne-(sidi-belyout)-CS050638,1,1,68,64,2,1076900,400.0,Casablanca,Bourgogne (sidi belyout),studio,2024,12,yakeey,1,1,0,0,1,0,1,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA049725,3,2,109,109,2,1650000,400.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hay-mohammadi-CA050620,3,2,73,73,2,790000,,Casablanca,Hay mohammadi,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-palmier-(maarif)-CA053130,3,,177,160,4,2500000,,Casablanca,Palmier (maarif),apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-maarif-CS051819,1,1,56,56,4,1170000,300.0,Casablanca,Maarif,studio,2024,12,yakeey,1,1,0,1,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-la-seista-MA051014,2,1,111,95,4,1290000,416.6666666666667,Mohammédia,La seista,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ancienne-medina-CA052451,3,2,88,88,5,1350000,220.0,Casablanca,Ancienne medina,apartment,2024,12,yakeey,0,1,1,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA051168,3,1,129,108,0,1400000,,Casablanca,Nassim,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-rabat-riyad-RA053001,3,2,271,248,3,6400000,600.0,Rabat,Riyad,apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA051602,3,2,110,110,3,1700000,200.0,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA051048,4,3,206,200,4,2000000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA052957,3,2,119,119,6,1400000,320.0,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lissasfa-CA050978,2,1,88,88,2,650000,,Casablanca,Lissasfa,apartment,2024,12,yakeey,0,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-maarif-DS051633,1,1,49,49,4,1150000,,Casablanca,Maarif,studio,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-azhar-oulfa-CA051728,2,1,67,67,3,700000,200.0,Casablanca,Azhar oulfa,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA052931,3,1,144,140,1,1751000,250.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-annasr-BA051858,3,2,134,126,0,1647000,,Casablanca,Annasr,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-lehouaoura-2-SA051454,2,2,91,91,3,580000,,Sidi rahal,Lehouaoura 2,apartment,2024,12,yakeey,0,1,1,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA052067,3,1,123,93,5,1500000,480.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-palmier-(maarif)-CA051009,3,2,178,178,3,2650000,200.0,Casablanca,Palmier (maarif),apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-beausejour-CA053962,3,2,208,208,1,2980000,,Casablanca,Beausejour,apartment,2024,12,yakeey,1,0,0,0,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-hay-el-bahja-MA053438,3,1,127,120,1,1000000,,Marrakech,Hay el bahja ,apartment,2024,12,yakeey,1,0,0,1,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-kenitra-la-ville-haute-KA051101,5,2,172,148,2,1680000,,Kénitra,La ville haute,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA054658,3,2,128,118,7,1650000,391.6666666666667,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bachkou-CA054494,2,2,66,66,0,1150000,100.0,Casablanca,Bachkou,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-almaz-CA053250,2,2,78,78,1,1070000,,Casablanca,Almaz,apartment,2024,12,yakeey,1,1,1,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bachkou-CA054727,3,2,98,98,3,1900000,300.0,Casablanca,Bachkou,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-rabat-hay-al-fath-RA054825,2,1,61,61,3,710000,,Rabat,Hay al fath,apartment,2024,12,yakeey,0,0,0,0,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA054092,3,1,116,116,1,1400000,25.0,Casablanca,Oulfa,apartment,2024,12,yakeey,0,1,0,1,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-rabat-kebibat-RA053950,2,1,85,85,1,1100000,100.0,Rabat,Kebibat,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA054295,3,2,166,166,4,2200000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-said-hajji-SA054450,2,2,85,85,3,1130000,,Salé,Said hajji,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-burger-CS053378,1,1,50,39,0,730000,,Casablanca,Burger,studio,2024,12,yakeey,1,1,0,1,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lissasfa-CA053172,3,2,78,78,3,812570,,Casablanca,Lissasfa,apartment,2024,12,yakeey,1,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA053818,2,1,111,111,4,1145430,,Casablanca,Hopitaux,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bachkou-CA056028,2,2,103,90,2,1350000,500.0,Casablanca,Bachkou,apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA055584,3,2,191,191,6,2900000,,Casablanca,Racine,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-maarouf-CA056094,2,1,74,68,2,845000,,Casablanca,Sidi maarouf,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA055955,2,1,69,69,3,780000,50.0,Casablanca,Nassim,apartment,2024,12,yakeey,0,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-rabat-l'ocean-RA055977,2,1,69,69,5,750000,100.0,Rabat,L'ocean,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oasis-CA054852,3,2,159,95,1,1700000,200.0,Casablanca,Oasis,apartment,2024,12,yakeey,1,0,0,0,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA055957,1,1,104,92,2,950000,300.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA054280,2,2,96,86,2,1200000,200.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,1,0,1,1,1,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA054869,3,2,194,158,1,2200000,420.0,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA055025,3,2,179,171,1,2300000,500.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-kenitra-bir-rami-KA055399,2,1,74,74,3,550000,,Kénitra,Bir rami,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lissasfa-CA055459,2,1,102,102,1,550000,,Casablanca,Lissasfa,apartment,2024,12,yakeey,0,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-plage-de-sidi-rahal-SA055896,2,2,64,64,1,860000,400.0,Sidi rahal,Plage de sidi rahal,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA054872,2,1,196,186,3,1700000,250.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA055018,4,2,254,197,4,2900000,,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-azhar-oulfa-2-CA055157,3,3,74,74,1,900000,,Casablanca,Azhar oulfa 2,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA055296,2,2,138,134,3,1575000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA055153,3,2,120,108,3,1500000,,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA057131,2,2,89,78,4,1270000,300.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-ain-chock-CT056991,6,3,400,360,1,3200000,,Casablanca,Ain chock,duplex/triplex,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-issil-MA058107,3,2,115,115,1,1200000,150.0,Marrakech,Issil ,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-rabat-jenan-ennahda-RA058809,2,2,88,76,4,700000,,Rabat,Jenan ennahda,apartment,2024,12,yakeey,0,1,0,1,1,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-la-gironde-CT057196,9,9,1221,1221,5,14000000,,Casablanca,La gironde,duplex/triplex,2024,12,yakeey,1,1,0,1,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-beausejour-CA056298,3,1,128,128,2,1262910,,Casablanca,Beausejour,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-ghalef-CA057563,3,1,108,108,4,1250000,200.0,Casablanca,Derb ghalef,apartment,2024,12,yakeey,1,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-temara-massira-iii-TA058763,3,2,111,111,1,1700000,,Témara,Massira iii,apartment,2024,12,yakeey,0,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-CA058363,1,1,90,80,3,1500000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA058867,3,3,178,178,2,3200000,600.0,Casablanca,Maarif,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nouaceur-NA057463,2,,82,82,1,800000,320.0,Casablanca,Nouaceur,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA056187,3,2,165,121,2,1450000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA057963,4,1,114,114,3,1349998,200.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-CA058587,3,2,125,125,3,2000000,,Casablanca,Californie,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-bernoussi-CA057857,2,1,83,83,3,695000,100.0,Casablanca,Sidi bernoussi,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-bourgogne-(sidi-belyout)-CS056914,1,1,40,40,2,935000,250.0,Casablanca,Bourgogne (sidi belyout),studio,2024,12,yakeey,1,0,0,1,1,0,1,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA058122,3,2,285,285,5,3950000,500.0,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA059723,2,1,64,64,1,975650,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,1,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA059054,2,2,96,91,1,1800000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-temara-centre-temara-TA058828,3,1,112,98,1,1220000,100.0,Témara,Centre temara,apartment,2024,12,yakeey,0,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA058959,2,2,92,92,4,1400000,275.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-belvedere-(roches-noires)-CS059685,1,1,55,55,7,840000,250.0,Casablanca,Belvedere (roches noires),studio,2024,12,yakeey,1,0,0,0,1,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-racine-CD059645,4,2,254,220,4,3800000,,Casablanca,Racine,duplex/triplex,2024,12,yakeey,1,1,0,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA059682,3,2,106,106,4,1280000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA059115,3,2,149,114,1,2650000,400.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA059803,2,1,75,70,0,1000000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,1,0,0,0,1,1,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-fonciere-DA059822,2,1,130,130,4,950000,60.0,Casablanca,Fonciere,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA059127,3,2,148,114,1,2650000,400.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-rabat-medina-RA059302,2,1,116,116,0,1200000,,Rabat,Medina,apartment,2024,12,yakeey,0,0,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-moumen-CA058918,3,1,72,72,3,624500,150.0,Casablanca,Sidi moumen,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA058956,3,2,119,110,5,1328000,,Casablanca,La gironde,apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-diab-CA058992,2,,117,104,0,3700000,,Casablanca,Ain diab,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA059493,3,2,186,156,0,2800000,480.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris1-DA059642,3,2,326,147,0,3200000,,Dar bouazza,Tamaris1,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA061092,4,2,259,259,3,4500000,333.3333333333333,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060564,2,2,148,94,7,1950000,458.3333333333333,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA061055,3,2,140,116,5,2400000,,Casablanca,Racine,apartment,2024,12,yakeey,1,0,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060521,3,2,132,132,1,1473219,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060525,3,2,134,134,3,1537726,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA059934,3,2,105,105,1,1200000,,Casablanca,Nassim,apartment,2024,12,yakeey,0,1,0,1,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060520,3,2,176,176,1,1969789,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,1,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-burger-CA060449,3,2,213,180,1,2450000,,Casablanca,Burger,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060522,3,2,140,140,2,1528805,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-CA060587,4,2,102,89,3,1643200,,Casablanca,Californie,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-DA060472,3,2,240,180,0,2700000,800.0,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-sale-cherkaoui-marzouka-SA060532,2,1,75,75,2,600000,,Salé,"Cherkaoui - marzouka",apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060523,3,2,176,176,2,1979941,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060524,3,,180,180,3,2048651,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060526,3,2,185,185,4,2026500,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA060527,3,2,130,130,4,1459499,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lissasfa-CA060183,3,2,102,102,2,1250000,250.0,Casablanca,Lissasfa,apartment,2024,12,yakeey,0,1,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nassim-CA061544,3,2,150,150,0,950000,,Casablanca,Nassim,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-cil-CA061261,3,1,106,106,0,1550000,,Casablanca,Cil,apartment,2024,12,yakeey,0,0,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-maarif-CD061163,3,1,163,163,4,2282000,400.0,Casablanca,Maarif,duplex/triplex,2024,12,yakeey,1,0,0,0,0,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA061364,2,1,65,65,3,750000,300.0,Casablanca,Oulfa,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA061266,3,2,137,137,3,1600000,,Casablanca,Maarif extension,apartment,2024,12,yakeey,0,1,0,1,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA061292,1,1,72,72,1,830000,200.0,Casablanca,Lekrimat,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-maarouf-CA061285,2,2,109,109,1,1000000,,Casablanca,Sidi maarouf,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061702,3,2,180,180,3,2048651,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061697,2,1,140,140,2,1528805,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA061589,3,2,104,104,1,1620000,400.0,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,0,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA061339,3,2,124,112,4,1054000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-semlalia-MA061586,3,1,115,115,4,1350000,200.0,Marrakech,Semlalia,apartment,2024,12,yakeey,1,1,0,1,1,0,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061701,3,2,176,176,2,1979941,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061371,2,1,132,132,1,1473219,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061691,5,2,186,174,3,2400000,300.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,1,1,1,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA061538,3,2,108,,3,1500000,150.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA061361,2,1,100,84,1,1300000,500.0,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061369,3,2,176,176,1,1969789,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-DA062881,2,2,103,103,4,1670000,500.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,0,0,1,1,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-cil-CA062733,3,2,141,126,2,2450000,500.0,Casablanca,Cil,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bouskoura-BA062067,3,3,120,107,1,1600000,500.0,Casablanca,Bouskoura,apartment,2024,12,yakeey,1,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-triplex-harhoura-harhoura-centre-HT062368,4,3,115,115,1,2800000,,Harhoura,Harhoura centre,duplex/triplex,2024,12,yakeey,0,0,0,0,1,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-anfa-superieur-CA062774,2,2,124,124,2,3200000,,Casablanca,Anfa superieur,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA062362,4,2,198,181,5,3300000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,1,1,0,1,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA062801,2,1,110,97,3,1700000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061709,3,2,185,185,4,2026500,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-sidi-moumen-CD061833,5,2,178,178,2,1990000,,Casablanca,Sidi moumen,duplex/triplex,2024,12,yakeey,0,0,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061713,2,1,130,130,4,1459500,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-chantilly-CS062044,1,1,92,52,1,1280000,,Casablanca,Chantilly,studio,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA062845,4,4,364,364,4,7000000,,Casablanca,Maarif,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA061946,4,2,234,220,1,2700000,,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA061978,2,1,80,80,1,1170000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,1,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-kenitra-la-ville-haute-KA062829,1,1,77,48,8,720000,200.0,Kénitra,La ville haute,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA063640,2,1,110,92,3,1700000,300.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ain-diab-CA062776,2,2,150,137,2,3750000,,Casablanca,Ain diab,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA063747,2,1,101,101,3,900000,,Casablanca,Maarif,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-CA063169,3,2,168,168,3,2780000,250.0,Casablanca,Californie,apartment,2024,12,yakeey,1,1,0,0,1,1,1,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-omar-CA063336,2,2,73,73,3,925000,230.0,Casablanca,Derb omar,apartment,2024,12,yakeey,1,1,0,0,0,1,1,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA064323,3,2,137,137,3,2300000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,0,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-soualem-had-soualem-(ben-abid)-HA063743,1,1,59,59,2,1000000,500.0,Soualem,Had soualem (ben abid),apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA064514,3,3,322,312,2,4800000,750.0,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,1,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-quartier-bd-med-v-CS063860,1,1,56,56,3,900000,,Casablanca,Quartier bd med v,studio,2024,12,yakeey,1,0,0,1,1,1,1,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA063817,3,1,133,133,0,1800000,270.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,0,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nouaceur-NA063287,3,2,126,116,,945000,400.0,Casablanca,Nouaceur,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA064055,3,2,167,157,3,1750000,400.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-garden-beach-SA063274,2,2,89,89,2,1350000,625.0,Sidi rahal,Garden beach,apartment,2024,12,yakeey,0,1,0,0,1,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA064152,3,2,180,166,5,2250000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-extension-CA064631,3,2,292,200,1,4200000,800.0,Casablanca,Maarif extension,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA065688,3,2,214,184,5,2300000,375.0,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA064545,2,1,167,125,,1650000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,0,0,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA065391,1,1,94,94,3,1100000,,Casablanca,Lekrimat,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sindibad-CA064775,2,2,170,148,2,3200000,916.6666666666666,Casablanca,Sindibad,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA065765,2,1,90,80,1,1600000,833.3333333333334,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA064535,4,3,220,162,10,3600000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA064537,2,1,85,85,5,1120000,,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-almaz-(hay-hassani)-CA065021,2,1,66,66,2,650000,,Casablanca,Almaz (hay hassani),apartment,2024,12,yakeey,0,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ibn-tachfine-CA065020,2,1,85,82,3,950000,150.0,Casablanca,Ibn tachfine,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nouaceur-NA064704,3,1,116,116,5,1076000,500.0,Casablanca,Nouaceur,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-racine-CS064860,1,1,58,58,2,1400000,400.0,Casablanca,Racine,studio,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA065384,2,1,131,100,4,960000,,Casablanca,Liberte,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mers-sultan-CA065544,3,2,170,120,1,1700000,,Casablanca,Mers sultan,apartment,2024,12,yakeey,1,0,0,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-DA065019,3,3,152,152,2,3200000,,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA065387,1,1,100,100,1,1000000,,Casablanca,Lekrimat,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-dar-bouazza-tamaris2-TA065633,4,2,286,286,2,4000000,,Dar bouazza,Tamaris2,apartment,2024,12,yakeey,0,1,1,0,1,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-maarif-CA065525,3,3,193,193,5,3950000,500.0,Casablanca,Maarif,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-tanger-quartier-administratif-TA068290,2,2,96,92,5,1550000,,Tanger,Quartier administratif,apartment,2024,12,yakeey,1,1,1,0,1,1,1,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA067659,4,2,154,154,5,2100000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA067991,3,2,263,263,5,3500000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA068705,2,1,112,102,4,1700000,,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ibn-tachfine-CA066537,3,2,86,86,0,900000,200.0,Casablanca,Ibn tachfine,apartment,2024,12,yakeey,1,0,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-la-gironde-CD065774,2,1,97,87,1,1250000,,Casablanca,La gironde,duplex/triplex,2024,12,yakeey,1,1,0,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA067685,3,2,180,154,5,2800000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA066787,3,3,147,147,2,2950000,,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,0,0,1,1,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA068001,2,2,100,95,3,1590000,,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,1,0,0,1,0,1,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-zone-industrielle-ain-sebaa-CA068148,2,1,74,74,2,814000,200.0,Casablanca,Zone industrielle ain sebaa,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA067689,3,2,199,193,4,3500000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,1,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lissasfa-CA068880,2,1,64,64,3,850000,,Casablanca,Lissasfa,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA068492,3,2,133,133,4,1900000,350.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,0,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA066644,4,2,277,215,1,3200000,400.0,Casablanca,Val fleury,apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-derb-ghalef-CA066413,2,1,98,98,5,1150000,,Casablanca,Derb ghalef,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA068346,3,2,129,129,4,2500000,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,1,1,1,0,1,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA068081,3,2,141,130,2,1860000,400.0,Casablanca,Lekrimat,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-bourgogne-(anfa)-CS069101,1,1,60,47,3,1425000,,Casablanca,Bourgogne (anfa),studio,2024,12,yakeey,1,1,0,0,1,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hay-hassani-CA070458,2,1,60,60,4,515000,91.66666666666667,Casablanca,Hay hassani,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-casablanca-finance-city-CA069046,2,,128,95,10,2500000,,Casablanca,Casablanca finance city,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-casablanca-finance-city-CD070511,4,3,392,260,0,5300000,,Casablanca,Casablanca finance city,duplex/triplex,2024,12,yakeey,1,1,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-liberte-CA070762,3,2,250,250,2,3400000,,Casablanca,Liberte,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA069352,3,2,110,110,5,1200000,250.0,Casablanca,Oulfa,apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-maarif-CS069050,1,1,46,41,2,980000,500.0,Casablanca,Maarif,studio,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-cil-CA071236,2,1,94,92,4,1457000,250.0,Casablanca,Cil,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-soualem-had-soualem-(ben-abid)-BA069080,2,1,87,87,1,1030000,500.0,Soualem,Had soualem (ben abid),apartment,2024,12,yakeey,0,1,0,0,0,0,1,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA069018,3,2,146,135,1,1500000,250.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-nouaceur-NA069007,3,2,127,127,,1380000,320.0,Casablanca,Nouaceur,apartment,2024,12,yakeey,1,1,0,0,0,1,0,0,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA070083,2,1,108,108,4,1350000,,Casablanca,Oulfa,apartment,2024,12,yakeey,1,1,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-tamaris2-CA070384,3,2,170,146,1,1980000,,Casablanca,Tamaris2,apartment,2024,12,yakeey,1,0,0,0,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ouled-azzouz-(bir-el-houssain)-CA069250,2,2,115,92,0,1450000,,Casablanca,Ouled azzouz (bir el houssain),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA072696,3,2,105,105,5,1375000,150.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,1,1,1,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA073300,3,2,171,162,2,2600000,833.3333333333334,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,1,0,0,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA073872,3,2,209,142,1,3000000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-studio-casablanca-anfa-superieur-CS071417,1,1,67,54,3,1670000,500.0,Casablanca,Anfa superieur,studio,2024,12,yakeey,1,0,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-studio-casablanca-casablanca-marina-CS069366,1,1,69,54,3,2500000,760.0,Casablanca,Casablanca marina,studio,2024,12,yakeey,1,1,0,0,0,0,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-belvedere-(roches-noires)-CA072426,2,3,112,112,4,1240000,200.0,Casablanca,Belvedere (roches noires),apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-studio-marrakech-hivernage-MS073159,1,1,36,36,1,890000,,Marrakech,Hivernage,studio,2024,12,yakeey,1,0,1,1,0,1,1,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA072938,4,1,126,106,0,930000,,Casablanca,Oulfa,apartment,2024,12,yakeey,0,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-plage-de-sidi-rahal-SA072393,1,1,60,60,,800000,583.3333333333334,Sidi rahal,Plage de sidi rahal,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-MA071723,2,1,60,60,1,850000,400.0,Mohammedia,El mansouria,apartment,2024,12,yakeey,0,1,0,1,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA073391,3,2,150,140,2,4200000,,Casablanca,Racine,apartment,2024,12,yakeey,1,1,1,0,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA073286,3,1,101,101,1,1200000,250.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,0,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oulfa-CA072141,2,1,65,65,2,530000,50.0,Casablanca,Oulfa,apartment,2024,12,yakeey,0,0,0,0,0,1,1,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA073336,3,2,173,170,2,2572000,500.0,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,1,1,0,1,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-semlalia-MA072009,2,2,99,84,0,1100000,300.0,Marrakech,Semlalia,apartment,2024,12,yakeey,1,0,1,1,0,1,0,1,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-hopitaux-CA068934,2,2,97,97,5,1530000,300.0,Casablanca,Hopitaux,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-gauthier-CA069713,3,2,172,165,1,2800000,,Casablanca,Gauthier,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-beausejour-CA064448,2,2,125,,1,1900000,,Casablanca,Beausejour,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-triangle-d'or-CA063242,3,2,139,139,4,3650000,900.0,Casablanca,Triangle d'or,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-duplex-casablanca-oulfa-CD063065,3,2,165,165,1,1850000,,Casablanca,Oulfa,duplex/triplex,2024,12,yakeey,0,1,0,0,0,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sidi-maarouf-CA063483,2,1,65,65,2,830000,,Casablanca,Sidi maarouf,apartment,2024,12,yakeey,0,1,1,0,1,1,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-val-fleury-CA062115,3,2,151,146,1,2050000,,Casablanca,Val fleury,apartment,2024,12,yakeey,0,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA061705,2,1,134,134,3,1537726,,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,0,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA060094,2,2,97,91,3,2160000,,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,0,1,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lissasfa-CA059142,3,2,90,87,2,1000000,200.0,Casablanca,Lissasfa,apartment,2024,12,yakeey,1,1,0,0,0,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-marrakech-socoma-MA059906,1,2,91,91,0,750000,,Marrakech,Socoma,apartment,2024,12,yakeey,0,0,1,0,0,1,1,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-ferme-bretonne-CA054970,3,2,117,100,4,2100000,350.0,Casablanca,Ferme bretonne,apartment,2024,12,yakeey,1,0,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA053185,3,2,121,121,3,2400000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA053664,4,3,310,298,2,4800000,,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-CA053672,3,2,123,118,4,2180000,350.0,Casablanca,Les princesses,apartment,2024,12,yakeey,1,1,0,1,1,1,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-oasis-CA050662,2,2,116,105,0,1900000,600.0,Casablanca,Oasis,apartment,2024,12,yakeey,1,0,0,1,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-sindibad-CA049145,3,2,230,210,3,2995000,680.0,Casablanca,Sindibad,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-la-gironde-CA049268,2,1,97,90,6,900000,,Casablanca,La gironde,apartment,2024,12,yakeey,1,0,0,0,1,1,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-sidi-rahal-plage-de-sidi-rahal-SA047844,1,1,61,61,1,850000,,Sidi rahal,Plage de sidi rahal,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-les-princesses-DA047868,3,2,120,120,4,2400000,,Casablanca,Les princesses,apartment,2024,12,yakeey,1,0,0,0,1,1,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-mandarouna-CA047620,3,2,96,86,4,1030000,,Casablanca,Mandarouna,apartment,2024,12,yakeey,0,0,0,0,0,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-kenitra-maghreb-al-arabi-KA046034,3,2,92,92,4,620000,,Kénitra,Maghreb al arabi,apartment,2024,12,yakeey,0,1,0,0,0,1,0,0,1,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lemkansa-CA047564,2,2,82,82,2,860000,,Casablanca,Lemkansa,apartment,2024,12,yakeey,0,0,0,0,0,0,0,0,0,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-racine-CA043458,3,2,166,152,4,2950000,,Casablanca,Racine,apartment,2024,12,yakeey,1,1,0,1,1,0,0,1,0,0
+https://yakeey.com/fr-ma/acheter-appartement-mohammedia-la-seista-MA037879,3,2,104,95,1,1300000,375.0,Mohammédia,La seista,apartment,2024,12,yakeey,1,1,0,0,1,0,0,1,0,1
+https://yakeey.com/fr-ma/acheter-triplex-casablanca-beausite-CT032587,3,2,476,206,2,4900000,,Casablanca,Beausite,duplex/triplex,2024,12,yakeey,0,0,0,0,0,0,0,0,0,1
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-bourgogne-(anfa)-CA019044,2,2,145,132,2,2590000,450.0,Casablanca,Bourgogne (anfa),apartment,2024,12,yakeey,1,1,0,1,0,1,0,1,1,0
+https://yakeey.com/fr-ma/acheter-appartement-casablanca-lekrimat-CA003904,2,1,114,114,0,1710000,,Casablanca,Lekrimat,apartment,2024,12,yakeey,1,0,0,0,0,1,0,0,1,0
