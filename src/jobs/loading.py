@@ -293,8 +293,8 @@ def populate_datawarehouse(input_paths, dw_path) -> None:
 if __name__ == "__main__":
 
     paths = [
-        "./data/clean/avito/2024-11-30T19-40-08+00-00/part-00000-39b01b3c-97a4-4bb6-ab7f-126d272f899c-c000.csv",
-        "./data/clean/yakeey/2024-11-30T19-39-41+00-00/part-00000-b9cf4e76-8f31-45d0-a47d-b6a59fdd750e-c000.csv",
+        "./data/clean/avito/avito_dummy/avito_dummy.csv",
+        "./data/clean/yakeey/yakeey_dummy/yakeey_dummy.csv",
     ]
     # load to dev dw
     dev_dw_path = "data/dw/datawarehouse.db"
