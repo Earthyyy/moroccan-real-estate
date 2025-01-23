@@ -5,6 +5,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+PATH_TO_DW = "./data/dw/datawarehouse.db"
+
 st.title("Moroccan Real Estate Analytics")
 
 st.subheader("For sale apartments market")
@@ -18,7 +20,7 @@ def get_average_price():
         FROM
             property_facts
     """
-    with duckdb.connect("./data/dw/datawarehouse.db") as conn:
+    with duckdb.connect(PATH_TO_DW) as conn:
         result = conn.execute(query)
         return result.fetchone()[0]
 
@@ -41,13 +43,13 @@ def get_top10_expensive_cities():
             2 DESC
         LIMIT 10
     """
-    with duckdb.connect("./data/dw/datawarehouse.db") as conn:
+    with duckdb.connect(PATH_TO_DW) as conn:
         result = conn.execute(query).fetchall()
         return pd.DataFrame(result, columns=["city", "average_price"])
 
 
 @st.cache_data
-def get_price_vs_total_area():
+def get_price_vs_total_area():  # TODO: load only a sample of data
     query = """
         SELECT
             price,
@@ -55,7 +57,7 @@ def get_price_vs_total_area():
         FROM
             property_facts
     """
-    with duckdb.connect("./data/dw/datawarehouse.db") as conn:
+    with duckdb.connect(PATH_TO_DW) as conn:
         results = conn.execute(query).fetchall()
         return pd.DataFrame(results, columns=["price", "total_area"])
 
@@ -73,9 +75,35 @@ def get_average_price_per_n_bedrooms():
         ORDER BY
             2 DESC
     """
-    with duckdb.connect("./data/dw/datawarehouse.db") as conn:
+    with duckdb.connect(PATH_TO_DW) as conn:
         results = conn.execute(query).fetchall()
         return pd.DataFrame(results, columns=["n_bedrooms", "average_price"])
+
+
+@st.cache_data
+def get_distinct_cities():
+    query = """
+        SELECT
+            DISTINCT city
+        FROM
+            location_dim
+    """
+    with duckdb.connect(PATH_TO_DW) as conn:
+        results = conn.execute(query).fetchall()
+        return [row[0] for row in results]
+
+
+@st.cache_data
+def get_min_max_col(column: str):
+    query = f"""
+        SELECT
+            MIN({column}),
+            MAX({column})
+        FROM
+            property_facts
+    """
+    with duckdb.connect(PATH_TO_DW) as conn:
+        return conn.execute(query).fetchone()
 
 
 # TODO: update page layout
@@ -84,8 +112,22 @@ def get_average_price_per_n_bedrooms():
 # TODO: style graphs
 
 
-# TODO: add filter widgets on sidebar
+# TODO: link filters to visuals
 
+
+# city filter
+cities = get_distinct_cities()
+cities_filter = st.sidebar.multiselect("City", cities)
+
+# area filter
+min_area, max_area = get_min_max_col("total_area")
+area_filter = st.sidebar.slider("Area (Total)", min_value=min_area, max_value=max_area)
+
+# n_bedrooms filter
+min_n_bedrooms, max_n_bedrooms = get_min_max_col("n_bedrooms")
+area_filter = st.sidebar.slider(
+    "Bedrooms (Total)", min_value=min_n_bedrooms, max_value=max_n_bedrooms
+)
 
 # add card component: average apartment price
 average_price = get_average_price() / 1_000_000
