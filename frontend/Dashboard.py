@@ -6,18 +6,16 @@ import duckdb
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from config import Config
 
-PATH_TO_DW = "./data/dw/datawarehouse.db"
-
-st.title("Moroccan Real Estate Analytics")
-
-st.subheader("For sale apartments market")
-
-# TODO: style graphs
-# TODO: update page layout
-# TODO: separate concerns (don't let everything in this single file)
 # TODO: improve code organization and error handling
-# TODO: add year/month filter
+
+st.set_page_config(
+    page_title=Config.PAGE_TITLE, page_icon=Config.PAGE_ICONE, layout="wide"
+)
+
+st.title(Config.PAGE_TITLE)
+st.subheader("For sale apartments market")
 
 
 @st.cache_data
@@ -52,7 +50,7 @@ def get_average_price(
             AND
             pf.n_bedrooms BETWEEN ? AND ?
     """
-    with duckdb.connect(PATH_TO_DW) as conn:
+    with duckdb.connect(Config.PATH_TO_DW) as conn:
         result = conn.execute(
             query,
             [
@@ -98,7 +96,7 @@ def get_top10_expensive_cities(
             2 DESC
         LIMIT 10
     """
-    with duckdb.connect(PATH_TO_DW) as conn:
+    with duckdb.connect(Config.PATH_TO_DW) as conn:
         result = conn.execute(
             query,
             [
@@ -142,7 +140,7 @@ def get_price_vs_total_area(
             AND
             pf.n_bedrooms BETWEEN ? AND ?
     """
-    with duckdb.connect(PATH_TO_DW) as conn:
+    with duckdb.connect(Config.PATH_TO_DW) as conn:
         result = conn.execute(
             query,
             [
@@ -191,7 +189,7 @@ def get_average_price_per_n_bedrooms(
         ORDER BY
             2 DESC
     """
-    with duckdb.connect(PATH_TO_DW) as conn:
+    with duckdb.connect(Config.PATH_TO_DW) as conn:
         result = conn.execute(
             query,
             [
@@ -216,7 +214,7 @@ def get_distinct_cities() -> List[str]:
         FROM
             location_dim
     """
-    with duckdb.connect(PATH_TO_DW) as conn:
+    with duckdb.connect(Config.PATH_TO_DW) as conn:
         result = conn.execute(query).fetchall()
         return [row[0] for row in result]
 
@@ -238,7 +236,7 @@ def get_min_max_col(column: str) -> Tuple[int, int]:
         FROM
             property_facts
     """
-    with duckdb.connect(PATH_TO_DW) as conn:
+    with duckdb.connect(Config.PATH_TO_DW) as conn:
         result = conn.execute(query).fetchone()
         return (int(result[0]), int(result[1])) if result else (0, 0)
 
@@ -264,13 +262,16 @@ n_bedrooms_filter = st.sidebar.slider(
     value=(min_n_bedrooms, max_n_bedrooms),
 )
 
-# card component: average apartment price
+# data and graph elements
 average_price = (
     get_average_price(cities_filter, area_filter, n_bedrooms_filter) / 1_000_000
 )
-st.metric("Average Apartment Price", f"{average_price:.2f}M MAD")
-
-# treemap graph: top 10 most expensive cities
+average_price_per_n_bedrooms = get_average_price_per_n_bedrooms(
+    cities_filter, area_filter, n_bedrooms_filter
+)
+price_vs_total_area = get_price_vs_total_area(
+    cities_filter, area_filter, n_bedrooms_filter
+)
 average_price_per_city = get_top10_expensive_cities(area_filter, n_bedrooms_filter)
 fig = px.treemap(
     average_price_per_city,
@@ -278,16 +279,34 @@ fig = px.treemap(
     values="average_price",
     title="Top 10 Most Expensive Cities",
 )
-st.plotly_chart(fig)
 
+# page layout
+
+# card component: average apartment price
+st.metric("Average Apartment Price", f"{average_price:.2f}M MAD")
+
+col1, _, col2 = st.columns([1, .1, 1])
 # scatterplot: price vs total_area
-price_vs_total_area = get_price_vs_total_area(
-    cities_filter, area_filter, n_bedrooms_filter
+col1.scatter_chart(
+    price_vs_total_area,
+    x="total_area",
+    y="price",
+    x_label="Total Area (m²)",
+    y_label="Price (MAD)",
+    width=300,
+    height=300
 )
-st.scatter_chart(price_vs_total_area, x="total_area", y="price")
-
 # barplot: average price per number of bedrooms group
-average_price_per_n_bedrooms = get_average_price_per_n_bedrooms(
-    cities_filter, area_filter, n_bedrooms_filter
+col2.bar_chart(
+    average_price_per_n_bedrooms,
+    x="n_bedrooms",
+    y="average_price",
+    x_label="Price (MAD)",
+    y_label="# Bedrooms",
+    horizontal=True,
+    width=300,
+    height=300
 )
-st.bar_chart(average_price_per_n_bedrooms, x="n_bedrooms", y="average_price")
+
+# treemap graph: top 10 most expensive cities
+st.plotly_chart(fig)
